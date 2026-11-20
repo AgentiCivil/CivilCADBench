@@ -1,0 +1,95 @@
+{
+ "sheet": "L1-easy-02",
+ "faults": {
+  "self": {
+   "overall": 100.00000000000001,
+   "components": {
+    "geometry F1@1mm": 1.0,
+    "layer-aware F1@1mm": 1.0,
+    "layer share": 1.0,
+    "text F1": 1.0
+   }
+  },
+  "shift_all_3mm": {
+   "overall": 100.00000000000001,
+   "components": {
+    "geometry F1@1mm": 1.0,
+    "layer-aware F1@1mm": 1.0,
+    "layer share": 1.0,
+    "text F1": 1.0
+   }
+  },
+  "all_on_one": {
+   "overall": 83.10392646873757,
+   "components": {
+    "geometry F1@1mm": 1.0,
+    "layer-aware F1@1mm": 0.5212779166142315,
+    "layer share": 1.0,
+    "text F1": 1.0
+   }
+  },
+  "swap_outline_rebar": {
+   "overall": 82.67389971225057,
+   "components": {
+    "geometry F1@1mm": 1.0,
+    "layer-aware F1@1mm": 0.509093825180433,
+    "layer share": 1.0,
+    "text F1": 1.0
+   }
+  },
+  "drop_text_10": {
+   "overall": 98.65546218487395,
+   "components": {
+    "geometry F1@1mm": 1.0,
+    "layer-aware F1@1mm": 1.0,
+    "layer share": 1.0,
+    "text F1": 0.9428571428571428
+   }
+  },
+  "edit_text_digit_10": {
+   "overall": 97.66825649178591,
+   "components": {
+    "geometry F1@1mm": 1.0,
+    "layer-aware F1@1mm": 1.0,
+    "layer share": 1.0,
+    "text F1": 0.9009009009009009
+   }
+  },
+  "drop_dim_10": {
+   "overall": 100.00000000000001,
+   "components": {
+    "geometry F1@1mm": 1.0,
+    "layer-aware F1@1mm": 1.0,
+    "layer share": 1.0,
+    "text F1": 1.0
+   }
+  },
+  "edit_dim_digit_10": {
+   "overall": 100.00000000000001,
+   "components": {
+    "geometry F1@1mm": 1.0,
+    "layer-aware F1@1mm": 1.0,
+    "layer share": 1.0,
+    "text F1": 1.0
+   }
+  },
+  "drop_lines_10": {
+   "overall": 97.55246987397526,
+   "components": {
+    "geometry F1@1mm": 0.9668257440180287,
+    "layer-aware F1@1mm": 0.9582985264142747,
+    "layer share": 1.0,
+    "text F1": 1.0
+   }
+  },
+  "jitter_lines_10_3mm": {
+   "overall": 96.37343063695927,
+   "components": {
+    "geometry F1@1mm": 0.9508461290804032,
+    "layer-aware F1@1mm": 0.9382087604801765,
+    "layer share": 1.0,
+    "text F1": 1.0
+   }
+  }
+ }
+}

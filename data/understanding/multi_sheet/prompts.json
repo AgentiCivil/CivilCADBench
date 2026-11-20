@@ -1,0 +1,5 @@
+{
+ "parent_instruction": "本题为不定项选择题，有一个或多个正确选项。请在最后一行写'答案：'，后接全部正确选项的字母，用英文逗号分隔。",
+ "probe_instruction_few_sheet": "以下几张图来自同一套工程图纸，顺序不代表页序。只根据这些图回答，不能确认时 answer 为 null。最后以 JSON 给出 {\"answer\": ...}，answer 的格式见 response_spec。",
+ "probe_instruction_full_set": "可以先简要推理，最后以 JSON 给出 {\"answer\":...}；不能确认则 answer 为 null。"
+}

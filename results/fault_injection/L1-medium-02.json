@@ -1,0 +1,105 @@
+{
+ "sheet": "L1-medium-02",
+ "faults": {
+  "self": {
+   "overall": 100.0,
+   "components": {
+    "geometry F1@1mm": 1.0,
+    "layer-aware F1@1mm": 1.0,
+    "layer share": 1.0,
+    "text F1": 1.0,
+    "dimension F1": 1.0
+   }
+  },
+  "shift_all_3mm": {
+   "overall": 100.0,
+   "components": {
+    "geometry F1@1mm": 1.0,
+    "layer-aware F1@1mm": 1.0,
+    "layer share": 1.0,
+    "text F1": 1.0,
+    "dimension F1": 1.0
+   }
+  },
+  "all_on_one": {
+   "overall": 78.85377974280702,
+   "components": {
+    "geometry F1@1mm": 1.0,
+    "layer-aware F1@1mm": 0.29512599142690077,
+    "layer share": 1.0,
+    "text F1": 1.0,
+    "dimension F1": 1.0
+   }
+  },
+  "swap_outline_rebar": {
+   "overall": 91.76548635873621,
+   "components": {
+    "geometry F1@1mm": 1.0,
+    "layer-aware F1@1mm": 0.7255162119578739,
+    "layer share": 1.0,
+    "text F1": 1.0,
+    "dimension F1": 1.0
+   }
+  },
+  "drop_text_10": {
+   "overall": 98.73873873873875,
+   "components": {
+    "geometry F1@1mm": 1.0,
+    "layer-aware F1@1mm": 1.0,
+    "layer share": 1.0,
+    "text F1": 0.936936936936937,
+    "dimension F1": 1.0
+   }
+  },
+  "edit_text_digit_10": {
+   "overall": 99.66101694915255,
+   "components": {
+    "geometry F1@1mm": 1.0,
+    "layer-aware F1@1mm": 1.0,
+    "layer share": 1.0,
+    "text F1": 0.9830508474576272,
+    "dimension F1": 1.0
+   }
+  },
+  "drop_dim_10": {
+   "overall": 98.81516334728906,
+   "components": {
+    "geometry F1@1mm": 0.9930414451526708,
+    "layer-aware F1@1mm": 0.9904421716502254,
+    "layer share": 1.0,
+    "text F1": 1.0,
+    "dimension F1": 0.9517241379310345
+   }
+  },
+  "edit_dim_digit_10": {
+   "overall": 99.40789473684212,
+   "components": {
+    "geometry F1@1mm": 1.0,
+    "layer-aware F1@1mm": 1.0,
+    "layer share": 1.0,
+    "text F1": 1.0,
+    "dimension F1": 0.9605263157894737
+   }
+  },
+  "drop_lines_10": {
+   "overall": 99.17939481100811,
+   "components": {
+    "geometry F1@1mm": 0.9857010682143158,
+    "layer-aware F1@1mm": 0.9845622701883403,
+    "layer share": 1.0,
+    "text F1": 1.0,
+    "dimension F1": 1.0
+   }
+  },
+  "jitter_lines_10_3mm": {
+   "overall": 99.24985789968429,
+   "components": {
+    "geometry F1@1mm": 0.9882430185733153,
+    "layer-aware F1@1mm": 0.9847927478450468,
+    "layer share": 1.0,
+    "text F1": 1.0,
+    "dimension F1": 1.0
+   }
+  }
+ }
+}

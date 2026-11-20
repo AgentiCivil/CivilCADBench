@@ -1,0 +1,27786 @@
+  0
+SECTION
+  2
+HEADER
+  9
+$ACADVER
+  1
+AC1032
+  9
+$ACADMAINTVER
+ 90
+4
+  9
+$DWGCODEPAGE
+  3
+ANSI_1252
+  9
+$LASTSAVEDBY
+  1
+
+  9
+$REQUIREDVERSIONS
+160
+0
+  9
+$INSBASE
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  9
+$EXTMIN
+ 10
+1e+20
+ 20
+1e+20
+ 30
+1e+20
+  9
+$EXTMAX
+ 10
+-1e+20
+ 20
+-1e+20
+ 30
+-1e+20
+  9
+$LIMMIN
+ 10
+0.0
+ 20
+0.0
+  9
+$LIMMAX
+ 10
+420.0
+ 20
+297.0
+  9
+$ORTHOMODE
+ 70
+0
+  9
+$REGENMODE
+ 70
+1
+  9
+$FILLMODE
+ 70
+1
+  9
+$QTEXTMODE
+ 70
+0
+  9
+$MIRRTEXT
+ 70
+1
+  9
+$LTSCALE
+ 40
+1.0
+  9
+$ATTMODE
+ 70
+1
+  9
+$TEXTSIZE
+ 40
+2.5
+  9
+$TRACEWID
+ 40
+1.0
+  9
+$TEXTSTYLE
+  7
+Standard
+  9
+$CLAYER
+  8
+0
+  9
+$CELTYPE
+  6
+ByLayer
+  9
+$CECOLOR
+ 62
+256
+  9
+$CELTSCALE
+ 40
+1.0
+  9
+$DISPSILH
+ 70
+0
+  9
+$DIMSCALE
+ 40
+1.0
+  9
+$DIMASZ
+ 40
+2.5
+  9
+$DIMEXO
+ 40
+0.625
+  9
+$DIMDLI
+ 40
+3.75
+  9
+$DIMRND
+ 40
+0.0
+  9
+$DIMDLE
+ 40
+0.0
+  9
+$DIMEXE
+ 40
+1.25
+  9
+$DIMTP
+ 40
+0.0
+  9
+$DIMTM
+ 40
+0.0
+  9
+$DIMTXT
+ 40
+2.5
+  9
+$DIMCEN
+ 40
+2.5
+  9
+$DIMTSZ
+ 40
+0.0
+  9
+$DIMTOL
+ 70
+0
+  9
+$DIMLIM
+ 70
+0
+  9
+$DIMTIH
+ 70
+0
+  9
+$DIMTOH
+ 70
+0
+  9
+$DIMSE1
+ 70
+0
+  9
+$DIMSE2
+ 70
+0
+  9
+$DIMTAD
+ 70
+1
+  9
+$DIMZIN
+ 70
+8
+  9
+$DIMBLK
+  1
+
+  9
+$DIMASO
+ 70
+1
+  9
+$DIMSHO
+ 70
+1
+  9
+$DIMPOST
+  1
+
+  9
+$DIMAPOST
+  1
+
+  9
+$DIMALT
+ 70
+0
+  9
+$DIMALTD
+ 70
+3
+  9
+$DIMALTF
+ 40
+0.03937007874
+  9
+$DIMLFAC
+ 40
+1.0
+  9
+$DIMTOFL
+ 70
+1
+  9
+$DIMTVP
+ 40
+0.0
+  9
+$DIMTIX
+ 70
+0
+  9
+$DIMSOXD
+ 70
+0
+  9
+$DIMSAH
+ 70
+0
+  9
+$DIMBLK1
+  1
+
+  9
+$DIMBLK2
+  1
+
+  9
+$DIMSTYLE
+  2
+ISO-25
+  9
+$DIMCLRD
+ 70
+0
+  9
+$DIMCLRE
+ 70
+0
+  9
+$DIMCLRT
+ 70
+0
+  9
+$DIMTFAC
+ 40
+1.0
+  9
+$DIMGAP
+ 40
+0.625
+  9
+$DIMJUST
+ 70
+0
+  9
+$DIMSD1
+ 70
+0
+  9
+$DIMSD2
+ 70
+0
+  9
+$DIMTOLJ
+ 70
+0
+  9
+$DIMTZIN
+ 70
+8
+  9
+$DIMALTZ
+ 70
+0
+  9
+$DIMALTTZ
+ 70
+0
+  9
+$DIMUPT
+ 70
+0
+  9
+$DIMDEC
+ 70
+2
+  9
+$DIMTDEC
+ 70
+2
+  9
+$DIMALTU
+ 70
+2
+  9
+$DIMALTTD
+ 70
+3
+  9
+$DIMTXSTY
+  7
+Standard
+  9
+$DIMAUNIT
+ 70
+0
+  9
+$DIMADEC
+ 70
+0
+  9
+$DIMALTRND
+ 40
+0.0
+  9
+$DIMAZIN
+ 70
+0
+  9
+$DIMDSEP
+ 70
+44
+  9
+$DIMATFIT
+ 70
+3
+  9
+$DIMFRAC
+ 70
+0
+  9
+$DIMLDRBLK
+  1
+
+  9
+$DIMLUNIT
+ 70
+2
+  9
+$DIMLWD
+ 70
+-2
+  9
+$DIMLWE
+ 70
+-2
+  9
+$DIMTMOVE
+ 70
+0
+  9
+$DIMFXL
+ 40
+1.0
+  9
+$DIMFXLON
+ 70
+0
+  9
+$DIMJOGANG
+ 40
+0.785398163397
+  9
+$DIMTFILL
+ 70
+0
+  9
+$DIMTFILLCLR
+ 70
+0
+  9
+$DIMARCSYM
+ 70
+0
+  9
+$DIMLTYPE
+  6
+
+  9
+$DIMLTEX1
+  6
+
+  9
+$DIMLTEX2
+  6
+
+  9
+$DIMTXTDIRECTION
+ 70
+0
+  9
+$LUNITS
+ 70
+2
+  9
+$LUPREC
+ 70
+4
+  9
+$SKETCHINC
+ 40
+1.0
+  9
+$FILLETRAD
+ 40
+10.0
+  9
+$AUNITS
+ 70
+0
+  9
+$AUPREC
+ 70
+2
+  9
+$MENU
+  1
+.
+  9
+$ELEVATION
+ 40
+0.0
+  9
+$PELEVATION
+ 40
+0.0
+  9
+$THICKNESS
+ 40
+0.0
+  9
+$LIMCHECK
+ 70
+0
+  9
+$CHAMFERA
+ 40
+0.0
+  9
+$CHAMFERB
+ 40
+0.0
+  9
+$CHAMFERC
+ 40
+0.0
+  9
+$CHAMFERD
+ 40
+0.0
+  9
+$SKPOLY
+ 70
+0
+  9
+$TDCREATE
+ 40
+2461000.0
+  9
+$TDUCREATE
+ 40
+2461000.0
+  9
+$TDUPDATE
+ 40
+2461000.0
+  9
+$TDUUPDATE
+ 40
+2461000.0
+  9
+$TDINDWG
+ 40
+0.0
+  9
+$TDUSRTIMER
+ 40
+0.0
+  9
+$USRTIMER
+ 70
+1
+  9
+$ANGBASE
+ 50
+0.0
+  9
+$ANGDIR
+ 70
+0
+  9
+$PDMODE
+ 70
+0
+  9
+$PDSIZE
+ 40
+0.0
+  9
+$PLINEWID
+ 40
+0.0
+  9
+$SPLFRAME
+ 70
+0
+  9
+$SPLINETYPE
+ 70
+6
+  9
+$SPLINESEGS
+ 70
+8
+  9
+$HANDSEED
+  5
+3BA
+  9
+$SURFTAB1
+ 70
+6
+  9
+$SURFTAB2
+ 70
+6
+  9
+$SURFTYPE
+ 70
+6
+  9
+$SURFU
+ 70
+6
+  9
+$SURFV
+ 70
+6
+  9
+$UCSBASE
+  2
+
+  9
+$UCSNAME
+  2
+
+  9
+$UCSORG
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  9
+$UCSXDIR
+ 10
+1.0
+ 20
+0.0
+ 30
+0.0
+  9
+$UCSYDIR
+ 10
+0.0
+ 20
+1.0
+ 30
+0.0
+  9
+$UCSORTHOREF
+  2
+
+  9
+$UCSORTHOVIEW
+ 70
+0
+  9
+$UCSORGTOP
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  9
+$UCSORGBOTTOM
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  9
+$UCSORGLEFT
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  9
+$UCSORGRIGHT
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  9
+$UCSORGFRONT
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  9
+$UCSORGBACK
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  9
+$PUCSBASE
+  2
+
+  9
+$PUCSNAME
+  2
+
+  9
+$PUCSORG
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  9
+$PUCSXDIR
+ 10
+1.0
+ 20
+0.0
+ 30
+0.0
+  9
+$PUCSYDIR
+ 10
+0.0
+ 20
+1.0
+ 30
+0.0
+  9
+$PUCSORTHOREF
+  2
+
+  9
+$PUCSORTHOVIEW
+ 70
+0
+  9
+$PUCSORGTOP
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  9
+$PUCSORGBOTTOM
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  9
+$PUCSORGLEFT
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  9
+$PUCSORGRIGHT
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  9
+$PUCSORGFRONT
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  9
+$PUCSORGBACK
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  9
+$USERI1
+ 70
+0
+  9
+$USERI2
+ 70
+0
+  9
+$USERI3
+ 70
+0
+  9
+$USERI4
+ 70
+0
+  9
+$USERI5
+ 70
+0
+  9
+$USERR1
+ 40
+0.0
+  9
+$USERR2
+ 40
+0.0
+  9
+$USERR3
+ 40
+0.0
+  9
+$USERR4
+ 40
+0.0
+  9
+$USERR5
+ 40
+0.0
+  9
+$WORLDVIEW
+ 70
+1
+  9
+$SHADEDGE
+ 70
+3
+  9
+$SHADEDIF
+ 70
+70
+  9
+$TILEMODE
+ 70
+1
+  9
+$MAXACTVP
+ 70
+64
+  9
+$PINSBASE
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  9
+$PLIMCHECK
+ 70
+0
+  9
+$PEXTMIN
+ 10
+1e+20
+ 20
+1e+20
+ 30
+1e+20
+  9
+$PEXTMAX
+ 10
+-1e+20
+ 20
+-1e+20
+ 30
+-1e+20
+  9
+$PLIMMIN
+ 10
+0.0
+ 20
+0.0
+  9
+$PLIMMAX
+ 10
+420.0
+ 20
+297.0
+  9
+$UNITMODE
+ 70
+0
+  9
+$VISRETAIN
+ 70
+1
+  9
+$PLINEGEN
+ 70
+0
+  9
+$PSLTSCALE
+ 70
+1
+  9
+$TREEDEPTH
+ 70
+3020
+  9
+$CMLSTYLE
+  2
+Standard
+  9
+$CMLJUST
+ 70
+0
+  9
+$CMLSCALE
+ 40
+20.0
+  9
+$PROXYGRAPHICS
+ 70
+1
+  9
+$MEASUREMENT
+ 70
+1
+  9
+$CELWEIGHT
+370
+-1
+  9
+$ENDCAPS
+280
+0
+  9
+$JOINSTYLE
+280
+0
+  9
+$LWDISPLAY
+290
+0
+  9
+$INSUNITS
+ 70
+6
+  9
+$HYPERLINKBASE
+  1
+
+  9
+$STYLESHEET
+  1
+
+  9
+$XEDIT
+290
+1
+  9
+$CEPSNTYPE
+380
+0
+  9
+$PSTYLEMODE
+290
+1
+  9
+$FINGERPRINTGUID
+  2
+{00000000-0000-0000-0000-000000000000}
+  9
+$VERSIONGUID
+  2
+{00000000-0000-0000-0000-000000000000}
+  9
+$EXTNAMES
+290
+1
+  9
+$PSVPSCALE
+ 40
+0.0
+  9
+$OLESTARTUP
+290
+0
+  9
+$SORTENTS
+280
+127
+  9
+$INDEXCTL
+280
+0
+  9
+$HIDETEXT
+280
+1
+  9
+$XCLIPFRAME
+280
+1
+  9
+$HALOGAP
+280
+0
+  9
+$OBSCOLOR
+ 70
+257
+  9
+$OBSLTYPE
+280
+0
+  9
+$INTERSECTIONDISPLAY
+280
+0
+  9
+$INTERSECTIONCOLOR
+ 70
+257
+  9
+$DIMASSOC
+280
+2
+  9
+$PROJECTNAME
+  1
+
+  9
+$CAMERADISPLAY
+290
+0
+  9
+$LENSLENGTH
+ 40
+50.0
+  9
+$CAMERAHEIGHT
+ 40
+0.0
+  9
+$STEPSPERSEC
+ 40
+24.0
+  9
+$STEPSIZE
+ 40
+100.0
+  9
+$3DDWFPREC
+ 40
+2.0
+  9
+$PSOLWIDTH
+ 40
+0.005
+  9
+$PSOLHEIGHT
+ 40
+0.08
+  9
+$LOFTANG1
+ 40
+1.570796326795
+  9
+$LOFTANG2
+ 40
+1.570796326795
+  9
+$LOFTMAG1
+ 40
+0.0
+  9
+$LOFTMAG2
+ 40
+0.0
+  9
+$LOFTPARAM
+ 70
+7
+  9
+$LOFTNORMALS
+280
+1
+  9
+$LATITUDE
+ 40
+37.795
+  9
+$LONGITUDE
+ 40
+-122.394
+  9
+$NORTHDIRECTION
+ 40
+0.0
+  9
+$TIMEZONE
+ 70
+-8000
+  9
+$LIGHTGLYPHDISPLAY
+280
+1
+  9
+$TILEMODELIGHTSYNCH
+280
+1
+  9
+$CMATERIAL
+347
+20
+  9
+$SOLIDHIST
+280
+0
+  9
+$SHOWHIST
+280
+1
+  9
+$DWFFRAME
+280
+2
+  9
+$DGNFRAME
+280
+2
+  9
+$REALWORLDSCALE
+290
+1
+  9
+$INTERFERECOLOR
+ 62
+256
+  9
+$CSHADOW
+280
+0
+  9
+$SHADOWPLANELOCATION
+ 40
+0.0
+  0
+ENDSEC
+  0
+SECTION
+  2
+CLASSES
+  0
+CLASS
+  1
+ACDBDICTIONARYWDFLT
+  2
+AcDbDictionaryWithDefault
+  3
+ObjectDBX Classes
+ 90
+0
+ 91
+0
+280
+0
+281
+0
+  0
+CLASS
+  1
+SUN
+  2
+AcDbSun
+  3
+SCENEOE
+ 90
+1153
+ 91
+0
+280
+0
+281
+0
+  0
+CLASS
+  1
+VISUALSTYLE
+  2
+AcDbVisualStyle
+  3
+ObjectDBX Classes
+ 90
+4095
+ 91
+0
+280
+0
+281
+0
+  0
+CLASS
+  1
+MATERIAL
+  2
+AcDbMaterial
+  3
+ObjectDBX Classes
+ 90
+1153
+ 91
+0
+280
+0
+281
+0
+  0
+CLASS
+  1
+SCALE
+  2
+AcDbScale
+  3
+ObjectDBX Classes
+ 90
+1153
+ 91
+0
+280
+0
+281
+0
+  0
+CLASS
+  1
+TABLESTYLE
+  2
+AcDbTableStyle
+  3
+ObjectDBX Classes
+ 90
+4095
+ 91
+0
+280
+0
+281
+0
+  0
+CLASS
+  1
+MLEADERSTYLE
+  2
+AcDbMLeaderStyle
+  3
+ACDB_MLEADERSTYLE_CLASS
+ 90
+4095
+ 91
+0
+280
+0
+281
+0
+  0
+CLASS
+  1
+DICTIONARYVAR
+  2
+AcDbDictionaryVar
+  3
+ObjectDBX Classes
+ 90
+0
+ 91
+0
+280
+0
+281
+0
+  0
+CLASS
+  1
+CELLSTYLEMAP
+  2
+AcDbCellStyleMap
+  3
+ObjectDBX Classes
+ 90
+1152
+ 91
+0
+280
+0
+281
+0
+  0
+CLASS
+  1
+MENTALRAYRENDERSETTINGS
+  2
+AcDbMentalRayRenderSettings
+  3
+SCENEOE
+ 90
+1024
+ 91
+0
+280
+0
+281
+0
+  0
+CLASS
+  1
+ACDBDETAILVIEWSTYLE
+  2
+AcDbDetailViewStyle
+  3
+ObjectDBX Classes
+ 90
+1025
+ 91
+0
+280
+0
+281
+0
+  0
+CLASS
+  1
+ACDBSECTIONVIEWSTYLE
+  2
+AcDbSectionViewStyle
+  3
+ObjectDBX Classes
+ 90
+1025
+ 91
+0
+280
+0
+281
+0
+  0
+CLASS
+  1
+RASTERVARIABLES
+  2
+AcDbRasterVariables
+  3
+ISM
+ 90
+0
+ 91
+0
+280
+0
+281
+0
+  0
+CLASS
+  1
+ACDBPLACEHOLDER
+  2
+AcDbPlaceHolder
+  3
+ObjectDBX Classes
+ 90
+0
+ 91
+0
+280
+0
+281
+0
+  0
+CLASS
+  1
+LAYOUT
+  2
+AcDbLayout
+  3
+ObjectDBX Classes
+ 90
+0
+ 91
+0
+280
+0
+281
+0
+  0
+ENDSEC
+  0
+SECTION
+  2
+TABLES
+  0
+TABLE
+  2
+VPORT
+  5
+8
+330
+0
+100
+AcDbSymbolTable
+ 70
+1
+  0
+VPORT
+  5
+23
+330
+8
+100
+AcDbSymbolTableRecord
+100
+AcDbViewportTableRecord
+  2
+*Active
+ 70
+0
+ 10
+0.0
+ 20
+0.0
+ 11
+1.0
+ 21
+1.0
+ 12
+0.0
+ 22
+0.0
+ 13
+0.0
+ 23
+0.0
+ 14
+0.5
+ 24
+0.5
+ 15
+0.5
+ 25
+0.5
+ 16
+0.0
+ 26
+0.0
+ 36
+1.0
+ 17
+0.0
+ 27
+0.0
+ 37
+0.0
+ 40
+1000.0
+ 41
+1.34
+ 42
+50.0
+ 43
+0.0
+ 44
+0.0
+ 50
+0.0
+ 51
+0.0
+ 71
+0
+ 72
+1000
+ 73
+1
+ 74
+3
+ 75
+0
+ 76
+0
+ 77
+0
+ 78
+0
+281
+0
+ 65
+0
+146
+0.0
+  0
+ENDTAB
+  0
+TABLE
+  2
+LTYPE
+  5
+2
+330
+0
+100
+AcDbSymbolTable
+ 70
+7
+  0
+LTYPE
+  5
+24
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLinetypeTableRecord
+  2
+ByBlock
+ 70
+0
+  3
+
+ 72
+65
+ 73
+0
+ 40
+0.0
+  0
+LTYPE
+  5
+25
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLinetypeTableRecord
+  2
+ByLayer
+ 70
+0
+  3
+
+ 72
+65
+ 73
+0
+ 40
+0.0
+  0
+LTYPE
+  5
+26
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLinetypeTableRecord
+  2
+Continuous
+ 70
+0
+  3
+
+ 72
+65
+ 73
+0
+ 40
+0.0
+  0
+LTYPE
+  5
+3E
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLinetypeTableRecord
+  2
+DASHDOT
+ 70
+0
+  3
+Dash dot __ . __ . __ . __ . __ . __ . __ . __
+ 72
+65
+ 73
+4
+ 40
+25.4
+ 49
+12.7
+ 74
+0
+ 49
+-6.35
+ 74
+0
+ 49
+0.0
+ 74
+0
+ 49
+-6.35
+ 74
+0
+  0
+LTYPE
+  5
+40
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLinetypeTableRecord
+  2
+HIDDEN
+ 70
+0
+  3
+Hidden __ __ __ __ __ __ __ __ __ __ __ __ __ _
+ 72
+65
+ 73
+2
+ 40
+9.524999999999999
+ 49
+6.35
+ 74
+0
+ 49
+-3.175
+ 74
+0
+  0
+LTYPE
+  5
+41
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLinetypeTableRecord
+  2
+CENTER
+ 70
+0
+  3
+Center ____ _ ____ _ ____ _ ____ _ ____ _ ____
+ 72
+65
+ 73
+4
+ 40
+2.0
+ 49
+1.25
+ 74
+0
+ 49
+-0.25
+ 74
+0
+ 49
+0.25
+ 74
+0
+ 49
+-0.25
+ 74
+0
+  0
+LTYPE
+  5
+43
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLinetypeTableRecord
+  2
+DASHED
+ 70
+0
+  3
+__ __ __ __ __ __ _
+ 72
+65
+ 73
+2
+ 40
+5.5
+ 49
+4.5
+ 74
+0
+ 49
+-1.0
+ 74
+0
+  0
+ENDTAB
+  0
+TABLE
+  2
+LAYER
+  5
+1
+330
+0
+100
+AcDbSymbolTable
+ 70
+9
+  0
+LAYER
+  5
+27
+330
+1
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+0
+ 70
+0
+ 62
+7
+  6
+Continuous
+370
+-3
+390
+13
+347
+21
+  0
+LAYER
+  5
+28
+330
+1
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+Defpoints
+ 70
+0
+ 62
+7
+  6
+Continuous
+290
+0
+370
+-3
+390
+13
+347
+21
+  0
+LAYER
+  5
+2F
+330
+1
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+A-文字
+ 70
+0
+ 62
+7
+  6
+Continuous
+370
+-3
+390
+13
+347
+21
+1001
+AcAecLayerStandard
+1000
+
+1000
+所有文字：图名、说明、表格内文字、钢筋编号
+  0
+LAYER
+  5
+34
+330
+1
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+S-结构轮廓
+ 70
+0
+ 62
+7
+  6
+Continuous
+370
+-3
+390
+13
+347
+21
+1001
+AcAecLayerStandard
+1000
+
+1000
+构件可见轮廓线（混凝土、钢构件外形）
+  0
+LAYER
+  5
+35
+330
+1
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+S-钢筋
+ 70
+0
+ 62
+7
+  6
+Continuous
+370
+-3
+390
+13
+347
+21
+1001
+AcAecLayerStandard
+1000
+
+1000
+钢筋、预应力钢束及其断面点（钢筋图中的钢筋线/圆点）
+  0
+LAYER
+  5
+36
+330
+1
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+A-尺寸标注
+ 70
+0
+ 62
+7
+  6
+Continuous
+370
+-3
+390
+13
+347
+21
+1001
+AcAecLayerStandard
+1000
+
+1000
+尺寸标注（DIMENSION 实体及手绘尺寸线）
+  0
+LAYER
+  5
+3D
+330
+1
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+S-中心线
+ 70
+0
+ 62
+7
+  6
+Continuous
+370
+-3
+390
+13
+347
+21
+1001
+AcAecLayerStandard
+1000
+
+1000
+中心线、轴线（点划线）
+  0
+LAYER
+  5
+3F
+330
+1
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+S-虚线
+ 70
+0
+ 62
+7
+  6
+Continuous
+370
+-3
+390
+13
+347
+21
+1001
+AcAecLayerStandard
+1000
+
+1000
+不可见轮廓（虚线）
+  0
+LAYER
+  5
+42
+330
+1
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+S-填充
+ 70
+0
+ 62
+7
+  6
+Continuous
+370
+-3
+390
+13
+347
+21
+1001
+AcAecLayerStandard
+1000
+
+1000
+材料图例填充（HATCH）
+  0
+ENDTAB
+  0
+TABLE
+  2
+STYLE
+  5
+5
+330
+0
+100
+AcDbSymbolTable
+ 70
+4
+  0
+STYLE
+  5
+29
+330
+5
+100
+AcDbSymbolTableRecord
+100
+AcDbTextStyleTableRecord
+  2
+Standard
+ 70
+0
+ 40
+0.0
+ 41
+1.0
+ 50
+0.0
+ 71
+0
+ 42
+2.5
+  3
+txt
+  4
+
+  0
+STYLE
+  5
+33
+330
+5
+100
+AcDbSymbolTableRecord
+100
+AcDbTextStyleTableRecord
+  2
+TS1
+ 70
+0
+ 40
+2.5
+ 41
+0.7
+ 50
+0.0
+ 71
+0
+ 42
+2.5
+  3
+FangSong_GB2312.TTF
+  4
+
+1001
+ACAD
+1000
+FangSong_GB2312
+1071
+34353
+  0
+STYLE
+  5
+38
+330
+5
+100
+AcDbSymbolTableRecord
+100
+AcDbTextStyleTableRecord
+  2
+TS2
+ 70
+0
+ 40
+0.0
+ 41
+1.0
+ 50
+0.0
+ 71
+0
+ 42
+2.5
+  3
+txt
+  4
+
+  0
+STYLE
+  5
+47
+330
+5
+100
+AcDbSymbolTableRecord
+100
+AcDbTextStyleTableRecord
+  2
+TS3
+ 70
+0
+ 40
+0.0
+ 41
+0.85
+ 50
+0.0
+ 71
+0
+ 42
+4.0
+  3
+fsdb_bz.shx
+  4
+fsdb.shx
+  0
+ENDTAB
+  0
+TABLE
+  2
+VIEW
+  5
+7
+330
+0
+100
+AcDbSymbolTable
+ 70
+0
+  0
+ENDTAB
+  0
+TABLE
+  2
+UCS
+  5
+6
+330
+0
+100
+AcDbSymbolTable
+ 70
+0
+  0
+ENDTAB
+  0
+TABLE
+  2
+APPID
+  5
+3
+330
+0
+100
+AcDbSymbolTable
+ 70
+9
+  0
+APPID
+  5
+2A
+330
+3
+100
+AcDbSymbolTableRecord
+100
+AcDbRegAppTableRecord
+  2
+ACAD
+ 70
+0
+  0
+APPID
+  5
+3B1
+330
+3
+100
+AcDbSymbolTableRecord
+100
+AcDbRegAppTableRecord
+  2
+ACAECLAYERSTANDARD
+ 70
+0
+  0
+APPID
+  5
+3B2
+330
+3
+100
+AcDbSymbolTableRecord
+100
+AcDbRegAppTableRecord
+  2
+ACAD_DSTYLE_DIMBREAK
+ 70
+0
+  0
+APPID
+  5
+3B3
+330
+3
+100
+AcDbSymbolTableRecord
+100
+AcDbRegAppTableRecord
+  2
+ACAD_DSTYLE_DIMJAG
+ 70
+0
+  0
+APPID
+  5
+3B4
+330
+3
+100
+AcDbSymbolTableRecord
+100
+AcDbRegAppTableRecord
+  2
+ACAD_DSTYLE_DIMEXT_ENABLED
+ 70
+0
+  0
+APPID
+  5
+3B5
+330
+3
+100
+AcDbSymbolTableRecord
+100
+AcDbRegAppTableRecord
+  2
+ACAD_DSTYLE_DIMEXT_LENGTH
+ 70
+0
+  0
+APPID
+  5
+3B6
+330
+3
+100
+AcDbSymbolTableRecord
+100
+AcDbRegAppTableRecord
+  2
+ACAD_DSTYLE_DIMTALN
+ 70
+0
+  0
+APPID
+  5
+3B7
+330
+3
+100
+AcDbSymbolTableRecord
+100
+AcDbRegAppTableRecord
+  2
+HATCHBACKGROUNDCOLOR
+ 70
+0
+  0
+APPID
+  5
+3B8
+330
+3
+100
+AcDbSymbolTableRecord
+100
+AcDbRegAppTableRecord
+  2
+EZDXF
+ 70
+0
+  0
+ENDTAB
+  0
+TABLE
+  2
+DIMSTYLE
+  5
+4
+330
+0
+100
+AcDbSymbolTable
+ 70
+4
+100
+AcDbDimStyleTable
+  0
+DIMSTYLE
+105
+2B
+330
+4
+100
+AcDbSymbolTableRecord
+100
+AcDbDimStyleTableRecord
+  2
+Standard
+ 70
+0
+ 40
+1.0
+ 41
+2.5
+ 42
+0.625
+ 43
+3.75
+ 44
+1.25
+ 45
+0.0
+ 46
+0.0
+ 47
+0.0
+ 48
+0.0
+ 49
+2.5
+140
+2.5
+141
+2.5
+142
+0.0
+143
+0.03937007874
+144
+1.0
+145
+0.0
+146
+1.0
+147
+0.625
+148
+0.0
+ 69
+0
+ 70
+0
+ 71
+0
+ 72
+0
+ 73
+0
+ 74
+0
+ 75
+0
+ 76
+0
+ 77
+1
+ 78
+8
+ 79
+3
+170
+0
+171
+3
+172
+1
+173
+0
+174
+0
+175
+0
+176
+0
+177
+0
+178
+0
+179
+2
+271
+2
+272
+2
+273
+2
+274
+3
+275
+0
+276
+0
+277
+2
+278
+44
+279
+0
+280
+0
+281
+0
+282
+0
+283
+0
+284
+8
+285
+0
+286
+0
+288
+0
+289
+3
+290
+0
+371
+-2
+372
+-2
+  0
+DIMSTYLE
+105
+37
+102
+{ACAD_REACTORS
+330
+71
+330
+80
+330
+18A
+330
+19A
+102
+}
+330
+4
+100
+AcDbSymbolTableRecord
+100
+AcDbDimStyleTableRecord
+  2
+DS1
+ 70
+0
+ 40
+1.0
+ 41
+2.0
+ 42
+0.0625
+ 43
+0.38
+ 44
+0.18
+ 45
+0.0
+ 46
+0.0
+ 47
+0.0
+ 48
+0.0
+ 49
+2.5
+140
+0.18
+141
+0.09
+142
+0.0
+143
+25.4
+144
+1.0
+145
+0.0
+146
+1.0
+147
+0.09
+148
+0.0
+ 69
+0
+ 70
+0
+ 71
+0
+ 72
+0
+ 73
+1
+ 74
+1
+ 75
+0
+ 76
+0
+ 77
+1
+ 78
+8
+ 79
+3
+170
+0
+171
+2
+172
+1
+173
+0
+174
+0
+175
+0
+176
+-1056964608
+177
+-1056964608
+178
+-1056964608
+179
+2
+271
+4
+272
+4
+273
+2
+274
+2
+275
+0
+276
+0
+277
+2
+278
+46
+279
+0
+280
+0
+281
+0
+282
+0
+283
+1
+284
+8
+285
+0
+286
+0
+288
+0
+289
+3
+290
+0
+340
+38
+371
+-2
+372
+-2
+  0
+DIMSTYLE
+105
+46
+102
+{ACAD_REACTORS
+330
+1EC
+330
+1FB
+330
+20A
+330
+219
+330
+228
+330
+237
+102
+}
+330
+4
+100
+AcDbSymbolTableRecord
+100
+AcDbDimStyleTableRecord
+  2
+DS2
+ 70
+0
+ 40
+1.0
+ 41
+2.0
+ 42
+0.625
+ 43
+0.38
+ 44
+1.5
+ 45
+0.0
+ 46
+0.0
+ 47
+0.0
+ 48
+0.0
+ 49
+2.5
+140
+2.5
+141
+0.09
+142
+0.0
+143
+25.4
+144
+40.0
+145
+0.0
+146
+1.0
+147
+0.8
+148
+0.0
+ 69
+0
+ 70
+0
+ 71
+0
+ 72
+0
+ 73
+0
+ 74
+0
+ 75
+0
+ 76
+0
+ 77
+1
+ 78
+8
+ 79
+3
+170
+0
+171
+1
+172
+1
+173
+0
+174
+1
+175
+0
+176
+-1073741824
+177
+-1073741824
+178
+-1023410169
+179
+2
+271
+2
+272
+2
+273
+2
+274
+1
+275
+0
+276
+0
+277
+2
+278
+46
+279
+2
+280
+0
+281
+0
+282
+0
+283
+1
+284
+8
+285
+0
+286
+0
+288
+0
+289
+3
+290
+0
+340
+47
+371
+-1
+372
+-1
+  0
+DIMSTYLE
+105
+4E
+102
+{ACAD_REACTORS
+330
+24B
+330
+25A
+330
+269
+330
+278
+330
+287
+330
+296
+330
+2A5
+330
+2B4
+102
+}
+330
+4
+100
+AcDbSymbolTableRecord
+100
+AcDbDimStyleTableRecord
+  2
+DS3
+ 70
+0
+ 40
+1.0
+ 41
+1.5
+ 42
+1.0
+ 43
+0.38
+ 44
+1.0
+ 45
+0.0
+ 46
+0.0
+ 47
+0.0
+ 48
+0.0
+ 49
+2.5
+140
+2.5
+141
+0.09
+142
+0.0
+143
+25.4
+144
+1.0
+145
+0.0
+146
+1.0
+147
+0.625
+148
+0.0
+ 69
+0
+ 70
+0
+ 71
+0
+ 72
+0
+ 73
+0
+ 74
+0
+ 75
+0
+ 76
+0
+ 77
+1
+ 78
+8
+ 79
+3
+170
+0
+171
+2
+172
+1
+173
+0
+174
+0
+175
+0
+176
+-1023410172
+177
+-1023410172
+178
+-1056964608
+179
+2
+271
+2
+272
+2
+273
+2
+274
+2
+275
+0
+276
+0
+277
+2
+278
+46
+279
+0
+280
+0
+281
+0
+282
+0
+283
+1
+284
+8
+285
+0
+286
+0
+288
+0
+289
+3
+290
+0
+340
+33
+342
+3A
+371
+-2
+372
+-2
+1001
+ACAD_DSTYLE_DIMBREAK
+1070
+391
+1040
+3.75
+1001
+ACAD_DSTYLE_DIMJAG
+1070
+388
+1040
+1.5
+1001
+ACAD_DSTYLE_DIMTALN
+1070
+392
+1070
+0
+1001
+ACAD_DSTYLE_DIMEXT_ENABLED
+1070
+383
+1070
+1
+1001
+ACAD_DSTYLE_DIMEXT_LENGTH
+1070
+378
+1040
+3.0
+  0
+ENDTAB
+  0
+TABLE
+  2
+BLOCK_RECORD
+  5
+9
+330
+0
+100
+AcDbSymbolTable
+ 70
+39
+  0
+BLOCK_RECORD
+  5
+17
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+*Model_Space
+340
+1A
+ 70
+0
+280
+1
+281
+0
+  0
+BLOCK_RECORD
+  5
+1B
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+*Paper_Space
+340
+1E
+ 70
+0
+280
+1
+281
+0
+  0
+BLOCK_RECORD
+  5
+72
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+*D1
+340
+0
+ 70
+0
+280
+1
+281
+0
+  0
+BLOCK_RECORD
+  5
+81
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+*D2
+340
+0
+ 70
+0
+280
+1
+281
+0
+  0
+BLOCK_RECORD
+  5
+18B
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+*D3
+340
+0
+ 70
+0
+280
+1
+281
+0
+  0
+BLOCK_RECORD
+  5
+19B
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+*D4
+340
+0
+ 70
+0
+280
+1
+281
+0
+  0
+BLOCK_RECORD
+  5
+1ED
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+*D5
+340
+0
+ 70
+0
+280
+1
+281
+0
+  0
+BLOCK_RECORD
+  5
+1FC
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+*D6
+340
+0
+ 70
+0
+280
+1
+281
+0
+  0
+BLOCK_RECORD
+  5
+20B
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+*D7
+340
+0
+ 70
+0
+280
+1
+281
+0
+  0
+BLOCK_RECORD
+  5
+21A
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+*D8
+340
+0
+ 70
+0
+280
+1
+281
+0
+  0
+BLOCK_RECORD
+  5
+229
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+*D9
+340
+0
+ 70
+0
+280
+1
+281
+0
+  0
+BLOCK_RECORD
+  5
+238
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+*D10
+340
+0
+ 70
+0
+280
+1
+281
+0
+  0
+BLOCK_RECORD
+  5
+24C
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+*D11
+340
+0
+ 70
+0
+280
+1
+281
+0
+  0
+BLOCK_RECORD
+  5
+25B
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+*D12
+340
+0
+ 70
+0
+280
+1
+281
+0
+  0
+BLOCK_RECORD
+  5
+26A
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+*D13
+340
+0
+ 70
+0
+280
+1
+281
+0
+  0
+BLOCK_RECORD
+  5
+279
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+*D14
+340
+0
+ 70
+0
+280
+1
+281
+0
+  0
+BLOCK_RECORD
+  5
+288
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+*D15
+340
+0
+ 70
+0
+280
+1
+281
+0
+  0
+BLOCK_RECORD
+  5
+297
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+*D16
+340
+0
+ 70
+0
+280
+1
+281
+0
+  0
+BLOCK_RECORD
+  5
+2A6
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+*D17
+340
+0
+ 70
+0
+280
+1
+281
+0
+  0
+BLOCK_RECORD
+  5
+2B5
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+*D18
+340
+0
+ 70
+0
+280
+1
+281
+0
+  0
+BLOCK_RECORD
+  5
+39
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+*D19
+340
+0
+ 70
+0
+280
+1
+281
+0
+  0
+BLOCK_RECORD
+  5
+3A
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+_Oblique
+340
+0
+ 70
+0
+280
+1
+281
+0
+  0
+BLOCK_RECORD
+  5
+3C
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+*D20
+340
+0
+ 70
+0
+280
+1
+281
+0
+  0
+BLOCK_RECORD
+  5
+44
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+*D21
+340
+0
+ 70
+0
+280
+1
+281
+0
+  0
+BLOCK_RECORD
+  5
+45
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+*D22
+340
+0
+ 70
+0
+280
+1
+281
+0
+  0
+BLOCK_RECORD
+  5
+48
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+*D23
+340
+0
+ 70
+0
+280
+1
+281
+0
+  0
+BLOCK_RECORD
+  5
+49
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+*D24
+340
+0
+ 70
+0
+280
+1
+281
+0
+  0
+BLOCK_RECORD
+  5
+4A
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+*D25
+340
+0
+ 70
+0
+280
+1
+281
+0
+  0
+BLOCK_RECORD
+  5
+4B
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+*D26
+340
+0
+ 70
+0
+280
+1
+281
+0
+  0
+BLOCK_RECORD
+  5
+4C
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+*D27
+340
+0
+ 70
+0
+280
+1
+281
+0
+  0
+BLOCK_RECORD
+  5
+4D
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+*D28
+340
+0
+ 70
+0
+280
+1
+281
+0
+  0
+BLOCK_RECORD
+  5
+4F
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+*D29
+340
+0
+ 70
+0
+280
+1
+281
+0
+  0
+BLOCK_RECORD
+  5
+50
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+*D30
+340
+0
+ 70
+0
+280
+1
+281
+0
+  0
+BLOCK_RECORD
+  5
+51
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+*D31
+340
+0
+ 70
+0
+280
+1
+281
+0
+  0
+BLOCK_RECORD
+  5
+52
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+*D32
+340
+0
+ 70
+0
+280
+1
+281
+0
+  0
+BLOCK_RECORD
+  5
+53
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+*D33
+340
+0
+ 70
+0
+280
+1
+281
+0
+  0
+BLOCK_RECORD
+  5
+54
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+*D34
+340
+0
+ 70
+0
+280
+1
+281
+0
+  0
+BLOCK_RECORD
+  5
+55
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+*D35
+340
+0
+ 70
+0
+280
+1
+281
+0
+  0
+BLOCK_RECORD
+  5
+56
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+*D36
+340
+0
+ 70
+0
+280
+1
+281
+0
+  0
+ENDTAB
+  0
+ENDSEC
+  0
+SECTION
+  2
+BLOCKS
+  0
+BLOCK
+  5
+18
+330
+17
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+*Model_Space
+ 70
+0
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  3
+*Model_Space
+  1
+
+  0
+ENDBLK
+  5
+19
+330
+17
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
+1C
+330
+1B
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+*Paper_Space
+ 70
+0
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  3
+*Paper_Space
+  1
+
+  0
+ENDBLK
+  5
+1D
+330
+1B
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
+73
+330
+72
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+*D1
+ 70
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  3
+*D1
+  1
+
+  0
+LINE
+  5
+75
+330
+72
+100
+AcDbEntity
+  8
+0
+ 62
+0
+370
+-2
+100
+AcDbLine
+ 10
+93.54560172522133
+ 20
+230.7510965610859
+ 30
+0.0
+ 11
+93.54560172522133
+ 21
+228.1771130600821
+ 31
+0.0
+  0
+LINE
+  5
+76
+330
+72
+100
+AcDbEntity
+  8
+0
+ 62
+0
+370
+-2
+100
+AcDbLine
+ 10
+98.54560172522133
+ 20
+230.7510965610859
+ 30
+0.0
+ 11
+98.54560172522133
+ 21
+228.1771130600821
+ 31
+0.0
+  0
+LINE
+  5
+77
+330
+72
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbLine
+ 10
+93.54560172522133
+ 20
+229.4271130600821
+ 30
+0.0
+ 11
+98.54560172522133
+ 21
+229.4271130600821
+ 31
+0.0
+  0
+INSERT
+  5
+78
+330
+72
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+93.54560172522133
+ 20
+229.4271130600821
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+ 50
+180.0
+  0
+INSERT
+  5
+7A
+330
+72
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+98.54560172522133
+ 20
+229.4271130600821
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+  0
+MTEXT
+  5
+7C
+330
+72
+100
+AcDbEntity
+  8
+0
+ 62
+0
+100
+AcDbMText
+ 10
+96.04560172522133
+ 20
+231.3021130600821
+ 30
+0.0
+ 40
+2.5
+ 41
+0.0
+ 71
+5
+  1
+\A1;100
+  7
+TS1
+  0
+POINT
+  5
+7D
+330
+72
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+93.54560172522133
+ 20
+231.3760965610859
+ 30
+0.0
+  0
+POINT
+  5
+7E
+330
+72
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+98.54560172522133
+ 20
+231.3760965610859
+ 30
+0.0
+  0
+POINT
+  5
+7F
+330
+72
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+98.54560172522133
+ 20
+229.4271130600821
+ 30
+0.0
+  0
+ENDBLK
+  5
+74
+330
+72
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
+82
+330
+81
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+*D2
+ 70
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  3
+*D2
+  1
+
+  0
+LINE
+  5
+84
+330
+81
+100
+AcDbEntity
+  8
+0
+ 62
+0
+370
+-2
+100
+AcDbLine
+ 10
+227.62365059642218
+ 20
+231.10569305523995
+ 30
+0.0
+ 11
+227.62365059642218
+ 21
+228.0866519829765
+ 31
+0.0
+  0
+LINE
+  5
+85
+330
+81
+100
+AcDbEntity
+  8
+0
+ 62
+0
+370
+-2
+100
+AcDbLine
+ 10
+232.62365059642218
+ 20
+231.10569305523995
+ 30
+0.0
+ 11
+232.62365059642218
+ 21
+228.0866519829765
+ 31
+0.0
+  0
+LINE
+  5
+86
+330
+81
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbLine
+ 10
+227.62365059642218
+ 20
+229.3366519829765
+ 30
+0.0
+ 11
+232.62365059642218
+ 21
+229.3366519829765
+ 31
+0.0
+  0
+INSERT
+  5
+87
+330
+81
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+227.62365059642218
+ 20
+229.3366519829765
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+ 50
+180.0
+  0
+INSERT
+  5
+89
+330
+81
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+232.62365059642218
+ 20
+229.3366519829765
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+  0
+MTEXT
+  5
+8B
+330
+81
+100
+AcDbEntity
+  8
+0
+ 62
+0
+100
+AcDbMText
+ 10
+230.12365059642218
+ 20
+231.2116519829765
+ 30
+0.0
+ 40
+2.5
+ 41
+0.0
+ 71
+5
+  1
+\A1;100
+  7
+TS1
+  0
+POINT
+  5
+8C
+330
+81
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+227.62365059642218
+ 20
+231.73069305523995
+ 30
+0.0
+  0
+POINT
+  5
+8D
+330
+81
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+232.62365059642218
+ 20
+231.73069305523995
+ 30
+0.0
+  0
+POINT
+  5
+8E
+330
+81
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+232.62365059642218
+ 20
+229.3366519829765
+ 30
+0.0
+  0
+ENDBLK
+  5
+83
+330
+81
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
+18C
+330
+18B
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+*D3
+ 70
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  3
+*D3
+  1
+
+  0
+LINE
+  5
+18E
+330
+18B
+100
+AcDbEntity
+  8
+0
+ 62
+0
+370
+-2
+100
+AcDbLine
+ 10
+154.54560172539186
+ 20
+231.01122438010088
+ 30
+0.0
+ 11
+154.54560172539186
+ 21
+228.4372408790971
+ 31
+0.0
+  0
+LINE
+  5
+18F
+330
+18B
+100
+AcDbEntity
+  8
+0
+ 62
+0
+370
+-2
+100
+AcDbLine
+ 10
+159.54560172539186
+ 20
+231.01122438010088
+ 30
+0.0
+ 11
+159.54560172539186
+ 21
+228.4372408790971
+ 31
+0.0
+  0
+LINE
+  5
+190
+330
+18B
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbLine
+ 10
+154.54560172539186
+ 20
+229.6872408790971
+ 30
+0.0
+ 11
+159.54560172539186
+ 21
+229.6872408790971
+ 31
+0.0
+  0
+INSERT
+  5
+191
+330
+18B
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+154.54560172539186
+ 20
+229.6872408790971
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+ 50
+180.0
+  0
+INSERT
+  5
+193
+330
+18B
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+159.54560172539186
+ 20
+229.6872408790971
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+  0
+MTEXT
+  5
+195
+330
+18B
+100
+AcDbEntity
+  8
+0
+ 62
+0
+100
+AcDbMText
+ 10
+157.04560172539186
+ 20
+231.5622408790971
+ 30
+0.0
+ 40
+2.5
+ 41
+0.0
+ 71
+5
+  1
+\A1;100
+  7
+TS1
+  0
+POINT
+  5
+196
+330
+18B
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+154.54560172539186
+ 20
+231.63622438010088
+ 30
+0.0
+  0
+POINT
+  5
+197
+330
+18B
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+159.54560172539186
+ 20
+231.63622438010088
+ 30
+0.0
+  0
+POINT
+  5
+198
+330
+18B
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+159.54560172539186
+ 20
+229.6872408790971
+ 30
+0.0
+  0
+ENDBLK
+  5
+18D
+330
+18B
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
+19C
+330
+19B
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+*D4
+ 70
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  3
+*D4
+  1
+
+  0
+LINE
+  5
+19E
+330
+19B
+100
+AcDbEntity
+  8
+0
+ 62
+0
+370
+-2
+100
+AcDbLine
+ 10
+276.6236505964181
+ 20
+231.10569305523995
+ 30
+0.0
+ 11
+276.6236505964181
+ 21
+228.0866519829765
+ 31
+0.0
+  0
+LINE
+  5
+19F
+330
+19B
+100
+AcDbEntity
+  8
+0
+ 62
+0
+370
+-2
+100
+AcDbLine
+ 10
+281.6236505964181
+ 20
+231.10569305523995
+ 30
+0.0
+ 11
+281.6236505964181
+ 21
+228.0866519829765
+ 31
+0.0
+  0
+LINE
+  5
+1A0
+330
+19B
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbLine
+ 10
+276.6236505964181
+ 20
+229.3366519829765
+ 30
+0.0
+ 11
+281.6236505964181
+ 21
+229.3366519829765
+ 31
+0.0
+  0
+INSERT
+  5
+1A1
+330
+19B
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+276.6236505964181
+ 20
+229.3366519829765
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+ 50
+180.0
+  0
+INSERT
+  5
+1A3
+330
+19B
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+281.6236505964181
+ 20
+229.3366519829765
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+  0
+MTEXT
+  5
+1A5
+330
+19B
+100
+AcDbEntity
+  8
+0
+ 62
+0
+100
+AcDbMText
+ 10
+279.1236505964181
+ 20
+231.2116519829765
+ 30
+0.0
+ 40
+2.5
+ 41
+0.0
+ 71
+5
+  1
+\A1;100
+  7
+TS1
+  0
+POINT
+  5
+1A6
+330
+19B
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+276.6236505964181
+ 20
+231.73069305523995
+ 30
+0.0
+  0
+POINT
+  5
+1A7
+330
+19B
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+281.6236505964181
+ 20
+231.73069305523995
+ 30
+0.0
+  0
+POINT
+  5
+1A8
+330
+19B
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+281.6236505964181
+ 20
+229.3366519829765
+ 30
+0.0
+  0
+ENDBLK
+  5
+19D
+330
+19B
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
+1EE
+330
+1ED
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+*D5
+ 70
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  3
+*D5
+  1
+
+  0
+LINE
+  5
+1F0
+330
+1ED
+100
+AcDbEntity
+  8
+标注
+ 62
+4
+100
+AcDbLine
+ 10
+107.75340664240571
+ 20
+112.15104678179512
+ 30
+0.0
+ 11
+102.69206598675805
+ 21
+114.30344794502207
+ 31
+0.0
+  0
+LINE
+  5
+1F1
+330
+1ED
+100
+AcDbEntity
+  8
+标注
+ 62
+4
+100
+AcDbLine
+ 10
+121.45050495385635
+ 20
+144.35957822683986
+ 30
+0.0
+ 11
+116.3891642982087
+ 21
+146.5119793900668
+ 31
+0.0
+  0
+LINE
+  5
+1F2
+330
+1ED
+100
+AcDbEntity
+  8
+标注
+ 62
+4
+100
+AcDbLine
+ 10
+104.07243162011707
+ 20
+113.71642944595988
+ 30
+0.0
+ 11
+117.76952993156772
+ 21
+145.92496089100462
+ 31
+0.0
+  0
+INSERT
+  5
+1F3
+330
+1ED
+100
+AcDbEntity
+  8
+标注
+ 62
+4
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+104.07243162011707
+ 20
+113.71642944595988
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+ 50
+-113.03825661647788
+  0
+INSERT
+  5
+1F5
+330
+1ED
+100
+AcDbEntity
+  8
+标注
+ 62
+4
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+117.76952993156772
+ 20
+145.92496089100462
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+ 50
+66.96174338352209
+  0
+MTEXT
+  5
+1F7
+330
+1ED
+100
+AcDbEntity
+  8
+标注
+ 62
+7
+100
+AcDbMText
+ 10
+109.03448107691838
+ 20
+130.62295378386716
+ 30
+0.0
+ 40
+2.5
+ 41
+0.0
+ 71
+5
+  1
+\A1;B+200
+  7
+TS1
+ 11
+0.3913456660414503
+ 21
+0.9202437555727144
+ 31
+0.0
+  0
+POINT
+  5
+1F8
+330
+1ED
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+107.75340664240571
+ 20
+112.15104678179512
+ 30
+0.0
+  0
+POINT
+  5
+1F9
+330
+1ED
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+121.45050495385635
+ 20
+144.35957822683986
+ 30
+0.0
+  0
+POINT
+  5
+1FA
+330
+1ED
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+117.76952993156772
+ 20
+145.92496089100462
+ 30
+0.0
+  0
+ENDBLK
+  5
+1EF
+330
+1ED
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
+1FD
+330
+1FC
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+*D6
+ 70
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  3
+*D6
+  1
+
+  0
+LINE
+  5
+1FF
+330
+1FC
+100
+AcDbEntity
+  8
+标注
+ 62
+4
+100
+AcDbLine
+ 10
+109.13377227576211
+ 20
+110.06402828273303
+ 30
+0.0
+ 11
+109.13377227576211
+ 21
+104.56402828273315
+ 31
+0.0
+  0
+LINE
+  5
+200
+330
+1FC
+100
+AcDbEntity
+  8
+标注
+ 62
+4
+100
+AcDbLine
+ 10
+134.1337722757621
+ 20
+110.06402828273303
+ 30
+0.0
+ 11
+134.1337722757621
+ 21
+104.56402828273315
+ 31
+0.0
+  0
+LINE
+  5
+201
+330
+1FC
+100
+AcDbEntity
+  8
+标注
+ 62
+4
+100
+AcDbLine
+ 10
+109.13377227576211
+ 20
+106.06402828273315
+ 30
+0.0
+ 11
+134.1337722757621
+ 21
+106.06402828273315
+ 31
+0.0
+  0
+INSERT
+  5
+202
+330
+1FC
+100
+AcDbEntity
+  8
+标注
+ 62
+4
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+109.13377227576211
+ 20
+106.06402828273315
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+ 50
+180.0
+  0
+INSERT
+  5
+204
+330
+1FC
+100
+AcDbEntity
+  8
+标注
+ 62
+4
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+134.1337722757621
+ 20
+106.06402828273315
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+  0
+MTEXT
+  5
+206
+330
+1FC
+100
+AcDbEntity
+  8
+标注
+ 62
+7
+100
+AcDbMText
+ 10
+121.63377227576211
+ 20
+108.1140282827331
+ 30
+0.0
+ 40
+2.5
+ 41
+0.0
+ 71
+5
+  1
+\A1;A+200
+  7
+TS1
+  0
+POINT
+  5
+207
+330
+1FC
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+109.13377227576211
+ 20
+110.06402828273303
+ 30
+0.0
+  0
+POINT
+  5
+208
+330
+1FC
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+134.1337722757621
+ 20
+110.06402828273303
+ 30
+0.0
+  0
+POINT
+  5
+209
+330
+1FC
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+134.1337722757621
+ 20
+106.06402828273315
+ 30
+0.0
+  0
+ENDBLK
+  5
+1FE
+330
+1FC
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
+20C
+330
+20B
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+*D7
+ 70
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  3
+*D7
+  1
+
+  0
+LINE
+  5
+20E
+330
+20B
+100
+AcDbEntity
+  8
+标注
+ 62
+4
+100
+AcDbLine
+ 10
+149.33087058721378
+ 20
+143.7725597277779
+ 30
+0.0
+ 11
+154.83087058721446
+ 21
+143.7725597277779
+ 31
+0.0
+  0
+LINE
+  5
+20F
+330
+20B
+100
+AcDbEntity
+  8
+标注
+ 62
+4
+100
+AcDbLine
+ 10
+149.33087058721378
+ 20
+148.99651462367547
+ 30
+0.0
+ 11
+154.83087058721446
+ 21
+148.99651462367547
+ 31
+0.0
+  0
+LINE
+  5
+210
+330
+20B
+100
+AcDbEntity
+  8
+标注
+ 62
+4
+100
+AcDbLine
+ 10
+153.33087058721446
+ 20
+143.7725597277779
+ 30
+0.0
+ 11
+153.33087058721446
+ 21
+148.99651462367547
+ 31
+0.0
+  0
+MTEXT
+  5
+211
+330
+20B
+100
+AcDbEntity
+  8
+标注
+ 62
+7
+100
+AcDbMText
+ 10
+163.8569018919071
+ 20
+146.38453717572668
+ 30
+0.0
+ 40
+2.5
+ 41
+0.0
+ 71
+5
+  1
+\A1;{\W0.5;H1=50-(A+200)/2*j%+(B+200)/2*i%}
+  7
+TS1
+ 11
+0.9999984769132877
+ 21
+-0.001745328365898445
+ 31
+0.0
+  0
+INSERT
+  5
+212
+330
+20B
+100
+AcDbEntity
+  8
+标注
+ 62
+4
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+153.33087058721446
+ 20
+143.7725597277779
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+ 50
+-90.00000000000001
+  0
+INSERT
+  5
+214
+330
+20B
+100
+AcDbEntity
+  8
+标注
+ 62
+4
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+153.33087058721446
+ 20
+148.99651462367547
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+ 50
+90.0
+  0
+POINT
+  5
+216
+330
+20B
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+149.33087058721378
+ 20
+143.7725597277779
+ 30
+0.0
+  0
+POINT
+  5
+217
+330
+20B
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+149.33087058721378
+ 20
+148.99651462367547
+ 30
+0.0
+  0
+POINT
+  5
+218
+330
+20B
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+153.33087058721446
+ 20
+148.99651462367547
+ 30
+0.0
+  0
+ENDBLK
+  5
+20D
+330
+20B
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
+21B
+330
+21A
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+*D8
+ 70
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  3
+*D8
+  1
+
+  0
+LINE
+  5
+21D
+330
+21A
+100
+AcDbEntity
+  8
+标注
+ 62
+4
+100
+AcDbLine
+ 10
+135.63377227576314
+ 20
+111.56402828273326
+ 30
+0.0
+ 11
+141.13377227576382
+ 21
+111.56402828273326
+ 31
+0.0
+  0
+LINE
+  5
+21E
+330
+21A
+100
+AcDbEntity
+  8
+标注
+ 62
+4
+100
+AcDbLine
+ 10
+135.63377227576314
+ 20
+116.18077005059956
+ 30
+0.0
+ 11
+141.13377227576382
+ 21
+116.18077005059956
+ 31
+0.0
+  0
+LINE
+  5
+21F
+330
+21A
+100
+AcDbEntity
+  8
+标注
+ 62
+4
+100
+AcDbLine
+ 10
+139.63377227576382
+ 20
+111.56402828273326
+ 30
+0.0
+ 11
+139.63377227576382
+ 21
+116.18077005059956
+ 31
+0.0
+  0
+MTEXT
+  5
+220
+330
+21A
+100
+AcDbEntity
+  8
+标注
+ 62
+7
+100
+AcDbMText
+ 10
+149.92860886363178
+ 20
+114.17600573068205
+ 30
+0.0
+ 40
+2.5
+ 41
+0.0
+ 71
+5
+  1
+\A1;{\W0.5;H4=50-(A+200)/2*j%-(B+200)/2*i%}
+  7
+TS1
+ 11
+0.9999984769132877
+ 21
+-0.001745328365898445
+ 31
+0.0
+  0
+INSERT
+  5
+221
+330
+21A
+100
+AcDbEntity
+  8
+标注
+ 62
+4
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+139.63377227576382
+ 20
+111.56402828273326
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+ 50
+-90.00000000000001
+  0
+INSERT
+  5
+223
+330
+21A
+100
+AcDbEntity
+  8
+标注
+ 62
+4
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+139.63377227576382
+ 20
+116.18077005059956
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+ 50
+90.0
+  0
+POINT
+  5
+225
+330
+21A
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+135.63377227576314
+ 20
+111.56402828273326
+ 30
+0.0
+  0
+POINT
+  5
+226
+330
+21A
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+135.63377227576314
+ 20
+116.18077005059956
+ 30
+0.0
+  0
+POINT
+  5
+227
+330
+21A
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+139.63377227576382
+ 20
+116.18077005059956
+ 30
+0.0
+  0
+ENDBLK
+  5
+21C
+330
+21A
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
+22A
+330
+229
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+*D9
+ 70
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  3
+*D9
+  1
+
+  0
+LINE
+  5
+22C
+330
+229
+100
+AcDbEntity
+  8
+标注
+ 62
+4
+100
+AcDbLine
+ 10
+121.33087058721378
+ 20
+143.77255972777778
+ 30
+0.0
+ 11
+114.33087058721446
+ 21
+143.77255972777778
+ 31
+0.0
+  0
+LINE
+  5
+22D
+330
+229
+100
+AcDbEntity
+  8
+标注
+ 62
+4
+100
+AcDbLine
+ 10
+121.33087058721378
+ 20
+156.17255972777775
+ 30
+0.0
+ 11
+114.33087058721446
+ 21
+156.17255972777775
+ 31
+0.0
+  0
+LINE
+  5
+22E
+330
+229
+100
+AcDbEntity
+  8
+标注
+ 62
+4
+100
+AcDbLine
+ 10
+115.83087058721446
+ 20
+143.77255972777778
+ 30
+0.0
+ 11
+115.83087058721446
+ 21
+156.17255972777775
+ 31
+0.0
+  0
+MTEXT
+  5
+22F
+330
+229
+100
+AcDbEntity
+  8
+标注
+ 62
+7
+100
+AcDbMText
+ 10
+101.47441684459682
+ 20
+150.61790253252775
+ 30
+0.0
+ 40
+2.5
+ 41
+0.0
+ 71
+5
+  1
+\A1;{\W0.5;H2=50+(A+200)/2*j%+(B+200)/2*i%}
+  7
+TS1
+ 11
+0.9999984769132877
+ 21
+-0.001745328365898445
+ 31
+0.0
+  0
+INSERT
+  5
+230
+330
+229
+100
+AcDbEntity
+  8
+标注
+ 62
+4
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+115.83087058721446
+ 20
+143.77255972777778
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+ 50
+-90.00000000000001
+  0
+INSERT
+  5
+232
+330
+229
+100
+AcDbEntity
+  8
+标注
+ 62
+4
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+115.83087058721446
+ 20
+156.17255972777775
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+ 50
+90.0
+  0
+POINT
+  5
+234
+330
+229
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+121.33087058721378
+ 20
+143.77255972777778
+ 30
+0.0
+  0
+POINT
+  5
+235
+330
+229
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+121.33087058721378
+ 20
+156.17255972777775
+ 30
+0.0
+  0
+POINT
+  5
+236
+330
+229
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+115.83087058721446
+ 20
+156.17255972777775
+ 30
+0.0
+  0
+ENDBLK
+  5
+22B
+330
+229
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
+239
+330
+238
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+*D10
+ 70
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  3
+*D10
+  1
+
+  0
+LINE
+  5
+23B
+330
+238
+100
+AcDbEntity
+  8
+标注
+ 62
+4
+100
+AcDbLine
+ 10
+107.63377227576314
+ 20
+111.56402828273315
+ 30
+0.0
+ 11
+100.63377227576382
+ 21
+111.56402828273315
+ 31
+0.0
+  0
+LINE
+  5
+23C
+330
+238
+100
+AcDbEntity
+  8
+标注
+ 62
+4
+100
+AcDbLine
+ 10
+107.63377227576314
+ 20
+117.50389202517101
+ 30
+0.0
+ 11
+100.63377227576382
+ 21
+117.50389202517101
+ 31
+0.0
+  0
+LINE
+  5
+23D
+330
+238
+100
+AcDbEntity
+  8
+标注
+ 62
+4
+100
+AcDbLine
+ 10
+102.13377227576382
+ 20
+111.56402828273315
+ 30
+0.0
+ 11
+102.13377227576382
+ 21
+117.50389202517101
+ 31
+0.0
+  0
+MTEXT
+  5
+23E
+330
+238
+100
+AcDbEntity
+  8
+标注
+ 62
+7
+100
+AcDbMText
+ 10
+87.58667473357764
+ 20
+114.71531625338366
+ 30
+0.0
+ 40
+2.5
+ 41
+0.0
+ 71
+5
+  1
+\A1;{\W0.5;H3=50+(A+200)/2*j%-(B+200)/2*i%}
+  7
+TS1
+ 11
+0.9999984769132877
+ 21
+-0.001745328365898445
+ 31
+0.0
+  0
+INSERT
+  5
+23F
+330
+238
+100
+AcDbEntity
+  8
+标注
+ 62
+4
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+102.13377227576382
+ 20
+111.56402828273315
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+ 50
+-90.00000000000001
+  0
+INSERT
+  5
+241
+330
+238
+100
+AcDbEntity
+  8
+标注
+ 62
+4
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+102.13377227576382
+ 20
+117.50389202517101
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+ 50
+90.0
+  0
+POINT
+  5
+243
+330
+238
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+107.63377227576314
+ 20
+111.56402828273315
+ 30
+0.0
+  0
+POINT
+  5
+244
+330
+238
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+107.63377227576314
+ 20
+117.50389202517101
+ 30
+0.0
+  0
+POINT
+  5
+245
+330
+238
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+102.13377227576382
+ 20
+117.50389202517101
+ 30
+0.0
+  0
+ENDBLK
+  5
+23A
+330
+238
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
+24D
+330
+24C
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+*D11
+ 70
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  3
+*D11
+  1
+
+  0
+LINE
+  5
+24F
+330
+24C
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbLine
+ 10
+129.51147811534668
+ 20
+236.10810532731182
+ 30
+0.0
+ 11
+133.51147811534668
+ 21
+236.10810532731182
+ 31
+0.0
+  0
+LINE
+  5
+250
+330
+24C
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbLine
+ 10
+129.51147811534668
+ 20
+232.52487834807744
+ 30
+0.0
+ 11
+133.51147811534668
+ 21
+232.52487834807744
+ 31
+0.0
+  0
+LINE
+  5
+251
+330
+24C
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbLine
+ 10
+132.51147811534668
+ 20
+236.10810532731182
+ 30
+0.0
+ 11
+132.51147811534668
+ 21
+232.52487834807744
+ 31
+0.0
+  0
+INSERT
+  5
+252
+330
+24C
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+132.51147811534668
+ 20
+236.10810532731182
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+ 50
+90.0
+  0
+INSERT
+  5
+254
+330
+24C
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+132.51147811534668
+ 20
+232.52487834807744
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+ 50
+-90.00000000000001
+  0
+MTEXT
+  5
+256
+330
+24C
+100
+AcDbEntity
+  8
+0
+ 62
+0
+100
+AcDbMText
+ 10
+131.2614781153468
+ 20
+234.3164918376948
+ 30
+0.0
+ 40
+2.5
+ 41
+0.0
+ 71
+5
+  1
+\A1;50
+  7
+TS1
+ 11
+6.123233995736766e-17
+ 21
+1.0
+ 31
+0.0
+  0
+POINT
+  5
+257
+330
+24C
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+126.54560172539198
+ 20
+236.10810532731182
+ 30
+0.0
+  0
+POINT
+  5
+258
+330
+24C
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+126.5456017253922
+ 20
+232.52487834807744
+ 30
+0.0
+  0
+POINT
+  5
+259
+330
+24C
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+132.51147811534668
+ 20
+232.52487834807744
+ 30
+0.0
+  0
+ENDBLK
+  5
+24E
+330
+24C
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
+25C
+330
+25B
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+*D12
+ 70
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  3
+*D12
+  1
+
+  0
+LINE
+  5
+25E
+330
+25B
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbLine
+ 10
+161.59860596995213
+ 20
+232.46948146208751
+ 30
+0.0
+ 11
+165.59860596995213
+ 21
+232.46948146208751
+ 31
+0.0
+  0
+LINE
+  5
+25F
+330
+25B
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbLine
+ 10
+161.59860596995213
+ 20
+222.1898783480774
+ 30
+0.0
+ 11
+165.59860596995213
+ 21
+222.1898783480774
+ 31
+0.0
+  0
+LINE
+  5
+260
+330
+25B
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbLine
+ 10
+164.59860596995213
+ 20
+232.46948146208751
+ 30
+0.0
+ 11
+164.59860596995213
+ 21
+222.1898783480774
+ 31
+0.0
+  0
+INSERT
+  5
+261
+330
+25B
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+164.59860596995213
+ 20
+232.46948146208751
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+ 50
+90.0
+  0
+INSERT
+  5
+263
+330
+25B
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+164.59860596995213
+ 20
+222.1898783480774
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+ 50
+-90.00000000000001
+  0
+MTEXT
+  5
+265
+330
+25B
+100
+AcDbEntity
+  8
+0
+ 62
+0
+100
+AcDbMText
+ 10
+163.34860596995213
+ 20
+227.32967990508257
+ 30
+0.0
+ 40
+2.5
+ 41
+0.0
+ 71
+5
+  1
+\A1;H
+  7
+TS1
+ 11
+6.123233995736766e-17
+ 21
+1.0
+ 31
+0.0
+  0
+POINT
+  5
+266
+330
+25B
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+158.54560172539198
+ 20
+232.46948146208751
+ 30
+0.0
+  0
+POINT
+  5
+267
+330
+25B
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+158.54560172539198
+ 20
+222.1898783480774
+ 30
+0.0
+  0
+POINT
+  5
+268
+330
+25B
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+164.59860596995213
+ 20
+222.1898783480774
+ 30
+0.0
+  0
+ENDBLK
+  5
+25D
+330
+25B
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
+26B
+330
+26A
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+*D13
+ 70
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  3
+*D13
+  1
+
+  0
+LINE
+  5
+26D
+330
+26A
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbLine
+ 10
+283.67665484104907
+ 20
+232.46948146208751
+ 30
+0.0
+ 11
+287.67665484104907
+ 21
+232.46948146208751
+ 31
+0.0
+  0
+LINE
+  5
+26E
+330
+26A
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbLine
+ 10
+283.67665484104907
+ 20
+222.1898783480774
+ 30
+0.0
+ 11
+287.67665484104907
+ 21
+222.1898783480774
+ 31
+0.0
+  0
+LINE
+  5
+26F
+330
+26A
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbLine
+ 10
+286.67665484104907
+ 20
+232.46948146208751
+ 30
+0.0
+ 11
+286.67665484104907
+ 21
+222.1898783480774
+ 31
+0.0
+  0
+INSERT
+  5
+270
+330
+26A
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+286.67665484104907
+ 20
+232.46948146208751
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+ 50
+90.0
+  0
+INSERT
+  5
+272
+330
+26A
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+286.67665484104907
+ 20
+222.1898783480774
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+ 50
+-90.00000000000001
+  0
+MTEXT
+  5
+274
+330
+26A
+100
+AcDbEntity
+  8
+0
+ 62
+0
+100
+AcDbMText
+ 10
+285.42665484104907
+ 20
+227.32967990508257
+ 30
+0.0
+ 40
+2.5
+ 41
+0.0
+ 71
+5
+  1
+\A1;H
+  7
+TS1
+ 11
+6.123233995736766e-17
+ 21
+1.0
+ 31
+0.0
+  0
+POINT
+  5
+275
+330
+26A
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+280.6236505964881
+ 20
+232.46948146208751
+ 30
+0.0
+  0
+POINT
+  5
+276
+330
+26A
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+280.6236505964881
+ 20
+222.1898783480774
+ 30
+0.0
+  0
+POINT
+  5
+277
+330
+26A
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+286.67665484104907
+ 20
+222.1898783480774
+ 30
+0.0
+  0
+ENDBLK
+  5
+26C
+330
+26A
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
+27A
+330
+279
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+*D14
+ 70
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  3
+*D14
+  1
+
+  0
+LINE
+  5
+27C
+330
+279
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbLine
+ 10
+257.5895269864442
+ 20
+236.0248783480772
+ 30
+0.0
+ 11
+261.5895269864442
+ 21
+236.0248783480772
+ 31
+0.0
+  0
+LINE
+  5
+27D
+330
+279
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbLine
+ 10
+257.5895269864442
+ 20
+232.52487834807505
+ 30
+0.0
+ 11
+261.5895269864442
+ 21
+232.52487834807505
+ 31
+0.0
+  0
+LINE
+  5
+27E
+330
+279
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbLine
+ 10
+260.5895269864442
+ 20
+236.0248783480772
+ 30
+0.0
+ 11
+260.5895269864442
+ 21
+232.52487834807505
+ 31
+0.0
+  0
+INSERT
+  5
+27F
+330
+279
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+260.5895269864442
+ 20
+236.0248783480772
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+ 50
+90.0
+  0
+INSERT
+  5
+281
+330
+279
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+260.5895269864442
+ 20
+232.52487834807505
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+ 50
+-90.00000000000001
+  0
+MTEXT
+  5
+283
+330
+279
+100
+AcDbEntity
+  8
+0
+ 62
+0
+100
+AcDbMText
+ 10
+259.3395269864442
+ 20
+234.2748783480762
+ 30
+0.0
+ 40
+2.5
+ 41
+0.0
+ 71
+5
+  1
+\A1;50
+  7
+TS1
+ 11
+6.123233995736766e-17
+ 21
+1.0
+ 31
+0.0
+  0
+POINT
+  5
+284
+330
+279
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+254.62365059649107
+ 20
+236.0248783480772
+ 30
+0.0
+  0
+POINT
+  5
+285
+330
+279
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+254.62365059648903
+ 20
+232.52487834807505
+ 30
+0.0
+  0
+POINT
+  5
+286
+330
+279
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+260.5895269864442
+ 20
+232.52487834807505
+ 30
+0.0
+  0
+ENDBLK
+  5
+27B
+330
+279
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
+289
+330
+288
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+*D15
+ 70
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  3
+*D15
+  1
+
+  0
+LINE
+  5
+28B
+330
+288
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbLine
+ 10
+228.62365059648812
+ 20
+161.98021103656856
+ 30
+0.0
+ 11
+228.62365059648812
+ 21
+165.98021103656856
+ 31
+0.0
+  0
+LINE
+  5
+28C
+330
+288
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbLine
+ 10
+280.6236505964881
+ 20
+161.98021103656856
+ 30
+0.0
+ 11
+280.6236505964881
+ 21
+165.98021103656856
+ 31
+0.0
+  0
+LINE
+  5
+28D
+330
+288
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbLine
+ 10
+228.62365059648812
+ 20
+164.98021103656856
+ 30
+0.0
+ 11
+280.6236505964881
+ 21
+164.98021103656856
+ 31
+0.0
+  0
+INSERT
+  5
+28E
+330
+288
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+228.62365059648812
+ 20
+164.98021103656856
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+ 50
+180.0
+  0
+INSERT
+  5
+290
+330
+288
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+280.6236505964881
+ 20
+164.98021103656856
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+  0
+MTEXT
+  5
+292
+330
+288
+100
+AcDbEntity
+  8
+0
+ 62
+0
+100
+AcDbMText
+ 10
+254.62365059648812
+ 20
+166.23021103656856
+ 30
+0.0
+ 40
+2.5
+ 41
+0.0
+ 71
+5
+  1
+\A1;C
+  7
+TS1
+  0
+POINT
+  5
+293
+330
+288
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+228.62365059648812
+ 20
+154.21066762979865
+ 30
+0.0
+  0
+POINT
+  5
+294
+330
+288
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+280.6236505964881
+ 20
+154.2106676297991
+ 30
+0.0
+  0
+POINT
+  5
+295
+330
+288
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+280.6236505964881
+ 20
+164.98021103656856
+ 30
+0.0
+  0
+ENDBLK
+  5
+28A
+330
+288
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
+298
+330
+297
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+*D16
+ 70
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  3
+*D16
+  1
+
+  0
+LINE
+  5
+29A
+330
+297
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbLine
+ 10
+224.0880055192821
+ 20
+160.12706364206383
+ 30
+0.0
+ 11
+220.0880055192821
+ 21
+160.12706364206383
+ 31
+0.0
+  0
+LINE
+  5
+29B
+330
+297
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbLine
+ 10
+224.0880055192821
+ 20
+108.12706364206383
+ 30
+0.0
+ 11
+220.0880055192821
+ 21
+108.12706364206383
+ 31
+0.0
+  0
+LINE
+  5
+29C
+330
+297
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbLine
+ 10
+221.0880055192821
+ 20
+160.12706364206383
+ 30
+0.0
+ 11
+221.0880055192821
+ 21
+108.12706364206383
+ 31
+0.0
+  0
+INSERT
+  5
+29D
+330
+297
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+221.0880055192821
+ 20
+160.12706364206383
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+ 50
+90.0
+  0
+INSERT
+  5
+29F
+330
+297
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+221.0880055192821
+ 20
+108.12706364206383
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+ 50
+-90.00000000000001
+  0
+MTEXT
+  5
+2A1
+330
+297
+100
+AcDbEntity
+  8
+0
+ 62
+0
+100
+AcDbMText
+ 10
+219.8380055192821
+ 20
+134.12706364206394
+ 30
+0.0
+ 40
+2.5
+ 41
+0.0
+ 71
+5
+  1
+\A1;B
+  7
+TS1
+ 11
+6.123233995736766e-17
+ 21
+1.0
+ 31
+0.0
+  0
+POINT
+  5
+2A2
+330
+297
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+228.62365059648812
+ 20
+160.12706364206383
+ 30
+0.0
+  0
+POINT
+  5
+2A3
+330
+297
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+228.62365059648812
+ 20
+108.12706364206383
+ 30
+0.0
+  0
+POINT
+  5
+2A4
+330
+297
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+221.0880055192821
+ 20
+108.12706364206383
+ 30
+0.0
+  0
+ENDBLK
+  5
+299
+330
+297
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
+2A7
+330
+2A6
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+*D17
+ 70
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  3
+*D17
+  1
+
+  0
+LINE
+  5
+2A9
+330
+2A6
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbLine
+ 10
+228.62365059648812
+ 20
+106.1350289898977
+ 30
+0.0
+ 11
+228.62365059648812
+ 21
+102.1350289898977
+ 31
+0.0
+  0
+LINE
+  5
+2AA
+330
+2A6
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbLine
+ 10
+280.6236505964881
+ 20
+106.1350289898977
+ 30
+0.0
+ 11
+280.6236505964881
+ 21
+102.1350289898977
+ 31
+0.0
+  0
+LINE
+  5
+2AB
+330
+2A6
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbLine
+ 10
+228.62365059648812
+ 20
+103.1350289898977
+ 30
+0.0
+ 11
+280.6236505964881
+ 21
+103.1350289898977
+ 31
+0.0
+  0
+INSERT
+  5
+2AC
+330
+2A6
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+228.62365059648812
+ 20
+103.1350289898977
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+ 50
+180.0
+  0
+INSERT
+  5
+2AE
+330
+2A6
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+280.6236505964881
+ 20
+103.1350289898977
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+  0
+MTEXT
+  5
+2B0
+330
+2A6
+100
+AcDbEntity
+  8
+0
+ 62
+0
+100
+AcDbMText
+ 10
+254.62365059648812
+ 20
+104.3850289898977
+ 30
+0.0
+ 40
+2.5
+ 41
+0.0
+ 71
+5
+  1
+\A1;A
+  7
+TS1
+  0
+POINT
+  5
+2B1
+330
+2A6
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+228.62365059648812
+ 20
+108.12706364206383
+ 30
+0.0
+  0
+POINT
+  5
+2B2
+330
+2A6
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+280.6236505964881
+ 20
+108.12706364206383
+ 30
+0.0
+  0
+POINT
+  5
+2B3
+330
+2A6
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+280.6236505964881
+ 20
+103.1350289898977
+ 30
+0.0
+  0
+ENDBLK
+  5
+2A8
+330
+2A6
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
+2B6
+330
+2B5
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+*D18
+ 70
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  3
+*D18
+  1
+
+  0
+LINE
+  5
+2B8
+330
+2B5
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbLine
+ 10
+282.44451026480203
+ 20
+160.1270636420643
+ 30
+0.0
+ 11
+286.44451026480203
+ 21
+160.1270636420643
+ 31
+0.0
+  0
+LINE
+  5
+2B9
+330
+2B5
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbLine
+ 10
+282.44451026480203
+ 20
+108.12706364206383
+ 30
+0.0
+ 11
+286.44451026480203
+ 21
+108.12706364206383
+ 31
+0.0
+  0
+LINE
+  5
+2BA
+330
+2B5
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbLine
+ 10
+285.44451026480203
+ 20
+160.1270636420643
+ 30
+0.0
+ 11
+285.44451026480203
+ 21
+108.12706364206383
+ 31
+0.0
+  0
+INSERT
+  5
+2BB
+330
+2B5
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+285.44451026480203
+ 20
+160.1270636420643
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+ 50
+90.0
+  0
+INSERT
+  5
+2BD
+330
+2B5
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+285.44451026480203
+ 20
+108.12706364206383
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+ 50
+-90.00000000000001
+  0
+MTEXT
+  5
+2BF
+330
+2B5
+100
+AcDbEntity
+  8
+0
+ 62
+0
+100
+AcDbMText
+ 10
+284.19451026480203
+ 20
+134.12706364206417
+ 30
+0.0
+ 40
+2.5
+ 41
+0.0
+ 71
+5
+  1
+\A1;D
+  7
+TS1
+ 11
+6.123233995736766e-17
+ 21
+1.0
+ 31
+0.0
+  0
+POINT
+  5
+2C0
+330
+2B5
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+259.12108097334215
+ 20
+160.1270636420643
+ 30
+0.0
+  0
+POINT
+  5
+2C1
+330
+2B5
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+259.12108097334306
+ 20
+108.12706364206383
+ 30
+0.0
+  0
+POINT
+  5
+2C2
+330
+2B5
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+285.44451026480203
+ 20
+108.12706364206383
+ 30
+0.0
+  0
+ENDBLK
+  5
+2B7
+330
+2B5
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
+2C4
+330
+39
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+*D19
+ 70
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  3
+*D19
+  1
+
+  0
+LINE
+  5
+2C6
+330
+39
+100
+AcDbEntity
+  8
+0
+ 62
+0
+370
+-2
+100
+AcDbLine
+ 10
+93.54560172522133
+ 20
+230.7510965610859
+ 30
+0.0
+ 11
+93.54560172522133
+ 21
+228.1771130600821
+ 31
+0.0
+  0
+LINE
+  5
+2C7
+330
+39
+100
+AcDbEntity
+  8
+0
+ 62
+0
+370
+-2
+100
+AcDbLine
+ 10
+98.54560172522133
+ 20
+230.7510965610859
+ 30
+0.0
+ 11
+98.54560172522133
+ 21
+228.1771130600821
+ 31
+0.0
+  0
+LINE
+  5
+2C8
+330
+39
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbLine
+ 10
+93.54560172522133
+ 20
+229.4271130600821
+ 30
+0.0
+ 11
+98.54560172522133
+ 21
+229.4271130600821
+ 31
+0.0
+  0
+INSERT
+  5
+2C9
+330
+39
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+93.54560172522133
+ 20
+229.4271130600821
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+ 50
+180.0
+  0
+INSERT
+  5
+2CB
+330
+39
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+98.54560172522133
+ 20
+229.4271130600821
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+  0
+MTEXT
+  5
+2CD
+330
+39
+100
+AcDbEntity
+  8
+0
+ 62
+0
+100
+AcDbMText
+ 10
+96.04560172522133
+ 20
+231.3021130600821
+ 30
+0.0
+ 40
+2.5
+ 41
+0.0
+ 71
+5
+  1
+\A1;100
+  7
+TS1
+  0
+POINT
+  5
+2CE
+330
+39
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+93.54560172522133
+ 20
+231.3760965610859
+ 30
+0.0
+  0
+POINT
+  5
+2CF
+330
+39
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+98.54560172522133
+ 20
+231.3760965610859
+ 30
+0.0
+  0
+POINT
+  5
+2D0
+330
+39
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+98.54560172522133
+ 20
+229.4271130600821
+ 30
+0.0
+  0
+ENDBLK
+  5
+2C5
+330
+39
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
+2D1
+330
+3A
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+_Oblique
+ 70
+0
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  3
+_Oblique
+  1
+
+  0
+LINE
+  5
+2D3
+330
+3A
+100
+AcDbEntity
+  8
+0
+  6
+ByBlock
+ 62
+0
+370
+-2
+100
+AcDbLine
+ 10
+-0.5
+ 20
+-0.5
+ 30
+0.0
+ 11
+0.5
+ 21
+0.5
+ 31
+0.0
+  0
+ENDBLK
+  5
+2D2
+330
+3A
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
+2D4
+330
+3C
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+*D20
+ 70
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  3
+*D20
+  1
+
+  0
+LINE
+  5
+2D6
+330
+3C
+100
+AcDbEntity
+  8
+0
+ 62
+0
+370
+-2
+100
+AcDbLine
+ 10
+227.62365059642218
+ 20
+231.10569305523995
+ 30
+0.0
+ 11
+227.62365059642218
+ 21
+228.0866519829765
+ 31
+0.0
+  0
+LINE
+  5
+2D7
+330
+3C
+100
+AcDbEntity
+  8
+0
+ 62
+0
+370
+-2
+100
+AcDbLine
+ 10
+232.62365059642218
+ 20
+231.10569305523995
+ 30
+0.0
+ 11
+232.62365059642218
+ 21
+228.0866519829765
+ 31
+0.0
+  0
+LINE
+  5
+2D8
+330
+3C
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbLine
+ 10
+227.62365059642218
+ 20
+229.3366519829765
+ 30
+0.0
+ 11
+232.62365059642218
+ 21
+229.3366519829765
+ 31
+0.0
+  0
+INSERT
+  5
+2D9
+330
+3C
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+227.62365059642218
+ 20
+229.3366519829765
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+ 50
+180.0
+  0
+INSERT
+  5
+2DB
+330
+3C
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+232.62365059642218
+ 20
+229.3366519829765
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+  0
+MTEXT
+  5
+2DD
+330
+3C
+100
+AcDbEntity
+  8
+0
+ 62
+0
+100
+AcDbMText
+ 10
+230.12365059642218
+ 20
+231.2116519829765
+ 30
+0.0
+ 40
+2.5
+ 41
+0.0
+ 71
+5
+  1
+\A1;100
+  7
+TS1
+  0
+POINT
+  5
+2DE
+330
+3C
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+227.62365059642218
+ 20
+231.73069305523995
+ 30
+0.0
+  0
+POINT
+  5
+2DF
+330
+3C
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+232.62365059642218
+ 20
+231.73069305523995
+ 30
+0.0
+  0
+POINT
+  5
+2E0
+330
+3C
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+232.62365059642218
+ 20
+229.3366519829765
+ 30
+0.0
+  0
+ENDBLK
+  5
+2D5
+330
+3C
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
+2E1
+330
+44
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+*D21
+ 70
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  3
+*D21
+  1
+
+  0
+LINE
+  5
+2E3
+330
+44
+100
+AcDbEntity
+  8
+0
+ 62
+0
+370
+-2
+100
+AcDbLine
+ 10
+154.54560172539186
+ 20
+231.01122438010088
+ 30
+0.0
+ 11
+154.54560172539186
+ 21
+228.4372408790971
+ 31
+0.0
+  0
+LINE
+  5
+2E4
+330
+44
+100
+AcDbEntity
+  8
+0
+ 62
+0
+370
+-2
+100
+AcDbLine
+ 10
+159.54560172539186
+ 20
+231.01122438010088
+ 30
+0.0
+ 11
+159.54560172539186
+ 21
+228.4372408790971
+ 31
+0.0
+  0
+LINE
+  5
+2E5
+330
+44
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbLine
+ 10
+154.54560172539186
+ 20
+229.6872408790971
+ 30
+0.0
+ 11
+159.54560172539186
+ 21
+229.6872408790971
+ 31
+0.0
+  0
+INSERT
+  5
+2E6
+330
+44
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+154.54560172539186
+ 20
+229.6872408790971
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+ 50
+180.0
+  0
+INSERT
+  5
+2E8
+330
+44
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+159.54560172539186
+ 20
+229.6872408790971
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+  0
+MTEXT
+  5
+2EA
+330
+44
+100
+AcDbEntity
+  8
+0
+ 62
+0
+100
+AcDbMText
+ 10
+157.04560172539186
+ 20
+231.5622408790971
+ 30
+0.0
+ 40
+2.5
+ 41
+0.0
+ 71
+5
+  1
+\A1;100
+  7
+TS1
+  0
+POINT
+  5
+2EB
+330
+44
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+154.54560172539186
+ 20
+231.63622438010088
+ 30
+0.0
+  0
+POINT
+  5
+2EC
+330
+44
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+159.54560172539186
+ 20
+231.63622438010088
+ 30
+0.0
+  0
+POINT
+  5
+2ED
+330
+44
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+159.54560172539186
+ 20
+229.6872408790971
+ 30
+0.0
+  0
+ENDBLK
+  5
+2E2
+330
+44
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
+2EE
+330
+45
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+*D22
+ 70
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  3
+*D22
+  1
+
+  0
+LINE
+  5
+2F0
+330
+45
+100
+AcDbEntity
+  8
+0
+ 62
+0
+370
+-2
+100
+AcDbLine
+ 10
+276.6236505964181
+ 20
+231.10569305523995
+ 30
+0.0
+ 11
+276.6236505964181
+ 21
+228.0866519829765
+ 31
+0.0
+  0
+LINE
+  5
+2F1
+330
+45
+100
+AcDbEntity
+  8
+0
+ 62
+0
+370
+-2
+100
+AcDbLine
+ 10
+281.6236505964181
+ 20
+231.10569305523995
+ 30
+0.0
+ 11
+281.6236505964181
+ 21
+228.0866519829765
+ 31
+0.0
+  0
+LINE
+  5
+2F2
+330
+45
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbLine
+ 10
+276.6236505964181
+ 20
+229.3366519829765
+ 30
+0.0
+ 11
+281.6236505964181
+ 21
+229.3366519829765
+ 31
+0.0
+  0
+INSERT
+  5
+2F3
+330
+45
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+276.6236505964181
+ 20
+229.3366519829765
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+ 50
+180.0
+  0
+INSERT
+  5
+2F5
+330
+45
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+281.6236505964181
+ 20
+229.3366519829765
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+  0
+MTEXT
+  5
+2F7
+330
+45
+100
+AcDbEntity
+  8
+0
+ 62
+0
+100
+AcDbMText
+ 10
+279.1236505964181
+ 20
+231.2116519829765
+ 30
+0.0
+ 40
+2.5
+ 41
+0.0
+ 71
+5
+  1
+\A1;100
+  7
+TS1
+  0
+POINT
+  5
+2F8
+330
+45
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+276.6236505964181
+ 20
+231.73069305523995
+ 30
+0.0
+  0
+POINT
+  5
+2F9
+330
+45
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+281.6236505964181
+ 20
+231.73069305523995
+ 30
+0.0
+  0
+POINT
+  5
+2FA
+330
+45
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+281.6236505964181
+ 20
+229.3366519829765
+ 30
+0.0
+  0
+ENDBLK
+  5
+2EF
+330
+45
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
+2FB
+330
+48
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+*D23
+ 70
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  3
+*D23
+  1
+
+  0
+LINE
+  5
+2FD
+330
+48
+100
+AcDbEntity
+  8
+标注
+ 62
+4
+100
+AcDbLine
+ 10
+107.75340664240571
+ 20
+112.15104678179512
+ 30
+0.0
+ 11
+102.69206598675805
+ 21
+114.30344794502207
+ 31
+0.0
+  0
+LINE
+  5
+2FE
+330
+48
+100
+AcDbEntity
+  8
+标注
+ 62
+4
+100
+AcDbLine
+ 10
+121.45050495385635
+ 20
+144.35957822683986
+ 30
+0.0
+ 11
+116.3891642982087
+ 21
+146.5119793900668
+ 31
+0.0
+  0
+LINE
+  5
+2FF
+330
+48
+100
+AcDbEntity
+  8
+标注
+ 62
+4
+100
+AcDbLine
+ 10
+104.07243162011707
+ 20
+113.71642944595988
+ 30
+0.0
+ 11
+117.76952993156772
+ 21
+145.92496089100462
+ 31
+0.0
+  0
+INSERT
+  5
+300
+330
+48
+100
+AcDbEntity
+  8
+标注
+ 62
+4
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+104.07243162011707
+ 20
+113.71642944595988
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+ 50
+-113.03825661647788
+  0
+INSERT
+  5
+302
+330
+48
+100
+AcDbEntity
+  8
+标注
+ 62
+4
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+117.76952993156772
+ 20
+145.92496089100462
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+ 50
+66.96174338352209
+  0
+MTEXT
+  5
+304
+330
+48
+100
+AcDbEntity
+  8
+标注
+ 62
+7
+100
+AcDbMText
+ 10
+109.03448107691838
+ 20
+130.62295378386716
+ 30
+0.0
+ 40
+2.5
+ 41
+0.0
+ 71
+5
+  1
+\A1;B+200
+  7
+TS1
+ 11
+0.3913456660414503
+ 21
+0.9202437555727144
+ 31
+0.0
+  0
+POINT
+  5
+305
+330
+48
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+107.75340664240571
+ 20
+112.15104678179512
+ 30
+0.0
+  0
+POINT
+  5
+306
+330
+48
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+121.45050495385635
+ 20
+144.35957822683986
+ 30
+0.0
+  0
+POINT
+  5
+307
+330
+48
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+117.76952993156772
+ 20
+145.92496089100462
+ 30
+0.0
+  0
+ENDBLK
+  5
+2FC
+330
+48
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
+308
+330
+49
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+*D24
+ 70
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  3
+*D24
+  1
+
+  0
+LINE
+  5
+30A
+330
+49
+100
+AcDbEntity
+  8
+标注
+ 62
+4
+100
+AcDbLine
+ 10
+109.13377227576211
+ 20
+110.06402828273303
+ 30
+0.0
+ 11
+109.13377227576211
+ 21
+104.56402828273315
+ 31
+0.0
+  0
+LINE
+  5
+30B
+330
+49
+100
+AcDbEntity
+  8
+标注
+ 62
+4
+100
+AcDbLine
+ 10
+134.1337722757621
+ 20
+110.06402828273303
+ 30
+0.0
+ 11
+134.1337722757621
+ 21
+104.56402828273315
+ 31
+0.0
+  0
+LINE
+  5
+30C
+330
+49
+100
+AcDbEntity
+  8
+标注
+ 62
+4
+100
+AcDbLine
+ 10
+109.13377227576211
+ 20
+106.06402828273315
+ 30
+0.0
+ 11
+134.1337722757621
+ 21
+106.06402828273315
+ 31
+0.0
+  0
+INSERT
+  5
+30D
+330
+49
+100
+AcDbEntity
+  8
+标注
+ 62
+4
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+109.13377227576211
+ 20
+106.06402828273315
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+ 50
+180.0
+  0
+INSERT
+  5
+30F
+330
+49
+100
+AcDbEntity
+  8
+标注
+ 62
+4
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+134.1337722757621
+ 20
+106.06402828273315
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+  0
+MTEXT
+  5
+311
+330
+49
+100
+AcDbEntity
+  8
+标注
+ 62
+7
+100
+AcDbMText
+ 10
+121.63377227576211
+ 20
+108.1140282827331
+ 30
+0.0
+ 40
+2.5
+ 41
+0.0
+ 71
+5
+  1
+\A1;A+200
+  7
+TS1
+  0
+POINT
+  5
+312
+330
+49
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+109.13377227576211
+ 20
+110.06402828273303
+ 30
+0.0
+  0
+POINT
+  5
+313
+330
+49
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+134.1337722757621
+ 20
+110.06402828273303
+ 30
+0.0
+  0
+POINT
+  5
+314
+330
+49
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+134.1337722757621
+ 20
+106.06402828273315
+ 30
+0.0
+  0
+ENDBLK
+  5
+309
+330
+49
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
+315
+330
+4A
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+*D25
+ 70
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  3
+*D25
+  1
+
+  0
+LINE
+  5
+317
+330
+4A
+100
+AcDbEntity
+  8
+标注
+ 62
+4
+100
+AcDbLine
+ 10
+149.33087058721378
+ 20
+143.7725597277779
+ 30
+0.0
+ 11
+154.83087058721446
+ 21
+143.7725597277779
+ 31
+0.0
+  0
+LINE
+  5
+318
+330
+4A
+100
+AcDbEntity
+  8
+标注
+ 62
+4
+100
+AcDbLine
+ 10
+149.33087058721378
+ 20
+148.99651462367547
+ 30
+0.0
+ 11
+154.83087058721446
+ 21
+148.99651462367547
+ 31
+0.0
+  0
+LINE
+  5
+319
+330
+4A
+100
+AcDbEntity
+  8
+标注
+ 62
+4
+100
+AcDbLine
+ 10
+153.33087058721446
+ 20
+143.7725597277779
+ 30
+0.0
+ 11
+153.33087058721446
+ 21
+148.99651462367547
+ 31
+0.0
+  0
+MTEXT
+  5
+31A
+330
+4A
+100
+AcDbEntity
+  8
+标注
+ 62
+7
+100
+AcDbMText
+ 10
+163.8569018919071
+ 20
+146.38453717572668
+ 30
+0.0
+ 40
+2.5
+ 41
+0.0
+ 71
+5
+  1
+\A1;{\W0.5;H1=50-(A+200)/2*j%+(B+200)/2*i%}
+  7
+TS1
+ 11
+0.9999984769132877
+ 21
+-0.001745328365898445
+ 31
+0.0
+  0
+INSERT
+  5
+31B
+330
+4A
+100
+AcDbEntity
+  8
+标注
+ 62
+4
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+153.33087058721446
+ 20
+143.7725597277779
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+ 50
+-90.00000000000001
+  0
+INSERT
+  5
+31D
+330
+4A
+100
+AcDbEntity
+  8
+标注
+ 62
+4
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+153.33087058721446
+ 20
+148.99651462367547
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+ 50
+90.0
+  0
+POINT
+  5
+31F
+330
+4A
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+149.33087058721378
+ 20
+143.7725597277779
+ 30
+0.0
+  0
+POINT
+  5
+320
+330
+4A
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+149.33087058721378
+ 20
+148.99651462367547
+ 30
+0.0
+  0
+POINT
+  5
+321
+330
+4A
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+153.33087058721446
+ 20
+148.99651462367547
+ 30
+0.0
+  0
+ENDBLK
+  5
+316
+330
+4A
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
+322
+330
+4B
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+*D26
+ 70
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  3
+*D26
+  1
+
+  0
+LINE
+  5
+324
+330
+4B
+100
+AcDbEntity
+  8
+标注
+ 62
+4
+100
+AcDbLine
+ 10
+135.63377227576314
+ 20
+111.56402828273326
+ 30
+0.0
+ 11
+141.13377227576382
+ 21
+111.56402828273326
+ 31
+0.0
+  0
+LINE
+  5
+325
+330
+4B
+100
+AcDbEntity
+  8
+标注
+ 62
+4
+100
+AcDbLine
+ 10
+135.63377227576314
+ 20
+116.18077005059956
+ 30
+0.0
+ 11
+141.13377227576382
+ 21
+116.18077005059956
+ 31
+0.0
+  0
+LINE
+  5
+326
+330
+4B
+100
+AcDbEntity
+  8
+标注
+ 62
+4
+100
+AcDbLine
+ 10
+139.63377227576382
+ 20
+111.56402828273326
+ 30
+0.0
+ 11
+139.63377227576382
+ 21
+116.18077005059956
+ 31
+0.0
+  0
+MTEXT
+  5
+327
+330
+4B
+100
+AcDbEntity
+  8
+标注
+ 62
+7
+100
+AcDbMText
+ 10
+149.92860886363178
+ 20
+114.17600573068205
+ 30
+0.0
+ 40
+2.5
+ 41
+0.0
+ 71
+5
+  1
+\A1;{\W0.5;H4=50-(A+200)/2*j%-(B+200)/2*i%}
+  7
+TS1
+ 11
+0.9999984769132877
+ 21
+-0.001745328365898445
+ 31
+0.0
+  0
+INSERT
+  5
+328
+330
+4B
+100
+AcDbEntity
+  8
+标注
+ 62
+4
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+139.63377227576382
+ 20
+111.56402828273326
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+ 50
+-90.00000000000001
+  0
+INSERT
+  5
+32A
+330
+4B
+100
+AcDbEntity
+  8
+标注
+ 62
+4
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+139.63377227576382
+ 20
+116.18077005059956
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+ 50
+90.0
+  0
+POINT
+  5
+32C
+330
+4B
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+135.63377227576314
+ 20
+111.56402828273326
+ 30
+0.0
+  0
+POINT
+  5
+32D
+330
+4B
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+135.63377227576314
+ 20
+116.18077005059956
+ 30
+0.0
+  0
+POINT
+  5
+32E
+330
+4B
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+139.63377227576382
+ 20
+116.18077005059956
+ 30
+0.0
+  0
+ENDBLK
+  5
+323
+330
+4B
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
+32F
+330
+4C
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+*D27
+ 70
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  3
+*D27
+  1
+
+  0
+LINE
+  5
+331
+330
+4C
+100
+AcDbEntity
+  8
+标注
+ 62
+4
+100
+AcDbLine
+ 10
+121.33087058721378
+ 20
+143.77255972777778
+ 30
+0.0
+ 11
+114.33087058721446
+ 21
+143.77255972777778
+ 31
+0.0
+  0
+LINE
+  5
+332
+330
+4C
+100
+AcDbEntity
+  8
+标注
+ 62
+4
+100
+AcDbLine
+ 10
+121.33087058721378
+ 20
+156.17255972777775
+ 30
+0.0
+ 11
+114.33087058721446
+ 21
+156.17255972777775
+ 31
+0.0
+  0
+LINE
+  5
+333
+330
+4C
+100
+AcDbEntity
+  8
+标注
+ 62
+4
+100
+AcDbLine
+ 10
+115.83087058721446
+ 20
+143.77255972777778
+ 30
+0.0
+ 11
+115.83087058721446
+ 21
+156.17255972777775
+ 31
+0.0
+  0
+MTEXT
+  5
+334
+330
+4C
+100
+AcDbEntity
+  8
+标注
+ 62
+7
+100
+AcDbMText
+ 10
+101.47441684459682
+ 20
+150.61790253252775
+ 30
+0.0
+ 40
+2.5
+ 41
+0.0
+ 71
+5
+  1
+\A1;{\W0.5;H2=50+(A+200)/2*j%+(B+200)/2*i%}
+  7
+TS1
+ 11
+0.9999984769132877
+ 21
+-0.001745328365898445
+ 31
+0.0
+  0
+INSERT
+  5
+335
+330
+4C
+100
+AcDbEntity
+  8
+标注
+ 62
+4
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+115.83087058721446
+ 20
+143.77255972777778
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+ 50
+-90.00000000000001
+  0
+INSERT
+  5
+337
+330
+4C
+100
+AcDbEntity
+  8
+标注
+ 62
+4
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+115.83087058721446
+ 20
+156.17255972777775
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+ 50
+90.0
+  0
+POINT
+  5
+339
+330
+4C
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+121.33087058721378
+ 20
+143.77255972777778
+ 30
+0.0
+  0
+POINT
+  5
+33A
+330
+4C
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+121.33087058721378
+ 20
+156.17255972777775
+ 30
+0.0
+  0
+POINT
+  5
+33B
+330
+4C
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+115.83087058721446
+ 20
+156.17255972777775
+ 30
+0.0
+  0
+ENDBLK
+  5
+330
+330
+4C
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
+33C
+330
+4D
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+*D28
+ 70
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  3
+*D28
+  1
+
+  0
+LINE
+  5
+33E
+330
+4D
+100
+AcDbEntity
+  8
+标注
+ 62
+4
+100
+AcDbLine
+ 10
+107.63377227576314
+ 20
+111.56402828273315
+ 30
+0.0
+ 11
+100.63377227576382
+ 21
+111.56402828273315
+ 31
+0.0
+  0
+LINE
+  5
+33F
+330
+4D
+100
+AcDbEntity
+  8
+标注
+ 62
+4
+100
+AcDbLine
+ 10
+107.63377227576314
+ 20
+117.50389202517101
+ 30
+0.0
+ 11
+100.63377227576382
+ 21
+117.50389202517101
+ 31
+0.0
+  0
+LINE
+  5
+340
+330
+4D
+100
+AcDbEntity
+  8
+标注
+ 62
+4
+100
+AcDbLine
+ 10
+102.13377227576382
+ 20
+111.56402828273315
+ 30
+0.0
+ 11
+102.13377227576382
+ 21
+117.50389202517101
+ 31
+0.0
+  0
+MTEXT
+  5
+341
+330
+4D
+100
+AcDbEntity
+  8
+标注
+ 62
+7
+100
+AcDbMText
+ 10
+87.58667473357764
+ 20
+114.71531625338366
+ 30
+0.0
+ 40
+2.5
+ 41
+0.0
+ 71
+5
+  1
+\A1;{\W0.5;H3=50+(A+200)/2*j%-(B+200)/2*i%}
+  7
+TS1
+ 11
+0.9999984769132877
+ 21
+-0.001745328365898445
+ 31
+0.0
+  0
+INSERT
+  5
+342
+330
+4D
+100
+AcDbEntity
+  8
+标注
+ 62
+4
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+102.13377227576382
+ 20
+111.56402828273315
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+ 50
+-90.00000000000001
+  0
+INSERT
+  5
+344
+330
+4D
+100
+AcDbEntity
+  8
+标注
+ 62
+4
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+102.13377227576382
+ 20
+117.50389202517101
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+ 50
+90.0
+  0
+POINT
+  5
+346
+330
+4D
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+107.63377227576314
+ 20
+111.56402828273315
+ 30
+0.0
+  0
+POINT
+  5
+347
+330
+4D
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+107.63377227576314
+ 20
+117.50389202517101
+ 30
+0.0
+  0
+POINT
+  5
+348
+330
+4D
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+102.13377227576382
+ 20
+117.50389202517101
+ 30
+0.0
+  0
+ENDBLK
+  5
+33D
+330
+4D
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
+349
+330
+4F
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+*D29
+ 70
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  3
+*D29
+  1
+
+  0
+LINE
+  5
+34B
+330
+4F
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbLine
+ 10
+129.51147811534668
+ 20
+236.10810532731182
+ 30
+0.0
+ 11
+133.51147811534668
+ 21
+236.10810532731182
+ 31
+0.0
+  0
+LINE
+  5
+34C
+330
+4F
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbLine
+ 10
+129.51147811534668
+ 20
+232.52487834807744
+ 30
+0.0
+ 11
+133.51147811534668
+ 21
+232.52487834807744
+ 31
+0.0
+  0
+LINE
+  5
+34D
+330
+4F
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbLine
+ 10
+132.51147811534668
+ 20
+236.10810532731182
+ 30
+0.0
+ 11
+132.51147811534668
+ 21
+232.52487834807744
+ 31
+0.0
+  0
+INSERT
+  5
+34E
+330
+4F
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+132.51147811534668
+ 20
+236.10810532731182
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+ 50
+90.0
+  0
+INSERT
+  5
+350
+330
+4F
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+132.51147811534668
+ 20
+232.52487834807744
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+ 50
+-90.00000000000001
+  0
+MTEXT
+  5
+352
+330
+4F
+100
+AcDbEntity
+  8
+0
+ 62
+0
+100
+AcDbMText
+ 10
+131.2614781153468
+ 20
+234.3164918376948
+ 30
+0.0
+ 40
+2.5
+ 41
+0.0
+ 71
+5
+  1
+\A1;50
+  7
+TS1
+ 11
+6.123233995736766e-17
+ 21
+1.0
+ 31
+0.0
+  0
+POINT
+  5
+353
+330
+4F
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+126.54560172539198
+ 20
+236.10810532731182
+ 30
+0.0
+  0
+POINT
+  5
+354
+330
+4F
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+126.5456017253922
+ 20
+232.52487834807744
+ 30
+0.0
+  0
+POINT
+  5
+355
+330
+4F
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+132.51147811534668
+ 20
+232.52487834807744
+ 30
+0.0
+  0
+ENDBLK
+  5
+34A
+330
+4F
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
+356
+330
+50
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+*D30
+ 70
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  3
+*D30
+  1
+
+  0
+LINE
+  5
+358
+330
+50
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbLine
+ 10
+161.59860596995213
+ 20
+232.46948146208751
+ 30
+0.0
+ 11
+165.59860596995213
+ 21
+232.46948146208751
+ 31
+0.0
+  0
+LINE
+  5
+359
+330
+50
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbLine
+ 10
+161.59860596995213
+ 20
+222.1898783480774
+ 30
+0.0
+ 11
+165.59860596995213
+ 21
+222.1898783480774
+ 31
+0.0
+  0
+LINE
+  5
+35A
+330
+50
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbLine
+ 10
+164.59860596995213
+ 20
+232.46948146208751
+ 30
+0.0
+ 11
+164.59860596995213
+ 21
+222.1898783480774
+ 31
+0.0
+  0
+INSERT
+  5
+35B
+330
+50
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+164.59860596995213
+ 20
+232.46948146208751
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+ 50
+90.0
+  0
+INSERT
+  5
+35D
+330
+50
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+164.59860596995213
+ 20
+222.1898783480774
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+ 50
+-90.00000000000001
+  0
+MTEXT
+  5
+35F
+330
+50
+100
+AcDbEntity
+  8
+0
+ 62
+0
+100
+AcDbMText
+ 10
+163.34860596995213
+ 20
+227.32967990508257
+ 30
+0.0
+ 40
+2.5
+ 41
+0.0
+ 71
+5
+  1
+\A1;H
+  7
+TS1
+ 11
+6.123233995736766e-17
+ 21
+1.0
+ 31
+0.0
+  0
+POINT
+  5
+360
+330
+50
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+158.54560172539198
+ 20
+232.46948146208751
+ 30
+0.0
+  0
+POINT
+  5
+361
+330
+50
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+158.54560172539198
+ 20
+222.1898783480774
+ 30
+0.0
+  0
+POINT
+  5
+362
+330
+50
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+164.59860596995213
+ 20
+222.1898783480774
+ 30
+0.0
+  0
+ENDBLK
+  5
+357
+330
+50
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
+363
+330
+51
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+*D31
+ 70
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  3
+*D31
+  1
+
+  0
+LINE
+  5
+365
+330
+51
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbLine
+ 10
+283.67665484104907
+ 20
+232.46948146208751
+ 30
+0.0
+ 11
+287.67665484104907
+ 21
+232.46948146208751
+ 31
+0.0
+  0
+LINE
+  5
+366
+330
+51
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbLine
+ 10
+283.67665484104907
+ 20
+222.1898783480774
+ 30
+0.0
+ 11
+287.67665484104907
+ 21
+222.1898783480774
+ 31
+0.0
+  0
+LINE
+  5
+367
+330
+51
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbLine
+ 10
+286.67665484104907
+ 20
+232.46948146208751
+ 30
+0.0
+ 11
+286.67665484104907
+ 21
+222.1898783480774
+ 31
+0.0
+  0
+INSERT
+  5
+368
+330
+51
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+286.67665484104907
+ 20
+232.46948146208751
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+ 50
+90.0
+  0
+INSERT
+  5
+36A
+330
+51
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+286.67665484104907
+ 20
+222.1898783480774
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+ 50
+-90.00000000000001
+  0
+MTEXT
+  5
+36C
+330
+51
+100
+AcDbEntity
+  8
+0
+ 62
+0
+100
+AcDbMText
+ 10
+285.42665484104907
+ 20
+227.32967990508257
+ 30
+0.0
+ 40
+2.5
+ 41
+0.0
+ 71
+5
+  1
+\A1;H
+  7
+TS1
+ 11
+6.123233995736766e-17
+ 21
+1.0
+ 31
+0.0
+  0
+POINT
+  5
+36D
+330
+51
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+280.6236505964881
+ 20
+232.46948146208751
+ 30
+0.0
+  0
+POINT
+  5
+36E
+330
+51
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+280.6236505964881
+ 20
+222.1898783480774
+ 30
+0.0
+  0
+POINT
+  5
+36F
+330
+51
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+286.67665484104907
+ 20
+222.1898783480774
+ 30
+0.0
+  0
+ENDBLK
+  5
+364
+330
+51
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
+370
+330
+52
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+*D32
+ 70
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  3
+*D32
+  1
+
+  0
+LINE
+  5
+372
+330
+52
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbLine
+ 10
+257.5895269864442
+ 20
+236.0248783480772
+ 30
+0.0
+ 11
+261.5895269864442
+ 21
+236.0248783480772
+ 31
+0.0
+  0
+LINE
+  5
+373
+330
+52
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbLine
+ 10
+257.5895269864442
+ 20
+232.52487834807505
+ 30
+0.0
+ 11
+261.5895269864442
+ 21
+232.52487834807505
+ 31
+0.0
+  0
+LINE
+  5
+374
+330
+52
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbLine
+ 10
+260.5895269864442
+ 20
+236.0248783480772
+ 30
+0.0
+ 11
+260.5895269864442
+ 21
+232.52487834807505
+ 31
+0.0
+  0
+INSERT
+  5
+375
+330
+52
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+260.5895269864442
+ 20
+236.0248783480772
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+ 50
+90.0
+  0
+INSERT
+  5
+377
+330
+52
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+260.5895269864442
+ 20
+232.52487834807505
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+ 50
+-90.00000000000001
+  0
+MTEXT
+  5
+379
+330
+52
+100
+AcDbEntity
+  8
+0
+ 62
+0
+100
+AcDbMText
+ 10
+259.3395269864442
+ 20
+234.2748783480762
+ 30
+0.0
+ 40
+2.5
+ 41
+0.0
+ 71
+5
+  1
+\A1;50
+  7
+TS1
+ 11
+6.123233995736766e-17
+ 21
+1.0
+ 31
+0.0
+  0
+POINT
+  5
+37A
+330
+52
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+254.62365059649107
+ 20
+236.0248783480772
+ 30
+0.0
+  0
+POINT
+  5
+37B
+330
+52
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+254.62365059648903
+ 20
+232.52487834807505
+ 30
+0.0
+  0
+POINT
+  5
+37C
+330
+52
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+260.5895269864442
+ 20
+232.52487834807505
+ 30
+0.0
+  0
+ENDBLK
+  5
+371
+330
+52
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
+37D
+330
+53
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+*D33
+ 70
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  3
+*D33
+  1
+
+  0
+LINE
+  5
+37F
+330
+53
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbLine
+ 10
+228.62365059648812
+ 20
+161.98021103656856
+ 30
+0.0
+ 11
+228.62365059648812
+ 21
+165.98021103656856
+ 31
+0.0
+  0
+LINE
+  5
+380
+330
+53
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbLine
+ 10
+280.6236505964881
+ 20
+161.98021103656856
+ 30
+0.0
+ 11
+280.6236505964881
+ 21
+165.98021103656856
+ 31
+0.0
+  0
+LINE
+  5
+381
+330
+53
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbLine
+ 10
+228.62365059648812
+ 20
+164.98021103656856
+ 30
+0.0
+ 11
+280.6236505964881
+ 21
+164.98021103656856
+ 31
+0.0
+  0
+INSERT
+  5
+382
+330
+53
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+228.62365059648812
+ 20
+164.98021103656856
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+ 50
+180.0
+  0
+INSERT
+  5
+384
+330
+53
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+280.6236505964881
+ 20
+164.98021103656856
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+  0
+MTEXT
+  5
+386
+330
+53
+100
+AcDbEntity
+  8
+0
+ 62
+0
+100
+AcDbMText
+ 10
+254.62365059648812
+ 20
+166.23021103656856
+ 30
+0.0
+ 40
+2.5
+ 41
+0.0
+ 71
+5
+  1
+\A1;C
+  7
+TS1
+  0
+POINT
+  5
+387
+330
+53
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+228.62365059648812
+ 20
+154.21066762979865
+ 30
+0.0
+  0
+POINT
+  5
+388
+330
+53
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+280.6236505964881
+ 20
+154.2106676297991
+ 30
+0.0
+  0
+POINT
+  5
+389
+330
+53
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+280.6236505964881
+ 20
+164.98021103656856
+ 30
+0.0
+  0
+ENDBLK
+  5
+37E
+330
+53
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
+38A
+330
+54
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+*D34
+ 70
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  3
+*D34
+  1
+
+  0
+LINE
+  5
+38C
+330
+54
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbLine
+ 10
+224.0880055192821
+ 20
+160.12706364206383
+ 30
+0.0
+ 11
+220.0880055192821
+ 21
+160.12706364206383
+ 31
+0.0
+  0
+LINE
+  5
+38D
+330
+54
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbLine
+ 10
+224.0880055192821
+ 20
+108.12706364206383
+ 30
+0.0
+ 11
+220.0880055192821
+ 21
+108.12706364206383
+ 31
+0.0
+  0
+LINE
+  5
+38E
+330
+54
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbLine
+ 10
+221.0880055192821
+ 20
+160.12706364206383
+ 30
+0.0
+ 11
+221.0880055192821
+ 21
+108.12706364206383
+ 31
+0.0
+  0
+INSERT
+  5
+38F
+330
+54
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+221.0880055192821
+ 20
+160.12706364206383
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+ 50
+90.0
+  0
+INSERT
+  5
+391
+330
+54
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+221.0880055192821
+ 20
+108.12706364206383
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+ 50
+-90.00000000000001
+  0
+MTEXT
+  5
+393
+330
+54
+100
+AcDbEntity
+  8
+0
+ 62
+0
+100
+AcDbMText
+ 10
+219.8380055192821
+ 20
+134.12706364206394
+ 30
+0.0
+ 40
+2.5
+ 41
+0.0
+ 71
+5
+  1
+\A1;B
+  7
+TS1
+ 11
+6.123233995736766e-17
+ 21
+1.0
+ 31
+0.0
+  0
+POINT
+  5
+394
+330
+54
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+228.62365059648812
+ 20
+160.12706364206383
+ 30
+0.0
+  0
+POINT
+  5
+395
+330
+54
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+228.62365059648812
+ 20
+108.12706364206383
+ 30
+0.0
+  0
+POINT
+  5
+396
+330
+54
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+221.0880055192821
+ 20
+108.12706364206383
+ 30
+0.0
+  0
+ENDBLK
+  5
+38B
+330
+54
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
+397
+330
+55
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+*D35
+ 70
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  3
+*D35
+  1
+
+  0
+LINE
+  5
+399
+330
+55
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbLine
+ 10
+228.62365059648812
+ 20
+106.1350289898977
+ 30
+0.0
+ 11
+228.62365059648812
+ 21
+102.1350289898977
+ 31
+0.0
+  0
+LINE
+  5
+39A
+330
+55
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbLine
+ 10
+280.6236505964881
+ 20
+106.1350289898977
+ 30
+0.0
+ 11
+280.6236505964881
+ 21
+102.1350289898977
+ 31
+0.0
+  0
+LINE
+  5
+39B
+330
+55
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbLine
+ 10
+228.62365059648812
+ 20
+103.1350289898977
+ 30
+0.0
+ 11
+280.6236505964881
+ 21
+103.1350289898977
+ 31
+0.0
+  0
+INSERT
+  5
+39C
+330
+55
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+228.62365059648812
+ 20
+103.1350289898977
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+ 50
+180.0
+  0
+INSERT
+  5
+39E
+330
+55
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+280.6236505964881
+ 20
+103.1350289898977
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+  0
+MTEXT
+  5
+3A0
+330
+55
+100
+AcDbEntity
+  8
+0
+ 62
+0
+100
+AcDbMText
+ 10
+254.62365059648812
+ 20
+104.3850289898977
+ 30
+0.0
+ 40
+2.5
+ 41
+0.0
+ 71
+5
+  1
+\A1;A
+  7
+TS1
+  0
+POINT
+  5
+3A1
+330
+55
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+228.62365059648812
+ 20
+108.12706364206383
+ 30
+0.0
+  0
+POINT
+  5
+3A2
+330
+55
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+280.6236505964881
+ 20
+108.12706364206383
+ 30
+0.0
+  0
+POINT
+  5
+3A3
+330
+55
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+280.6236505964881
+ 20
+103.1350289898977
+ 30
+0.0
+  0
+ENDBLK
+  5
+398
+330
+55
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
+3A4
+330
+56
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+*D36
+ 70
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  3
+*D36
+  1
+
+  0
+LINE
+  5
+3A6
+330
+56
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbLine
+ 10
+282.44451026480203
+ 20
+160.1270636420643
+ 30
+0.0
+ 11
+286.44451026480203
+ 21
+160.1270636420643
+ 31
+0.0
+  0
+LINE
+  5
+3A7
+330
+56
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbLine
+ 10
+282.44451026480203
+ 20
+108.12706364206383
+ 30
+0.0
+ 11
+286.44451026480203
+ 21
+108.12706364206383
+ 31
+0.0
+  0
+LINE
+  5
+3A8
+330
+56
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbLine
+ 10
+285.44451026480203
+ 20
+160.1270636420643
+ 30
+0.0
+ 11
+285.44451026480203
+ 21
+108.12706364206383
+ 31
+0.0
+  0
+INSERT
+  5
+3A9
+330
+56
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+285.44451026480203
+ 20
+160.1270636420643
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+ 50
+90.0
+  0
+INSERT
+  5
+3AB
+330
+56
+100
+AcDbEntity
+  8
+0
+ 62
+4
+370
+-2
+100
+AcDbBlockReference
+  2
+_Oblique
+ 10
+285.44451026480203
+ 20
+108.12706364206383
+ 30
+0.0
+ 41
+1.5
+ 42
+1.5
+ 43
+1.5
+ 50
+-90.00000000000001
+  0
+MTEXT
+  5
+3AD
+330
+56
+100
+AcDbEntity
+  8
+0
+ 62
+0
+100
+AcDbMText
+ 10
+284.19451026480203
+ 20
+134.12706364206417
+ 30
+0.0
+ 40
+2.5
+ 41
+0.0
+ 71
+5
+  1
+\A1;D
+  7
+TS1
+ 11
+6.123233995736766e-17
+ 21
+1.0
+ 31
+0.0
+  0
+POINT
+  5
+3AE
+330
+56
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+259.12108097334215
+ 20
+160.1270636420643
+ 30
+0.0
+  0
+POINT
+  5
+3AF
+330
+56
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+259.12108097334306
+ 20
+108.12706364206383
+ 30
+0.0
+  0
+POINT
+  5
+3B0
+330
+56
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+0
+100
+AcDbPoint
+ 10
+285.44451026480203
+ 20
+108.12706364206383
+ 30
+0.0
+  0
+ENDBLK
+  5
+3A5
+330
+56
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+ENDSEC
+  0
+SECTION
+  2
+ENTITIES
+  0
+TEXT
+  5
+57
+330
+17
+100
+AcDbEntity
+  8
+A-文字
+  6
+Continuous
+100
+AcDbText
+ 10
+136.39094844249735
+ 20
+68.20536945675599
+ 30
+0.0
+ 40
+3.5
+  1
+固定支座（GD型）主要尺寸
+  7
+TS1
+ 41
+0.7
+ 11
+-839.9999999999999
+ 21
+1008.264654153736
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+58
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+ 62
+5
+100
+AcDbPolyline
+ 90
+2
+ 70
+0
+ 10
+136.47844844249698
+ 20
+67.33036945675599
+ 10
+176.59209561470811
+ 20
+67.33036945675599
+  0
+LWPOLYLINE
+  5
+59
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+100
+AcDbPolyline
+ 90
+2
+ 70
+0
+ 10
+136.47844844249698
+ 20
+66.33036945675599
+ 10
+176.59209561470811
+ 20
+66.33036945675599
+  0
+LINE
+  5
+5A
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+122.94569021191819
+ 20
+58.60241991076646
+ 30
+0.0
+ 11
+208.94569021191808
+ 21
+58.60241991076646
+ 31
+0.0
+  0
+LINE
+  5
+5B
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+90.94569021191819
+ 20
+52.60241991076646
+ 30
+0.0
+ 11
+219.44569021191808
+ 21
+52.60241991076646
+ 31
+0.0
+  0
+LINE
+  5
+5C
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+122.94569021191819
+ 20
+64.60241991076646
+ 30
+0.0
+ 11
+122.94569021191819
+ 21
+47.60241991076646
+ 31
+0.0
+  0
+LINE
+  5
+5D
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+165.94569021191808
+ 20
+64.60241991076646
+ 30
+0.0
+ 11
+165.94569021191808
+ 21
+47.60241991076646
+ 31
+0.0
+  0
+LINE
+  5
+5E
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+208.94569021191808
+ 20
+64.60241991076646
+ 30
+0.0
+ 11
+208.94569021191808
+ 21
+47.60241991076646
+ 31
+0.0
+  0
+LINE
+  5
+5F
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+144.4456902119182
+ 20
+58.60241991076646
+ 30
+0.0
+ 11
+144.4456902119182
+ 21
+47.60241991076646
+ 31
+0.0
+  0
+LINE
+  5
+60
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+187.44569021191808
+ 20
+58.60241991076646
+ 30
+0.0
+ 11
+187.44569021191808
+ 21
+47.60241991076646
+ 31
+0.0
+  0
+LWPOLYLINE
+  5
+61
+330
+17
+100
+AcDbEntity
+  8
+S-钢筋
+  6
+Continuous
+100
+AcDbPolyline
+ 90
+4
+ 70
+1
+ 10
+90.94569021191819
+ 20
+64.60241991076646
+ 10
+219.44569021191808
+ 20
+64.60241991076646
+ 10
+219.44569021191808
+ 20
+47.60241991076646
+ 10
+90.94569021191819
+ 20
+47.60241991076646
+  0
+TEXT
+  5
+62
+330
+17
+100
+AcDbEntity
+  8
+A-文字
+  6
+Continuous
+ 62
+7
+100
+AcDbText
+ 10
+102.10244696867494
+ 20
+57.35241991076646
+ 30
+0.0
+ 40
+2.5
+  1
+支座类型
+  7
+TS1
+ 41
+0.7
+ 72
+1
+ 11
+106.94569021191819
+ 21
+58.60241991076646
+ 31
+0.0
+100
+AcDbText
+ 73
+2
+  0
+TEXT
+  5
+63
+330
+17
+100
+AcDbEntity
+  8
+A-文字
+  6
+Continuous
+ 62
+7
+100
+AcDbText
+ 10
+134.15379832002634
+ 20
+60.35241991076646
+ 30
+0.0
+ 40
+2.5
+  1
+支座上部尺寸 (mm)
+  7
+TS1
+ 41
+0.7
+ 72
+1
+ 11
+144.4456902119182
+ 21
+61.60241991076646
+ 31
+0.0
+100
+AcDbText
+ 73
+2
+  0
+TEXT
+  5
+64
+330
+17
+100
+AcDbEntity
+  8
+A-文字
+  6
+Continuous
+ 62
+7
+100
+AcDbText
+ 10
+177.1537983200261
+ 20
+60.35241991076646
+ 30
+0.0
+ 40
+2.5
+  1
+支座下部尺寸 (mm)
+  7
+TS1
+ 41
+0.7
+ 72
+1
+ 11
+187.44569021191808
+ 21
+61.60241991076646
+ 31
+0.0
+100
+AcDbText
+ 73
+2
+  0
+TEXT
+  5
+65
+330
+17
+100
+AcDbEntity
+  8
+A-文字
+  6
+Continuous
+ 62
+7
+100
+AcDbText
+ 10
+213.59028480651307
+ 20
+60.35241991076646
+ 30
+0.0
+ 40
+2.5
+  1
+H
+  7
+TS1
+ 41
+0.7
+ 72
+1
+ 11
+214.19569021191808
+ 21
+61.60241991076646
+ 31
+0.0
+100
+AcDbText
+ 73
+2
+  0
+TEXT
+  5
+66
+330
+17
+100
+AcDbEntity
+  8
+A-文字
+  6
+Continuous
+ 62
+7
+100
+AcDbText
+ 10
+133.09028480651284
+ 20
+54.35241991076646
+ 30
+0.0
+ 40
+2.5
+  1
+A
+  7
+TS1
+ 41
+0.7
+ 72
+1
+ 11
+133.6956902119182
+ 21
+55.60241991076646
+ 31
+0.0
+100
+AcDbText
+ 73
+2
+  0
+TEXT
+  5
+67
+330
+17
+100
+AcDbEntity
+  8
+A-文字
+  6
+Continuous
+ 62
+7
+100
+AcDbText
+ 10
+154.59028480651284
+ 20
+54.35241991076646
+ 30
+0.0
+ 40
+2.5
+  1
+B
+  7
+TS1
+ 41
+0.7
+ 72
+1
+ 11
+155.1956902119182
+ 21
+55.60241991076646
+ 31
+0.0
+100
+AcDbText
+ 73
+2
+  0
+TEXT
+  5
+68
+330
+17
+100
+AcDbEntity
+  8
+A-文字
+  6
+Continuous
+ 62
+7
+100
+AcDbText
+ 10
+176.09028480651307
+ 20
+54.35241991076646
+ 30
+0.0
+ 40
+2.5
+  1
+C
+  7
+TS1
+ 41
+0.7
+ 72
+1
+ 11
+176.69569021191808
+ 21
+55.60241991076646
+ 31
+0.0
+100
+AcDbText
+ 73
+2
+  0
+TEXT
+  5
+69
+330
+17
+100
+AcDbEntity
+  8
+A-文字
+  6
+Continuous
+ 62
+7
+100
+AcDbText
+ 10
+197.59028480651307
+ 20
+54.35241991076646
+ 30
+0.0
+ 40
+2.5
+  1
+D
+  7
+TS1
+ 41
+0.7
+ 72
+1
+ 11
+198.19569021191808
+ 21
+55.60241991076646
+ 31
+0.0
+100
+AcDbText
+ 73
+2
+  0
+TEXT
+  5
+6A
+330
+17
+100
+AcDbEntity
+  8
+A-文字
+  6
+Continuous
+ 62
+7
+100
+AcDbText
+ 10
+211.77406859029713
+ 20
+54.35241991076646
+ 30
+0.0
+ 40
+2.5
+  1
+(mm)
+  7
+TS1
+ 41
+0.7
+ 72
+1
+ 11
+214.19569021191808
+ 21
+55.60241991076646
+ 31
+0.0
+100
+AcDbText
+ 73
+2
+  0
+TEXT
+  5
+6B
+330
+17
+100
+AcDbEntity
+  8
+A-文字
+  6
+Continuous
+ 62
+7
+100
+AcDbText
+ 10
+99.07541994164797
+ 20
+48.85241991076646
+ 30
+0.0
+ 40
+2.5
+  1
+GPZ(Ⅱ)25.0GD
+  7
+TS1
+ 41
+0.7
+ 72
+1
+ 11
+106.94569021191819
+ 21
+50.10241991076646
+ 31
+0.0
+100
+AcDbText
+ 73
+2
+  0
+TEXT
+  5
+6C
+330
+17
+100
+AcDbEntity
+  8
+A-文字
+  6
+Continuous
+ 62
+7
+100
+AcDbText
+ 10
+131.27406859029657
+ 20
+48.85241991076646
+ 30
+0.0
+ 40
+2.5
+  1
+1360
+  7
+TS1
+ 41
+0.7
+ 72
+1
+ 11
+133.6956902119182
+ 21
+50.10241991076646
+ 31
+0.0
+100
+AcDbText
+ 73
+2
+  0
+TEXT
+  5
+6D
+330
+17
+100
+AcDbEntity
+  8
+A-文字
+  6
+Continuous
+ 62
+7
+100
+AcDbText
+ 10
+152.77406859029657
+ 20
+48.85241991076646
+ 30
+0.0
+ 40
+2.5
+  1
+1360
+  7
+TS1
+ 41
+0.7
+ 72
+1
+ 11
+155.1956902119182
+ 21
+50.10241991076646
+ 31
+0.0
+100
+AcDbText
+ 73
+2
+  0
+TEXT
+  5
+6E
+330
+17
+100
+AcDbEntity
+  8
+A-文字
+  6
+Continuous
+ 62
+7
+100
+AcDbText
+ 10
+174.2740685902961
+ 20
+48.85241991076646
+ 30
+0.0
+ 40
+2.5
+  1
+1360
+  7
+TS1
+ 41
+0.7
+ 72
+1
+ 11
+176.69569021191808
+ 21
+50.10241991076646
+ 31
+0.0
+100
+AcDbText
+ 73
+2
+  0
+TEXT
+  5
+6F
+330
+17
+100
+AcDbEntity
+  8
+A-文字
+  6
+Continuous
+ 62
+7
+100
+AcDbText
+ 10
+195.77406859029713
+ 20
+48.85241991076646
+ 30
+0.0
+ 40
+2.5
+  1
+1360
+  7
+TS1
+ 41
+0.7
+ 72
+1
+ 11
+198.19569021191808
+ 21
+50.10241991076646
+ 31
+0.0
+100
+AcDbText
+ 73
+2
+  0
+TEXT
+  5
+70
+330
+17
+100
+AcDbEntity
+  8
+A-文字
+  6
+Continuous
+ 62
+7
+100
+AcDbText
+ 10
+212.37947399570214
+ 20
+48.85241991076646
+ 30
+0.0
+ 40
+2.5
+  1
+250
+  7
+TS1
+ 41
+0.7
+ 72
+1
+ 11
+214.19569021191808
+ 21
+50.10241991076646
+ 31
+0.0
+100
+AcDbText
+ 73
+2
+  0
+DIMENSION
+  5
+71
+330
+17
+100
+AcDbEntity
+  8
+A-尺寸标注
+ 62
+4
+100
+AcDbDimension
+280
+0
+  2
+*D19
+  3
+DS1
+ 10
+98.54560172522133
+ 20
+229.4271130600821
+ 30
+0.0
+ 11
+96.04560172522133
+ 21
+231.3021130600821
+ 31
+0.0
+ 70
+32
+ 71
+5
+ 42
+5.0
+  1
+100
+100
+AcDbAlignedDimension
+ 13
+93.54560172522133
+ 23
+231.3760965610859
+ 33
+0.0
+ 14
+98.54560172522133
+ 24
+231.3760965610859
+ 34
+0.0
+ 50
+0.0
+100
+AcDbRotatedDimension
+1001
+ACAD
+1000
+DSTYLE
+1002
+{
+1070
+176
+1070
+4
+1070
+343
+1005
+3A
+1070
+173
+1070
+1
+1070
+344
+1005
+3A
+1070
+340
+1005
+33
+1070
+270
+1070
+8
+1070
+270
+1070
+8
+1070
+270
+1070
+8
+1070
+270
+1070
+8
+1070
+270
+1070
+8
+1070
+270
+1070
+8
+1070
+270
+1070
+8
+1070
+270
+1070
+8
+1070
+270
+1070
+8
+1070
+270
+1070
+8
+1070
+270
+1070
+8
+1070
+270
+1070
+8
+1070
+270
+1070
+8
+1070
+270
+1070
+8
+1070
+270
+1070
+8
+1070
+270
+1070
+8
+1070
+41
+1040
+1.5
+1070
+42
+1040
+0.625
+1070
+43
+1040
+3.75
+1070
+44
+1040
+1.25
+1070
+73
+1070
+0
+1070
+74
+1070
+0
+1070
+77
+1070
+1
+1070
+78
+1070
+8
+1070
+140
+1040
+2.5
+1070
+141
+1040
+2.5
+1070
+143
+1040
+0.0394
+1070
+147
+1040
+0.625
+1070
+171
+1070
+4
+1070
+172
+1070
+1
+1070
+273
+1070
+8
+1070
+274
+1070
+4
+1070
+277
+1070
+6
+1002
+}
+  0
+DIMENSION
+  5
+80
+330
+17
+100
+AcDbEntity
+  8
+A-尺寸标注
+ 62
+4
+100
+AcDbDimension
+280
+0
+  2
+*D20
+  3
+DS1
+ 10
+232.62365059642218
+ 20
+229.3366519829765
+ 30
+0.0
+ 11
+230.12365059642218
+ 21
+231.2116519829765
+ 31
+0.0
+ 70
+32
+ 71
+5
+ 42
+5.0
+  1
+100
+100
+AcDbAlignedDimension
+ 13
+227.62365059642218
+ 23
+231.73069305523995
+ 33
+0.0
+ 14
+232.62365059642218
+ 24
+231.73069305523995
+ 34
+0.0
+ 50
+0.0
+100
+AcDbRotatedDimension
+1001
+ACAD
+1000
+DSTYLE
+1002
+{
+1070
+176
+1070
+4
+1070
+343
+1005
+3A
+1070
+173
+1070
+1
+1070
+344
+1005
+3A
+1070
+340
+1005
+33
+1070
+270
+1070
+8
+1070
+270
+1070
+8
+1070
+270
+1070
+8
+1070
+270
+1070
+8
+1070
+270
+1070
+8
+1070
+270
+1070
+8
+1070
+270
+1070
+8
+1070
+270
+1070
+8
+1070
+270
+1070
+8
+1070
+270
+1070
+8
+1070
+270
+1070
+8
+1070
+270
+1070
+8
+1070
+270
+1070
+8
+1070
+270
+1070
+8
+1070
+270
+1070
+8
+1070
+270
+1070
+8
+1070
+41
+1040
+1.5
+1070
+42
+1040
+0.625
+1070
+43
+1040
+3.75
+1070
+44
+1040
+1.25
+1070
+73
+1070
+0
+1070
+74
+1070
+0
+1070
+77
+1070
+1
+1070
+78
+1070
+8
+1070
+140
+1040
+2.5
+1070
+141
+1040
+2.5
+1070
+143
+1040
+0.0394
+1070
+147
+1040
+0.625
+1070
+171
+1070
+4
+1070
+172
+1070
+1
+1070
+273
+1070
+8
+1070
+274
+1070
+4
+1070
+277
+1070
+6
+1002
+}
+  0
+LINE
+  5
+8F
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+7
+100
+AcDbLine
+ 10
+270.6846247676841
+ 20
+247.64991330430485
+ 30
+0.0
+ 11
+230.82281423595816
+ 21
+247.64991330430485
+ 31
+0.0
+  0
+TEXT
+  5
+90
+330
+17
+100
+AcDbEntity
+  8
+A-文字
+ 62
+7
+100
+AcDbText
+ 10
+231.08880725581218
+ 20
+248.35868703897995
+ 30
+0.0
+ 40
+2.5
+  1
+C50号混凝土楔形块(与箱梁同时现浇)
+  7
+TS1
+ 41
+0.7
+ 11
+-839.9999999999999
+ 21
+1008.264654153736
+ 31
+0.0
+100
+AcDbText
+  0
+LINE
+  5
+91
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbLine
+ 10
+237.1826007691751
+ 20
+227.96395670734137
+ 30
+0.0
+ 11
+234.0836007691761
+ 21
+227.96395670734137
+ 31
+0.0
+  0
+LINE
+  5
+92
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+7
+100
+AcDbLine
+ 10
+242.9209967450671
+ 20
+227.86953294469708
+ 30
+0.0
+ 11
+227.74103946381604
+ 21
+221.79769599390897
+ 31
+0.0
+  0
+LINE
+  5
+93
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+7
+100
+AcDbLine
+ 10
+238.06065059648915
+ 20
+229.61787834807728
+ 30
+0.0
+ 11
+232.06336235711308
+ 21
+225.28618173433574
+ 31
+0.0
+  0
+LINE
+  5
+94
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbLine
+ 10
+276.6236505964881
+ 20
+230.74757041212433
+ 30
+0.0
+ 11
+232.62365059648812
+ 21
+230.7475704121241
+ 31
+0.0
+  0
+LINE
+  5
+95
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbLine
+ 10
+232.62365059648812
+ 20
+232.52487834807755
+ 30
+0.0
+ 11
+276.6236505964881
+ 21
+232.52487834807755
+ 31
+0.0
+  0
+LINE
+  5
+96
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbLine
+ 10
+275.1637004238022
+ 20
+228.92687834807748
+ 30
+0.0
+ 11
+234.0836007691761
+ 21
+228.92687834807725
+ 31
+0.0
+  0
+LWPOLYLINE
+  5
+97
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbPolyline
+ 90
+4
+ 70
+1
+ 10
+228.8570488556801
+ 20
+235.96001924077723
+ 10
+228.8570488556801
+ 20
+236.4361812068821
+ 10
+279.9522327685121
+ 20
+236.43618120688188
+ 10
+279.9522327685121
+ 20
+235.96001924077723
+  0
+LINE
+  5
+98
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+228.62365059648812
+ 20
+222.1898783480774
+ 30
+0.0
+ 11
+280.6236505964881
+ 21
+222.1898783480774
+ 31
+0.0
+  0
+TEXT
+  5
+99
+330
+17
+100
+AcDbEntity
+  8
+A-文字
+ 62
+7
+100
+AcDbText
+ 10
+237.7770088136732
+ 20
+204.52059906586373
+ 30
+0.0
+ 40
+2.5
+  1
+支承中心线
+  7
+TS1
+ 41
+0.7
+ 11
+-839.9999999999999
+ 21
+1008.264654153736
+ 31
+0.0
+100
+AcDbText
+  0
+LINE
+  5
+9A
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+7
+100
+AcDbLine
+ 10
+249.62365059648812
+ 20
+203.8438783480774
+ 30
+0.0
+ 11
+237.0870330501731
+ 21
+203.8438783480774
+ 31
+0.0
+  0
+LINE
+  5
+9B
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+228.62365059648812
+ 20
+160.12706364206383
+ 30
+0.0
+ 11
+280.6236505964881
+ 21
+160.12706364206383
+ 31
+0.0
+  0
+LINE
+  5
+9C
+330
+17
+100
+AcDbEntity
+  8
+S-中心线
+  6
+DASHDOT
+100
+AcDbLine
+ 10
+225.52199042818108
+ 20
+134.12706364206406
+ 30
+0.0
+ 11
+282.82683078483217
+ 21
+134.12706364206406
+ 31
+0.0
+  0
+LINE
+  5
+9D
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+228.62365059648812
+ 20
+108.12706364206383
+ 30
+0.0
+ 11
+280.6236505964881
+ 21
+108.12706364206383
+ 31
+0.0
+  0
+CIRCLE
+  5
+9E
+330
+17
+100
+AcDbEntity
+  8
+S-虚线
+  6
+HIDDEN
+100
+AcDbCircle
+ 10
+254.62365059648812
+ 20
+134.12706364206406
+ 30
+0.0
+ 40
+17.44104982731335
+  0
+CIRCLE
+  5
+9F
+330
+17
+100
+AcDbEntity
+  8
+S-虚线
+  6
+HIDDEN
+100
+AcDbCircle
+ 10
+254.62365059648812
+ 20
+134.12706364206406
+ 30
+0.0
+ 40
+20.54004982731362
+  0
+LINE
+  5
+A0
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+256.984560115564
+ 20
+260.45667647039113
+ 30
+0.0
+ 11
+220.7513532976642
+ 21
+260.45667647039113
+ 31
+0.0
+  0
+LINE
+  5
+A1
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+254.98456011556016
+ 20
+195.1898783480774
+ 30
+0.0
+ 11
+218.7513532976601
+ 21
+195.1898783480774
+ 31
+0.0
+  0
+LINE
+  5
+A2
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+218.7513532976601
+ 20
+220.1898783480774
+ 30
+0.0
+ 11
+294.2177669334602
+ 21
+220.1898783480774
+ 31
+0.0
+  0
+LINE
+  5
+A3
+330
+17
+100
+AcDbEntity
+  8
+S-虚线
+  6
+HIDDEN
+ 62
+6
+ 48
+0.3
+100
+AcDbLine
+ 10
+227.62365059649312
+ 20
+237.5171201952678
+ 30
+0.0
+ 11
+281.6236505964881
+ 21
+234.5326365008866
+ 31
+0.0
+  0
+LINE
+  5
+A4
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbLine
+ 10
+228.62365059648812
+ 20
+160.12706364206383
+ 30
+0.0
+ 11
+228.62365059648812
+ 21
+108.12706364206383
+ 31
+0.0
+  0
+CIRCLE
+  5
+A5
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbCircle
+ 10
+232.62365059648812
+ 20
+112.12706364206383
+ 30
+0.0
+ 40
+1.099973240683028
+  0
+LINE
+  5
+A6
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+7
+100
+AcDbLine
+ 10
+231.518650596489
+ 20
+220.7758783480774
+ 30
+0.0
+ 11
+227.56165019242314
+ 21
+215.9751369519097
+ 31
+0.0
+  0
+LINE
+  5
+A7
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+218.7513532976601
+ 20
+220.1898783480774
+ 30
+0.0
+ 11
+218.7513532976601
+ 21
+210.1898783480774
+ 31
+0.0
+  0
+LINE
+  5
+A8
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+166.13971806236316
+ 20
+220.1898783480774
+ 30
+0.0
+ 11
+166.13971806236316
+ 21
+210.1898783480774
+ 31
+0.0
+  0
+LINE
+  5
+A9
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+7
+100
+AcDbLine
+ 10
+125.1676017253917
+ 20
+215.46087834807736
+ 30
+0.0
+ 11
+130.11960172539193
+ 21
+222.89087834807742
+ 31
+0.0
+  0
+LINE
+  5
+AA
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+7
+100
+AcDbLine
+ 10
+139.56660172539205
+ 20
+224.9778783480774
+ 30
+0.0
+ 11
+142.40518734805755
+ 21
+215.5090283638051
+ 31
+0.0
+  0
+TEXT
+  5
+AB
+330
+17
+100
+AcDbEntity
+  8
+A-文字
+ 62
+7
+100
+AcDbText
+ 10
+115.59428094859629
+ 20
+216.13022694759968
+ 30
+0.0
+ 40
+2.5
+  1
+支座底板
+  7
+TS1
+ 41
+0.7
+ 11
+-839.9999999999999
+ 21
+1008.264654153736
+ 31
+0.0
+100
+AcDbText
+  0
+LINE
+  5
+AC
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+90.67330442656294
+ 20
+220.1898783480774
+ 30
+0.0
+ 11
+90.67330442656294
+ 21
+210.1898783480774
+ 31
+0.0
+  0
+LINE
+  5
+AD
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+7
+100
+AcDbLine
+ 10
+106.63806207893094
+ 20
+220.7758783480774
+ 30
+0.0
+ 11
+102.64071851760718
+ 21
+216.25182954048455
+ 31
+0.0
+  0
+LINE
+  5
+AE
+330
+17
+100
+AcDbEntity
+  8
+S-中心线
+  6
+CENTER
+ 62
+6
+100
+AcDbLine
+ 10
+126.54560172539186
+ 20
+245.26531704705667
+ 30
+0.0
+ 11
+126.54560172539186
+ 21
+207.73487834807747
+ 31
+0.0
+  0
+TEXT
+  5
+AF
+330
+17
+100
+AcDbEntity
+  8
+A-文字
+ 62
+7
+100
+AcDbText
+ 10
+127.49199406686557
+ 20
+200.07892655990736
+ 30
+0.0
+ 40
+2.5
+  1
+桥梁下部
+  7
+TS1
+ 41
+0.7
+ 11
+-839.9999999999999
+ 21
+1008.264654153736
+ 31
+0.0
+100
+AcDbText
+  0
+LINE
+  5
+B0
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+166.13971806236316
+ 20
+195.1898783480774
+ 30
+0.0
+ 11
+129.90651124446276
+ 21
+195.1898783480774
+ 31
+0.0
+  0
+LINE
+  5
+B1
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+129.90651124487295
+ 20
+193.1898783480774
+ 30
+0.0
+ 11
+126.90651124405258
+ 21
+197.1898783480774
+ 31
+0.0
+  0
+LINE
+  5
+B2
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+129.90651124446276
+ 20
+195.1898783480774
+ 30
+0.0
+ 11
+129.90651124487295
+ 21
+193.1898783480774
+ 31
+0.0
+  0
+LINE
+  5
+B3
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+126.90651124446276
+ 20
+195.1898783480774
+ 30
+0.0
+ 11
+90.67330442656294
+ 21
+195.1898783480774
+ 31
+0.0
+  0
+LINE
+  5
+B4
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+90.67330442656294
+ 20
+207.1898783480774
+ 30
+0.0
+ 11
+90.67330442656294
+ 21
+195.1898783480774
+ 31
+0.0
+  0
+LINE
+  5
+B5
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+90.67330442656294
+ 20
+210.1898783480774
+ 30
+0.0
+ 11
+92.67330442656294
+ 21
+210.18987834848758
+ 31
+0.0
+  0
+LINE
+  5
+B6
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+92.67330442656294
+ 20
+210.18987834848758
+ 30
+0.0
+ 11
+88.67330442656294
+ 21
+207.18987834766722
+ 31
+0.0
+  0
+TEXT
+  5
+B7
+330
+17
+100
+AcDbEntity
+  8
+A-文字
+ 62
+7
+100
+AcDbText
+ 10
+93.55649600144216
+ 20
+216.98074852557602
+ 30
+0.0
+ 40
+2.5
+  1
+支座垫石
+  7
+TS1
+ 41
+0.7
+ 11
+-839.9999999999999
+ 21
+1008.264654153736
+ 31
+0.0
+100
+AcDbText
+  0
+LINE
+  5
+B8
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+7
+100
+AcDbLine
+ 10
+102.64071851760718
+ 20
+216.25182954048455
+ 30
+0.0
+ 11
+92.85638376667794
+ 21
+216.25182954048455
+ 31
+0.0
+  0
+LINE
+  5
+B9
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+88.67330442656294
+ 20
+207.18987834766722
+ 30
+0.0
+ 11
+90.67330442656294
+ 21
+207.1898783480774
+ 31
+0.0
+  0
+LINE
+  5
+BA
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+7
+100
+AcDbLine
+ 10
+126.54560172539186
+ 20
+208.8438783480774
+ 30
+0.0
+ 11
+123.98383915136583
+ 21
+203.8438783480774
+ 31
+0.0
+  0
+TEXT
+  5
+BB
+330
+17
+100
+AcDbEntity
+  8
+A-文字
+ 62
+7
+100
+AcDbText
+ 10
+111.7606291103416
+ 20
+204.57218195654593
+ 30
+0.0
+ 40
+2.5
+  1
+支承中心线
+  7
+TS1
+ 41
+0.7
+ 11
+-839.9999999999999
+ 21
+1008.264654153736
+ 31
+0.0
+100
+AcDbText
+  0
+LINE
+  5
+BC
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+7
+100
+AcDbLine
+ 10
+123.98383915136583
+ 20
+203.8438783480774
+ 30
+0.0
+ 11
+111.07065334684069
+ 21
+203.8438783480774
+ 31
+0.0
+  0
+LINE
+  5
+BD
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+126.90651124405258
+ 20
+197.1898783480774
+ 30
+0.0
+ 11
+126.90651124446276
+ 21
+195.1898783480774
+ 31
+0.0
+  0
+TEXT
+  5
+BE
+330
+17
+100
+AcDbEntity
+  8
+A-文字
+ 62
+7
+100
+AcDbText
+ 10
+142.7786057668012
+ 20
+216.49179661016865
+ 30
+0.0
+ 40
+2.5
+  1
+橡胶块
+  7
+TS1
+ 41
+0.7
+ 11
+-839.9999999999999
+ 21
+1008.264654153736
+ 31
+0.0
+100
+AcDbText
+  0
+LINE
+  5
+BF
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+7
+100
+AcDbLine
+ 10
+150.81227820657296
+ 20
+215.5090283638051
+ 30
+0.0
+ 11
+142.40518734805755
+ 21
+215.5090283638051
+ 31
+0.0
+  0
+LINE
+  5
+C0
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+7
+100
+AcDbLine
+ 10
+125.1676017253917
+ 20
+215.46087834807736
+ 30
+0.0
+ 11
+114.90430518509538
+ 21
+215.46087834807736
+ 31
+0.0
+  0
+LINE
+  5
+C1
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+2
+100
+AcDbLine
+ 10
+204.1478707241871
+ 20
+134.16062839196502
+ 30
+0.0
+ 11
+204.1478707241871
+ 21
+139.16062839196502
+ 31
+0.0
+  0
+LINE
+  5
+C2
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+2
+100
+AcDbLine
+ 10
+209.1478707241871
+ 20
+134.16062839196502
+ 30
+0.0
+ 11
+204.1478707241871
+ 21
+134.16062839196502
+ 31
+0.0
+  0
+TEXT
+  5
+C3
+330
+17
+100
+AcDbEntity
+  8
+A-文字
+  6
+Continuous
+100
+AcDbText
+ 10
+202.55852271333913
+ 20
+141.13203888255043
+ 30
+0.0
+ 40
+2.5
+  1
+Ⅰ
+  7
+TS1
+ 41
+0.7
+ 11
+-839.9999999999999
+ 21
+1008.264654153736
+ 31
+0.0
+100
+AcDbText
+  0
+SOLID
+  5
+C4
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+2
+100
+AcDbTrace
+ 10
+204.1478707241871
+ 20
+139.16062839196502
+ 30
+0.0
+ 11
+203.7312040641881
+ 21
+136.66062839196502
+ 31
+0.0
+ 12
+204.56453739418714
+ 22
+136.66062839196502
+ 32
+0.0
+ 13
+204.1478707241871
+ 23
+139.16062839196502
+ 33
+0.0
+  0
+CIRCLE
+  5
+C5
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbCircle
+ 10
+232.62365059648812
+ 20
+156.12706364206383
+ 30
+0.0
+ 40
+1.099973240683028
+  0
+LINE
+  5
+C6
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+166.13971806236316
+ 20
+207.1898783480774
+ 30
+0.0
+ 11
+166.13971806236316
+ 21
+195.1898783480774
+ 31
+0.0
+  0
+LINE
+  5
+C7
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+164.13971806236316
+ 20
+207.18987834766722
+ 30
+0.0
+ 11
+166.13971806236316
+ 21
+207.1898783480774
+ 31
+0.0
+  0
+LINE
+  5
+C8
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+166.13971806236316
+ 20
+210.1898783480774
+ 30
+0.0
+ 11
+168.13971806236316
+ 21
+210.18987834848758
+ 31
+0.0
+  0
+LINE
+  5
+C9
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+168.13971806236316
+ 20
+210.18987834848758
+ 30
+0.0
+ 11
+164.13971806236316
+ 21
+207.18987834766722
+ 31
+0.0
+  0
+TEXT
+  5
+CA
+330
+17
+100
+AcDbEntity
+  8
+A-文字
+ 62
+7
+100
+AcDbText
+ 10
+218.59133062115018
+ 20
+216.42428495914214
+ 30
+0.0
+ 40
+2.5
+  1
+支座垫石
+  7
+TS1
+ 41
+0.7
+ 11
+-839.9999999999999
+ 21
+1008.264654153736
+ 31
+0.0
+100
+AcDbText
+  0
+LINE
+  5
+CB
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+7
+100
+AcDbLine
+ 10
+227.56165019242314
+ 20
+215.9751369519097
+ 30
+0.0
+ 11
+218.7513532976601
+ 21
+215.9751369519097
+ 31
+0.0
+  0
+LINE
+  5
+CC
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+218.7513532976601
+ 20
+207.1898783480774
+ 30
+0.0
+ 11
+218.7513532976601
+ 21
+195.1898783480774
+ 31
+0.0
+  0
+LINE
+  5
+CD
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+218.7513532976601
+ 20
+210.1898783480774
+ 30
+0.0
+ 11
+220.7513532976601
+ 21
+210.18987834848758
+ 31
+0.0
+  0
+LINE
+  5
+CE
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+216.7513532976601
+ 20
+207.18987834766722
+ 30
+0.0
+ 11
+218.7513532976601
+ 21
+207.1898783480774
+ 31
+0.0
+  0
+LINE
+  5
+CF
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+220.7513532976601
+ 20
+210.18987834848758
+ 30
+0.0
+ 11
+216.7513532976601
+ 21
+207.18987834766722
+ 31
+0.0
+  0
+TEXT
+  5
+D0
+330
+17
+100
+AcDbEntity
+  8
+A-文字
+  6
+Continuous
+100
+AcDbText
+ 10
+120.62938846180805
+ 20
+271.1892578980396
+ 30
+0.0
+ 40
+3.5
+  1
+Ⅰ - Ⅰ
+  7
+TS1
+ 41
+0.7
+ 72
+1
+ 11
+126.562361434781
+ 21
+271.1892578980396
+ 31
+0.0
+100
+AcDbText
+  0
+LINE
+  5
+D1
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+166.13283365594816
+ 20
+260.2645978053274
+ 30
+0.0
+ 11
+129.89962683804742
+ 21
+260.2645978053274
+ 31
+0.0
+  0
+LINE
+  5
+D2
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+94.54560172539186
+ 20
+222.1898783480774
+ 30
+0.0
+ 11
+158.54560172539186
+ 21
+222.1898783480774
+ 31
+0.0
+  0
+LINE
+  5
+D3
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+90.67330442656294
+ 20
+220.1898783480774
+ 30
+0.0
+ 11
+166.13971806236316
+ 21
+220.1898783480774
+ 31
+0.0
+  0
+HATCH
+  5
+D4
+330
+17
+100
+AcDbEntity
+  8
+S-填充
+  6
+Continuous
+100
+AcDbHatch
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+210
+0.0
+220
+0.0
+230
+1.0
+  2
+ANSI37
+ 70
+0
+ 71
+0
+ 91
+2
+ 92
+7
+ 72
+0
+ 73
+1
+ 93
+5
+ 10
+126.54560172539186
+ 20
+225.97026464329485
+ 10
+104.98503680478143
+ 20
+225.97026464329485
+ 10
+104.98503680478143
+ 20
+223.92687834807748
+ 10
+108.44660172539216
+ 20
+223.92687834807748
+ 10
+126.54560172539186
+ 20
+223.92687834807748
+ 97
+0
+ 92
+7
+ 72
+0
+ 73
+1
+ 93
+4
+ 10
+148.1061666460023
+ 20
+225.97026464329485
+ 10
+126.54560172539186
+ 20
+225.97026464329485
+ 10
+126.54560172539186
+ 20
+223.92687834807748
+ 10
+148.1061666460023
+ 20
+223.92687834807748
+ 97
+0
+ 75
+0
+ 76
+1
+ 52
+0.0
+ 41
+5.0
+ 77
+0
+ 78
+2
+ 53
+45.0
+ 43
+-428.933991661161
+ 44
+68.9213496263526
+ 45
+-0.4419417382
+ 46
+0.4419417382
+ 79
+0
+ 53
+135.0
+ 43
+-428.933991661161
+ 44
+68.9213496263526
+ 45
+-0.4419417382
+ 46
+-0.4419417382
+ 79
+0
+ 47
+0.0895424812954944
+ 98
+2
+ 10
+957.8333308389682
+ 20
+-782.9818261870852
+ 10
+976.0287587271376
+ 20
+-783.6981662019277
+  0
+HATCH
+  5
+D5
+330
+17
+100
+AcDbEntity
+  8
+S-填充
+  6
+Continuous
+100
+AcDbHatch
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+210
+0.0
+220
+0.0
+230
+1.0
+  2
+SOLID
+ 70
+1
+ 71
+0
+ 91
+2
+ 92
+7
+ 72
+0
+ 73
+1
+ 93
+4
+ 10
+106.98503680478143
+ 20
+225.97026464329485
+ 10
+106.98503680478143
+ 20
+226.65500760424004
+ 10
+104.98503680478143
+ 20
+226.65500760424004
+ 10
+104.98503680478143
+ 20
+225.97026464329485
+ 97
+0
+ 92
+7
+ 72
+0
+ 73
+1
+ 93
+4
+ 10
+146.1061666460023
+ 20
+226.65500760424004
+ 10
+146.1061666460023
+ 20
+225.97026464329485
+ 10
+148.1061666460023
+ 20
+225.97026464329485
+ 10
+148.1061666460023
+ 20
+226.65500760424004
+ 97
+0
+ 75
+0
+ 76
+1
+ 47
+0.0895424812954944
+ 98
+2
+ 10
+946.0018216854963
+ 20
+-781.9968585846368
+ 10
+987.3224731289391
+ 20
+-781.9073164929802
+  0
+LINE
+  5
+D6
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbLine
+ 10
+104.98503680478143
+ 20
+223.92687834807748
+ 30
+0.0
+ 11
+148.1061666460023
+ 21
+223.92687834807748
+ 31
+0.0
+  0
+LINE
+  5
+D7
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbLine
+ 10
+104.98503680478143
+ 20
+225.97026464329474
+ 30
+0.0
+ 11
+148.1061666460023
+ 21
+225.97026464329474
+ 31
+0.0
+  0
+LINE
+  5
+D8
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbLine
+ 10
+98.54560172539186
+ 20
+232.52487834807744
+ 30
+0.0
+ 11
+154.54560172539232
+ 21
+232.52487834807744
+ 31
+0.0
+  0
+LINE
+  5
+D9
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbLine
+ 10
+154.54560172539186
+ 20
+230.74757041212433
+ 30
+0.0
+ 11
+98.54560172539186
+ 21
+230.7475704121241
+ 31
+0.0
+  0
+LINE
+  5
+DA
+330
+17
+100
+AcDbEntity
+  8
+S-虚线
+  6
+DASHED
+ 62
+1
+100
+AcDbLine
+ 10
+111.80936950021533
+ 20
+236.26054854569384
+ 30
+0.0
+ 11
+148.10079623505135
+ 21
+236.26054854569384
+ 31
+0.0
+  0
+LINE
+  5
+DB
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbLine
+ 10
+151.20516664600245
+ 20
+228.92687834807748
+ 30
+0.0
+ 11
+101.88603680478172
+ 21
+228.92687834807725
+ 31
+0.0
+  0
+LWPOLYLINE
+  5
+DC
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbPolyline
+ 90
+4
+ 70
+1
+ 10
+94.6940652453145
+ 20
+235.78376433642586
+ 10
+94.6940652453145
+ 20
+236.25992630253074
+ 10
+158.5764308429525
+ 20
+236.25992630253074
+ 10
+158.5764308429525
+ 20
+235.78376433642586
+  0
+LINE
+  5
+DD
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+7
+100
+AcDbLine
+ 10
+93.78516456504758
+ 20
+221.4177967409006
+ 30
+0.0
+ 11
+83.35380031504803
+ 21
+221.39705423427597
+ 31
+0.0
+  0
+LINE
+  5
+DE
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+7
+100
+AcDbLine
+ 10
+96.73454765540919
+ 20
+225.51503204162736
+ 30
+0.0
+ 11
+86.43473032331406
+ 21
+225.51503204162748
+ 31
+0.0
+  0
+LINE
+  5
+DF
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+85.6664200201476
+ 20
+246.7978190574022
+ 30
+0.0
+ 11
+85.6664200201476
+ 21
+238.0183898015905
+ 31
+0.0
+  0
+LINE
+  5
+E0
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+7
+100
+AcDbLine
+ 10
+94.19896040760796
+ 20
+236.88920612872585
+ 30
+0.0
+ 11
+97.20510506182609
+ 21
+247.8711343975417
+ 31
+0.0
+  0
+TEXT
+  5
+E1
+330
+17
+100
+AcDbEntity
+  8
+A-文字
+ 62
+7
+100
+AcDbText
+ 10
+114.97385965166768
+ 20
+239.3264536874624
+ 30
+0.0
+ 40
+2.5
+  1
+支座顶板
+  7
+TS1
+ 41
+0.7
+ 11
+-839.9999999999999
+ 21
+1008.264654153736
+ 31
+0.0
+100
+AcDbText
+  0
+LINE
+  5
+E2
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbLine
+ 10
+104.98503680478143
+ 20
+227.9639567073416
+ 30
+0.0
+ 11
+101.88603680478127
+ 21
+227.9639567073416
+ 31
+0.0
+  0
+LINE
+  5
+E3
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+7
+100
+AcDbLine
+ 10
+108.15472432979277
+ 20
+227.86953294469708
+ 30
+0.0
+ 11
+93.78660286136198
+ 21
+221.41779960091685
+ 31
+0.0
+  0
+LINE
+  5
+E4
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbLine
+ 10
+101.88603680478172
+ 20
+228.92687834807748
+ 30
+0.0
+ 11
+101.88603680478127
+ 21
+230.74757041212433
+ 31
+0.0
+  0
+TEXT
+  5
+E5
+330
+17
+100
+AcDbEntity
+  8
+A-文字
+ 62
+7
+100
+AcDbText
+ 10
+86.9429170125095
+ 20
+226.02882725412815
+ 30
+0.0
+ 40
+2.5
+  1
+不锈钢板
+  7
+TS1
+ 41
+0.7
+ 11
+-839.9999999999999
+ 21
+1008.264654153736
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+E6
+330
+17
+100
+AcDbEntity
+  8
+A-文字
+ 62
+7
+100
+AcDbText
+ 10
+83.81337022776734
+ 20
+222.19274660845758
+ 30
+0.0
+ 40
+2.5
+  1
+中间钢板
+  7
+TS1
+ 41
+0.7
+ 11
+-839.9999999999999
+ 21
+1008.264654153736
+ 31
+0.0
+100
+AcDbText
+  0
+LINE
+  5
+E7
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbLine
+ 10
+101.88603680478127
+ 20
+223.92687834807748
+ 30
+0.0
+ 11
+101.88603680478172
+ 21
+227.96395670734137
+ 31
+0.0
+  0
+LINE
+  5
+E8
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbLine
+ 10
+98.54560172539186
+ 20
+222.1898783480774
+ 30
+0.0
+ 11
+98.54560172539186
+ 21
+223.92687834807748
+ 31
+0.0
+  0
+LINE
+  5
+E9
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+94.54560172539186
+ 20
+220.1898783480774
+ 30
+0.0
+ 11
+94.54560172539186
+ 21
+222.1898783480774
+ 31
+0.0
+  0
+LINE
+  5
+EA
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbLine
+ 10
+98.54560172539186
+ 20
+223.92687834807748
+ 30
+0.0
+ 11
+101.88603680478127
+ 21
+223.92687834807725
+ 31
+0.0
+  0
+LINE
+  5
+EB
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+7
+100
+AcDbLine
+ 10
+103.29437818121505
+ 20
+229.61787834807728
+ 30
+0.0
+ 11
+96.73454765540919
+ 21
+225.51503204162736
+ 31
+0.0
+  0
+LINE
+  5
+EC
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbLine
+ 10
+98.54560172539186
+ 20
+232.52487834807744
+ 30
+0.0
+ 11
+98.54560172539186
+ 21
+230.74757041212433
+ 31
+0.0
+  0
+LWPOLYLINE
+  5
+ED
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbPolyline
+ 90
+2
+ 70
+1
+ 43
+0.25
+ 10
+101.0266712579596
+ 20
+236.67518489733186
+ 42
+1.0
+ 10
+101.2766712579596
+ 20
+236.67518489733186
+ 42
+1.0
+  0
+LWPOLYLINE
+  5
+EE
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbPolyline
+ 90
+2
+ 70
+1
+ 43
+0.25
+ 10
+95.72073654015185
+ 20
+236.67518489733186
+ 42
+1.0
+ 10
+95.97073654015185
+ 20
+236.67518489733186
+ 42
+1.0
+  0
+LINE
+  5
+EF
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbLine
+ 10
+104.98503680478143
+ 20
+227.96395670734137
+ 30
+0.0
+ 11
+104.98503680478143
+ 21
+223.92687834807748
+ 31
+0.0
+  0
+LINE
+  5
+F0
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbLine
+ 10
+104.98503680478143
+ 20
+223.92687834807725
+ 30
+0.0
+ 11
+108.44660172539216
+ 21
+223.92687834807748
+ 31
+0.0
+  0
+LINE
+  5
+F1
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbLine
+ 10
+104.98503680478143
+ 20
+226.65500760423993
+ 30
+0.0
+ 11
+106.98503680478143
+ 21
+226.65500760423993
+ 31
+0.0
+  0
+LINE
+  5
+F2
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbLine
+ 10
+106.98503680478143
+ 20
+226.65500760423993
+ 30
+0.0
+ 11
+106.98503680478143
+ 21
+225.97026464329474
+ 31
+0.0
+  0
+LINE
+  5
+F3
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbLine
+ 10
+105.68503680478125
+ 20
+228.92687834807748
+ 30
+0.0
+ 11
+105.68503680478125
+ 21
+226.65500760423993
+ 31
+0.0
+  0
+LINE
+  5
+F4
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+7
+100
+AcDbLine
+ 10
+125.37780414321401
+ 20
+238.56397554063767
+ 30
+0.0
+ 11
+114.65823450614926
+ 21
+238.56397554063756
+ 31
+0.0
+  0
+LWPOLYLINE
+  5
+F5
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbPolyline
+ 90
+2
+ 70
+1
+ 43
+0.25
+ 10
+119.39597708506926
+ 20
+236.67518489733186
+ 42
+1.0
+ 10
+119.64597708506926
+ 20
+236.67518489733186
+ 42
+1.0
+  0
+LINE
+  5
+F6
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+7
+100
+AcDbLine
+ 10
+112.28216418240618
+ 20
+231.67331808194035
+ 30
+0.0
+ 11
+114.65823450614926
+ 21
+238.56397554063756
+ 31
+0.0
+  0
+LWPOLYLINE
+  5
+F7
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbPolyline
+ 90
+2
+ 70
+1
+ 43
+0.25
+ 10
+106.99597708506963
+ 20
+236.67518489733186
+ 42
+1.0
+ 10
+107.24597708506963
+ 20
+236.67518489733186
+ 42
+1.0
+  0
+LWPOLYLINE
+  5
+F8
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbPolyline
+ 90
+2
+ 70
+1
+ 43
+0.25
+ 10
+113.19597708506944
+ 20
+236.67518489733186
+ 42
+1.0
+ 10
+113.44597708506944
+ 20
+236.67518489733186
+ 42
+1.0
+  0
+LWPOLYLINE
+  5
+F9
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbPolyline
+ 90
+2
+ 70
+1
+ 43
+0.25
+ 10
+131.79597708506935
+ 20
+236.67518489733186
+ 42
+1.0
+ 10
+132.04597708506935
+ 20
+236.67518489733186
+ 42
+1.0
+  0
+LWPOLYLINE
+  5
+FA
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbPolyline
+ 90
+2
+ 70
+1
+ 43
+0.25
+ 10
+125.59597708506953
+ 20
+236.67518489733186
+ 42
+1.0
+ 10
+125.84597708506953
+ 20
+236.67518489733186
+ 42
+1.0
+  0
+LINE
+  5
+FB
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+126.89962683804742
+ 20
+260.2645978053274
+ 30
+0.0
+ 11
+85.6664200201476
+ 21
+260.2645978053274
+ 31
+0.0
+  0
+TEXT
+  5
+FC
+330
+17
+100
+AcDbEntity
+  8
+A-文字
+ 62
+7
+100
+AcDbText
+ 10
+97.47109808168034
+ 20
+248.57990813221681
+ 30
+0.0
+ 40
+2.5
+  1
+C50号混凝土楔形块(与箱梁同时现浇)
+  7
+TS1
+ 41
+0.7
+ 11
+-839.9999999999999
+ 21
+1008.264654153736
+ 31
+0.0
+100
+AcDbText
+  0
+LINE
+  5
+FD
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+7
+100
+AcDbLine
+ 10
+138.007852581291
+ 20
+247.87113439754148
+ 30
+0.0
+ 11
+97.20510506182609
+ 21
+247.8711343975417
+ 31
+0.0
+  0
+LINE
+  5
+FE
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+85.67330442656294
+ 20
+260.2095885512372
+ 30
+0.0
+ 11
+85.67330442656294
+ 21
+249.74280980331196
+ 31
+0.0
+  0
+LINE
+  5
+FF
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+85.67330442656294
+ 20
+249.74280980331196
+ 30
+0.0
+ 11
+87.67330442656294
+ 21
+249.74280980372214
+ 31
+0.0
+  0
+LINE
+  5
+100
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+83.67330442656294
+ 20
+246.74280980290177
+ 30
+0.0
+ 11
+85.67330442656294
+ 21
+246.74280980331196
+ 31
+0.0
+  0
+LINE
+  5
+101
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+87.67330442656294
+ 20
+249.74280980372214
+ 30
+0.0
+ 11
+83.67330442656294
+ 21
+246.74280980290177
+ 31
+0.0
+  0
+LINE
+  5
+102
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+129.89962683804742
+ 20
+260.2645978053274
+ 30
+0.0
+ 11
+129.8996268384576
+ 21
+258.2645978053274
+ 31
+0.0
+  0
+LINE
+  5
+103
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+126.89962683763724
+ 20
+262.2645978053274
+ 30
+0.0
+ 11
+126.89962683804742
+ 21
+260.2645978053274
+ 31
+0.0
+  0
+LINE
+  5
+104
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+129.8996268384576
+ 20
+258.2645978053274
+ 30
+0.0
+ 11
+126.89962683763724
+ 21
+262.2645978053274
+ 31
+0.0
+  0
+LINE
+  5
+105
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+166.13283365594816
+ 20
+246.0403633385863
+ 30
+0.0
+ 11
+166.15081686301812
+ 21
+234.2573533204984
+ 31
+0.0
+  0
+LINE
+  5
+106
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbLine
+ 10
+151.20516664600245
+ 20
+228.92687834807748
+ 30
+0.0
+ 11
+151.20516664600245
+ 21
+230.74757041212433
+ 31
+0.0
+  0
+LINE
+  5
+107
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbLine
+ 10
+154.54560172539186
+ 20
+222.1898783480774
+ 30
+0.0
+ 11
+154.54560172539186
+ 21
+223.92687834807748
+ 31
+0.0
+  0
+LINE
+  5
+108
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbLine
+ 10
+146.1061666460023
+ 20
+226.65500760423993
+ 30
+0.0
+ 11
+148.1061666460023
+ 21
+226.65500760423993
+ 31
+0.0
+  0
+LINE
+  5
+109
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbLine
+ 10
+144.64460172539202
+ 20
+223.92687834807748
+ 30
+0.0
+ 11
+148.1061666460023
+ 21
+223.92687834807748
+ 31
+0.0
+  0
+LINE
+  5
+10A
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbLine
+ 10
+146.1061666460023
+ 20
+225.97026464329474
+ 30
+0.0
+ 11
+146.1061666460023
+ 21
+226.65500760423993
+ 31
+0.0
+  0
+LINE
+  5
+10B
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbLine
+ 10
+148.1061666460023
+ 20
+223.92687834807748
+ 30
+0.0
+ 11
+148.1061666460023
+ 21
+227.96395670734137
+ 31
+0.0
+  0
+LINE
+  5
+10C
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbLine
+ 10
+151.20516664600245
+ 20
+223.92687834807748
+ 30
+0.0
+ 11
+151.20516664600245
+ 21
+227.9639567073416
+ 31
+0.0
+  0
+LINE
+  5
+10D
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbLine
+ 10
+151.20516664600245
+ 20
+227.9639567073416
+ 30
+0.0
+ 11
+148.1061666460023
+ 21
+227.9639567073416
+ 31
+0.0
+  0
+LINE
+  5
+10E
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbLine
+ 10
+151.20516664600245
+ 20
+223.92687834807748
+ 30
+0.0
+ 11
+154.54560172539186
+ 21
+223.92687834807748
+ 31
+0.0
+  0
+LINE
+  5
+10F
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbLine
+ 10
+147.40616664600248
+ 20
+226.65500760423993
+ 30
+0.0
+ 11
+147.40616664600248
+ 21
+228.92687834807748
+ 31
+0.0
+  0
+LWPOLYLINE
+  5
+110
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbPolyline
+ 90
+2
+ 70
+1
+ 43
+0.25
+ 10
+144.19597708506944
+ 20
+236.67518489733186
+ 42
+1.0
+ 10
+144.44597708506944
+ 20
+236.67518489733186
+ 42
+1.0
+  0
+LWPOLYLINE
+  5
+111
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbPolyline
+ 90
+2
+ 70
+1
+ 43
+0.25
+ 10
+137.99597708506917
+ 20
+236.67518489733186
+ 42
+1.0
+ 10
+138.24597708506917
+ 20
+236.67518489733186
+ 42
+1.0
+  0
+LINE
+  5
+112
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbLine
+ 10
+154.54560172539186
+ 20
+232.52487834807744
+ 30
+0.0
+ 11
+154.54560172539186
+ 21
+230.74757041212433
+ 31
+0.0
+  0
+LWPOLYLINE
+  5
+113
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbPolyline
+ 90
+2
+ 70
+1
+ 43
+0.25
+ 10
+150.39597708506926
+ 20
+236.67518489733186
+ 42
+1.0
+ 10
+150.64597708506926
+ 20
+236.67518489733186
+ 42
+1.0
+  0
+LWPOLYLINE
+  5
+114
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbPolyline
+ 90
+2
+ 70
+1
+ 43
+0.25
+ 10
+156.48523271159684
+ 20
+236.67518489733186
+ 42
+-1.0
+ 10
+156.23523271159684
+ 20
+236.67518489733186
+ 42
+-1.0
+  0
+LINE
+  5
+115
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+158.54560172539186
+ 20
+222.1898783480774
+ 30
+0.0
+ 11
+158.54560172539186
+ 21
+220.1898783480774
+ 31
+0.0
+  0
+LINE
+  5
+116
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+166.13283365594816
+ 20
+260.2645978053274
+ 30
+0.0
+ 11
+166.13283365594816
+ 21
+249.0403633385863
+ 31
+0.0
+  0
+LINE
+  5
+117
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+164.13283365594816
+ 20
+246.04036333817612
+ 30
+0.0
+ 11
+166.13283365594816
+ 21
+246.0403633385863
+ 31
+0.0
+  0
+LINE
+  5
+118
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+166.13283365594816
+ 20
+249.0403633385863
+ 30
+0.0
+ 11
+168.13283365594816
+ 21
+249.04036333899649
+ 31
+0.0
+  0
+LINE
+  5
+119
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+168.13283365594816
+ 20
+249.04036333899649
+ 30
+0.0
+ 11
+164.13283365594816
+ 21
+246.04036333817612
+ 31
+0.0
+  0
+LINE
+  5
+11A
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+7
+100
+AcDbLine
+ 10
+227.81666958174003
+ 20
+236.66798503548898
+ 30
+0.0
+ 11
+230.82281423595816
+ 21
+247.64991330430485
+ 31
+0.0
+  0
+LINE
+  5
+11B
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+220.7513532976642
+ 20
+246.9898977224659
+ 30
+0.0
+ 11
+220.7513532976642
+ 21
+237.89693981066262
+ 31
+0.0
+  0
+LINE
+  5
+11C
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbLine
+ 10
+234.0836007691761
+ 20
+228.92687834807725
+ 30
+0.0
+ 11
+234.0836007691761
+ 21
+230.7475704121241
+ 31
+0.0
+  0
+TEXT
+  5
+11D
+330
+17
+100
+AcDbEntity
+  8
+A-文字
+ 62
+7
+100
+AcDbText
+ 10
+222.64767391149405
+ 20
+225.75764543524485
+ 30
+0.0
+ 40
+2.5
+  1
+不锈钢板
+  7
+TS1
+ 41
+0.7
+ 11
+-839.9999999999999
+ 21
+1008.264654153736
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+11E
+330
+17
+100
+AcDbEntity
+  8
+A-文字
+ 62
+7
+100
+AcDbText
+ 10
+218.17357093831822
+ 20
+222.32310811958314
+ 30
+0.0
+ 40
+2.5
+  1
+中间钢板
+  7
+TS1
+ 41
+0.7
+ 11
+-839.9999999999999
+ 21
+1008.264654153736
+ 31
+0.0
+100
+AcDbText
+  0
+LINE
+  5
+11F
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+7
+100
+AcDbLine
+ 10
+227.74103946381604
+ 20
+221.79769599390897
+ 30
+0.0
+ 11
+217.85011424085212
+ 21
+221.7789087298346
+ 31
+0.0
+  0
+LINE
+  5
+120
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+7
+100
+AcDbLine
+ 10
+232.06336235711308
+ 20
+225.2861817343355
+ 30
+0.0
+ 11
+221.96513280730608
+ 21
+225.26610165772092
+ 31
+0.0
+  0
+LINE
+  5
+121
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbLine
+ 10
+232.62365059648812
+ 20
+222.1898783480774
+ 30
+0.0
+ 11
+232.62365059648812
+ 21
+223.92687834807748
+ 31
+0.0
+  0
+LINE
+  5
+122
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbLine
+ 10
+234.0836007691761
+ 20
+223.92687834807725
+ 30
+0.0
+ 11
+234.0836007691761
+ 21
+227.96395670734137
+ 31
+0.0
+  0
+LINE
+  5
+123
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbLine
+ 10
+232.62365059648812
+ 20
+223.92687834807748
+ 30
+0.0
+ 11
+234.08360076917518
+ 21
+223.92687834807725
+ 31
+0.0
+  0
+LINE
+  5
+124
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+228.62365059648812
+ 20
+220.1898783480774
+ 30
+0.0
+ 11
+228.62365059648812
+ 21
+222.1898783480774
+ 31
+0.0
+  0
+LINE
+  5
+125
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbLine
+ 10
+232.62365059648812
+ 20
+232.52487834807744
+ 30
+0.0
+ 11
+232.62365059648812
+ 21
+230.74757041212433
+ 31
+0.0
+  0
+LWPOLYLINE
+  5
+126
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbPolyline
+ 90
+2
+ 70
+1
+ 43
+0.25
+ 10
+234.97932916295906
+ 20
+235.35142660587917
+ 42
+1.0
+ 10
+235.22932916295906
+ 20
+235.35142660587917
+ 42
+1.0
+  0
+LWPOLYLINE
+  5
+127
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbPolyline
+ 90
+2
+ 70
+1
+ 43
+0.25
+ 10
+230.2844180302842
+ 20
+235.35142660587917
+ 42
+1.0
+ 10
+230.5344180302842
+ 20
+235.35142660587917
+ 42
+1.0
+  0
+LINE
+  5
+128
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+220.7513532976642
+ 20
+260.45667647039113
+ 30
+0.0
+ 11
+220.7513532976642
+ 21
+249.9898977224659
+ 31
+0.0
+  0
+LINE
+  5
+129
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+220.7513532976642
+ 20
+249.9898977224659
+ 30
+0.0
+ 11
+222.7513532976642
+ 21
+249.9898977228761
+ 31
+0.0
+  0
+LINE
+  5
+12A
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+218.7513532976642
+ 20
+246.98989772205573
+ 30
+0.0
+ 11
+220.7513532976642
+ 21
+246.9898977224659
+ 31
+0.0
+  0
+LINE
+  5
+12B
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+222.7513532976642
+ 20
+249.9898977228761
+ 30
+0.0
+ 11
+218.7513532976642
+ 21
+246.98989772205573
+ 31
+0.0
+  0
+TEXT
+  5
+12C
+330
+17
+100
+AcDbEntity
+  8
+A-文字
+  6
+Continuous
+100
+AcDbText
+ 10
+133.32381960958776
+ 20
+269.7241977717413
+ 30
+0.0
+ 40
+2.5
+  1
+（顺桥向）
+  7
+TS1
+ 41
+0.7
+ 72
+1
+ 11
+139.37787366364182
+ 21
+269.7241977717413
+ 31
+0.0
+100
+AcDbText
+  0
+LINE
+  5
+12D
+330
+17
+100
+AcDbEntity
+  8
+S-中心线
+  6
+DASHDOT
+100
+AcDbLine
+ 10
+254.62365059648812
+ 20
+162.70837117673636
+ 30
+0.0
+ 11
+254.62365059648812
+ 21
+106.66436138103018
+ 31
+0.0
+  0
+LINE
+  5
+12E
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+280.6236505964881
+ 20
+160.12706364206383
+ 30
+0.0
+ 11
+280.6236505964881
+ 21
+108.12706364206383
+ 31
+0.0
+  0
+LINE
+  5
+12F
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+2
+100
+AcDbLine
+ 10
+254.65883532496912
+ 20
+93.6377816082229
+ 30
+0.0
+ 11
+254.65883532496912
+ 21
+88.6377816082229
+ 31
+0.0
+  0
+TEXT
+  5
+130
+330
+17
+100
+AcDbEntity
+  8
+A-文字
+  6
+Continuous
+ 62
+2
+100
+AcDbText
+ 10
+260.5588353249681
+ 20
+86.76415981990522
+ 30
+0.0
+ 40
+2.5
+  1
+Ⅱ
+  7
+TS1
+ 41
+0.7
+ 11
+-839.9999999999999
+ 21
+1008.264654153736
+ 31
+0.0
+100
+AcDbText
+  0
+SOLID
+  5
+131
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+2
+100
+AcDbTrace
+ 10
+259.6588353249691
+ 20
+88.6377816082229
+ 30
+0.0
+ 11
+257.1588353249691
+ 21
+88.22111494822298
+ 31
+0.0
+ 12
+257.1588353249691
+ 22
+89.05444827822294
+ 32
+0.0
+ 13
+259.6588353249691
+ 23
+88.6377816082229
+ 33
+0.0
+  0
+LINE
+  5
+132
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+2
+100
+AcDbLine
+ 10
+254.65883532496912
+ 20
+88.6377816082229
+ 30
+0.0
+ 11
+259.6588353249691
+ 21
+88.6377816082229
+ 31
+0.0
+  0
+CIRCLE
+  5
+133
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbCircle
+ 10
+276.6236505964881
+ 20
+112.12706364206383
+ 30
+0.0
+ 40
+1.099973240683028
+  0
+LINE
+  5
+134
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+294.2177669334602
+ 20
+220.1898783480774
+ 30
+0.0
+ 11
+294.2177669334602
+ 21
+210.1898783480774
+ 31
+0.0
+  0
+LINE
+  5
+135
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+7
+100
+AcDbLine
+ 10
+245.97185636687107
+ 20
+215.46087834807736
+ 30
+0.0
+ 11
+250.92385636687106
+ 21
+222.89087834807742
+ 31
+0.0
+  0
+LINE
+  5
+136
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+7
+100
+AcDbLine
+ 10
+267.6446505964892
+ 20
+224.9778783480774
+ 30
+0.0
+ 11
+261.56921153791416
+ 21
+215.46087834807736
+ 31
+0.0
+  0
+TEXT
+  5
+137
+330
+17
+100
+AcDbEntity
+  8
+A-文字
+ 62
+7
+100
+AcDbText
+ 10
+236.5282213068882
+ 20
+216.1076255161122
+ 30
+0.0
+ 40
+2.5
+  1
+支座底板
+  7
+TS1
+ 41
+0.7
+ 11
+-839.9999999999999
+ 21
+1008.264654153736
+ 31
+0.0
+100
+AcDbText
+  0
+LINE
+  5
+138
+330
+17
+100
+AcDbEntity
+  8
+S-中心线
+  6
+CENTER
+ 62
+6
+100
+AcDbLine
+ 10
+254.62365059648903
+ 20
+248.58342858085746
+ 30
+0.0
+ 11
+254.62365059648903
+ 21
+234.59298988187822
+ 31
+0.0
+  0
+LINE
+  5
+139
+330
+17
+100
+AcDbEntity
+  8
+S-中心线
+  6
+CENTER
+ 62
+6
+100
+AcDbLine
+ 10
+254.62365059648903
+ 20
+232.52487834807744
+ 30
+0.0
+ 11
+254.62365059648812
+ 21
+207.73487834807747
+ 31
+0.0
+  0
+CIRCLE
+  5
+13A
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbCircle
+ 10
+276.6236505964881
+ 20
+156.12706364206383
+ 30
+0.0
+ 40
+1.099973240683028
+  0
+LINE
+  5
+13B
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+2
+100
+AcDbLine
+ 10
+300.29195999555407
+ 20
+134.12896968167138
+ 30
+0.0
+ 11
+300.29195999555407
+ 21
+139.12896968167138
+ 31
+0.0
+  0
+LINE
+  5
+13C
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+2
+100
+AcDbLine
+ 10
+295.29195999555407
+ 20
+134.12896968167138
+ 30
+0.0
+ 11
+300.29195999555407
+ 21
+134.12896968167138
+ 31
+0.0
+  0
+TEXT
+  5
+13D
+330
+17
+100
+AcDbEntity
+  8
+A-文字
+  6
+Continuous
+100
+AcDbText
+ 10
+298.8594389381391
+ 20
+141.1003801722568
+ 30
+0.0
+ 40
+2.5
+  1
+Ⅰ
+  7
+TS1
+ 41
+0.7
+ 11
+-839.9999999999999
+ 21
+1008.264654153736
+ 31
+0.0
+100
+AcDbText
+  0
+SOLID
+  5
+13E
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+2
+100
+AcDbTrace
+ 10
+300.29195999555407
+ 20
+139.12896968167138
+ 30
+0.0
+ 11
+300.7086266555542
+ 21
+136.62896968167138
+ 31
+0.0
+ 12
+299.875293325554
+ 22
+136.62896968167138
+ 32
+0.0
+ 13
+300.29195999555407
+ 23
+139.12896968167138
+ 33
+0.0
+  0
+LINE
+  5
+13F
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+294.2177669334602
+ 20
+195.1898783480774
+ 30
+0.0
+ 11
+257.98456011556016
+ 21
+195.1898783480774
+ 31
+0.0
+  0
+LINE
+  5
+140
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+257.9845601159701
+ 20
+193.1898783480774
+ 30
+0.0
+ 11
+254.9845601151502
+ 21
+197.1898783480774
+ 31
+0.0
+  0
+LINE
+  5
+141
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+257.98456011556016
+ 20
+195.1898783480774
+ 30
+0.0
+ 11
+257.9845601159701
+ 21
+193.1898783480774
+ 31
+0.0
+  0
+TEXT
+  5
+142
+330
+17
+100
+AcDbEntity
+  8
+A-文字
+  6
+Continuous
+100
+AcDbText
+ 10
+244.39178910386215
+ 20
+185.6099234220742
+ 30
+0.0
+ 40
+3.5
+  1
+支座平面示意
+  7
+TS1
+ 41
+0.7
+ 72
+1
+ 11
+254.56259991467311
+ 21
+185.6099234220742
+ 31
+0.0
+100
+AcDbText
+  0
+LINE
+  5
+143
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+2
+100
+AcDbLine
+ 10
+254.50094386007402
+ 20
+173.49493589563872
+ 30
+0.0
+ 11
+254.50094386007402
+ 21
+178.49493589563872
+ 31
+0.0
+  0
+TEXT
+  5
+144
+330
+17
+100
+AcDbEntity
+  8
+A-文字
+  6
+Continuous
+100
+AcDbText
+ 10
+260.4009438600741
+ 20
+176.99493589563872
+ 30
+0.0
+ 40
+2.5
+  1
+Ⅱ
+  7
+TS1
+ 41
+0.7
+ 11
+-839.9999999999999
+ 21
+1008.264654153736
+ 31
+0.0
+100
+AcDbText
+  0
+SOLID
+  5
+145
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+2
+100
+AcDbTrace
+ 10
+259.500943860074
+ 20
+178.49493589563872
+ 30
+0.0
+ 11
+257.000943860074
+ 21
+178.91160255563864
+ 31
+0.0
+ 12
+257.000943860074
+ 22
+178.07826922563868
+ 32
+0.0
+ 13
+259.500943860074
+ 23
+178.49493589563872
+ 33
+0.0
+  0
+LINE
+  5
+146
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+2
+100
+AcDbLine
+ 10
+254.50094386007402
+ 20
+178.49493589563872
+ 30
+0.0
+ 11
+259.500943860074
+ 21
+178.49493589563872
+ 31
+0.0
+  0
+TEXT
+  5
+147
+330
+17
+100
+AcDbEntity
+  8
+A-文字
+ 62
+7
+100
+AcDbText
+ 10
+255.5700429379632
+ 20
+200.07892655990736
+ 30
+0.0
+ 40
+2.5
+  1
+桥梁下部
+  7
+TS1
+ 41
+0.7
+ 11
+-839.9999999999999
+ 21
+1008.264654153736
+ 31
+0.0
+100
+AcDbText
+  0
+LINE
+  5
+148
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+7
+100
+AcDbLine
+ 10
+254.62365059648812
+ 20
+208.8438783480774
+ 30
+0.0
+ 11
+249.62365059648812
+ 21
+203.8438783480774
+ 31
+0.0
+  0
+LINE
+  5
+149
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+254.9845601151502
+ 20
+197.1898783480774
+ 30
+0.0
+ 11
+254.98456011556016
+ 21
+195.1898783480774
+ 31
+0.0
+  0
+TEXT
+  5
+14A
+330
+17
+100
+AcDbEntity
+  8
+A-文字
+ 62
+7
+100
+AcDbText
+ 10
+254.49195459485702
+ 20
+216.1315364770959
+ 30
+0.0
+ 40
+2.5
+  1
+橡胶块
+  7
+TS1
+ 41
+0.7
+ 11
+-839.9999999999999
+ 21
+1008.264654153736
+ 31
+0.0
+100
+AcDbText
+  0
+LINE
+  5
+14B
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+7
+100
+AcDbLine
+ 10
+261.56921153791416
+ 20
+215.46087834807736
+ 30
+0.0
+ 11
+254.62365059648903
+ 21
+215.46087834807736
+ 31
+0.0
+  0
+LINE
+  5
+14C
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+7
+100
+AcDbLine
+ 10
+245.97185636687107
+ 20
+215.46087834807736
+ 30
+0.0
+ 11
+235.8382455433872
+ 21
+215.46087834807736
+ 31
+0.0
+  0
+LINE
+  5
+14D
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+294.2177669334602
+ 20
+207.1898783480774
+ 30
+0.0
+ 11
+294.2177669334602
+ 21
+195.1898783480774
+ 31
+0.0
+  0
+LINE
+  5
+14E
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+294.2177669334602
+ 20
+210.1898783480774
+ 30
+0.0
+ 11
+296.2177669334602
+ 21
+210.18987834848758
+ 31
+0.0
+  0
+LINE
+  5
+14F
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+292.2177669334602
+ 20
+207.18987834766722
+ 30
+0.0
+ 11
+294.2177669334602
+ 21
+207.1898783480774
+ 31
+0.0
+  0
+LINE
+  5
+150
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+296.2177669334602
+ 20
+210.18987834848758
+ 30
+0.0
+ 11
+292.2177669334602
+ 21
+207.18987834766722
+ 31
+0.0
+  0
+LINE
+  5
+151
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+296.2177669334641
+ 20
+260.45667647039113
+ 30
+0.0
+ 11
+259.984560115564
+ 21
+260.45667647039113
+ 31
+0.0
+  0
+TEXT
+  5
+152
+330
+17
+100
+AcDbEntity
+  8
+A-文字
+ 62
+7
+100
+AcDbText
+ 10
+245.71332700245318
+ 20
+240.80589310913444
+ 30
+0.0
+ 40
+2.5
+  1
+支座顶板
+  7
+TS1
+ 41
+0.7
+ 11
+-839.9999999999999
+ 21
+1008.264654153736
+ 31
+0.0
+100
+AcDbText
+  0
+HATCH
+  5
+153
+330
+17
+100
+AcDbEntity
+  8
+S-填充
+  6
+Continuous
+100
+AcDbHatch
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+210
+0.0
+220
+0.0
+230
+1.0
+  2
+SOLID
+ 70
+1
+ 71
+0
+ 91
+2
+ 92
+7
+ 72
+0
+ 73
+1
+ 93
+4
+ 10
+237.1826007691751
+ 20
+226.65500760423993
+ 10
+237.1826007691751
+ 20
+225.97026464329485
+ 10
+239.18260076917602
+ 20
+225.97026464329485
+ 10
+239.1826007691751
+ 20
+226.65500760423993
+ 97
+0
+ 92
+7
+ 72
+0
+ 73
+1
+ 93
+4
+ 10
+270.06470042380204
+ 20
+226.65500760424004
+ 10
+270.06470042380204
+ 20
+225.97026464329485
+ 10
+272.06470042380204
+ 20
+225.97026464329485
+ 10
+272.06470042380204
+ 20
+226.65500760424004
+ 97
+0
+ 75
+0
+ 76
+1
+ 47
+0.1219297327287386
+ 98
+2
+ 10
+1078.436092137042
+ 20
+-781.8919954106188
+ 10
+1110.902061553961
+ 20
+-781.8919954106188
+  0
+HATCH
+  5
+154
+330
+17
+100
+AcDbEntity
+  8
+S-填充
+  6
+Continuous
+100
+AcDbHatch
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+210
+0.0
+220
+0.0
+230
+1.0
+  2
+ANSI37
+ 70
+0
+ 71
+0
+ 91
+2
+ 92
+7
+ 72
+0
+ 73
+1
+ 93
+4
+ 10
+254.62365059648812
+ 20
+223.92687834807748
+ 10
+254.62365059648812
+ 20
+225.97026464329485
+ 10
+237.1826007691751
+ 20
+225.97026464329485
+ 10
+237.1826007691751
+ 20
+223.92687834807748
+ 97
+0
+ 92
+7
+ 72
+0
+ 73
+1
+ 93
+4
+ 10
+254.62365059648812
+ 20
+225.97026464329485
+ 10
+254.62365059648812
+ 20
+223.92687834807737
+ 10
+272.06470042380204
+ 20
+223.92687834807737
+ 10
+272.06470042380204
+ 20
+225.97026464329485
+ 97
+0
+ 75
+0
+ 76
+1
+ 52
+0.0
+ 41
+5.0
+ 77
+0
+ 78
+2
+ 53
+45.0
+ 43
+-428.933991661161
+ 44
+68.9213496263526
+ 45
+-0.4419417382
+ 46
+0.4419417382
+ 79
+0
+ 53
+135.0
+ 43
+-428.933991661161
+ 44
+68.9213496263526
+ 45
+-0.4419417382
+ 46
+-0.4419417382
+ 79
+0
+ 47
+0.1219297327287386
+ 98
+2
+ 10
+1087.956188701448
+ 20
+-783.5990116799993
+ 10
+1099.062967094136
+ 20
+-783.1112927458906
+  0
+LINE
+  5
+155
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbLine
+ 10
+237.1826007691751
+ 20
+223.92687834807748
+ 30
+0.0
+ 11
+272.06470042380204
+ 21
+223.92687834807725
+ 31
+0.0
+  0
+LINE
+  5
+156
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbLine
+ 10
+237.1826007691751
+ 20
+225.97026464329474
+ 30
+0.0
+ 11
+272.06470042380204
+ 21
+225.97026464329474
+ 31
+0.0
+  0
+LINE
+  5
+157
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbLine
+ 10
+239.1826007691751
+ 20
+226.65500760423993
+ 30
+0.0
+ 11
+239.18260076917602
+ 21
+225.97026464329474
+ 31
+0.0
+  0
+LINE
+  5
+158
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbLine
+ 10
+237.1826007691751
+ 20
+227.96395670734137
+ 30
+0.0
+ 11
+237.1826007691751
+ 21
+223.92687834807725
+ 31
+0.0
+  0
+LINE
+  5
+159
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbLine
+ 10
+237.1826007691751
+ 20
+226.65500760423993
+ 30
+0.0
+ 11
+239.1826007691751
+ 21
+226.65500760423993
+ 31
+0.0
+  0
+LINE
+  5
+15A
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbLine
+ 10
+237.88260076917516
+ 20
+228.92687834807725
+ 30
+0.0
+ 11
+237.88260076917516
+ 21
+226.65500760423993
+ 31
+0.0
+  0
+LINE
+  5
+15B
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+7
+100
+AcDbLine
+ 10
+254.62365059648903
+ 20
+240.05401062737235
+ 30
+0.0
+ 11
+245.81042353887608
+ 21
+240.05401062737235
+ 31
+0.0
+  0
+LWPOLYLINE
+  5
+15C
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbPolyline
+ 90
+2
+ 70
+1
+ 43
+0.25
+ 10
+249.37932916295915
+ 20
+235.35142660587917
+ 42
+1.0
+ 10
+249.62932916295915
+ 20
+235.35142660587917
+ 42
+1.0
+  0
+LINE
+  5
+15D
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+7
+100
+AcDbLine
+ 10
+244.1418743300061
+ 20
+234.59298988187822
+ 30
+0.0
+ 11
+245.81042353887608
+ 21
+240.05401062737235
+ 31
+0.0
+  0
+LWPOLYLINE
+  5
+15E
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbPolyline
+ 90
+2
+ 70
+1
+ 43
+0.25
+ 10
+239.77932916295902
+ 20
+235.35142660587917
+ 42
+1.0
+ 10
+240.02932916295902
+ 20
+235.35142660587917
+ 42
+1.0
+  0
+LWPOLYLINE
+  5
+15F
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbPolyline
+ 90
+2
+ 70
+1
+ 43
+0.25
+ 10
+244.5793291629592
+ 20
+235.35142660587917
+ 42
+1.0
+ 10
+244.8293291629592
+ 20
+235.35142660587917
+ 42
+1.0
+  0
+LWPOLYLINE
+  5
+160
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbPolyline
+ 90
+2
+ 70
+1
+ 43
+0.25
+ 10
+254.0793291629592
+ 20
+235.35142660587917
+ 42
+1.0
+ 10
+254.3293291629592
+ 20
+235.35142660587917
+ 42
+1.0
+  0
+LWPOLYLINE
+  5
+161
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbPolyline
+ 90
+2
+ 70
+1
+ 43
+0.25
+ 10
+258.87932916295915
+ 20
+235.35142660587917
+ 42
+1.0
+ 10
+259.12932916295915
+ 20
+235.35142660587917
+ 42
+1.0
+  0
+LINE
+  5
+162
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbLine
+ 10
+275.1637004238022
+ 20
+228.92687834807748
+ 30
+0.0
+ 11
+275.1637004238022
+ 21
+230.74757041212433
+ 31
+0.0
+  0
+LINE
+  5
+163
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbLine
+ 10
+275.1637004238022
+ 20
+227.9639567073416
+ 30
+0.0
+ 11
+272.06470042380204
+ 21
+227.9639567073416
+ 31
+0.0
+  0
+LINE
+  5
+164
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbLine
+ 10
+272.06470042380204
+ 20
+223.92687834807725
+ 30
+0.0
+ 11
+272.06470042380204
+ 21
+227.96395670734137
+ 31
+0.0
+  0
+LINE
+  5
+165
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbLine
+ 10
+270.06470042380204
+ 20
+226.65500760423993
+ 30
+0.0
+ 11
+272.06470042380204
+ 21
+226.65500760423993
+ 31
+0.0
+  0
+LINE
+  5
+166
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbLine
+ 10
+270.06470042380204
+ 20
+225.97026464329474
+ 30
+0.0
+ 11
+270.06470042380204
+ 21
+226.65500760423993
+ 31
+0.0
+  0
+LINE
+  5
+167
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbLine
+ 10
+271.3647004238022
+ 20
+226.65500760423993
+ 30
+0.0
+ 11
+271.3647004238022
+ 21
+228.92687834807748
+ 31
+0.0
+  0
+LINE
+  5
+168
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbLine
+ 10
+275.1637004238022
+ 20
+223.92687834807748
+ 30
+0.0
+ 11
+276.6236505964881
+ 21
+223.92687834807748
+ 31
+0.0
+  0
+LINE
+  5
+169
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbLine
+ 10
+275.1637004238022
+ 20
+223.92687834807725
+ 30
+0.0
+ 11
+275.1637004238022
+ 21
+227.9639567073416
+ 31
+0.0
+  0
+LINE
+  5
+16A
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbLine
+ 10
+276.6236505964881
+ 20
+222.1898783480774
+ 30
+0.0
+ 11
+276.6236505964881
+ 21
+223.92687834807748
+ 31
+0.0
+  0
+LINE
+  5
+16B
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+280.6236505964881
+ 20
+222.1898783480774
+ 30
+0.0
+ 11
+280.6236505964881
+ 21
+220.1898783480774
+ 31
+0.0
+  0
+LWPOLYLINE
+  5
+16C
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbPolyline
+ 90
+2
+ 70
+1
+ 43
+0.25
+ 10
+268.47932916295906
+ 20
+235.35142660587917
+ 42
+1.0
+ 10
+268.72932916295906
+ 20
+235.35142660587917
+ 42
+1.0
+  0
+LWPOLYLINE
+  5
+16D
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbPolyline
+ 90
+2
+ 70
+1
+ 43
+0.25
+ 10
+273.7688015006512
+ 20
+235.35142660587917
+ 42
+1.0
+ 10
+274.0188015006512
+ 20
+235.35142660587917
+ 42
+1.0
+  0
+LWPOLYLINE
+  5
+16E
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbPolyline
+ 90
+2
+ 70
+1
+ 43
+0.25
+ 10
+263.6793291629591
+ 20
+235.35142660587917
+ 42
+1.0
+ 10
+263.9293291629591
+ 20
+235.35142660587917
+ 42
+1.0
+  0
+LINE
+  5
+16F
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbLine
+ 10
+276.6236505964881
+ 20
+232.52487834807744
+ 30
+0.0
+ 11
+276.6236505964881
+ 21
+230.74757041212433
+ 31
+0.0
+  0
+LWPOLYLINE
+  5
+170
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbPolyline
+ 90
+2
+ 70
+1
+ 43
+0.25
+ 10
+278.2679720300272
+ 20
+235.35142660587917
+ 42
+-1.0
+ 10
+278.0179720300272
+ 20
+235.35142660587917
+ 42
+-1.0
+  0
+LINE
+  5
+171
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+256.98456011515407
+ 20
+262.45667647039113
+ 30
+0.0
+ 11
+256.984560115564
+ 21
+260.45667647039113
+ 31
+0.0
+  0
+LINE
+  5
+172
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+259.9845601159742
+ 20
+258.45667647039113
+ 30
+0.0
+ 11
+256.98456011515407
+ 21
+262.45667647039113
+ 31
+0.0
+  0
+LINE
+  5
+173
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+259.984560115564
+ 20
+260.45667647039113
+ 30
+0.0
+ 11
+259.9845601159742
+ 21
+258.45667647039113
+ 31
+0.0
+  0
+LINE
+  5
+174
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+296.2177669334641
+ 20
+246.23244200365002
+ 30
+0.0
+ 11
+296.2177669334641
+ 21
+233.7260457186344
+ 31
+0.0
+  0
+LINE
+  5
+175
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+296.2177669334641
+ 20
+260.45667647039113
+ 30
+0.0
+ 11
+296.2177669334641
+ 21
+249.23244200365002
+ 31
+0.0
+  0
+LINE
+  5
+176
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+296.2177669334641
+ 20
+249.23244200365002
+ 30
+0.0
+ 11
+298.2177669334641
+ 21
+249.2324420040602
+ 31
+0.0
+  0
+LINE
+  5
+177
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+294.2177669334641
+ 20
+246.23244200323984
+ 30
+0.0
+ 11
+296.2177669334641
+ 21
+246.23244200365002
+ 31
+0.0
+  0
+LINE
+  5
+178
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+298.2177669334641
+ 20
+249.2324420040602
+ 30
+0.0
+ 11
+294.2177669334641
+ 21
+246.23244200323984
+ 31
+0.0
+  0
+TEXT
+  5
+179
+330
+17
+100
+AcDbEntity
+  8
+A-文字
+  6
+Continuous
+100
+AcDbText
+ 10
+257.4134850501431
+ 20
+271.5925361979605
+ 30
+0.0
+ 40
+2.5
+  1
+（横桥向）
+  7
+TS1
+ 41
+0.7
+ 72
+1
+ 11
+263.46753910419704
+ 21
+271.5925361979605
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+17A
+330
+17
+100
+AcDbEntity
+  8
+A-文字
+  6
+Continuous
+100
+AcDbText
+ 10
+244.67582695889007
+ 20
+271.1425361979607
+ 30
+0.0
+ 40
+3.5
+  1
+Ⅱ - Ⅱ
+  7
+TS1
+ 41
+0.7
+ 72
+1
+ 11
+250.60879993186302
+ 21
+271.1425361979607
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+17B
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+5
+100
+AcDbPolyline
+ 90
+2
+ 70
+0
+ 10
+119.4837900062098
+ 20
+270.5892578980397
+ 10
+133.6409328633522
+ 20
+270.5892578980397
+  0
+LWPOLYLINE
+  5
+17C
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+7
+100
+AcDbPolyline
+ 90
+2
+ 70
+0
+ 10
+119.4837900062098
+ 20
+269.5892578980397
+ 10
+133.6409328633522
+ 20
+269.5892578980397
+  0
+LWPOLYLINE
+  5
+17D
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+5
+100
+AcDbPolyline
+ 90
+2
+ 70
+0
+ 10
+243.3802285032922
+ 20
+270.54253619796066
+ 10
+257.8373713604352
+ 20
+270.54253619796066
+  0
+LWPOLYLINE
+  5
+17E
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+7
+100
+AcDbPolyline
+ 90
+2
+ 70
+0
+ 10
+243.3802285032922
+ 20
+269.54253619796066
+ 10
+257.8373713604352
+ 20
+269.54253619796066
+  0
+LWPOLYLINE
+  5
+17F
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+5
+100
+AcDbPolyline
+ 90
+2
+ 70
+0
+ 10
+244.6917651008772
+ 20
+184.7099234220742
+ 10
+263.933794877605
+ 20
+184.7099234220742
+  0
+LWPOLYLINE
+  5
+180
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+7
+100
+AcDbPolyline
+ 90
+2
+ 70
+0
+ 10
+244.6917651008772
+ 20
+183.7099234220742
+ 10
+263.933794877605
+ 20
+183.7099234220742
+  0
+LINE
+  5
+181
+330
+17
+100
+AcDbEntity
+  8
+S-虚线
+  6
+HIDDEN
+ 62
+6
+ 48
+0.3
+100
+AcDbLine
+ 10
+93.54560172539232
+ 20
+237.65019558013864
+ 30
+0.0
+ 11
+157.255651618927
+ 21
+234.6730244605044
+ 31
+0.0
+  0
+LINE
+  5
+182
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+85.6664200201476
+ 20
+238.0183898015905
+ 30
+0.0
+ 11
+93.54560172539232
+ 21
+237.65019558013864
+ 31
+0.0
+  0
+LINE
+  5
+183
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+93.54560172539186
+ 20
+232.52487834807744
+ 30
+0.0
+ 11
+159.54560172539186
+ 21
+232.52487834807766
+ 31
+0.0
+  0
+LINE
+  5
+184
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+220.7513532976642
+ 20
+237.89693981066262
+ 30
+0.0
+ 11
+227.62365059649312
+ 21
+237.51712019526803
+ 31
+0.0
+  0
+LINE
+  5
+185
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+227.62365059649312
+ 20
+232.52487834807755
+ 30
+0.0
+ 11
+281.6236505964881
+ 21
+232.52487834807766
+ 31
+0.0
+  0
+LINE
+  5
+186
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+281.6236505964881
+ 20
+234.53263650088638
+ 30
+0.0
+ 11
+296.16539806241906
+ 21
+233.72894005274043
+ 31
+0.0
+  0
+LINE
+  5
+187
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+93.54560172539186
+ 20
+232.52487834807744
+ 30
+0.0
+ 11
+93.54560172539186
+ 21
+237.65019558013864
+ 31
+0.0
+  0
+LINE
+  5
+188
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+159.54560172539186
+ 20
+232.52487834807766
+ 30
+0.0
+ 11
+159.54560172539323
+ 21
+234.54759321293977
+ 31
+0.0
+  0
+LINE
+  5
+189
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+157.255651618927
+ 20
+234.6730244605044
+ 30
+0.0
+ 11
+166.15081686301812
+ 21
+234.2573533204984
+ 31
+0.0
+  0
+DIMENSION
+  5
+18A
+330
+17
+100
+AcDbEntity
+  8
+A-尺寸标注
+ 62
+4
+100
+AcDbDimension
+280
+0
+  2
+*D21
+  3
+DS1
+ 10
+159.54560172539186
+ 20
+229.6872408790971
+ 30
+0.0
+ 11
+157.04560172539186
+ 21
+231.5622408790971
+ 31
+0.0
+ 70
+32
+ 71
+5
+ 42
+5.0
+  1
+100
+100
+AcDbAlignedDimension
+ 13
+154.54560172539186
+ 23
+231.63622438010088
+ 33
+0.0
+ 14
+159.54560172539186
+ 24
+231.63622438010088
+ 34
+0.0
+ 50
+0.0
+100
+AcDbRotatedDimension
+1001
+ACAD
+1000
+DSTYLE
+1002
+{
+1070
+176
+1070
+4
+1070
+343
+1005
+3A
+1070
+173
+1070
+1
+1070
+344
+1005
+3A
+1070
+340
+1005
+33
+1070
+270
+1070
+8
+1070
+270
+1070
+8
+1070
+270
+1070
+8
+1070
+270
+1070
+8
+1070
+270
+1070
+8
+1070
+270
+1070
+8
+1070
+270
+1070
+8
+1070
+270
+1070
+8
+1070
+270
+1070
+8
+1070
+270
+1070
+8
+1070
+270
+1070
+8
+1070
+270
+1070
+8
+1070
+270
+1070
+8
+1070
+270
+1070
+8
+1070
+270
+1070
+8
+1070
+270
+1070
+8
+1070
+41
+1040
+1.5
+1070
+42
+1040
+0.625
+1070
+43
+1040
+3.75
+1070
+44
+1040
+1.25
+1070
+73
+1070
+0
+1070
+74
+1070
+0
+1070
+77
+1070
+1
+1070
+78
+1070
+8
+1070
+140
+1040
+2.5
+1070
+141
+1040
+2.5
+1070
+143
+1040
+0.0394
+1070
+147
+1040
+0.625
+1070
+171
+1070
+4
+1070
+172
+1070
+1
+1070
+273
+1070
+8
+1070
+274
+1070
+4
+1070
+277
+1070
+6
+1002
+}
+  0
+LINE
+  5
+199
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+227.62365059649312
+ 20
+232.52487834807755
+ 30
+0.0
+ 11
+227.62365059649312
+ 21
+237.5171201952678
+ 31
+0.0
+  0
+DIMENSION
+  5
+19A
+330
+17
+100
+AcDbEntity
+  8
+A-尺寸标注
+ 62
+4
+100
+AcDbDimension
+280
+0
+  2
+*D22
+  3
+DS1
+ 10
+281.6236505964181
+ 20
+229.3366519829765
+ 30
+0.0
+ 11
+279.1236505964181
+ 21
+231.2116519829765
+ 31
+0.0
+ 70
+32
+ 71
+5
+ 42
+5.0
+  1
+100
+100
+AcDbAlignedDimension
+ 13
+276.6236505964181
+ 23
+231.73069305523995
+ 33
+0.0
+ 14
+281.6236505964181
+ 24
+231.73069305523995
+ 34
+0.0
+ 50
+0.0
+100
+AcDbRotatedDimension
+1001
+ACAD
+1000
+DSTYLE
+1002
+{
+1070
+176
+1070
+4
+1070
+343
+1005
+3A
+1070
+173
+1070
+1
+1070
+344
+1005
+3A
+1070
+340
+1005
+33
+1070
+270
+1070
+8
+1070
+270
+1070
+8
+1070
+270
+1070
+8
+1070
+270
+1070
+8
+1070
+270
+1070
+8
+1070
+270
+1070
+8
+1070
+270
+1070
+8
+1070
+270
+1070
+8
+1070
+270
+1070
+8
+1070
+270
+1070
+8
+1070
+270
+1070
+8
+1070
+270
+1070
+8
+1070
+270
+1070
+8
+1070
+270
+1070
+8
+1070
+270
+1070
+8
+1070
+270
+1070
+8
+1070
+41
+1040
+1.5
+1070
+42
+1040
+0.625
+1070
+43
+1040
+3.75
+1070
+44
+1040
+1.25
+1070
+73
+1070
+0
+1070
+74
+1070
+0
+1070
+77
+1070
+1
+1070
+78
+1070
+8
+1070
+140
+1040
+2.5
+1070
+141
+1040
+2.5
+1070
+143
+1040
+0.0394
+1070
+147
+1040
+0.625
+1070
+171
+1070
+4
+1070
+172
+1070
+1
+1070
+273
+1070
+8
+1070
+274
+1070
+4
+1070
+277
+1070
+6
+1002
+}
+  0
+LINE
+  5
+1A9
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+281.6236505964881
+ 20
+232.52487834807766
+ 30
+0.0
+ 11
+281.6236505964881
+ 21
+234.53263650088638
+ 31
+0.0
+  0
+TEXT
+  5
+1AA
+330
+17
+100
+AcDbEntity
+  8
+A-文字
+100
+AcDbText
+ 10
+145.917317934548
+ 20
+239.01871157135054
+ 30
+0.0
+ 40
+2.5
+  1
+梁底纵坡j%
+  7
+TS1
+ 41
+0.7
+ 11
+-839.9999999999999
+ 21
+1008.264654153736
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+1AB
+330
+17
+100
+AcDbEntity
+  8
+A-尺寸标注
+100
+AcDbPolyline
+ 90
+3
+ 70
+0
+ 10
+159.70485932843576
+ 20
+239.3858310856118
+ 10
+161.94767421308507
+ 20
+238.12831867462762
+ 10
+145.59374342167212
+ 20
+238.6339166084564
+  0
+TEXT
+  5
+1AC
+330
+17
+100
+AcDbEntity
+  8
+A-文字
+100
+AcDbText
+ 10
+262.609663681348
+ 20
+239.19058631516043
+ 30
+0.0
+ 40
+2.5
+  1
+梁底横坡i%
+  7
+TS1
+ 41
+0.7
+ 11
+-839.9999999999999
+ 21
+1008.264654153736
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+1AD
+330
+17
+100
+AcDbEntity
+  8
+A-尺寸标注
+100
+AcDbPolyline
+ 90
+3
+ 70
+0
+ 10
+276.397205075236
+ 20
+239.5577058294217
+ 10
+278.6400199598851
+ 20
+238.30019341843752
+ 10
+262.28608916847213
+ 20
+238.80579135226628
+  0
+CIRCLE
+  5
+1AE
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+7
+100
+AcDbCircle
+ 10
+98.53921071440982
+ 20
+243.11854856894468
+ 30
+0.0
+ 40
+2.0
+  0
+TEXT
+  5
+1AF
+330
+17
+100
+AcDbEntity
+  8
+A-文字
+ 62
+7
+100
+AcDbText
+ 10
+97.93380530900447
+ 20
+241.86854856894468
+ 30
+0.0
+ 40
+2.5
+  1
+2
+  7
+TS1
+ 41
+0.7
+ 72
+1
+ 11
+98.53921071440982
+ 21
+243.11854856894468
+ 31
+0.0
+100
+AcDbText
+ 73
+2
+  0
+LWPOLYLINE
+  5
+1B0
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+100
+AcDbPolyline
+ 90
+2
+ 70
+0
+ 10
+97.99392663305616
+ 20
+241.1943174833881
+ 10
+95.84573654015185
+ 20
+236.67518489733186
+  0
+CIRCLE
+  5
+1B1
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+7
+100
+AcDbCircle
+ 10
+105.39560388448444
+ 20
+243.11854856894468
+ 30
+0.0
+ 40
+2.0
+  0
+TEXT
+  5
+1B2
+330
+17
+100
+AcDbEntity
+  8
+A-文字
+ 62
+7
+100
+AcDbText
+ 10
+104.7901984790791
+ 20
+241.86854856894468
+ 30
+0.0
+ 40
+2.5
+  1
+1
+  7
+TS1
+ 41
+0.7
+ 72
+1
+ 11
+105.39560388448444
+ 21
+243.11854856894468
+ 31
+0.0
+100
+AcDbText
+ 73
+2
+  0
+LWPOLYLINE
+  5
+1B3
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+100
+AcDbPolyline
+ 90
+2
+ 70
+0
+ 10
+104.99176591234618
+ 20
+241.15974411411526
+ 10
+102.70212971022647
+ 20
+235.95453124842822
+  0
+CIRCLE
+  5
+1B4
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+7
+100
+AcDbCircle
+ 10
+233.15308906258304
+ 20
+241.87037596408595
+ 30
+0.0
+ 40
+2.0
+  0
+TEXT
+  5
+1B5
+330
+17
+100
+AcDbEntity
+  8
+A-文字
+ 62
+7
+100
+AcDbText
+ 10
+232.54768365717712
+ 20
+240.62037596408595
+ 30
+0.0
+ 40
+2.5
+  1
+2
+  7
+TS1
+ 41
+0.7
+ 72
+1
+ 11
+233.15308906258304
+ 21
+241.87037596408595
+ 31
+0.0
+100
+AcDbText
+ 73
+2
+  0
+LWPOLYLINE
+  5
+1B6
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+100
+AcDbPolyline
+ 90
+2
+ 70
+0
+ 10
+232.26312721610714
+ 20
+240.07929586765863
+ 10
+230.32358891415208
+ 20
+236.18361405449969
+  0
+CIRCLE
+  5
+1B7
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+7
+100
+AcDbCircle
+ 10
+238.09252311510306
+ 20
+241.5319086824029
+ 30
+0.0
+ 40
+2.0
+  0
+TEXT
+  5
+1B8
+330
+17
+100
+AcDbEntity
+  8
+A-文字
+ 62
+7
+100
+AcDbText
+ 10
+237.48711770969715
+ 20
+240.2819086824029
+ 30
+0.0
+ 40
+2.5
+  1
+1
+  7
+TS1
+ 41
+0.7
+ 72
+1
+ 11
+238.09252311510306
+ 21
+241.5319086824029
+ 31
+0.0
+100
+AcDbText
+ 73
+2
+  0
+LWPOLYLINE
+  5
+1B9
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+100
+AcDbPolyline
+ 90
+2
+ 70
+0
+ 10
+237.25660293316116
+ 20
+239.714977905124
+ 10
+235.08776913397116
+ 20
+235.31785256106764
+  0
+TEXT
+  5
+1BA
+330
+17
+100
+AcDbEntity
+  8
+A-文字
+ 62
+7
+100
+AcDbText
+ 10
+354.8027781124732
+ 20
+235.55178430446767
+ 30
+0.0
+ 40
+2.5
+  1
+环氧树脂砂浆
+  7
+TS1
+ 41
+0.7
+ 11
+-839.9999999999999
+ 21
+1008.264654153736
+ 31
+0.0
+100
+AcDbText
+  0
+LINE
+  5
+1BB
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+7
+100
+AcDbLine
+ 10
+354.55935171605904
+ 20
+235.1227901245211
+ 30
+0.0
+ 11
+365.6776998376332
+ 21
+235.1227901245211
+ 31
+0.0
+  0
+LINE
+  5
+1BC
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+7
+100
+AcDbLine
+ 10
+337.8950099120342
+ 20
+238.62144811407393
+ 30
+0.0
+ 11
+342.8470099120342
+ 21
+246.051448114074
+ 31
+0.0
+  0
+HATCH
+  5
+1BD
+330
+17
+100
+AcDbEntity
+  8
+S-填充
+  6
+Continuous
+100
+AcDbHatch
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+210
+0.0
+220
+0.0
+230
+1.0
+  2
+AR-CONC,_O
+ 70
+0
+ 71
+0
+ 91
+1
+ 92
+7
+ 72
+0
+ 73
+1
+ 93
+8
+ 10
+352.6772376106022
+ 20
+244.04464722043667
+ 10
+349.84503867401315
+ 20
+244.04464722043667
+ 10
+349.84503867401315
+ 20
+224.83064722043673
+ 10
+348.62903867401303
+ 20
+224.83064722043673
+ 10
+348.62903867401303
+ 20
+244.04464722043667
+ 10
+345.7968397374242
+ 20
+244.04464722043667
+ 10
+345.7968397374242
+ 20
+222.03064722043678
+ 10
+352.6772376106022
+ 20
+222.03064722043655
+ 97
+0
+ 75
+1
+ 76
+1
+ 52
+0.0
+ 41
+1.0
+ 77
+0
+ 78
+13
+ 53
+50.0
+ 43
+19.535785978646572
+ 44
+178.3751144895332
+ 45
+7.172601826
+ 46
+-0.6275213498
+ 79
+2
+ 49
+0.75
+ 49
+-8.25
+ 53
+355.0
+ 43
+19.535785978646572
+ 44
+178.3751144895332
+ 45
+-1.3875133361
+ 46
+7.521921337
+ 79
+2
+ 49
+0.6
+ 49
+-6.6
+ 53
+100.4514
+ 43
+20.133502778646516
+ 44
+178.32282108953314
+ 45
+5.7850938171
+ 46
+6.8943954206
+ 79
+2
+ 49
+0.6374019
+ 49
+-7.01142112
+ 53
+46.1842
+ 43
+19.535785978646572
+ 44
+180.3751144895332
+ 45
+10.6724104863
+ 46
+-1.6551901433
+ 79
+2
+ 49
+1.125
+ 49
+-12.375
+ 53
+96.6356
+ 43
+20.42515342864658
+ 44
+180.23718141953304
+ 45
+9.3466270555
+ 46
+9.741178709
+ 79
+2
+ 49
+0.95610288
+ 49
+-10.51713
+ 53
+351.1842
+ 43
+19.535785978646572
+ 44
+180.3751144895332
+ 45
+9.3466194513
+ 46
+9.7411860093
+ 79
+2
+ 49
+0.9
+ 49
+-9.9
+ 53
+21.0
+ 43
+20.535785978646572
+ 44
+179.8751144895332
+ 45
+5.9690705212
+ 46
+-4.0261889067
+ 79
+2
+ 49
+0.75
+ 49
+-8.25
+ 53
+326.0
+ 43
+20.535785978646572
+ 44
+179.8751144895332
+ 45
+2.4331533192
+ 46
+7.2515004505
+ 79
+2
+ 49
+0.6
+ 49
+-6.6
+ 53
+71.4514
+ 43
+21.033208308646635
+ 44
+179.53959842953316
+ 45
+8.4022262858
+ 46
+3.2253049671
+ 79
+2
+ 49
+0.6374019
+ 49
+-7.01142112
+ 53
+37.5
+ 43
+19.535785978646572
+ 44
+178.3751144895332
+ 45
+0.1215985532
+ 46
+3.3289385383
+ 79
+6
+ 49
+0.0
+ 49
+-6.52
+ 49
+0.0
+ 49
+-6.7
+ 49
+0.0
+ 49
+-6.625
+ 53
+7.5
+ 43
+19.535785978646572
+ 44
+178.3751144895332
+ 45
+2.6306953744
+ 46
+3.9441171188
+ 79
+6
+ 49
+0.0
+ 49
+-3.82
+ 49
+0.0
+ 49
+-6.37
+ 49
+0.0
+ 49
+-2.525
+ 53
+327.5
+ 43
+17.305785978646554
+ 44
+178.3751144895332
+ 45
+5.3382243617
+ 46
+-0.2255487173
+ 79
+6
+ 49
+0.0
+ 49
+-2.5
+ 49
+0.0
+ 49
+-7.8
+ 49
+0.0
+ 49
+-10.35
+ 53
+317.5
+ 43
+16.305785978646554
+ 44
+178.3751144895332
+ 45
+5.8318616934
+ 46
+1.0010498233
+ 79
+6
+ 49
+0.0
+ 49
+-3.25
+ 49
+0.0
+ 49
+-5.18
+ 49
+0.0
+ 49
+-7.35
+ 47
+0.08573787812305864
+ 98
+1
+ 10
+1191.495297745641
+ 20
+-778.3541732321326
+  0
+LINE
+  5
+1BE
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+ 62
+1
+100
+AcDbLine
+ 10
+345.7968397374242
+ 20
+244.04464722043667
+ 30
+0.0
+ 11
+345.7968397374242
+ 21
+222.03064722043678
+ 31
+0.0
+  0
+LINE
+  5
+1BF
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+ 62
+1
+100
+AcDbLine
+ 10
+352.6772376106022
+ 20
+244.04464722043667
+ 30
+0.0
+ 11
+352.6772376106022
+ 21
+222.03064722043655
+ 31
+0.0
+  0
+LINE
+  5
+1C0
+330
+17
+100
+AcDbEntity
+  8
+S-虚线
+  6
+DASHED
+ 62
+1
+100
+AcDbLine
+ 10
+349.84503867401315
+ 20
+249.38264722043664
+ 30
+0.0
+ 11
+349.84503867401315
+ 21
+224.83064722043673
+ 31
+0.0
+  0
+LINE
+  5
+1C1
+330
+17
+100
+AcDbEntity
+  8
+S-虚线
+  6
+DASHED
+ 62
+1
+100
+AcDbLine
+ 10
+348.62903867401303
+ 20
+249.38264722043664
+ 30
+0.0
+ 11
+348.62903867401303
+ 21
+224.83064722043673
+ 31
+0.0
+  0
+TEXT
+  5
+1C2
+330
+17
+100
+AcDbEntity
+  8
+A-文字
+ 62
+7
+100
+AcDbText
+ 10
+330.88879400332814
+ 20
+238.7831399640545
+ 30
+0.0
+ 40
+2.5
+  1
+支座底板
+  7
+TS1
+ 41
+0.7
+ 11
+-839.9999999999999
+ 21
+1008.264654153736
+ 31
+0.0
+100
+AcDbText
+  0
+SPLINE
+  5
+1C3
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbSpline
+ 70
+8
+ 71
+3
+ 72
+0
+ 73
+0
+ 74
+11
+ 42
+1e-07
+ 43
+1e-07
+ 11
+361.70837926499405
+ 21
+245.0089214398556
+ 31
+0.0
+ 11
+361.6225550936862
+ 21
+241.0649786120996
+ 31
+0.0
+ 11
+361.3650825797621
+ 21
+235.06332707205206
+ 31
+0.0
+ 11
+359.99189455540716
+ 21
+226.4895392652411
+ 31
+0.0
+ 11
+357.50299230405005
+ 21
+222.63133486509582
+ 31
+0.0
+ 11
+354.32749668223016
+ 21
+221.43100440652688
+ 31
+0.0
+ 11
+347.890679983852
+ 21
+221.25952830410347
+ 31
+0.0
+ 11
+341.96880959675116
+ 21
+221.68821818376273
+ 31
+0.0
+ 11
+339.0507864888542
+ 21
+227.4326559465742
+ 31
+0.0
+ 11
+338.70748980362316
+ 21
+235.83496840376006
+ 31
+0.0
+ 11
+338.87966293006014
+ 21
+242.3713180649247
+ 31
+0.0
+  0
+LINE
+  5
+1C4
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+7
+100
+AcDbLine
+ 10
+337.6163980694172
+ 20
+225.69767729602677
+ 30
+0.0
+ 11
+342.5683980694172
+ 21
+233.12767729602683
+ 31
+0.0
+  0
+TEXT
+  5
+1C5
+330
+17
+100
+AcDbEntity
+  8
+A-文字
+ 62
+7
+100
+AcDbText
+ 10
+330.58889685548013
+ 20
+226.00967729602667
+ 30
+0.0
+ 40
+2.5
+  1
+桥梁下部
+  7
+TS1
+ 41
+0.7
+ 11
+-839.9999999999999
+ 21
+1008.264654153736
+ 31
+0.0
+100
+AcDbText
+  0
+LINE
+  5
+1C6
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+7
+100
+AcDbLine
+ 10
+337.6163980694172
+ 20
+225.69767729602677
+ 30
+0.0
+ 11
+330.03881858063903
+ 21
+225.69767729602677
+ 31
+0.0
+  0
+LINE
+  5
+1C7
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+7
+100
+AcDbLine
+ 10
+337.8950099120342
+ 20
+238.62144811407393
+ 30
+0.0
+ 11
+330.42621572848714
+ 21
+238.62144811407393
+ 31
+0.0
+  0
+LINE
+  5
+1C8
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+7
+100
+AcDbLine
+ 10
+349.2315461357931
+ 20
+231.06983808824066
+ 30
+0.0
+ 11
+353.43099841232913
+ 21
+227.4048380882407
+ 31
+0.0
+  0
+TEXT
+  5
+1C9
+330
+17
+100
+AcDbEntity
+  8
+A-文字
+ 62
+7
+100
+AcDbText
+ 10
+353.67683892028515
+ 20
+227.76387764092192
+ 30
+0.0
+ 40
+2.5
+  1
+螺栓
+  7
+TS1
+ 41
+0.7
+ 11
+-839.9999999999999
+ 21
+1008.264654153736
+ 31
+0.0
+100
+AcDbText
+  0
+LINE
+  5
+1CA
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+7
+100
+AcDbLine
+ 10
+353.43099841232913
+ 20
+227.4048380882407
+ 30
+0.0
+ 11
+357.5361377053092
+ 21
+227.4048380882407
+ 31
+0.0
+  0
+LINE
+  5
+1CB
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbLine
+ 10
+349.84503867401315
+ 20
+224.83064722043673
+ 30
+0.0
+ 11
+348.62903867401303
+ 21
+224.83064722043673
+ 31
+0.0
+  0
+LINE
+  5
+1CC
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbLine
+ 10
+352.6772376106022
+ 20
+222.03064722043655
+ 30
+0.0
+ 11
+345.7968397374242
+ 21
+222.03064722043678
+ 31
+0.0
+  0
+LINE
+  5
+1CD
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+7
+100
+AcDbLine
+ 10
+351.8836607518682
+ 20
+238.78779012452105
+ 30
+0.0
+ 11
+354.55935171605904
+ 21
+235.1227901245211
+ 31
+0.0
+  0
+LINE
+  5
+1CE
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbLine
+ 10
+338.1153029811222
+ 20
+247.51864722043683
+ 30
+0.0
+ 11
+353.745038674013
+ 21
+247.5186472204366
+ 31
+0.0
+  0
+LINE
+  5
+1CF
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+338.52836548789617
+ 20
+244.04464722043667
+ 30
+0.0
+ 11
+361.745038674013
+ 21
+244.04464722043667
+ 31
+0.0
+  0
+TEXT
+  5
+1D0
+330
+17
+100
+AcDbEntity
+  8
+A-文字
+  6
+Continuous
+100
+AcDbText
+ 10
+334.065050926789
+ 20
+260.8086682726573
+ 30
+0.0
+ 40
+3.5
+  1
+地脚螺栓安装示意图
+  7
+TS1
+ 41
+0.7
+ 72
+1
+ 11
+349.32126714300614
+ 21
+260.8086682726573
+ 31
+0.0
+100
+AcDbText
+  0
+SPLINE
+  5
+1D1
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbSpline
+ 70
+8
+ 71
+3
+ 72
+11
+ 73
+7
+ 74
+0
+ 42
+1e-09
+ 40
+1.790332736747048
+ 40
+1.790332736747048
+ 40
+1.790332736747048
+ 40
+1.790332736747048
+ 40
+2.266720026483357
+ 40
+4.461088833467833
+ 40
+7.575522743883474
+ 40
+8.222573765780457
+ 40
+8.222573765780457
+ 40
+8.222573765780457
+ 40
+8.222573765780457
+ 10
+337.9778772077442
+ 20
+248.5700717318889
+ 30
+0.0
+ 10
+337.9651189612972
+ 20
+248.41675545027147
+ 30
+0.0
+ 10
+337.9655680639281
+ 20
+247.56210178543824
+ 30
+0.0
+ 10
+339.0731773689182
+ 20
+245.78582997045532
+ 30
+0.0
+ 10
+338.1641802801181
+ 20
+243.52944843893079
+ 30
+0.0
+ 10
+338.7531478528962
+ 20
+242.53336906034497
+ 30
+0.0
+ 10
+338.87966293006014
+ 20
+242.3713180649247
+ 30
+0.0
+  0
+TEXT
+  5
+1D2
+330
+17
+100
+AcDbEntity
+  8
+A-文字
+ 62
+7
+100
+AcDbText
+ 10
+353.4739584509331
+ 20
+251.00276973871087
+ 30
+0.0
+ 40
+2.5
+  1
+螺母
+  7
+TS1
+ 41
+0.7
+ 11
+-839.9999999999999
+ 21
+1008.264654153736
+ 31
+0.0
+100
+AcDbText
+  0
+LINE
+  5
+1D3
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+7
+100
+AcDbLine
+ 10
+350.4999486108601
+ 20
+247.88806305207277
+ 30
+0.0
+ 11
+352.98053823882617
+ 21
+250.80470119815686
+ 31
+0.0
+  0
+LINE
+  5
+1D4
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbLine
+ 10
+349.84503867401315
+ 20
+249.38264722043664
+ 30
+0.0
+ 11
+348.62903867401303
+ 21
+249.38264722043664
+ 31
+0.0
+  0
+LINE
+  5
+1D5
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbLine
+ 10
+351.03703867401316
+ 20
+248.3226472204367
+ 30
+0.0
+ 11
+347.3230386740132
+ 21
+248.3226472204367
+ 31
+0.0
+  0
+LINE
+  5
+1D6
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbLine
+ 10
+347.3230386740132
+ 20
+248.3226472204367
+ 30
+0.0
+ 11
+347.3230386740132
+ 21
+247.5186472204366
+ 31
+0.0
+  0
+LINE
+  5
+1D7
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbLine
+ 10
+351.03703867401316
+ 20
+248.3226472204367
+ 30
+0.0
+ 11
+351.03703867401316
+ 21
+247.5186472204366
+ 31
+0.0
+  0
+LINE
+  5
+1D8
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+1
+100
+AcDbLine
+ 10
+353.745038674013
+ 20
+244.04464722043667
+ 30
+0.0
+ 11
+353.745038674013
+ 21
+247.5186472204366
+ 31
+0.0
+  0
+LINE
+  5
+1D9
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+7
+100
+AcDbLine
+ 10
+352.98053823882617
+ 20
+250.80470119815686
+ 30
+0.0
+ 11
+357.2895072359571
+ 21
+250.80470119815686
+ 31
+0.0
+  0
+LWPOLYLINE
+  5
+1DA
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+5
+100
+AcDbPolyline
+ 90
+2
+ 70
+0
+ 10
+331.3624535966352
+ 20
+259.9336682726573
+ 10
+367.5110145167131
+ 20
+259.9336682726573
+  0
+LWPOLYLINE
+  5
+1DB
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+7
+100
+AcDbPolyline
+ 90
+2
+ 70
+0
+ 10
+331.3624535966352
+ 20
+258.9336682726573
+ 10
+367.5110145167131
+ 20
+258.9336682726573
+  0
+LINE
+  5
+1DC
+330
+17
+100
+AcDbEntity
+  8
+S-虚线
+  6
+DASHED
+100
+AcDbLine
+ 10
+147.83087058721367
+ 20
+143.7725597277779
+ 30
+0.0
+ 11
+122.83087058721367
+ 21
+143.77255972777778
+ 31
+0.0
+  0
+LINE
+  5
+1DD
+330
+17
+100
+AcDbEntity
+  8
+S-虚线
+  6
+DASHED
+100
+AcDbLine
+ 10
+109.13377227576302
+ 20
+111.56402828273315
+ 30
+0.0
+ 11
+122.83087058721367
+ 21
+143.77255972777778
+ 31
+0.0
+  0
+LINE
+  5
+1DE
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+109.13377227576211
+ 20
+111.56402828273315
+ 30
+0.0
+ 11
+134.13377227576302
+ 21
+111.56402828273326
+ 31
+0.0
+  0
+LINE
+  5
+1DF
+330
+17
+100
+AcDbEntity
+  8
+S-虚线
+  6
+DASHED
+100
+AcDbLine
+ 10
+122.83087058721367
+ 20
+143.7725597277779
+ 30
+0.0
+ 11
+122.83087058721367
+ 21
+156.17255972777787
+ 31
+0.0
+  0
+LINE
+  5
+1E0
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+134.13377227576302
+ 20
+111.56402828273326
+ 30
+0.0
+ 11
+147.83087058721367
+ 21
+143.7725597277779
+ 31
+0.0
+  0
+LINE
+  5
+1E1
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+109.13377227576302
+ 20
+111.56402828273315
+ 30
+0.0
+ 11
+109.13377227576302
+ 21
+117.50389202517101
+ 31
+0.0
+  0
+LINE
+  5
+1E2
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+122.83087058721367
+ 20
+156.17255972777787
+ 30
+0.0
+ 11
+109.13377227576302
+ 21
+117.50389202517101
+ 31
+0.0
+  0
+LINE
+  5
+1E3
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+122.83087058721367
+ 20
+156.17255972777787
+ 30
+0.0
+ 11
+147.83087058721367
+ 21
+148.99651462367547
+ 31
+0.0
+  0
+LINE
+  5
+1E4
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+109.13377227576302
+ 20
+117.50389202517101
+ 30
+0.0
+ 11
+134.13377227576302
+ 21
+116.18077005059945
+ 31
+0.0
+  0
+LINE
+  5
+1E5
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+147.83087058721367
+ 20
+148.99651462367547
+ 30
+0.0
+ 11
+134.13377227576302
+ 21
+116.18077005059945
+ 31
+0.0
+  0
+TEXT
+  5
+1E6
+330
+17
+100
+AcDbEntity
+  8
+A-文字
+  6
+Continuous
+100
+AcDbText
+ 10
+108.58740475633795
+ 20
+170.99491954104383
+ 30
+0.0
+ 40
+3.5
+  1
+梁底混凝土楔形块大样
+  7
+TS1
+ 41
+0.7
+ 11
+-839.9999999999999
+ 21
+1008.264654153736
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+1E7
+330
+17
+100
+AcDbEntity
+  8
+A-文字
+100
+AcDbText
+ 10
+129.55977879449165
+ 20
+139.73733296939406
+ 30
+0.0
+ 40
+2.5
+  1
+顺桥向
+  7
+TS1
+ 41
+0.7
+ 11
+-839.9999999999999
+ 21
+1008.264654153736
+ 31
+0.0
+100
+AcDbText
+  0
+LINE
+  5
+1E8
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+100
+AcDbLine
+ 10
+128.97468486468279
+ 20
+139.12615544036544
+ 30
+0.0
+ 11
+140.5556046388374
+ 21
+139.12615544036544
+ 31
+0.0
+  0
+LINE
+  5
+1E9
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+100
+AcDbLine
+ 10
+140.5556046388374
+ 20
+139.12615544036544
+ 30
+0.0
+ 11
+137.48647315966355
+ 21
+140.10814669819456
+ 31
+0.0
+  0
+TEXT
+  5
+1EA
+330
+17
+100
+AcDbEntity
+  8
+A-文字
+100
+AcDbText
+ 10
+121.4144430754477
+ 20
+129.46212099551406
+ 30
+0.0
+ 40
+2.4999999999999996
+  1
+横桥向
+ 50
+66.96174338352627
+  7
+TS1
+ 41
+0.7
+ 11
+-839.9999999999999
+ 21
+1008.264654153736
+ 31
+0.0
+100
+AcDbText
+  0
+LINE
+  5
+1EB
+330
+17
+100
+AcDbEntity
+  8
+A-尺寸标注
+100
+AcDbLine
+ 10
+120.77030283377144
+ 20
+126.32336240318341
+ 30
+0.0
+ 11
+125.22126933950449
+ 21
+136.7897466986733
+ 31
+0.0
+  0
+DIMENSION
+  5
+1EC
+330
+17
+100
+AcDbEntity
+  8
+A-尺寸标注
+ 62
+4
+100
+AcDbDimension
+280
+0
+  2
+*D23
+  3
+DS2
+ 10
+117.76952993156772
+ 20
+145.92496089100462
+ 30
+28.73914785714285
+ 11
+109.03448107691838
+ 21
+130.62295378386716
+ 31
+28.73914785714285
+ 70
+33
+ 71
+5
+ 42
+1399.999999999989
+  1
+B+200
+100
+AcDbAlignedDimension
+ 13
+107.75340664240548
+ 23
+112.15104678179523
+ 33
+28.73914785714285
+ 14
+121.45050495385613
+ 24
+144.35957822683997
+ 34
+28.73914785714285
+ 50
+0.0
+1001
+ACAD
+1000
+DSTYLE
+1002
+{
+1070
+177
+1070
+4
+1070
+176
+1070
+4
+1070
+41
+1040
+1.5
+1070
+343
+1005
+3A
+1070
+173
+1070
+1
+1070
+344
+1005
+3A
+1070
+340
+1005
+33
+1002
+}
+  0
+DIMENSION
+  5
+1FB
+330
+17
+100
+AcDbEntity
+  8
+A-尺寸标注
+ 62
+4
+100
+AcDbDimension
+280
+0
+  2
+*D24
+  3
+DS2
+ 10
+134.1337722757621
+ 20
+106.06402828273315
+ 30
+-28.73914785714285
+ 11
+121.63377227576211
+ 21
+108.1140282827331
+ 31
+-28.73914785714285
+ 70
+33
+ 71
+5
+ 42
+1000.0
+  1
+A+200
+100
+AcDbAlignedDimension
+ 13
+109.13377227576211
+ 23
+110.06402828273303
+ 33
+-28.73914785714285
+ 14
+134.1337722757621
+ 24
+110.06402828273303
+ 34
+-28.73914785714285
+ 50
+0.0
+1001
+ACAD
+1000
+DSTYLE
+1002
+{
+1070
+177
+1070
+4
+1070
+176
+1070
+4
+1070
+41
+1040
+1.5
+1070
+343
+1005
+3A
+1070
+173
+1070
+1
+1070
+344
+1005
+3A
+1070
+340
+1005
+33
+1002
+}
+  0
+DIMENSION
+  5
+20A
+330
+17
+100
+AcDbEntity
+  8
+A-尺寸标注
+ 62
+4
+100
+AcDbDimension
+280
+0
+  2
+*D25
+  3
+DS2
+ 10
+153.33087058721446
+ 20
+148.99651462367547
+ 30
+-28.73914785714285
+ 11
+163.8569018919071
+ 21
+146.38453717572668
+ 31
+-28.73914785714285
+ 70
+161
+ 71
+5
+ 42
+208.9581958359031
+  1
+{\W0.5;H1=50-(A+200)/2*j%+(B+200)/2*i%}
+ 53
+-0.10000000000000782
+100
+AcDbAlignedDimension
+ 13
+149.33087058721367
+ 23
+143.7725597277779
+ 33
+-28.73914785714285
+ 14
+149.33087058721367
+ 24
+148.99651462367547
+ 34
+-28.73914785714285
+ 50
+0.0
+1001
+ACAD
+1000
+DSTYLE
+1002
+{
+1070
+177
+1070
+4
+1070
+176
+1070
+4
+1070
+41
+1040
+1.5
+1070
+343
+1005
+3A
+1070
+173
+1070
+1
+1070
+344
+1005
+3A
+1070
+340
+1005
+33
+1002
+}
+  0
+DIMENSION
+  5
+219
+330
+17
+100
+AcDbEntity
+  8
+A-尺寸标注
+ 62
+4
+100
+AcDbDimension
+280
+0
+  2
+*D26
+  3
+DS2
+ 10
+139.63377227576382
+ 20
+116.18077005059956
+ 30
+-28.73914785714285
+ 11
+149.92860886363178
+ 21
+114.17600573068205
+ 31
+-28.73914785714285
+ 70
+161
+ 71
+5
+ 42
+184.6696707146521
+  1
+{\W0.5;H4=50-(A+200)/2*j%-(B+200)/2*i%}
+ 53
+-0.10000000000000782
+100
+AcDbAlignedDimension
+ 13
+135.63377227576302
+ 23
+111.56402828273326
+ 33
+-28.73914785714285
+ 14
+135.63377227576302
+ 24
+116.18077005059956
+ 34
+-28.73914785714285
+ 50
+0.0
+1001
+ACAD
+1000
+DSTYLE
+1002
+{
+1070
+177
+1070
+4
+1070
+176
+1070
+4
+1070
+41
+1040
+1.5
+1070
+343
+1005
+3A
+1070
+173
+1070
+1
+1070
+344
+1005
+3A
+1070
+340
+1005
+33
+1002
+}
+  0
+DIMENSION
+  5
+228
+330
+17
+100
+AcDbEntity
+  8
+A-尺寸标注
+ 62
+4
+100
+AcDbDimension
+280
+0
+  2
+*D27
+  3
+DS2
+ 10
+115.83087058721446
+ 20
+156.17255972777775
+ 30
+-28.73914785714285
+ 11
+101.47441684459682
+ 21
+150.61790253252775
+ 31
+-28.73914785714285
+ 70
+161
+ 71
+5
+ 42
+495.9999999999991
+  1
+{\W0.5;H2=50+(A+200)/2*j%+(B+200)/2*i%}
+ 53
+-0.10000000000000782
+100
+AcDbAlignedDimension
+ 13
+121.33087058721367
+ 23
+143.7725597277779
+ 33
+-28.73914785714285
+ 14
+121.33087058721367
+ 24
+156.17255972777787
+ 34
+-28.73914785714285
+ 50
+0.0
+1001
+ACAD
+1000
+DSTYLE
+1002
+{
+1070
+177
+1070
+4
+1070
+176
+1070
+4
+1070
+41
+1040
+1.5
+1070
+343
+1005
+3A
+1070
+173
+1070
+1
+1070
+344
+1005
+3A
+1070
+340
+1005
+33
+1002
+}
+  0
+DIMENSION
+  5
+237
+330
+17
+100
+AcDbEntity
+  8
+A-尺寸标注
+ 62
+4
+100
+AcDbDimension
+280
+0
+  2
+*D28
+  3
+DS2
+ 10
+102.13377227576382
+ 20
+117.50389202517101
+ 30
+-28.73914785714285
+ 11
+87.58667473357764
+ 21
+114.71531625338366
+ 31
+-28.73914785714285
+ 70
+161
+ 71
+5
+ 42
+237.5945496975146
+  1
+{\W0.5;H3=50+(A+200)/2*j%-(B+200)/2*i%}
+ 53
+-0.10000000000000782
+100
+AcDbAlignedDimension
+ 13
+107.63377227576302
+ 23
+111.56402828273326
+ 33
+-28.73914785714285
+ 14
+107.63377227576302
+ 24
+117.50389202517113
+ 34
+-28.73914785714285
+ 50
+0.0
+1001
+ACAD
+1000
+DSTYLE
+1002
+{
+1070
+177
+1070
+4
+1070
+176
+1070
+4
+1070
+41
+1040
+1.5
+1070
+343
+1005
+3A
+1070
+173
+1070
+1
+1070
+344
+1005
+3A
+1070
+340
+1005
+33
+1002
+}
+  0
+LINE
+  5
+246
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+134.13377227576302
+ 20
+111.56402828273326
+ 30
+0.0
+ 11
+134.13377227576302
+ 21
+116.18077005059956
+ 31
+0.0
+  0
+LINE
+  5
+247
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+100
+AcDbLine
+ 10
+147.83087058721367
+ 20
+143.7725597277779
+ 30
+0.0
+ 11
+147.83087058721367
+ 21
+148.99651462367535
+ 31
+0.0
+  0
+LWPOLYLINE
+  5
+248
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+5
+100
+AcDbPolyline
+ 90
+2
+ 70
+0
+ 10
+108.51475888862706
+ 20
+170.64776937569093
+ 10
+140.4082940471526
+ 20
+170.64776937569093
+  0
+LWPOLYLINE
+  5
+249
+330
+17
+100
+AcDbEntity
+  8
+S-结构轮廓
+  6
+Continuous
+ 62
+7
+100
+AcDbPolyline
+ 90
+2
+ 70
+0
+ 10
+108.51475888862706
+ 20
+169.64776937569093
+ 10
+140.4082940471526
+ 20
+169.64776937569093
+  0
+LINE
+  5
+24A
+330
+17
+100
+AcDbEntity
+  8
+A-尺寸标注
+100
+AcDbLine
+ 10
+120.77030283377144
+ 20
+126.32336240318341
+ 30
+0.0
+ 11
+121.02505311159712
+ 21
+129.55015535237953
+ 31
+0.0
+  0
+DIMENSION
+  5
+24B
+330
+17
+100
+AcDbEntity
+  8
+A-尺寸标注
+100
+AcDbDimension
+280
+0
+  2
+*D29
+  3
+DS3
+ 10
+132.51147811534668
+ 20
+232.52487834807744
+ 30
+0.0
+ 11
+131.2614781153468
+ 21
+234.3164918376948
+ 31
+0.0
+ 70
+32
+ 71
+5
+ 42
+3.583226979234382
+  1
+50
+100
+AcDbAlignedDimension
+ 13
+126.54560172539186
+ 23
+236.10810532731182
+ 33
+0.0
+ 14
+126.54560172539209
+ 24
+232.52487834807744
+ 34
+0.0
+ 50
+90.0
+100
+AcDbRotatedDimension
+  0
+DIMENSION
+  5
+25A
+330
+17
+100
+AcDbEntity
+  8
+A-尺寸标注
+100
+AcDbDimension
+280
+0
+  2
+*D30
+  3
+DS3
+ 10
+164.59860596995213
+ 20
+222.1898783480774
+ 30
+0.0
+ 11
+163.34860596995213
+ 21
+227.32967990508257
+ 31
+0.0
+ 70
+32
+ 71
+5
+ 42
+10.27960311401011
+  1
+H
+100
+AcDbAlignedDimension
+ 13
+158.54560172539186
+ 23
+232.46948146208751
+ 33
+0.0
+ 14
+158.54560172539186
+ 24
+222.1898783480774
+ 34
+0.0
+ 50
+90.0
+100
+AcDbRotatedDimension
+  0
+DIMENSION
+  5
+269
+330
+17
+100
+AcDbEntity
+  8
+A-尺寸标注
+100
+AcDbDimension
+280
+0
+  2
+*D31
+  3
+DS3
+ 10
+286.67665484104907
+ 20
+222.1898783480774
+ 30
+0.0
+ 11
+285.42665484104907
+ 21
+227.32967990508257
+ 31
+0.0
+ 70
+32
+ 71
+5
+ 42
+10.27960311401011
+  1
+H
+100
+AcDbAlignedDimension
+ 13
+280.6236505964881
+ 23
+232.46948146208751
+ 33
+0.0
+ 14
+280.6236505964881
+ 24
+222.1898783480774
+ 34
+0.0
+ 50
+90.0
+100
+AcDbRotatedDimension
+  0
+DIMENSION
+  5
+278
+330
+17
+100
+AcDbEntity
+  8
+A-尺寸标注
+100
+AcDbDimension
+280
+0
+  2
+*D32
+  3
+DS3
+ 10
+260.5895269864442
+ 20
+232.52487834807505
+ 30
+0.0
+ 11
+259.3395269864442
+ 21
+234.2748783480762
+ 31
+0.0
+ 70
+32
+ 71
+5
+ 42
+3.50000000000216
+  1
+50
+100
+AcDbAlignedDimension
+ 13
+254.62365059649107
+ 23
+236.0248783480772
+ 33
+0.0
+ 14
+254.62365059648903
+ 24
+232.52487834807505
+ 34
+0.0
+ 50
+90.0
+100
+AcDbRotatedDimension
+  0
+DIMENSION
+  5
+287
+330
+17
+100
+AcDbEntity
+  8
+A-尺寸标注
+100
+AcDbDimension
+280
+0
+  2
+*D33
+  3
+DS3
+ 10
+280.6236505964881
+ 20
+164.98021103656856
+ 30
+0.0
+ 11
+254.62365059648812
+ 21
+166.23021103656856
+ 31
+0.0
+ 70
+32
+ 71
+5
+ 42
+52.00000000000045
+  1
+C
+100
+AcDbAlignedDimension
+ 13
+228.62365059648812
+ 23
+154.21066762979865
+ 33
+0.0
+ 14
+280.6236505964881
+ 24
+154.2106676297991
+ 34
+0.0
+ 50
+0.0
+100
+AcDbRotatedDimension
+  0
+DIMENSION
+  5
+296
+330
+17
+100
+AcDbEntity
+  8
+A-尺寸标注
+100
+AcDbDimension
+280
+0
+  2
+*D34
+  3
+DS3
+ 10
+221.0880055192821
+ 20
+108.12706364206383
+ 30
+0.0
+ 11
+219.8380055192821
+ 21
+134.12706364206394
+ 31
+0.0
+ 70
+32
+ 71
+5
+ 42
+52.0
+  1
+B
+100
+AcDbAlignedDimension
+ 13
+228.62365059648812
+ 23
+160.12706364206383
+ 33
+0.0
+ 14
+228.62365059648812
+ 24
+108.12706364206383
+ 34
+0.0
+ 50
+90.0
+100
+AcDbRotatedDimension
+  0
+DIMENSION
+  5
+2A5
+330
+17
+100
+AcDbEntity
+  8
+A-尺寸标注
+100
+AcDbDimension
+280
+0
+  2
+*D35
+  3
+DS3
+ 10
+280.6236505964881
+ 20
+103.1350289898977
+ 30
+0.0
+ 11
+254.62365059648812
+ 21
+104.3850289898977
+ 31
+0.0
+ 70
+32
+ 71
+5
+ 42
+52.0
+  1
+A
+100
+AcDbAlignedDimension
+ 13
+228.62365059648812
+ 23
+108.12706364206383
+ 33
+0.0
+ 14
+280.6236505964881
+ 24
+108.12706364206383
+ 34
+0.0
+ 50
+0.0
+100
+AcDbRotatedDimension
+  0
+DIMENSION
+  5
+2B4
+330
+17
+100
+AcDbEntity
+  8
+A-尺寸标注
+100
+AcDbDimension
+280
+0
+  2
+*D36
+  3
+DS3
+ 10
+285.44451026480203
+ 20
+108.12706364206383
+ 30
+0.0
+ 11
+284.19451026480203
+ 21
+134.12706364206417
+ 31
+0.0
+ 70
+32
+ 71
+5
+ 42
+52.00000000000045
+  1
+D
+100
+AcDbAlignedDimension
+ 13
+259.12108097334215
+ 23
+160.1270636420643
+ 33
+0.0
+ 14
+259.12108097334306
+ 24
+108.12706364206383
+ 34
+0.0
+ 50
+90.0
+100
+AcDbRotatedDimension
+  0
+MTEXT
+  5
+2C3
+330
+17
+100
+AcDbEntity
+  8
+A-文字
+100
+AcDbMText
+ 10
+284.1547926323202
+ 20
+94.92261324956428
+ 30
+0.0
+ 40
+3.0
+ 41
+0.0
+ 71
+1
+ 72
+5
+  3
+说明：\P  1、图中尺寸均以毫米计。\P   2、施工过程中必须保证支座上下面的水平，承载力5MN以下的支座四角高差\P       不得超过1mm；承载力5MN及其以上的支座四角高差不得超过2mm。\P  3、支座顶面必须水平设置，当有纵横坡时，以梁底楔形块及支座垫石予以调整。\P  4、梁底楔形块保证在支座中心线处凸出梁底50mm。\P  5、具体安装工艺参照产品安装手册。\P  6、本图所示支座为固定支座。\P  7、图中N1、N2钢筋尺寸及数量见“支座一般构造（四）”。\P  8、梁底
+  1
+纵横坡以楔形块大样中所示方向为正反之为负。\P  9、桥台处混凝土楔形块+支座高度+支座垫石=30cm，\P     桥墩处混凝土楔形块+支座高度+支座垫石=45cm。
+  7
+TS1
+  0
+ENDSEC
+  0
+SECTION
+  2
+OBJECTS
+  0
+DICTIONARY
+  5
+A
+330
+0
+100
+AcDbDictionary
+281
+1
+  3
+ACAD_COLOR
+350
+B
+  3
+ACAD_GROUP
+350
+C
+  3
+ACAD_LAYOUT
+350
+D
+  3
+ACAD_MATERIAL
+350
+E
+  3
+ACAD_MLEADERSTYLE
+350
+F
+  3
+ACAD_MLINESTYLE
+350
+10
+  3
+ACAD_PLOTSETTINGS
+350
+11
+  3
+ACAD_PLOTSTYLENAME
+350
+12
+  3
+ACAD_SCALELIST
+350
+14
+  3
+ACAD_TABLESTYLE
+350
+15
+  3
+ACAD_VISUALSTYLE
+350
+16
+  3
+EZDXF_META
+350
+2D
+  0
+DICTIONARY
+  5
+B
+330
+A
+100
+AcDbDictionary
+281
+1
+  0
+DICTIONARY
+  5
+C
+330
+A
+100
+AcDbDictionary
+281
+1
+  0
+DICTIONARY
+  5
+D
+330
+A
+100
+AcDbDictionary
+281
+1
+  3
+Model
+350
+1A
+  3
+Layout1
+350
+1E
+  0
+DICTIONARY
+  5
+E
+330
+A
+100
+AcDbDictionary
+281
+1
+  3
+ByBlock
+350
+1F
+  3
+ByLayer
+350
+20
+  3
+Global
+350
+21
+  0
+DICTIONARY
+  5
+F
+330
+A
+100
+AcDbDictionary
+281
+1
+  3
+Standard
+350
+2C
+  0
+DICTIONARY
+  5
+10
+330
+A
+100
+AcDbDictionary
+281
+1
+  3
+Standard
+350
+22
+  0
+DICTIONARY
+  5
+11
+330
+A
+100
+AcDbDictionary
+281
+1
+  0
+ACDBDICTIONARYWDFLT
+  5
+12
+330
+A
+100
+AcDbDictionary
+281
+1
+  3
+Normal
+350
+13
+100
+AcDbDictionaryWithDefault
+340
+13
+  0
+ACDBPLACEHOLDER
+  5
+13
+330
+12
+  0
+DICTIONARY
+  5
+14
+330
+A
+100
+AcDbDictionary
+281
+1
+  0
+DICTIONARY
+  5
+15
+330
+A
+100
+AcDbDictionary
+281
+1
+  0
+DICTIONARY
+  5
+16
+330
+A
+100
+AcDbDictionary
+281
+1
+  0
+LAYOUT
+  5
+1A
+330
+D
+100
+AcDbPlotSettings
+  1
+
+  4
+A3
+  6
+
+ 40
+7.5
+ 41
+20.0
+ 42
+7.5
+ 43
+20.0
+ 44
+420.0
+ 45
+297.0
+ 46
+0.0
+ 47
+0.0
+ 48
+0.0
+ 49
+0.0
+140
+0.0
+141
+0.0
+142
+1.0
+143
+1.0
+ 70
+1024
+ 72
+1
+ 73
+0
+ 74
+5
+  7
+
+ 75
+16
+ 76
+0
+ 77
+2
+ 78
+300
+147
+1.0
+148
+0.0
+149
+0.0
+100
+AcDbLayout
+  1
+Model
+ 70
+1
+ 71
+0
+ 10
+0.0
+ 20
+0.0
+ 11
+420.0
+ 21
+297.0
+ 12
+0.0
+ 22
+0.0
+ 32
+0.0
+ 14
+1e+20
+ 24
+1e+20
+ 34
+1e+20
+ 15
+-1e+20
+ 25
+-1e+20
+ 35
+-1e+20
+146
+0.0
+ 13
+0.0
+ 23
+0.0
+ 33
+0.0
+ 16
+1.0
+ 26
+0.0
+ 36
+0.0
+ 17
+0.0
+ 27
+1.0
+ 37
+0.0
+ 76
+1
+330
+17
+  0
+LAYOUT
+  5
+1E
+330
+D
+100
+AcDbPlotSettings
+  1
+
+  4
+A3
+  6
+
+ 40
+7.5
+ 41
+20.0
+ 42
+7.5
+ 43
+20.0
+ 44
+420.0
+ 45
+297.0
+ 46
+0.0
+ 47
+0.0
+ 48
+0.0
+ 49
+0.0
+140
+0.0
+141
+0.0
+142
+1.0
+143
+1.0
+ 70
+0
+ 72
+1
+ 73
+0
+ 74
+5
+  7
+
+ 75
+16
+ 76
+0
+ 77
+2
+ 78
+300
+147
+1.0
+148
+0.0
+149
+0.0
+100
+AcDbLayout
+  1
+Layout1
+ 70
+1
+ 71
+1
+ 10
+0.0
+ 20
+0.0
+ 11
+420.0
+ 21
+297.0
+ 12
+0.0
+ 22
+0.0
+ 32
+0.0
+ 14
+1e+20
+ 24
+1e+20
+ 34
+1e+20
+ 15
+-1e+20
+ 25
+-1e+20
+ 35
+-1e+20
+146
+0.0
+ 13
+0.0
+ 23
+0.0
+ 33
+0.0
+ 16
+1.0
+ 26
+0.0
+ 36
+0.0
+ 17
+0.0
+ 27
+1.0
+ 37
+0.0
+ 76
+1
+330
+1B
+  0
+MATERIAL
+  5
+1F
+102
+{ACAD_REACTORS
+330
+E
+102
+}
+330
+E
+100
+AcDbMaterial
+  1
+ByBlock
+  2
+
+ 70
+0
+ 40
+1.0
+ 71
+1
+ 41
+1.0
+ 91
+-1023410177
+ 42
+1.0
+ 72
+1
+  3
+
+ 73
+1
+ 74
+1
+ 75
+1
+ 44
+0.5
+ 73
+0
+ 45
+1.0
+ 46
+1.0
+ 77
+1
+  4
+
+ 78
+1
+ 79
+1
+170
+1
+ 48
+1.0
+171
+1
+  6
+
+172
+1
+173
+1
+174
+1
+140
+1.0
+141
+1.0
+175
+1
+  7
+
+176
+1
+177
+1
+178
+1
+143
+1.0
+179
+1
+  8
+
+270
+1
+271
+1
+272
+1
+145
+1.0
+146
+1.0
+273
+1
+  9
+
+274
+1
+275
+1
+276
+1
+ 42
+1.0
+ 72
+1
+  3
+
+ 73
+1
+ 74
+1
+ 75
+1
+ 94
+63
+  0
+MATERIAL
+  5
+20
+102
+{ACAD_REACTORS
+330
+E
+102
+}
+330
+E
+100
+AcDbMaterial
+  1
+ByLayer
+  2
+
+ 70
+0
+ 40
+1.0
+ 71
+1
+ 41
+1.0
+ 91
+-1023410177
+ 42
+1.0
+ 72
+1
+  3
+
+ 73
+1
+ 74
+1
+ 75
+1
+ 44
+0.5
+ 73
+0
+ 45
+1.0
+ 46
+1.0
+ 77
+1
+  4
+
+ 78
+1
+ 79
+1
+170
+1
+ 48
+1.0
+171
+1
+  6
+
+172
+1
+173
+1
+174
+1
+140
+1.0
+141
+1.0
+175
+1
+  7
+
+176
+1
+177
+1
+178
+1
+143
+1.0
+179
+1
+  8
+
+270
+1
+271
+1
+272
+1
+145
+1.0
+146
+1.0
+273
+1
+  9
+
+274
+1
+275
+1
+276
+1
+ 42
+1.0
+ 72
+1
+  3
+
+ 73
+1
+ 74
+1
+ 75
+1
+ 94
+63
+  0
+MATERIAL
+  5
+21
+102
+{ACAD_REACTORS
+330
+E
+102
+}
+330
+E
+100
+AcDbMaterial
+  1
+Global
+  2
+
+ 70
+0
+ 40
+1.0
+ 71
+1
+ 41
+1.0
+ 91
+-1023410177
+ 42
+1.0
+ 72
+1
+  3
+
+ 73
+1
+ 74
+1
+ 75
+1
+ 44
+0.5
+ 73
+0
+ 45
+1.0
+ 46
+1.0
+ 77
+1
+  4
+
+ 78
+1
+ 79
+1
+170
+1
+ 48
+1.0
+171
+1
+  6
+
+172
+1
+173
+1
+174
+1
+140
+1.0
+141
+1.0
+175
+1
+  7
+
+176
+1
+177
+1
+178
+1
+143
+1.0
+179
+1
+  8
+
+270
+1
+271
+1
+272
+1
+145
+1.0
+146
+1.0
+273
+1
+  9
+
+274
+1
+275
+1
+276
+1
+ 42
+1.0
+ 72
+1
+  3
+
+ 73
+1
+ 74
+1
+ 75
+1
+ 94
+63
+  0
+MLINESTYLE
+  5
+22
+102
+{ACAD_REACTORS
+330
+10
+102
+}
+330
+10
+100
+AcDbMlineStyle
+  2
+Standard
+ 70
+0
+  3
+
+ 62
+256
+ 51
+90.0
+ 52
+90.0
+ 71
+2
+ 49
+0.5
+ 62
+256
+  6
+BYLAYER
+ 49
+-0.5
+ 62
+256
+  6
+BYLAYER
+  0
+MLEADERSTYLE
+  5
+2C
+102
+{ACAD_REACTORS
+330
+F
+102
+}
+330
+F
+100
+AcDbMLeaderStyle
+179
+2
+170
+2
+171
+1
+172
+0
+ 90
+2
+ 40
+0.0
+ 41
+0.0
+173
+1
+ 91
+-1056964608
+ 92
+-2
+290
+1
+ 42
+2.0
+291
+1
+ 43
+8.0
+  3
+Standard
+ 44
+4.0
+300
+
+342
+29
+174
+1
+175
+1
+176
+0
+178
+1
+ 93
+-1056964608
+ 45
+4.0
+292
+0
+297
+0
+ 46
+4.0
+ 94
+-1056964608
+ 47
+1.0
+ 49
+1.0
+140
+1.0
+294
+1
+141
+0.0
+177
+0
+142
+1.0
+295
+0
+296
+0
+143
+3.75
+271
+0
+272
+9
+273
+9
+  0
+DICTIONARY
+  5
+2D
+330
+A
+100
+AcDbDictionary
+280
+1
+281
+1
+  3
+CREATED_BY_EZDXF
+350
+2E
+  3
+WRITTEN_BY_EZDXF
+350
+3B9
+  0
+DICTIONARYVAR
+  5
+2E
+330
+2D
+100
+DictionaryVariables
+280
+0
+  1
+1.4.5 @ 2026-01-01T00:00:00+00:00
+  0
+DICTIONARYVAR
+  5
+3B9
+330
+2D
+100
+DictionaryVariables
+280
+0
+  1
+1.4.5 @ 2026-01-01T00:00:00+00:00
+  0
+ENDSEC
+  0
+EOF

@@ -1,0 +1,56 @@
+{
+ "task_id": "L2-01",
+ "level": "L2",
+ "n_pages": 7,
+ "pages": [
+  {
+   "page": 1,
+   "sheet": "QL-29",
+   "output": "output/page_01.dxf",
+   "gt": "gt/page_01",
+   "layer_trusted": false
+  },
+  {
+   "page": 2,
+   "sheet": "QL-30 (sheet 1)",
+   "output": "output/page_02.dxf",
+   "gt": "gt/page_02",
+   "layer_trusted": false
+  },
+  {
+   "page": 3,
+   "sheet": "QL-30 (sheet 2)",
+   "output": "output/page_03.dxf",
+   "gt": "gt/page_03",
+   "layer_trusted": false
+  },
+  {
+   "page": 4,
+   "sheet": "QL-30 (sheet 3)",
+   "output": "output/page_04.dxf",
+   "gt": "gt/page_04",
+   "layer_trusted": false
+  },
+  {
+   "page": 5,
+   "sheet": "QL-30 (sheet 4)",
+   "output": "output/page_05.dxf",
+   "gt": "gt/page_05",
+   "layer_trusted": false
+  },
+  {
+   "page": 6,
+   "sheet": "QL-32",
+   "output": "output/page_06.dxf",
+   "gt": "gt/page_06",
+   "layer_trusted": false
+  },
+  {
+   "page": 7,
+   "sheet": "QL-33",
+   "output": "output/page_07.dxf",
+   "gt": "gt/page_07",
+   "layer_trusted": false
+  }
+ ]
+}

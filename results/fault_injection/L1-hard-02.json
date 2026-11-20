@@ -1,0 +1,95 @@
+{
+ "sheet": "L1-hard-02",
+ "faults": {
+  "self": {
+   "overall": 100.00000000000001,
+   "components": {
+    "geometry F1@1mm": 1.0,
+    "layer-aware F1@1mm": 1.0,
+    "layer share": 1.0,
+    "text F1": 1.0
+   }
+  },
+  "shift_all_3mm": {
+   "overall": 97.8411654491031,
+   "components": {
+    "geometry F1@1mm": 0.9678412493479596,
+    "layer-aware F1@1mm": 0.9656319799346218,
+    "layer share": 1.0,
+    "text F1": 1.0
+   }
+  },
+  "all_on_one": {
+   "overall": 80.93546814433462,
+   "components": {
+    "geometry F1@1mm": 1.0,
+    "layer-aware F1@1mm": 0.4598382640894805,
+    "layer share": 1.0,
+    "text F1": 1.0
+   }
+  },
+  "swap_outline_rebar": {
+   "overall": 80.33264845850346,
+   "components": {
+    "geometry F1@1mm": 1.0,
+    "layer-aware F1@1mm": 0.4427583729909311,
+    "layer share": 1.0,
+    "text F1": 1.0
+   }
+  },
+  "drop_text_10": {
+   "overall": 98.9769820971867,
+   "components": {
+    "geometry F1@1mm": 1.0,
+    "layer-aware F1@1mm": 1.0,
+    "layer share": 1.0,
+    "text F1": 0.9565217391304348
+   }
+  },
+  "edit_text_digit_10": {
+   "overall": 98.03921568627452,
+   "components": {
+    "geometry F1@1mm": 1.0,
+    "layer-aware F1@1mm": 1.0,
+    "layer share": 1.0,
+    "text F1": 0.9166666666666666
+   }
+  },
+  "drop_dim_10": {
+   "overall": 100.00000000000001,
+   "components": {
+    "geometry F1@1mm": 1.0,
+    "layer-aware F1@1mm": 1.0,
+    "layer share": 1.0,
+    "text F1": 1.0
+   }
+  },
+  "edit_dim_digit_10": {
+   "overall": 100.00000000000001,
+   "components": {
+    "geometry F1@1mm": 1.0,
+    "layer-aware F1@1mm": 1.0,
+    "layer share": 1.0,
+    "text F1": 1.0
+   }
+  },
+  "drop_lines_10": {
+   "overall": 99.46015787147185,
+   "components": {
+    "geometry F1@1mm": 0.9943473235570324,
+    "layer-aware F1@1mm": 0.9894150367275086,
+    "layer share": 1.0,
+    "text F1": 1.0
+   }
+  },
+  "jitter_lines_10_3mm": {
+   "overall": 99.69563530375824,
+   "components": {
+    "geometry F1@1mm": 0.9954969846994036,
+    "layer-aware F1@1mm": 0.9951288463569805,
+    "layer share": 1.0,
+    "text F1": 1.0
+   }
+  }
+ }
+}

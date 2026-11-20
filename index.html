@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>CivilCADBench sample viewer</title>
+<style>
+:root{
+  color-scheme:light;
+  --bg:#f3f1ea;--panel:#fff;--panel2:#faf9f5;--ink:#1d1c19;--mute:#6b685f;--faint:#9b978c;--line:#e4e0d5;--line2:#d2cdbf;
+  --u:#2a5d9f;--u-soft:#e7eef8;--r:#2a7865;--r-soft:#e1f0eb;--d:#b25e19;--d-soft:#f8ead9;
+  --ok:#1f7a4a;--ok-soft:#e5f3ea;--bad:#a53d2c;--bad-soft:#f9e9e5;--warn:#856000;--warn-soft:#f8efd3;
+  --accent:var(--u);--accent-soft:var(--u-soft);--code:#f1efe8;--heat:176,62,40;
+  --shadow:0 1px 2px rgba(40,32,12,.05),0 8px 24px -12px rgba(40,32,12,.18);
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,"Songti SC","Noto Serif CJK SC",serif;
+  --sans:system-ui,-apple-system,"Segoe UI","PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+body[data-tab=recon]{--accent:var(--r);--accent-soft:var(--r-soft)}
+body[data-tab=faults]{--accent:var(--d);--accent-soft:var(--d-soft)}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%}
+body{background:var(--bg);color:var(--ink);font:15px/1.55 var(--sans);-webkit-font-smoothing:antialiased}
+button{font:inherit;color:inherit}
+a{color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+/* header */
+header{position:sticky;top:0;z-index:5;background:var(--panel);border-bottom:1px solid var(--line);padding:0 20px;display:flex;flex-wrap:wrap;gap:0 28px;align-items:stretch;min-height:56px}
+header h1{display:flex;align-items:center;gap:10px;margin:0;font-size:15px;font-weight:400;white-space:nowrap}
+header h1 svg{width:24px;height:24px;color:var(--accent);flex:none;transition:color .2s}
+header h1 b{font:700 18px/1 var(--serif);letter-spacing:.005em}
+header h1 span{color:var(--mute);font-size:12px;text-transform:uppercase;letter-spacing:.09em;border-left:1px solid var(--line2);padding-left:10px}
+nav{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+nav::-webkit-scrollbar{display:none}
+nav button{position:relative;border:0;background:none;color:var(--mute);padding:0 13px;min-height:56px;cursor:pointer;white-space:nowrap;font-size:14.5px}
+nav button:hover{color:var(--ink)}
+nav button::after{content:"";position:absolute;left:10px;right:10px;bottom:0;height:3px;border-radius:3px 3px 0 0;background:transparent;transition:background .15s}
+nav button[aria-selected=true]{color:var(--ink);font-weight:650}
+nav button[aria-selected=true]::after{background:var(--accent)}
+
+main{max-width:1640px;margin:0 auto;padding:20px}
+.cols{display:grid;grid-template-columns:216px minmax(0,1fr);gap:20px;align-items:start}
+.split{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:20px;align-items:start}
+.stick{position:sticky;top:76px}
+@media (max-width:1180px){.split{grid-template-columns:1fr}.stick{position:static}}
+@media (max-width:820px){main{padding:12px}.cols{grid-template-columns:1fr}.side{position:static!important;max-height:240px!important}.chips{grid-template-columns:repeat(10,1fr)}}
+
+/* side list */
+.side{position:sticky;top:76px;max-height:calc(100vh - 96px);overflow:auto;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:10px;box-shadow:var(--shadow)}
+.side h3{display:flex;justify-content:space-between;align-items:baseline;font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--mute);margin:12px 4px 6px;font-weight:650}
+.side h3:first-child{margin-top:4px}
+.side h3 small{font-weight:400;letter-spacing:0;text-transform:none;color:var(--faint)}
+.chips{display:grid;grid-template-columns:repeat(5,1fr);gap:4px}
+.chip{position:relative;border:1px solid var(--line);background:var(--panel2);border-radius:7px;padding:4px 0;font-size:12.5px;font-variant-numeric:tabular-nums;cursor:pointer;color:var(--ink)}
+.chip:hover{border-color:var(--accent);color:var(--accent)}
+.chip.hard::after{content:"";position:absolute;top:3px;right:3px;width:5px;height:5px;border-radius:50%;background:var(--d)}
+.chip[aria-current=true]{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:650}
+.sidefoot{display:flex;align-items:center;gap:6px;color:var(--faint);font-size:12px;margin:12px 4px 2px}
+.sidefoot i{width:6px;height:6px;border-radius:50%;background:var(--d);display:inline-block}
+.row{display:flex;justify-content:space-between;align-items:baseline;gap:8px;width:100%;text-align:left;border:0;background:none;font-size:13.5px;padding:6px 8px;border-radius:7px;cursor:pointer;font-variant-numeric:tabular-nums}
+.row:hover{background:var(--code)}
+.row[aria-current=true]{background:var(--accent-soft);color:var(--accent);font-weight:650;box-shadow:inset 3px 0 0 var(--accent)}
+.row small{color:var(--mute);font-weight:400;font-size:12px}
+
+/* cards */
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:20px;margin-bottom:20px;box-shadow:var(--shadow)}
+.card h2{font:700 21px/1.25 var(--serif);margin:0}
+.card h3{font-size:14px;margin:20px 0 6px;font-weight:650}
+.card h3.first,.card>h3:first-child{margin-top:0}
+.card p{margin:8px 0}
+.head{display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px;margin-bottom:14px;padding-bottom:14px;border-bottom:1px solid var(--line)}
+.head .sp{flex:1}.acts{display:inline-flex;align-items:center;gap:10px}
+.meta{color:var(--mute);font-size:13px;margin:6px 0 10px}
+.tag{display:inline-flex;align-items:center;font-size:12px;line-height:1.5;padding:1px 9px;border-radius:999px;border:1px solid var(--line2);color:var(--mute);white-space:nowrap;margin-right:4px}
+.tag.ok{background:var(--ok-soft);color:var(--ok);border-color:transparent}.tag.bad{background:var(--bad-soft);color:var(--bad);border-color:transparent}
+.tag.warn{background:var(--warn-soft);color:var(--warn);border-color:transparent}.tag.acc{background:var(--accent-soft);color:var(--accent);border-color:transparent;font-weight:650}
+.btn{border:1px solid var(--line2);background:var(--panel);color:var(--ink);font-size:13px;padding:4px 11px;border-radius:8px;cursor:pointer}
+.btn:hover:not(:disabled){border-color:var(--accent);color:var(--accent)}
+.btn:disabled{opacity:.35;cursor:default}
+.step{display:inline-flex;align-items:center;gap:6px}
+.step .btn{padding:2px 10px;font-size:16px;line-height:1.35}
+.step .pos{color:var(--mute);font-size:12.5px;font-variant-numeric:tabular-nums;min-width:52px;text-align:center}
+
+/* question and options */
+.trnote{font-size:12.5px;color:var(--mute);margin:0 0 10px;display:flex;gap:7px;align-items:baseline}
+.trnote::before{content:"EN";flex:none;font-size:11px;border:1px solid var(--line2);border-radius:4px;padding:0 4px;color:var(--faint)}
+.q{font-size:17px;line-height:1.5;margin:0 0 16px;font-weight:550}
+.zh{color:var(--mute);font-size:13px;margin-top:3px;font-weight:400}
+.q .zh{font-size:14px;margin-top:6px}
+.opts{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.opts li{display:grid;grid-template-columns:28px minmax(0,1fr) auto;gap:12px;align-items:start;padding:11px 13px;border:1px solid var(--line);border-radius:10px;background:var(--panel2)}
+.opts .k{display:grid;place-items:center;width:28px;height:28px;border-radius:50%;border:1px solid var(--line2);background:var(--panel);font-weight:700;font-size:13px}
+.opts li.c{border-color:var(--ok);background:var(--ok-soft)}
+.opts li.c .k{background:var(--ok);border-color:var(--ok);color:#fff}
+.okpill{font-size:12px;color:var(--ok);font-weight:650;white-space:nowrap;padding-top:4px}
+.why{margin-top:8px;padding:7px 10px;border-left:3px solid var(--bad);background:var(--bad-soft);border-radius:0 6px 6px 0;font-size:13px}
+.why .wl{display:block;font-size:10.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--bad);font-weight:700;margin-bottom:1px}
+.ansline{margin:14px 0 0;padding-top:12px;border-top:1px dashed var(--line2)}
+.hide .opts li.c{border-color:var(--line);background:var(--panel2)}
+.hide .opts li.c .k{background:var(--panel);border-color:var(--line2);color:inherit}
+.hide .why,.hide .okpill,.hide .ansline,.hide .gold>*{display:none}
+.hide .gold::after{content:"hidden";color:var(--faint);font-size:12px}
+
+/* page images */
+.cap{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:10px}
+.cap h3{margin:0}
+.hint{color:var(--faint);font-size:12px;white-space:nowrap}
+.page{border:1px solid var(--line2);border-radius:8px;background:#fff;overflow:auto;max-height:78vh}
+.stick .page{max-height:calc(100vh - 176px)}
+.page img{display:block;width:100%;height:auto;cursor:zoom-in}
+.page.zoom img{width:auto;max-width:none;cursor:zoom-out}
+.thumbs{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:14px}
+.th{display:block;text-decoration:none;color:var(--mute);font-size:12px}
+.th .tw{position:relative;display:block;border:1px solid var(--line2);border-radius:8px;overflow:hidden;background:#fff;transition:transform .12s,box-shadow .12s}
+.th:hover .tw{transform:translateY(-2px);box-shadow:var(--shadow)}
+.th img{width:100%;height:auto;display:block}
+.th .bd{position:absolute;top:6px;left:6px;background:rgba(29,28,25,.82);color:#fff;font-size:11px;padding:1px 7px;border-radius:999px}
+.th .tl{display:block;margin-top:6px;line-height:1.4}
+.th.ev .tw{border-color:var(--ok);box-shadow:0 0 0 2px var(--ok)}
+.th.dc .tw{border-color:var(--warn);box-shadow:0 0 0 2px var(--warn)}
+.th .tag{margin:0 0 0 5px;font-size:11px;padding:0 7px}
+.key{display:flex;flex-wrap:wrap;gap:4px 16px;color:var(--mute);font-size:13px;margin:6px 0 12px}
+.key span{display:inline-flex;align-items:center;gap:6px}
+.key i{width:14px;height:10px;border-radius:3px;border:2px solid;display:inline-block}
+details{margin-top:8px}
+summary{cursor:pointer;color:var(--accent);font-size:13.5px;width:max-content}
+.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:14px}
+@media (max-width:900px){.two{grid-template-columns:1fr}}
+.two figure{margin:0}.two figcaption{font-size:12.5px;color:var(--mute);margin-bottom:6px;min-height:2.6em;display:flex;align-items:flex-end}
+
+/* tables */
+.scroll{overflow-x:auto;border:1px solid var(--line);border-radius:10px}
+table{border-collapse:collapse;width:100%;font-size:13px}
+th,td{border-bottom:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+tbody tr:last-child td{border-bottom:0}
+tbody tr:hover td{background:var(--panel2)}
+th{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--mute);font-weight:650;background:var(--panel2);white-space:nowrap}
+th.num,td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+td.mean{font-weight:700}
+td.pid{font-weight:650;white-space:nowrap}
+.lt{display:inline-grid;place-items:center;min-width:20px;height:20px;border-radius:5px;background:var(--code);font-size:11.5px;font-weight:650;margin-right:3px}
+code,pre{font:12.5px/1.5 var(--mono);background:var(--code);border-radius:5px}
+code{padding:1px 6px}
+.kv{display:grid;grid-template-columns:auto auto;justify-content:start;gap:2px 10px;margin:0;font-size:12.5px}
+.kv dt,.kv dd{white-space:nowrap}td.gold{min-width:150px}td.nw{white-space:nowrap}
+.kv dt{color:var(--mute)}.kv dd{margin:0;font-family:var(--mono);font-variant-numeric:tabular-nums}
+.loss{display:inline-block;width:150px;height:8px;border-radius:4px;background:var(--code);vertical-align:middle;overflow:hidden}
+.loss i{display:block;height:100%;border-radius:4px;background:rgb(var(--heat))}
+
+/* layer legend and files */
+.legend{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0 2px}
+.legend span{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;border:1px solid var(--line);border-radius:999px;padding:2px 10px 2px 8px;background:var(--panel2)}
+.legend i{width:10px;height:10px;border-radius:3px;display:inline-block}
+.legend small{color:var(--faint)}
+.files a,.files code{display:inline-block;font:12px/1.6 var(--mono);text-decoration:none;background:var(--code);border-radius:5px;padding:0 6px;margin:2px 0}
+.files a:hover{text-decoration:underline}
+
+/* overview */
+.hero{padding:26px 28px}
+.eyebrow{font-size:11.5px;text-transform:uppercase;letter-spacing:.12em;color:var(--accent);font-weight:700;margin-bottom:6px}
+.hero h2{font-size:30px}
+.lead{font-size:16.5px;line-height:1.55;color:var(--mute);max-width:78ch;margin:10px 0 0!important}
+.stat{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0 4px}
+.stat button{--c:var(--u);--cs:var(--u-soft);text-align:left;border:1px solid var(--line);border-top:4px solid var(--c);border-radius:12px;padding:14px 16px 12px;background:var(--panel2);cursor:pointer;display:flex;flex-direction:column;gap:2px;transition:transform .12s,box-shadow .12s,background .12s}
+.stat button.r{--c:var(--r);--cs:var(--r-soft)}.stat button.d{--c:var(--d);--cs:var(--d-soft)}
+.stat button:hover{transform:translateY(-2px);box-shadow:var(--shadow);background:var(--cs)}
+.stat em{font-style:normal;font-size:11px;text-transform:uppercase;letter-spacing:.09em;color:var(--c);font-weight:700}
+.stat b{font:700 34px/1.15 var(--serif);font-variant-numeric:tabular-nums}
+.stat span{color:var(--mute);font-size:13px;line-height:1.45}
+.stat u{text-decoration:none;color:var(--c);font-size:12.5px;font-weight:650;margin-top:8px}
+.filegrid{display:grid;grid-template-columns:max-content minmax(0,1fr);gap:8px 16px;margin:8px 0 0;font-size:14px}
+.filegrid div{color:var(--mute)}
+</style>
+</head>
+<body>
+<header>
+  <h1><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4" width="19" height="16" rx="1.5"/><path d="M2.5 16h19M14 16v4M6 12.5l4-5 3.5 3 4-4"/></svg><b>CivilCADBench</b><span>sample</span></h1>
+  <nav id="nav" role="tablist"></nav>
+</header>
+<main id="main"></main>
+<script src="viewer/data.js"></script>
+<script src="viewer/translations.js"></script>
+<script>
+"use strict";
+const D = window.DATA, $ = (t, a = {}, ...kids) => { const e = document.createElement(t); for (const [k, v] of Object.entries(a)) { if (k === "class") e.className = v; else if (k === "text") e.textContent = v; else if (k.startsWith("on")) e.addEventListener(k.slice(2), v); else e.setAttribute(k, v); } for (const c of kids.flat(Infinity)) if (c != null) e.append(c); return e; };
+const T = window.TR || {};
+const tr = (k, zh) => T[k] ? [$("div", { text: T[k] }), $("div", { class: "zh", text: zh })] : $("div", { text: zh });
+const qbox = (k, zh) => [T[k] ? $("div", { class: "trnote", text: "English translation added for the reader. The model was given the Chinese original, shown in grey." }) : null, $("div", { class: "q" }, tr(k, zh))];
+const BIND = { table_block: "Table / block", instance: "Instance", cross_view: "Cross-view", scope: "Scope", view: "View", datum: "Datum" };
+const FAULT = { self: ["Unchanged file", "none"], shift_all_3mm: ["Whole page shifted by 3 mm", "harmless"], all_on_one: ["All entities moved to one layer", "layer only"], swap_outline_rebar: ["Outline and reinforcement layers swapped", "layer only"], drop_text_10: ["10% of texts dropped", "content"], edit_text_digit_10: ["One digit changed in 10% of texts", "content"], drop_dim_10: ["10% of dimensions dropped", "content"], edit_dim_digit_10: ["One digit changed in 10% of dimensions", "content"], drop_lines_10: ["10% of lines dropped", "content"], jitter_lines_10_3mm: ["10% of lines moved by 3 mm", "content"] };
+const KIND = { content: "bad", "layer only": "warn", harmless: "ok", none: "" };
+const TABS = [["overview", "Overview"], ["single", "Single-Sheet"], ["multi", "Few-Sheet / Full-Set"], ["recon", "Reconstruction and design"], ["faults", "Fault injection"]];
+const state = { tab: "overview", single: D.single[0].id, unit: D.units[0].id, parent: D.units[0].parents[0].id, task: D.recon[0].id, hide: false };
+const main = document.getElementById("main"), nav = document.getElementById("nav");
+let KEYS = null;
+function go(patch, keepScroll) { Object.assign(state, patch); render(); if (!keepScroll) window.scrollTo(0, 0); }
+function pageBox(src, alt, size) { const box = $("div", { class: "page" }, $("img", size ? { src, alt, loading: "lazy", width: size[0], height: size[1] } : { src, alt, loading: "lazy" })); box.addEventListener("click", () => box.classList.toggle("zoom")); return box; }
+function options(it) {
+  return $("ul", { class: "opts" }, it.options.map(o => {
+    const k = it.id + "/" + o.key, w = T[k + "/why"];
+    return $("li", { class: o.correct ? "c" : "" }, $("span", { class: "k", text: o.key }),
+      $("div", {}, tr(k, o.text), o.why_wrong ? $("div", { class: "why" }, $("span", { class: "wl", text: "Why it is wrong" }), $("div", { text: w || o.why_wrong }), w ? $("div", { class: "zh", text: "错因：" + o.why_wrong }) : null) : null),
+      o.correct ? $("span", { class: "okpill", text: "✓ correct" }) : null);
+  }));
+}
+function toggle() { return $("button", { class: "btn", text: state.hide ? "Show answers" : "Hide answers", onclick: () => go({ hide: !state.hide }, true) }); }
+function stepper(list, cur, pick) {
+  const i = list.indexOf(cur); KEYS = { prev: list[i - 1], next: list[i + 1], pick };
+  const b = (to, label, sym) => { const e = $("button", { class: "btn", title: label, "aria-label": label, text: sym, onclick: () => pick(to) }); if (to == null) e.disabled = true; return e; };
+  return $("span", { class: "step" }, b(list[i - 1], "Previous (left arrow key)", "‹"), $("span", { class: "pos", text: (i + 1) + " / " + list.length }), b(list[i + 1], "Next (right arrow key)", "›"));
+}
+function gold(v) {
+  const vu = x => x && typeof x === "object" && !Array.isArray(x) && Object.keys(x).length === 2 && "value" in x && "unit" in x;
+  const one = x => vu(x) ? x.value + " " + x.unit : typeof x === "string" || typeof x === "number" ? String(x) : JSON.stringify(x);
+  if (v && typeof v === "object" && !Array.isArray(v) && !vu(v)) return $("dl", { class: "kv", title: JSON.stringify(v) }, Object.entries(v).map(([k, x]) => [$("dt", { text: k }), $("dd", { text: one(x) })]));
+  return $("code", { title: JSON.stringify(v), text: one(v) });
+}
+
+function overview() {
+  const nProbe = D.units.reduce((s, u) => s + u.probes.length, 0), nPar = D.units.reduce((s, u) => s + u.parents.length, 0), nPages = D.units.reduce((s, u) => s + u.n_pages, 0);
+  const l1 = D.recon.filter(t => t.level === "L1"), l2 = D.recon.find(t => t.level === "L2");
+  const tile = (cls, fam, big, text, patch) => $("button", { class: cls, onclick: () => go(patch) }, $("em", { text: fam }), $("b", { text: big }), $("span", { text }), $("u", { text: "Open →" }));
+  return [$("div", { class: "card hero" },
+    $("div", { class: "eyebrow", text: "Sample" }),
+    $("h2", { text: "What this page shows" }),
+    $("p", { class: "lead", text: "A fixed-seed, stratified sample of the benchmark, drawn without looking at any model result, together with the scorers. Everything is read from the files next to this page; nothing is loaded from the network." }),
+    $("div", { class: "stat" },
+      tile("", "Understanding", String(D.single.length), "Single-Sheet items, ten per binding type", { tab: "single" }),
+      tile("", "Understanding", nPar + " / " + nProbe, "multi-sheet parents / probes in " + D.units.length + " whole units (" + nPages + " pages)", { tab: "multi" }),
+      tile("r", "Reconstruction", String(l1.length), "L1 reconstruction pages, two per size tier", { tab: "recon", task: l1[0].id }),
+      tile("d", "Reconstruction and design", "1 + 1", "L2 set (" + l2.pages.length + " pages) and L3 design task", { tab: "recon", task: l2.id }))),
+  $("div", { class: "card" },
+    $("h3", { text: "Files" }),
+    $("div", { class: "filegrid" },
+      $("code", { text: "README.md" }), $("div", { text: "contents, environment, commands and expected output" }),
+      $("code", { text: "SAMPLING.md" }), $("div", { text: "how the sample was drawn and every replacement with its reason" }),
+      $("code", { text: "code/" }), $("div", { text: "reconstruction and design scorer, fault injection, typed graders for items and probes" }),
+      $("code", { text: "data/" }), $("div", { text: "the sample" }),
+      $("code", { text: "results/" }), $("div", { text: "fault-injection output on the six L1 pages" })))];
+}
+
+function single() {
+  const it = D.single.find(x => x.id === state.single), groups = Object.keys(BIND).map(b => [b, D.single.filter(x => x.binding === b)]);
+  const ids = groups.flatMap(g => g[1].map(x => x.id)), pick = id => go({ single: id });
+  const side = $("div", { class: "side" }, groups.map(([b, xs]) => [$("h3", {}, BIND[b], $("small", { text: String(xs.length) })),
+    $("div", { class: "chips" }, xs.map(x => $("button", { class: "chip" + (x.difficulty === "hard" ? " hard" : ""), "aria-current": x.id === it.id, title: x.id + " · " + x.difficulty, text: x.id.split("-").pop(), onclick: () => pick(x.id) })))]),
+    D.single.some(x => x.difficulty === "hard") ? $("div", { class: "sidefoot" }, $("i"), "hard item") : null);
+  const body = $("div", { class: "split" + (state.hide ? " hide" : "") },
+    $("div", { class: "card" },
+      $("div", { class: "head" }, $("h2", { text: it.id }), $("span", { class: "tag acc", text: BIND[it.binding] }), $("span", { class: "tag", text: it.difficulty }), $("span", { class: "sp" }), $("span", { class: "acts" }, stepper(ids, it.id, pick), toggle())),
+      qbox(it.id, it.question), options(it),
+      $("div", { class: "ansline meta", text: "Correct set: " + it.answer.join(", ") + " — scored by exact match of the selected set." })),
+    $("div", { class: "card stick" },
+      $("div", { class: "cap" }, $("h3", { text: "Page (title block masked)" }), $("span", { class: "hint", text: it.dpi + " dpi, " + it.size_px.join(" × ") + " px · click to zoom" })),
+      pageBox("data/understanding/single_sheet/" + it.image, it.id, it.size_px)));
+  return [$("div", { class: "cols" }, side, body)];
+}
+
+function multi() {
+  const u = D.units.find(x => x.id === state.unit), p = u.parents.find(x => x.id === state.parent) || u.parents[0];
+  const dir = "data/understanding/multi_sheet/" + u.id + "/pages/", pg = n => dir + "p" + String(n).padStart(2, "0") + ".png";
+  const all = D.units.flatMap(x => x.parents.map(q => x.id + "|" + q.id)), pick = k => go({ unit: k.split("|")[0], parent: k.split("|")[1] });
+  const side = $("div", { class: "side" }, D.units.map(x => [$("h3", {}, "Unit " + x.id, $("small", { text: x.n_pages + " pages" })), x.parents.map(q => $("button", { class: "row", "aria-current": q.id === p.id, onclick: () => pick(x.id + "|" + q.id) }, $("span", { text: q.id }), $("small", { text: q.question_style })))]));
+  const probes = u.probes.filter(q => q.parent === p.id), ev = new Set(p.few_sheet.evidence_pages), dc = new Map(p.few_sheet.decoys.map(d => [d.page, d]));
+  const thumb = (n, badge, cls, label) => $("a", { href: pg(n), target: "_blank", rel: "noopener", class: "th " + cls }, $("span", { class: "tw" }, $("img", { src: pg(n), alt: "page " + n, loading: "lazy" }), badge ? $("span", { class: "bd", text: badge }) : null), $("span", { class: "tl" }, label));
+  const body = $("div", { class: state.hide ? "hide" : "" },
+    $("div", { class: "card" },
+      $("div", { class: "head" }, $("h2", { text: p.id }), $("span", { class: "tag acc", text: "parent" }), $("span", { class: "tag", text: p.question_style }), $("span", { class: "sp" }), $("span", { class: "acts" }, stepper(all, u.id + "|" + p.id, pick), toggle())),
+      qbox(p.id, p.question), options(p),
+      $("div", { class: "ansline meta", text: "Correct set: " + p.answer.join(", ") })),
+    $("div", { class: "card" },
+      $("h3", { class: "first", text: "Few-Sheet input: " + p.few_sheet.pages_in_order.length + " pages in the order shown to the model" }),
+      $("div", { class: "key" }, $("span", {}, $("i", { style: "border-color:var(--ok)" }), "Green border: evidence page."), $("span", {}, $("i", { style: "border-color:var(--warn)" }), "Amber border: look-alike decoy."), $("span", { text: "The model is not told which is which." })),
+      $("div", { class: "thumbs" }, p.few_sheet.pages_in_order.map((n, i) => thumb(n, "图 " + (i + 1), ev.has(n) ? "ev" : dc.has(n) ? "dc" : "",
+        ["unit page " + n, ev.has(n) ? $("span", { class: "tag ok", text: "evidence" }) : dc.has(n) ? $("span", { class: "tag warn", text: "decoy" }) : null, dc.has(n) && dc.get(n).note ? $("div", { text: T[p.id + "/decoy/" + n] || dc.get(n).note }) : null]))),
+      $("h3", { text: "Full-Set input: the whole unit" }),
+      $("div", { class: "meta", text: "The same parent and probes are posed over all " + u.n_pages + " pages; the model works as an agent that views pages or zoomed boxes." }),
+      $("details", {}, $("summary", { text: "Show all " + u.n_pages + " pages" }), $("div", { class: "thumbs", style: "margin-top:12px" }, Array.from({ length: u.n_pages }, (_, i) => thumb(i + 1, null, "", "unit page " + (i + 1)))))),
+    $("div", { class: "card" },
+      $("h3", { class: "first", text: "Probes (" + probes.length + ")" }),
+      $("div", { class: "meta", text: "Read probes name the object and ask for a value; bind probes refer to it through a property printed on another sheet. Solution paths: " + p.solution_paths.map(s => s.map(x => x.split("-").pop()).join(" + ")).join("  or  ") + "." }),
+      $("div", { class: "scroll" }, $("table", {},
+        $("thead", {}, $("tr", {}, ["Probe", "Role", "Tiers", "Pages", "Decides", "Question", "Gold answer", "Grader"].map(h => $("th", { text: h })))),
+        $("tbody", {}, probes.map(q => $("tr", {},
+          $("td", { class: "pid", text: q.id.split("-").pop() }),
+          $("td", {}, $("span", { class: "tag " + (q.role === "bind" ? "warn" : "acc"), text: q.role }), q.on_decoy_page ? $("span", { class: "tag", text: "on decoy" }) : null),
+          $("td", { class: "nw", text: q.tiers.map(t => t === "few_sheet" ? "Few" : "Full").join(", ") }),
+          $("td", { class: "nw", text: q.pages.join(", ") }), $("td", { class: "nw" }, q.decides.map(x => $("span", { class: "lt", text: x }))),
+          $("td", { style: "min-width:340px" }, tr(q.id, q.question)),
+          $("td", { class: "gold" }, gold(q.gold_answer)),
+          $("td", { text: q.grader_id + (q.tolerance ? " ±" + q.tolerance : "") }))))))));
+  return [$("div", { class: "cols" }, side, body)];
+}
+
+function legend() { return $("div", { class: "legend" }, D.layers.map(l => $("span", {}, $("i", { style: "background:" + l.color }), l.gloss, $("small", { text: l.name })))); }
+function recon() {
+  const t = D.recon.find(x => x.id === state.task), A = "viewer/assets/", base = "data/reconstruction/" + t.level + "/" + t.id + "/";
+  const ids = D.recon.map(x => x.id), pick = id => go({ task: id });
+  const side = $("div", { class: "side" }, ["L1", "L2", "L3"].map(L => [$("h3", { text: { L1: "L1 · one page", L2: "L2 · a set", L3: "L3 · design" }[L] }), D.recon.filter(x => x.level === L).map(x => $("button", { class: "row", "aria-current": x.id === t.id, onclick: () => pick(x.id) }, $("span", { text: x.id }), $("small", { text: x.level === "L1" ? x.entities + " ent." : x.level === "L2" ? x.pages.length + " pages" : "" })))]));
+  const pair = (inp, lay, capIn, capLay) => $("div", { class: "two" }, $("figure", {}, $("figcaption", { text: capIn }), pageBox(A + inp, capIn)), $("figure", {}, $("figcaption", { text: capLay }), pageBox(A + lay, capLay)));
+  const files = (...fs) => $("div", { class: "meta files" }, "Files: ", fs.map((f, i) => [i ? " · " : "", $("a", { href: base + f, target: "_blank", rel: "noopener", text: f })]));
+  const head = (...tags) => $("div", { class: "head" }, $("h2", { text: t.id }), tags, $("span", { class: "sp" }), stepper(ids, t.id, pick));
+  let body;
+  if (t.level === "L1") {
+    body = [$("div", { class: "card" }, head($("span", { class: "tag acc", text: "L1" }), $("span", { class: "tag", text: t.tier + " tier" }), $("span", { class: "tag", text: t.entities + " entities" })),
+      $("p", { text: "The agent receives the raster page and the task statement and writes output.dxf. The scorer compares that file with the ground-truth file." }), files("TASK.md", "input.pdf", "gt/gt.dxf", "gt/meta.json"), legend(),
+      pair(t.id + "_input.png", t.id + "_layers.png", "Input: monochrome plot, no vector or text layer", "Ground truth as the scorer reads it: curves sampled every 0.25 mm, coloured by layer; squares are text anchors")),
+      faultTable(t.id)];
+  } else if (t.level === "L2") {
+    body = [$("div", { class: "card" }, head($("span", { class: "tag acc", text: "L2" }), $("span", { class: "tag", text: t.pages.length + " pages of one set" })),
+      $("p", { text: "One DXF per page; besides the mean page score, shared-value recall checks that values repeated across pages of the source are also repeated in the output." }), files("TASK.md", "input.pdf", "meta.json"), legend()),
+      t.pages.map(p => $("div", { class: "card" }, $("h3", { class: "first", text: "Page " + p.page + " · " + p.sheet }), pair(t.id + "_p" + String(p.page).padStart(2, "0") + "_input.png", t.id + "_p" + String(p.page).padStart(2, "0") + "_layers.png", "Input", "Ground truth, coloured by layer")))];
+  } else {
+    body = [$("div", { class: "card" }, head($("span", { class: "tag acc", text: "L3" }), $("span", { class: "tag", text: t.n_context_pages + " context pages" })),
+      $("p", { text: "The agent receives the reference page as an editable DXF and as a plot, the rest of the set as raster pages, and the new parameters in the task statement. The derived page is withheld. Design recall is the share of values that differ from the reference page and that the output writes correctly." }),
+      files("TASK.md", "ref/sibling.dxf", "ref/sibling.pdf", "ref/context.pdf", "ref/context_index.md", "gt/gt.dxf"), legend(),
+      pair(t.id + "_sibling_layers.png", t.id + "_layers.png", "Reference page given to the agent (ref/sibling.dxf), coloured by layer", "Withheld target page (ground truth), coloured by layer")),
+      $("div", { class: "card" }, $("h3", { class: "first", text: "Context pages (ref/context.pdf)" }), $("div", { class: "thumbs", style: "margin-top:12px" }, t.context.map((c, i) => { const src = A + t.id + "_ctx" + String(i + 1).padStart(2, "0") + ".png", en = T[t.id + "/ctx/" + (i + 1)];
+        return $("a", { href: src, target: "_blank", rel: "noopener", class: "th" }, $("span", { class: "tw" }, $("img", { src, alt: c, loading: "lazy" }), $("span", { class: "bd", text: String(i + 1) })), $("span", { class: "tl" }, en || c, en ? $("div", { class: "zh", text: c }) : null)); })))];
+  }
+  return [$("div", { class: "cols" }, side, $("div", {}, body))];
+}
+function lossBar(v) { return $("span", { class: "loss", title: (100 - v).toFixed(1) + " points lost" }, $("i", { style: "width:" + Math.min(100, (100 - v) * 5).toFixed(1) + "%" })); }
+function faultTable(id) {
+  const r = D.faults[id]; if (!r) return null;
+  return $("div", { class: "card" }, $("h3", { class: "first", text: "Fault injection on this ground truth" }), $("div", { class: "scroll", style: "margin-top:10px" }, $("table", {},
+    $("thead", {}, $("tr", {}, $("th", { text: "Fault" }), $("th", { text: "Kind" }), $("th", { text: "Points lost (scale 0 to 20)" }), $("th", { class: "num", text: "Page score" }))),
+    $("tbody", {}, Object.keys(FAULT).filter(k => r[k]).map(k => $("tr", {}, $("td", { text: FAULT[k][0] }), $("td", {}, $("span", { class: "tag " + KIND[FAULT[k][1]], text: FAULT[k][1] })), $("td", {}, lossBar(r[k].overall)), $("td", { class: "num", text: r[k].overall.toFixed(1) })))))));
+}
+function faults() {
+  const ids = Object.keys(D.faults), ks = Object.keys(FAULT);
+  const cell = (x, cls) => $("td", { class: "num" + (cls || ""), style: x == null ? "" : "background:rgba(var(--heat)," + (Math.min(1, (100 - x) / 20) * .42).toFixed(3) + ")", text: x == null ? "–" : x.toFixed(1) });
+  return [$("div", { class: "card" }, $("div", { class: "head" }, $("h2", { text: "Fault injection on the six L1 ground truths" })),
+    $("p", { text: "Each ground truth receives one fault at a time and is scored against the untouched file with the packaged scorer (results/fault_injection/). The two layer faults leave every printed pixel unchanged. A fault that finds nothing to act on leaves the score at 100 (for example the two dimension faults on a page whose ground truth has no dimension entity). Numbers are for these six pages only; the paper reports the means over all 232 pages." }),
+    $("div", { class: "meta", text: "Cell shading grows with the points lost against the unchanged file." }),
+    $("div", { class: "scroll" }, $("table", {},
+      $("thead", {}, $("tr", {}, $("th", { text: "Fault" }), $("th", { text: "Kind" }), ids.map(i => $("th", { class: "num", text: i })), $("th", { class: "num", text: "Mean" }))),
+      $("tbody", {}, ks.map(k => { const v = ids.map(i => D.faults[i][k] ? D.faults[i][k].overall : null), ok = v.filter(x => x != null); return $("tr", {}, $("td", { text: FAULT[k][0] }), $("td", {}, $("span", { class: "tag " + KIND[FAULT[k][1]], text: FAULT[k][1] })), v.map(x => cell(x)), cell(ok.reduce((a, b) => a + b, 0) / ok.length, " mean")); })))))];
+}
+function render() {
+  KEYS = null; document.body.dataset.tab = state.tab;
+  nav.replaceChildren(...TABS.map(([k, t]) => $("button", { role: "tab", "aria-selected": state.tab === k, text: t, onclick: () => go({ tab: k }) })));
+  main.replaceChildren(...({ overview, single, multi, recon, faults }[state.tab])().flat(3).filter(Boolean));
+}
+document.addEventListener("keydown", e => {
+  if (!KEYS || e.metaKey || e.ctrlKey || e.altKey || document.querySelector(".lb")) return;
+  const to = e.key === "ArrowLeft" ? KEYS.prev : e.key === "ArrowRight" ? KEYS.next : null;
+  if (to != null) { e.preventDefault(); KEYS.pick(to); }
+});
+render();
+</script>
+</body>
+</html>
