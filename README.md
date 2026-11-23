@@ -29,25 +29,77 @@ from real civil engineering drawing sets, in three tasks of rising difficulty.
 </p>
 <p align="center"><sub><b>(a)</b> Understanding: every answer binds a number on the page to what it belongs to. <b>(b)</b> Reconstruction and design: the model returns the editable CAD file behind the pixels.</sub></p>
 
-| Task | The model gets | The model returns | Size | Scored by |
-|---|---|---|---|---|
-| **Understanding** | page images of one sheet, a few sheets or a whole set, and a question | the set of correct options | 1,800 + 383 questions | exact match |
-| **Reconstruction** L1 / L2 | a monochrome print of one page / of a whole set | one layered DXF file per page | 232 pages / 28 sets | point-level F1 against the designers' own CAD file |
-| **Design** L3 | a reference page with its CAD file, and the rest of the set | a new page as a DXF file | 19 tasks | recall of the values that had to change |
+<table>
+  <thead>
+    <tr>
+      <th width="13%"></th>
+      <th width="29%">Understanding</th>
+      <th width="29%">Reconstruction (L1, L2)</th>
+      <th width="29%">Design (L3)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th align="left">Input</th>
+      <td>page images of one sheet, a few sheets or a whole set, and a question</td>
+      <td>a monochrome print of one page (L1) or of a whole set (L2)</td>
+      <td>a reference page with its CAD file, and the rest of the set</td>
+    </tr>
+    <tr>
+      <th align="left">Output</th>
+      <td>the set of correct options</td>
+      <td>one layered DXF file per page</td>
+      <td>a new page as a DXF file</td>
+    </tr>
+    <tr>
+      <th align="left">Size</th>
+      <td>1,800 + 383 questions</td>
+      <td>232 pages / 28 sets</td>
+      <td>19 tasks</td>
+    </tr>
+    <tr>
+      <th align="left">Scored by</th>
+      <td>exact match</td>
+      <td>point-level F1 against the designers' own CAD file</td>
+      <td>recall of the values that had to change</td>
+    </tr>
+  </tbody>
+</table>
 
 Every score is computed by a deterministic program. No model acts as a judge.
 
 ## Results
 
-| Model | L1 page score | L1 layer F1 | L2 set score | L3 design recall | Single-Sheet | Few-Sheet | Full-Set |
-|---|---:|---:|---:|---:|---:|---:|---:|
-| GPT-6 Astra | **91.2** | 59.9 | **87.8** | 47.9 | **93.3** | **95.3** | **94.5** |
-| GPT-6.1 Sol | 90.4 | 58.9 | 85.9 | **49.1** | 91.5 | 92.2 | 89.7 |
-| GPT-5.6 Sol | 59.8 | 40.8 | 36.6 | 40.3 | 72.2 | 75.5 | 69.4 |
-| DeepSeek-V4.1-Flash | 81.3 | 63.2 | 55.4 | 37.8 | 60.4 | 63.8 | 58.7 |
-| GLM-5.3-Flash | 76.1 | **70.8** | 47.2 | 19.2 | 57.4 | 60.2 | 52.8 |
-| Qwen3.8-27B | 36.2 | 30.1 | 14.5 | 6.3 | 58.2 | 61.4 | 53.6 |
-| Qwen3.5-9B | 5.6 | 1.8 | 0.0 | 0.0 | 34.3 | 43.1 | 8.2 |
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2" align="left" width="26%">Model</th>
+      <th colspan="3">Reconstruction</th>
+      <th>Design</th>
+      <th colspan="3">Understanding</th>
+    </tr>
+    <tr>
+      <th align="right" >L1&nbsp;page</th>
+      <th align="right" >L1&nbsp;layer&nbsp;F1</th>
+      <th align="right" >L2&nbsp;set</th>
+      <th align="right" >L3&nbsp;recall</th>
+      <th align="right" width="11%">Single</th>
+      <th align="right" width="11%">Few</th>
+      <th align="right" width="11%">Full</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>GPT-6 Astra</td><td align="right"><b>91.2</b></td><td align="right">59.9</td><td align="right"><b>87.8</b></td><td align="right">47.9</td><td align="right"><b>93.3</b></td><td align="right"><b>95.3</b></td><td align="right"><b>94.5</b></td></tr>
+    <tr><td>GPT-6.1 Sol</td><td align="right">90.4</td><td align="right">58.9</td><td align="right">85.9</td><td align="right"><b>49.1</b></td><td align="right">91.5</td><td align="right">92.2</td><td align="right">89.7</td></tr>
+    <tr><td>GPT-5.6 Sol</td><td align="right">59.8</td><td align="right">40.8</td><td align="right">36.6</td><td align="right">40.3</td><td align="right">72.2</td><td align="right">75.5</td><td align="right">69.4</td></tr>
+    <tr><td>DeepSeek-V4.1-Flash</td><td align="right">81.3</td><td align="right">63.2</td><td align="right">55.4</td><td align="right">37.8</td><td align="right">60.4</td><td align="right">63.8</td><td align="right">58.7</td></tr>
+    <tr><td>GLM-5.3-Flash</td><td align="right">76.1</td><td align="right"><b>70.8</b></td><td align="right">47.2</td><td align="right">19.2</td><td align="right">57.4</td><td align="right">60.2</td><td align="right">52.8</td></tr>
+    <tr><td>Qwen3.8-27B</td><td align="right">36.2</td><td align="right">30.1</td><td align="right">14.5</td><td align="right">6.3</td><td align="right">58.2</td><td align="right">61.4</td><td align="right">53.6</td></tr>
+    <tr><td>Qwen3.5-9B</td><td align="right">5.6</td><td align="right">1.8</td><td align="right">0.0</td><td align="right">0.0</td><td align="right">34.3</td><td align="right">43.1</td><td align="right">8.2</td></tr>
+  </tbody>
+</table>
+
+<sub>Reconstruction: page score and layer-aware F1 on L1, set score on L2. Design: recall of the values that had to change. Understanding: accuracy on Single-Sheet, Few-Sheet and Full-Set. All on a 0 to 100 scale; best in bold.</sub>
 
 On single pages the best model reaches a geometry F1 of 95.5 and a layer-aware F1 of 59.9: it traces the drawing and
 does not recover the file. All columns and the case studies are on the
@@ -146,28 +198,49 @@ for Codex CLI and Claude Code that cuts the network and applies the limits below
 
 ### Protocol for comparable numbers
 
-| Rule | Setting |
-|---|---|
-| Workspace | a fresh copy per task; one run per task and model; the agent submits once |
-| Outside the workspace | the source CAD file, the ground truth and the scorer |
-| Reasoning effort | high, for every model |
-| Network | none, apart from the model endpoint; no web search |
-| Sandbox | 8 CPUs, 16 GB of memory, 1024 processes, non-root |
-| Time limit | 2 hours for L1 and L3, 6 hours for L2; at the limit, the files in the workspace are scored |
-| Reruns | only after an infrastructure failure, never after a low score |
-| Understanding | Single-Sheet and Few-Sheet in one turn; in Full-Set the model opens the pages of the set with tools |
+- **Workspace.** A fresh copy per task; one run per task and model; the agent submits once.
+- **Outside the workspace.** The source CAD file, the ground truth and the scorer.
+- **Reasoning effort.** High, for every model.
+- **Network.** None, apart from the model endpoint; no web search.
+- **Sandbox.** 8 CPUs, 16 GB of memory, 1024 processes, non-root.
+- **Time limit.** 2 hours for L1 and L3, 6 hours for L2; at the limit, the files in the workspace are scored.
+- **Reruns.** Only after an infrastructure failure, never after a low score.
+- **Understanding.** Single-Sheet and Few-Sheet in one turn; in Full-Set the model opens the pages of the set with tools.
 
 Details and the exact prompts: [`docs/PROTOCOL.md`](docs/PROTOCOL.md).
 
 ## Data
 
-| | In this repository | Full benchmark |
-|---|---|---|
-| Single-Sheet questions | 60 | 1,800 |
-| Few-Sheet and Full-Set questions | 10, with 62 probes | 383 and 330 |
-| L1 pages | 6 | 232 |
-| L2 sets | 1 (7 pages) | 28 |
-| L3 tasks | 1 | 19 |
+<table>
+  <thead>
+    <tr>
+      <th width="18%"></th>
+      <th width="17%">Single-Sheet<br>questions</th>
+      <th width="26%">Few-Sheet&nbsp;and&nbsp;Full-Set<br>questions</th>
+      <th width="13%">L1 pages</th>
+      <th width="13%">L2 sets</th>
+      <th width="13%">L3 tasks</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th align="left">This repository</th>
+      <td align="center">60</td>
+      <td align="center">10, with 62 probes</td>
+      <td align="center">6</td>
+      <td align="center">1&nbsp;(7&nbsp;pages)</td>
+      <td align="center">1</td>
+    </tr>
+    <tr>
+      <th align="left">Full benchmark</th>
+      <td align="center">1,800</td>
+      <td align="center">383 and 330</td>
+      <td align="center">232</td>
+      <td align="center">28</td>
+      <td align="center">19</td>
+    </tr>
+  </tbody>
+</table>
 
 The full benchmark will be published on Hugging Face. Drawings, questions and task statements are in Chinese, the
 language of the source drawing sets; the [sample viewer](https://agenticivil.com/civilcadbench/sample/) shows an
