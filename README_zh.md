@@ -12,7 +12,7 @@
   <a href="https://agenticivil.com/civilcadbench/zh"><img alt="项目主页" src="https://img.shields.io/badge/%E9%A1%B9%E7%9B%AE%E4%B8%BB%E9%A1%B5-1e46d6?style=for-the-badge"></a>
   <a href="https://agenticivil.com/civilcadbench/zh#results"><img alt="榜单" src="https://img.shields.io/badge/%E6%A6%9C%E5%8D%95-0f172a?style=for-the-badge"></a>
   <a href="https://agenticivil.com/civilcadbench/sample/zh"><img alt="数据样例" src="https://img.shields.io/badge/%E6%95%B0%E6%8D%AE%E6%A0%B7%E4%BE%8B-0f172a?style=for-the-badge"></a>
-  <img alt="Hugging Face 数据集：即将发布" src="https://img.shields.io/badge/%E6%95%B0%E6%8D%AE%E9%9B%86-%E5%8D%B3%E5%B0%86%E5%8F%91%E5%B8%83-9ca3af?style=for-the-badge&logo=huggingface&logoColor=white&labelColor=6b7280">
+  <a href="https://huggingface.co/datasets/AgentiCivil/CivilCADBench"><img alt="Hugging Face 数据集" src="https://img.shields.io/badge/%E6%95%B0%E6%8D%AE%E9%9B%86-0f172a?style=for-the-badge&logo=huggingface&logoColor=ffd21e"></a>
   <img alt="论文：即将发布" src="https://img.shields.io/badge/%E8%AE%BA%E6%96%87-%E5%8D%B3%E5%B0%86%E5%8F%91%E5%B8%83-9ca3af?style=for-the-badge&logo=arxiv&logoColor=white&labelColor=6b7280">
 </p>
 
@@ -240,7 +240,15 @@ Claude Code），它会断开网络并施加下面的限制。
   </tbody>
 </table>
 
-完整基准将发布在 Hugging Face。图纸、题目和任务说明均为中文，与原始图纸集一致；
+完整基准发布在 Hugging Face：[AgentiCivil/CivilCADBench](https://huggingface.co/datasets/AgentiCivil/CivilCADBench)，许可为 CC BY-NC 4.0。
+它与样例的目录结构相同，所有 `ccb` 命令都可以用 `--data` 读取它：
+
+```bash
+hf download AgentiCivil/CivilCADBench --repo-type dataset --local-dir CivilCADBench-data
+ccb --data CivilCADBench-data/data export understanding --tier single --out requests/
+```
+
+图纸、题目和任务说明均为中文，与原始图纸集一致；
 [数据样例页面](https://agenticivil.com/civilcadbench/sample/zh)在每道题旁给出了对照翻译。
 
 - [`docs/PROTOCOL.md`](docs/PROTOCOL.md)：与模型或智能体交换的文件、提示词和规则

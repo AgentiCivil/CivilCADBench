@@ -12,7 +12,7 @@
   <a href="https://agenticivil.com/civilcadbench/"><img alt="Project page" src="https://img.shields.io/badge/Project%20Page-1e46d6?style=for-the-badge"></a>
   <a href="https://agenticivil.com/civilcadbench/#results"><img alt="Leaderboard" src="https://img.shields.io/badge/Leaderboard-0f172a?style=for-the-badge"></a>
   <a href="https://agenticivil.com/civilcadbench/sample/"><img alt="Sample viewer" src="https://img.shields.io/badge/Sample%20Viewer-0f172a?style=for-the-badge"></a>
-  <img alt="Dataset on Hugging Face: coming soon" src="https://img.shields.io/badge/Dataset-coming%20soon-9ca3af?style=for-the-badge&logo=huggingface&logoColor=white&labelColor=6b7280">
+  <a href="https://huggingface.co/datasets/AgentiCivil/CivilCADBench"><img alt="Dataset on Hugging Face" src="https://img.shields.io/badge/Dataset-0f172a?style=for-the-badge&logo=huggingface&logoColor=ffd21e"></a>
   <img alt="Paper: coming soon" src="https://img.shields.io/badge/Paper-coming%20soon-9ca3af?style=for-the-badge&logo=arxiv&logoColor=white&labelColor=6b7280">
 </p>
 
@@ -242,8 +242,15 @@ Details and the exact prompts: [`docs/PROTOCOL.md`](docs/PROTOCOL.md).
   </tbody>
 </table>
 
-The full benchmark will be published on Hugging Face. Drawings, questions and task statements are in Chinese, the
-language of the source drawing sets; the [sample viewer](https://agenticivil.com/civilcadbench/sample/) shows an
+The full benchmark is on Hugging Face as [AgentiCivil/CivilCADBench](https://huggingface.co/datasets/AgentiCivil/CivilCADBench), under the CC BY-NC 4.0
+licence. It has the layout of the sample, so every `ccb` command reads it through `--data`:
+
+```bash
+hf download AgentiCivil/CivilCADBench --repo-type dataset --local-dir CivilCADBench-data
+ccb --data CivilCADBench-data/data export understanding --tier single --out requests/
+```
+
+Drawings, questions and task statements are in Chinese, the language of the source drawing sets; the [sample viewer](https://agenticivil.com/civilcadbench/sample/) shows an
 English translation next to every question.
 
 - [`docs/PROTOCOL.md`](docs/PROTOCOL.md): the files exchanged with a model or an agent, the prompts and the rules
