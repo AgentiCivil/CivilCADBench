@@ -67,9 +67,31 @@ def scorers():
     return load(CODE_R, fn)
 
 
-def units(data):
-    base = Path(data) / "understanding" / "multi_sheet"
-    return [d for d in sorted(base.iterdir()) if d.is_dir()]
+def multi_items(data, key=None):
+    """Parents of multi_sheet/items.jsonl, each with its probes; with a tier key, only the parents posed in that tier."""
+    items = rows(Path(data) / "understanding" / "multi_sheet" / "items.jsonl")
+    return [p for p in items if key is None or key in p["tiers"]]
+
+
+def set_folders(data, tmp, key=None):
+    """The graders under code/ read one folder per drawing set, with parents.jsonl and probes.jsonl. This writes
+    items.jsonl in that form under tmp/multi_sheet/ and returns the folders, so that the graders run unchanged."""
+    by = {}
+    for p in multi_items(data, key):
+        by.setdefault(p["set"], []).append(p)
+    out = []
+    for name, parents in sorted(by.items()):
+        d = Path(tmp) / "multi_sheet" / name
+        d.mkdir(parents=True)
+        with open(d / "parents.jsonl", "w", encoding="utf-8") as f:
+            for p in parents:
+                f.write(json.dumps({k: v for k, v in p.items() if k != "probes"}, ensure_ascii=False) + "\n")
+        with open(d / "probes.jsonl", "w", encoding="utf-8") as f:
+            for p in parents:
+                for q in p["probes"]:
+                    f.write(json.dumps({**q, "parent": p["id"]}, ensure_ascii=False) + "\n")
+        out.append(d)
+    return out
 
 
 def tasks(data, level):
@@ -106,28 +128,22 @@ def export_understanding(args):
                          "prompt": compact(user), "images": [img]})
     else:
         key = TIERS[tier]
-        for u in units(data):
-            pages = sorted((u / "pages").glob("p*.png"))
-            parents = rows(u / "parents.jsonl")
-            shown = {}
-            for p in parents:
-                if tier == "few":
-                    imgs = [link(u / "pages" / f"p{n:02d}.png", f"{u.name}/p{n:02d}.png") for n in p["few_sheet"]["pages_in_order"]]
-                    user = {"image_count": len(imgs)}
-                    system = SYSTEM["one_turn_choice"]
-                else:
-                    imgs = [link(pg, f"{u.name}/{pg.name}") for pg in pages]
-                    user = {"document": "document", "page_count": len(imgs)}
-                    system = SYSTEM["full_choice"]
-                shown[p["id"]] = imgs
-                user.update(instruction=instr["parent_instruction"], question=p["question"], options=options(p))
-                reqs.append({"id": p["id"], "kind": "parent", "tier": tier, "system": system, "prompt": compact(user), "images": imgs})
+        base = data / "understanding" / "multi_sheet"
+        for p in multi_items(data, key):        # every parent brings its own images: few_sheet.images or full_set.images
+            imgs = [link(base / rel, rel.removeprefix("images/")) for rel in p[key]["images"]]
+            if tier == "few":
+                user = {"image_count": len(imgs)}
+                system = SYSTEM["one_turn_choice"]
+            else:
+                user = {"document": "document", "page_count": len(imgs)}
+                system = SYSTEM["full_choice"]
+            user.update(instruction=instr["parent_instruction"], question=p["question"], options=options(p))
+            reqs.append({"id": p["id"], "kind": "parent", "tier": tier, "system": system, "prompt": compact(user), "images": imgs})
             if args.parents_only:
                 continue
-            for q in rows(u / "probes.jsonl"):
+            for q in p["probes"]:
                 if key not in q["tiers"]:
                     continue
-                imgs = shown[q["parent"]]
                 if tier == "few":
                     user = {"image_count": len(imgs), "instruction": instr["probe_instruction_few_sheet"]}
                     system = SYSTEM["one_turn_probe"]
@@ -174,24 +190,25 @@ def grade_understanding(args):
         key = TIERS[tier]
         tot = {"parents": 0, "parents_answered": 0, "parents_correct": 0, "M": 0, "K": 0, "J": 0}
         probes = {"read": [0, 0], "bind": [0, 0]}
-        per_unit = {}
-        for u in units(data):
-            r = g.multi(str(u), resp, key)
-            parents = rows(u / "parents.jsonl")
-            tot["parents"] += len(parents)
-            tot["parents_answered"] += sum(p["id"] in resp for p in parents)
-            tot["parents_correct"] += sum(bool(p["id"] in resp and g.grade_choice(p, resp[p["id"]])) for p in parents)
-            for k in ("M", "K", "J"):
-                tot[k] += r[k]
-            for q in rows(u / "probes.jsonl"):
-                if key in q["tiers"] and q["id"] in resp:
-                    probes[q["role"]][1] += 1
-                    probes[q["role"]][0] += bool(g.grade_probe(q, resp[q["id"]]))
-            per_unit[u.name] = r
+        per_set = {}
+        with tempfile.TemporaryDirectory() as tmp:
+            for u in set_folders(data, tmp, key):       # the parents posed in this tier, grouped by drawing set
+                r = g.multi(str(u), resp, key)
+                parents = rows(u / "parents.jsonl")
+                tot["parents"] += len(parents)
+                tot["parents_answered"] += sum(p["id"] in resp for p in parents)
+                tot["parents_correct"] += sum(bool(p["id"] in resp and g.grade_choice(p, resp[p["id"]])) for p in parents)
+                for k in ("M", "K", "J"):
+                    tot[k] += r[k]
+                for q in rows(u / "probes.jsonl"):
+                    if key in q["tiers"] and q["id"] in resp:
+                        probes[q["role"]][1] += 1
+                        probes[q["role"]][0] += bool(g.grade_probe(q, resp[q["id"]]))
+                per_set[u.name] = r
         res = {"tier": tier, **tot, "parent_accuracy": round(tot["parents_correct"] / tot["parents"], 4) if tot["parents"] else None,
                "probe_accuracy": {k: {"correct": c, "answered": n, "accuracy": round(c / n, 4) if n else None} for k, (c, n) in probes.items()},
                "LC": round(tot["K"] / tot["M"], 4) if tot["M"] else None, "CA": round(tot["J"] / tot["K"], 4) if tot["K"] else None,
-               "units": per_unit}
+               "sets": per_set}
     text = json.dumps(res, ensure_ascii=False, indent=1)
     if args.out:
         Path(args.out).write_text(text + "\n", encoding="utf-8")
@@ -363,7 +380,11 @@ def selfcheck(args):
             ok &= all(full)
             print(f"reconstruction  {sum(full)}/{len(full)} tasks at 100.0 with the ground truth as output")
     g = grader()
-    d = g.demo(str(data / "understanding"))
+    with tempfile.TemporaryDirectory() as tmp:
+        (Path(tmp) / "single_sheet").mkdir()
+        shutil.copyfile(data / "understanding" / "single_sheet" / "items.jsonl", Path(tmp) / "single_sheet" / "items.jsonl")
+        set_folders(data, tmp)
+        d = g.demo(tmp)
     ok &= d["gold_pass"] == d["gold_total"] and d["perturbed_fail"] == d["perturbed_total"]
     print(f"understanding   {d['gold_pass']}/{d['gold_total']} gold answers pass, {d['perturbed_fail']}/{d['perturbed_total']} perturbed answers fail")
     sys.exit(0 if ok else 1)

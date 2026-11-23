@@ -8,7 +8,8 @@ data/
     single_sheet/              items.jsonl and pages/SS-01.png ...
     multi_sheet/
       prompts.json             instruction lines shown to the model
-      U01/ U02/ ...            one drawing unit each: pages/pNN.png (the whole unit), parents.jsonl, probes.jsonl
+      items.jsonl              one parent per line, with its probes
+      images/<parent id>/      few_sheet/01.png ... and full_set/p01.png ...: every image the parent needs
   reconstruction/
     L1/<task>/                 input.pdf, TASK.md, gt/gt.dxf, gt/meta.json
     L2/<task>/                 input.pdf, TASK.md, meta.json, gt/page_NN/
@@ -18,10 +19,13 @@ data/
 These folders hold the questions together with their answers, and the tasks together with their ground truth. Do not
 hand them to a model or an agent: `ccb export` writes the inputs without the answers (see [PROTOCOL.md](PROTOCOL.md)).
 
+Every entry is self-contained. An item, a parent or a task can be copied out together with the files it names, and no
+file is shared between two entries: a page that two parents show is stored once under each of them.
+
 | Part | In the sample | In the benchmark |
 |---|---|---|
 | Single-Sheet items | 60 (10 per binding type) | 1,800 |
-| Multi-sheet parents (Few-Sheet and Full-Set) | 10, in 2 units, with 62 probes | 383 Few-Sheet, 330 Full-Set |
+| Multi-sheet parents (Few-Sheet and Full-Set) | 10, from 2 drawing sets, with 62 probes | 383 Few-Sheet, 330 Full-Set |
 | Reconstruction L1 pages | 6 (2 easy, 2 medium, 2 hard) | 232 |
 | Reconstruction L2 sets | 1 (7 pages) | 28 |
 | Design L3 tasks | 1 | 19 |
@@ -43,7 +47,7 @@ Chinese originals only. Names printed on the drawings are quoted in Chinese with
 
 | Field | Meaning |
 |---|---|
-| `id` | `SS-01` ... `SS-60` |
+| `id` | `SS-01` ... `SS-60` in the sample, `SS-0001` ... `SS-1800` in the benchmark |
 | `binding` | binding type: `table_block`, `instance`, `cross_view`, `scope`, `view`, `datum` |
 | `difficulty` | `standard` or `hard` |
 | `question_type`, `question` | the question as shown to the model |
@@ -51,18 +55,33 @@ Chinese originals only. Names printed on the drawings are quoted in Chinese with
 | `answer` | the set of correct keys (one to four); an item is correct only on exact match of the set |
 | `image`, `dpi`, `size_px` | page image and the resolution at which it was shown |
 
-**`multi_sheet/Uxx/parents.jsonl`** A parent is posed twice: in Few-Sheet over the pages of `few_sheet.pages_in_order`
-(evidence pages mixed with look-alike decoy pages), and in Full-Set over the whole unit, `pages/p01.png` onwards.
-`solution_paths` lists sets of probe ids; each set suffices to decide the parent. Options carry `cross_page`, true when
-the option cannot be decided from one page.
-
-**`multi_sheet/Uxx/probes.jsonl`** Short-answer questions attached to a parent.
+**`multi_sheet/items.jsonl`** One parent per line. A parent is posed in Few-Sheet over a handful of pages (evidence
+pages mixed with look-alike decoy pages) and, when `tiers` says so, in Full-Set over every page of its drawing set.
 
 | Field | Meaning |
 |---|---|
+| `id` | `MS-Uxx-NN` |
+| `set` | label of the drawing set the parent was built on. A label only: no file is looked up through it |
+| `tiers` | where the parent is posed: `["few_sheet", "full_set"]`, or `["few_sheet"]` alone |
+| `question_type`, `question_style`, `question` | the question as shown to the model |
+| `options` | as for a Single-Sheet item, plus `cross_page`, true when the option cannot be decided from one page |
+| `answer` | the set of correct keys; exact match of the set |
+| `few_sheet` | `images`: the pages shown, in the order shown, as paths below `multi_sheet/`. `dpi`: the resolution of each image. `pages`: the page number of each image. `evidence_pages` and `decoys`: which of them hold the evidence and which are look-alikes |
+| `full_set` | `images`: every page of the set, in order, and `page_count`. `null` for a parent posed in Few-Sheet only |
+| `probes` | the probes of this parent, see below |
+| `solution_paths` | sets of probe ids; each set suffices to decide the parent |
+
+Page numbers count the pages of the drawing set and match `full_set/pNN.png`. For a parent posed in Few-Sheet only,
+they count the images of `few_sheet.images` from 1.
+
+**`probes`** Short-answer questions attached to a parent.
+
+| Field | Meaning |
+|---|---|
+| `id` | `MS-Uxx-NN-R1` ... for `read` probes, `-B1` ... for `bind` probes |
 | `role` | `read`: the probe names the object and asks for a printed value. `bind`: it refers to the object through a property printed elsewhere |
 | `tiers` | where the probe is posed: `few_sheet`, `full_set` |
-| `pages` | unit pages that hold the evidence |
+| `pages` | pages that hold the evidence |
 | `decides` | the parent options this probe decides |
 | `on_decoy_page` | true when the probed value sits on a decoy page |
 | `response_spec` | answer format requested from the model |
@@ -77,7 +96,7 @@ names its output file and its ground-truth folder.
 The sample is de-identified: design-office, owner, project and place names were removed.
 
 - Page images of the understanding tasks are re-rendered with everything outside the drawing area blanked: title
-  block, sign-off cells, stamps and margin strips. In the two multi-sheet units the sheet-title and sheet-number cells
+  block, sign-off cells, stamps and margin strips. On the pages of the multi-sheet parents the sheet-title and sheet-number cells
   are kept, because items refer to sheets by title.
 - Ground-truth and reference DXF files are rebuilt into fresh files that hold the model-space entities only. The
   header is that of a new file with its save-time stamps set to constants; unused blocks and the original file

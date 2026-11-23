@@ -78,14 +78,17 @@ faults on a page without dimension entities.
 ## Understanding
 
 ```bash
-python code/understanding/grade.py demo   data/understanding
-python code/understanding/grade.py single data/understanding/single_sheet/items.jsonl <responses.jsonl>
-python code/understanding/grade.py multi  data/understanding/multi_sheet/U01 <responses.jsonl> [few_sheet|full_set]
+ccb selfcheck
+ccb grade understanding --tier single <responses.jsonl>
+ccb grade understanding --tier few    <responses.jsonl>
+ccb grade understanding --tier full   <responses.jsonl>
 ```
 
-`demo` sends the gold answer of every item, parent and probe through its grader (all must pass) and then an answer
-with one letter flipped, one digit changed or a suffix added (all must fail). For a multi-sheet unit the grader also
-reports the composition metrics. A solution path is a set of probes that suffices to decide the parent. M counts the
+`selfcheck` sends the gold answer of every item, parent and probe through its grader (all must pass) and then an
+answer with one letter flipped, one digit changed or a suffix added (all must fail). The graders are the functions of
+`code/understanding/grade.py`. Its `multi` and `demo` functions read one folder per drawing set, with `parents.jsonl`
+and `probes.jsonl`; `ccb` writes `items.jsonl` in that form into a temporary folder and calls them unchanged. For the
+multi-sheet tiers the grader also reports the composition metrics, in total and per drawing set (`sets`). A solution path is a set of probes that suffices to decide the parent. M counts the
 parents with at least one fully answered path, K those with a path whose probes are all correct, J those among K
 whose parent is also correct. Local coverage LC = K / M, compositional accuracy CA = J / K.
 

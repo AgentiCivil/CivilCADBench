@@ -260,7 +260,7 @@ function single() {
 
 function multi() {
   const u = D.units.find(x => x.id === state.unit), p = u.parents.find(x => x.id === state.parent) || u.parents[0];
-  const dir = "data/understanding/multi_sheet/" + u.id + "/pages/", pg = n => dir + "p" + String(n).padStart(2, "0") + ".png";
+  const dir = "data/understanding/multi_sheet/images/" + p.id + "/full_set/", pg = n => dir + "p" + String(n).padStart(2, "0") + ".png";
   const all = D.units.flatMap(x => x.parents.map(q => x.id + "|" + q.id)), pick = k => go({ unit: k.split("|")[0], parent: k.split("|")[1] });
   const side = $("div", { class: "side" }, D.units.map(x => [$("h3", {}, "Unit " + x.id, $("small", { text: x.n_pages + " pages" })), x.parents.map(q => $("button", { class: "row", "aria-current": q.id === p.id, onclick: () => pick(x.id + "|" + q.id) }, $("span", { text: q.id }), $("small", { text: q.question_style })))]));
   const probes = u.probes.filter(q => q.parent === p.id), ev = new Set(p.few_sheet.evidence_pages), dc = new Map(p.few_sheet.decoys.map(d => [d.page, d]));
