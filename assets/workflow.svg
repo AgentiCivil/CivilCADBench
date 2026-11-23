@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 424" width="960" height="424" role="img" aria-label="How an evaluation runs: ccb exports the inputs as files, your model or agent turns them into outputs, ccb scores the outputs">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#1e46d6"/></marker>
+    <style>
+      .s{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif}
+      .m{font-family:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace}
+      .h{font-size:11.5px;font-weight:600;letter-spacing:.08em;fill:#5b6577}
+      .hb{fill:#1e46d6}
+      .row{font-size:17px;font-weight:700;fill:#0f172a}
+      .sub{font-size:12px;fill:#5b6577}
+      .t{font-size:15px;font-weight:650;fill:#0f172a}
+      .d{font-size:13px;fill:#475569}
+      .f{font-size:13.5px;fill:#0f172a}
+      .k{font-size:13px;font-weight:600;fill:#1e46d6}
+      .c{font-size:13px;fill:#ffffff}
+      .box{fill:#ffffff;stroke:#cbd5e1;stroke-width:1.2}
+      .mine{fill:#ffffff;stroke:#1e46d6;stroke-width:1.4}
+      .ar{stroke:#1e46d6;stroke-width:2;fill:none;marker-end:url(#a)}
+    </style>
+  </defs>
+  <rect x="1" y="1" width="958" height="422" rx="14" fill="#ffffff" stroke="#d0d7de"/>
+
+  <!-- your side -->
+  <rect x="440" y="18" width="246" height="388" rx="12" fill="#eef2ff" stroke="#1e46d6" stroke-width="1.2" stroke-dasharray="5 5"/>
+
+  <text x="285" y="44" text-anchor="middle" class="m h">1 · EXPORT THE INPUTS</text>
+  <text x="563" y="44" text-anchor="middle" class="m h hb">2 · YOUR MODEL OR AGENT</text>
+  <text x="826" y="44" text-anchor="middle" class="m h">3 · SCORE THE OUTPUTS</text>
+
+  <!-- row 1: understanding -->
+  <text x="22" y="122" class="s row">Understanding</text>
+  <text x="22" y="144" class="s sub">Single-Sheet,</text>
+  <text x="22" y="161" class="s sub">Few-Sheet, Full-Set</text>
+
+  <rect x="158" y="62" width="254" height="150" rx="10" class="box"/>
+  <rect x="174" y="80" width="210" height="27" rx="6" fill="#0f172a"/>
+  <text x="185" y="98" class="m c">ccb export understanding</text>
+  <text x="174" y="138" class="m f">requests.jsonl + images/</text>
+  <text x="174" y="164" class="s d">question, options, page images</text>
+  <text x="174" y="190" class="s k">no answers inside</text>
+
+  <path d="M416 137H446" class="ar"/>
+
+  <rect x="452" y="62" width="222" height="150" rx="10" class="mine"/>
+  <text x="468" y="96" class="s t">Any model, any API</text>
+  <text x="468" y="124" class="s d">one request in, one answer out</text>
+  <text x="468" y="158" class="s d">you write</text>
+  <text x="468" y="184" class="m f">responses.jsonl</text>
+
+  <path d="M678 137H708" class="ar"/>
+
+  <rect x="712" y="62" width="228" height="150" rx="10" class="box"/>
+  <rect x="728" y="80" width="202" height="27" rx="6" fill="#0f172a"/>
+  <text x="739" y="98" class="m c">ccb grade understanding</text>
+  <text x="728" y="138" class="s t">Accuracy</text>
+  <text x="728" y="162" class="s d">exact match on the option set</text>
+  <text x="728" y="190" class="s k">deterministic, no LLM judge</text>
+
+  <!-- row 2: reconstruction and design -->
+  <text x="22" y="292" class="s row">Reconstruction</text>
+  <text x="22" y="314" class="s row">and Design</text>
+  <text x="22" y="337" class="s sub">L1, L2, L3</text>
+
+  <rect x="158" y="228" width="254" height="166" rx="10" class="box"/>
+  <rect x="174" y="246" width="178" height="27" rx="6" fill="#0f172a"/>
+  <text x="185" y="264" class="m c">ccb export workspace</text>
+  <text x="174" y="304" class="m f">TASK.md, input.pdf, tools/</text>
+  <text x="174" y="330" class="s d">one folder per task</text>
+  <text x="174" y="372" class="s k">no ground truth inside</text>
+
+  <path d="M416 311H446" class="ar"/>
+
+  <rect x="452" y="228" width="222" height="166" rx="10" class="mine"/>
+  <text x="468" y="262" class="s t">Any coding agent</text>
+  <text x="468" y="290" class="s d">works inside the folder,</text>
+  <text x="468" y="309" class="s d">sandboxed, no web access</text>
+  <text x="468" y="342" class="s d">it writes</text>
+  <text x="468" y="368" class="m f">output.dxf</text>
+
+  <path d="M678 311H708" class="ar"/>
+
+  <rect x="712" y="228" width="228" height="166" rx="10" class="box"/>
+  <rect x="728" y="246" width="96" height="27" rx="6" fill="#0f172a"/>
+  <text x="739" y="264" class="m c">ccb score</text>
+  <text x="728" y="304" class="s t">Page score</text>
+  <text x="728" y="328" class="s d">point-level F1 against</text>
+  <text x="728" y="347" class="s d">the designers' own CAD file</text>
+  <text x="728" y="372" class="s k">deterministic, no LLM judge</text>
+</svg>
