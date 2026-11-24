@@ -20,14 +20,14 @@
   <b>English</b> | <a href="README_zh.md">简体中文</a>
 </p>
 
-A printed drawing keeps the lines and loses the file behind them: the layers, the dimension entities, and the link
-between a printed number and the object it describes. CivilCADBench measures how much of that a model can recover
-from real civil engineering drawing sets, in three tasks of rising difficulty.
+A printed drawing shows lines and text, but not the layers, the dimension entities or which object each printed value
+refers to; these are kept in the designers' CAD file. CivilCADBench tests how much of this a model can recover, using
+real civil engineering drawing sets and three tasks of rising difficulty: understanding, reconstruction and design.
 
 <p align="center">
   <img src="assets/overview.png" alt="Overview of the three tasks" width="100%">
 </p>
-<p align="center"><sub><b>(a)</b> Understanding: every answer binds a number on the page to what it belongs to. <b>(b)</b> Reconstruction and design: the model returns the editable CAD file behind the pixels.</sub></p>
+<p align="center"><sub><b>(a)</b> Understanding: each question asks which object a printed value belongs to. <b>(b)</b> Reconstruction and design: the model returns an editable CAD file (DXF).</sub></p>
 
 <table>
   <thead>
@@ -101,8 +101,8 @@ Every score is computed by a deterministic program. No model acts as a judge.
 
 <sub>Reconstruction: page score and layer-aware F1 on L1, set score on L2. Design: recall of the values that had to change. Understanding: accuracy on Single-Sheet, Few-Sheet and Full-Set. All on a 0 to 100 scale; best in bold.</sub>
 
-On single pages the best model reaches a geometry F1 of 95.5 and a layer-aware F1 of 59.9: it traces the drawing and
-does not recover the file. All columns and the case studies are on the
+On single pages the best model reaches a geometry F1 of 95.5 but a layer-aware F1 of only 59.9: it puts lines in the
+right place but often on the wrong layer. All columns and the case studies are on the
 [leaderboard](https://agenticivil.com/civilcadbench/#results).
 
 <p align="center">
@@ -118,7 +118,7 @@ cd CivilCADBench
 pip install -e .
 ```
 
-Python 3.12 or later is needed. This repository ships a sample of the benchmark (60 questions, 2 multi-sheet units, 6 L1 pages, 1 L2 set, 1 L3 task),
+Python 3.12 or later is needed. This repository ships a sample of the benchmark (60 single-sheet questions, 10 multi-sheet questions from 2 drawing sets, 6 L1 pages, 1 L2 set, 1 L3 task),
 so everything below runs right after the clone. Check the installation by scoring the ground truth against itself:
 
 ```bash
@@ -226,7 +226,7 @@ Details and the exact prompts: [`docs/PROTOCOL.md`](docs/PROTOCOL.md).
     <tr>
       <th align="left">This repository</th>
       <td align="center">60</td>
-      <td align="center">10, with 62 probes</td>
+      <td align="center">10, with 62 sub-questions</td>
       <td align="center">6</td>
       <td align="center">1&nbsp;(7&nbsp;pages)</td>
       <td align="center">1</td>
@@ -254,7 +254,7 @@ Drawings, questions and task statements are in Chinese, the language of the sour
 English translation next to every question.
 
 - [`docs/PROTOCOL.md`](docs/PROTOCOL.md): the files exchanged with a model or an agent, the prompts and the rules
-- [`docs/DATA.md`](docs/DATA.md): layout and file formats of items, parents, probes and tasks; de-identification
+- [`docs/DATA.md`](docs/DATA.md): layout and file formats of questions, sub-questions and tasks; de-identification
 - [`docs/SCORING.md`](docs/SCORING.md): the scorers one by one, the columns of `ccb score`, and the fault-injection test
 - [`SAMPLING.md`](SAMPLING.md): how the sample was drawn
 
