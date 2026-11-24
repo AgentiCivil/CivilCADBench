@@ -13,7 +13,7 @@
   <a href="https://agenticivil.com/civilcadbench/#results"><img alt="Leaderboard" src="https://img.shields.io/badge/Leaderboard-0f172a?style=for-the-badge"></a>
   <a href="https://agenticivil.com/civilcadbench/sample/"><img alt="Sample viewer" src="https://img.shields.io/badge/Sample%20Viewer-0f172a?style=for-the-badge"></a>
   <a href="https://huggingface.co/datasets/AgentiCivil/CivilCADBench"><img alt="Dataset on Hugging Face" src="https://img.shields.io/badge/Dataset-0f172a?style=for-the-badge&logo=huggingface&logoColor=ffd21e"></a>
-  <img alt="Paper: coming soon" src="https://img.shields.io/badge/Paper-coming%20soon-9ca3af?style=for-the-badge&logo=arxiv&logoColor=white&labelColor=6b7280">
+  <a href="https://arxiv.org/abs/2611.28853"><img alt="Paper on arXiv" src="https://img.shields.io/badge/Paper-0f172a?style=for-the-badge&logo=arxiv&logoColor=white"></a>
 </p>
 
 <p align="center">
@@ -272,7 +272,21 @@ results/           fault-injection scores of the six sample pages
 
 ## Citation
 
-The citation will be added with the paper.
+The paper is on arXiv: [arXiv:2611.28853](https://arxiv.org/abs/2611.28853). If you use CivilCADBench, please cite it:
+
+```bibtex
+@misc{zheng2026civilcadbench,
+  title         = {CivilCADBench: Benchmarking Multimodal LLMs for Understanding,
+                   Reconstructing, and Designing Civil Engineering Drawing Sets},
+  author        = {Zelin Zheng and Difei Wu and Xinyan Liu and Minghong Chen and
+                   Antoni B. Chan and Difan Zou},
+  year          = {2026},
+  eprint        = {2611.28853},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CV},
+  url           = {https://arxiv.org/abs/2611.28853}
+}
+```
 
 ## Contact
 

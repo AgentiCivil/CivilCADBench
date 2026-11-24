@@ -13,7 +13,7 @@
   <a href="https://agenticivil.com/civilcadbench/zh#results"><img alt="榜单" src="https://img.shields.io/badge/%E6%A6%9C%E5%8D%95-0f172a?style=for-the-badge"></a>
   <a href="https://agenticivil.com/civilcadbench/sample/zh"><img alt="数据样例" src="https://img.shields.io/badge/%E6%95%B0%E6%8D%AE%E6%A0%B7%E4%BE%8B-0f172a?style=for-the-badge"></a>
   <a href="https://huggingface.co/datasets/AgentiCivil/CivilCADBench"><img alt="Hugging Face 数据集" src="https://img.shields.io/badge/%E6%95%B0%E6%8D%AE%E9%9B%86-0f172a?style=for-the-badge&logo=huggingface&logoColor=ffd21e"></a>
-  <img alt="论文：即将发布" src="https://img.shields.io/badge/%E8%AE%BA%E6%96%87-%E5%8D%B3%E5%B0%86%E5%8F%91%E5%B8%83-9ca3af?style=for-the-badge&logo=arxiv&logoColor=white&labelColor=6b7280">
+  <a href="https://arxiv.org/abs/2611.28853"><img alt="arXiv 论文" src="https://img.shields.io/badge/%E8%AE%BA%E6%96%87-0f172a?style=for-the-badge&logo=arxiv&logoColor=white"></a>
 </p>
 
 <p align="center">
@@ -272,7 +272,21 @@ results/           六页样例的错误注入得分
 
 ## 引用
 
-引用信息将随论文一并补充。
+论文见 [arXiv:2611.28853](https://arxiv.org/abs/2611.28853)。使用 CivilCADBench 请引用：
+
+```bibtex
+@misc{zheng2026civilcadbench,
+  title         = {CivilCADBench: Benchmarking Multimodal LLMs for Understanding,
+                   Reconstructing, and Designing Civil Engineering Drawing Sets},
+  author        = {Zelin Zheng and Difei Wu and Xinyan Liu and Minghong Chen and
+                   Antoni B. Chan and Difan Zou},
+  year          = {2026},
+  eprint        = {2611.28853},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CV},
+  url           = {https://arxiv.org/abs/2611.28853}
+}
+```
 
 ## 联系
 
