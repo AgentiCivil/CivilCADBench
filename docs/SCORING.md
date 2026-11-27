@@ -85,7 +85,7 @@ ccb grade understanding --tier full   <responses.jsonl>
 ```
 
 `selfcheck` sends the gold answer of every item, parent and probe through its grader (all must pass) and then an
-answer with one letter flipped, one digit changed or a suffix added (all must fail). The graders are the functions of
+answer with one letter flipped, a value moved beyond the tolerance or a suffix added (all must fail). The graders are the functions of
 `code/understanding/grade.py`. Its `multi` and `demo` functions read one folder per drawing set, with `parents.jsonl`
 and `probes.jsonl`; `ccb` writes `items.jsonl` in that form into a temporary folder and calls them unchanged. For the
 multi-sheet tiers the grader also reports the composition metrics, in total and per drawing set (`sets`). A solution path is a set of probes that suffices to decide the parent. M counts the

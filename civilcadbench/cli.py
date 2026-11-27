@@ -575,8 +575,8 @@ def run_agent(args):
     cfg = {"agent": args.agent, "agent_cmd": args.agent_cmd, "model": args.model, "docker": docker, "limits": limits, "jobs": args.jobs,
            "env_file": str(Path(args.env_file).resolve()) if args.env_file else None,
            "codex_home": str(Path(args.codex_home).resolve()) if args.codex_home else None,
-           "image": args.image, "proxy_image": "cadbench/proxy", "proxy": "cadbench-proxy",
-           "sock": str(Path.home() / ".cache" / "cadbench" / "proxy_sock")}
+           "image": args.image, "proxy_image": args.proxy_image, "proxy": args.proxy_name,
+           "sock": str(Path(args.proxy_socket).expanduser().resolve())}
     rec = record(run, args.data, args.data_source)
     settings = {"agent": "custom command" if args.agent_cmd else args.agent, "command": args.agent_cmd, "model": args.model,
                 "isolation": "container" if docker else "none (local run)", "image": args.image if docker else None, "limits_seconds": limits}
@@ -726,6 +726,12 @@ def main(argv=None):
     ra.add_argument("--env-file", help="container: file with the endpoint and the key of the agent, passed to docker --env-file")
     ra.add_argument("--codex-home", help="container, Codex: folder with config.toml and auth.json")
     ra.add_argument("--image", default="cadbench/agent", help="container image (default: cadbench/agent, built from examples/docker)")
+    ra.add_argument("--proxy-image", default="cadbench/proxy", help="image of the allowlist proxy (default: cadbench/proxy, built from examples/docker)")
+    ra.add_argument("--proxy-name", default="cadbench-proxy",
+                    help="name of the proxy container (default: cadbench-proxy). A running container of this name is used as it is; "
+                         "give another name to start a proxy of your own next to it")
+    ra.add_argument("--proxy-socket", default=str(Path.home() / ".cache" / "cadbench" / "proxy_sock"),
+                    help="folder that holds the socket of the proxy (default: ~/.cache/cadbench/proxy_sock); one folder per proxy container")
     ra.add_argument("--jobs", type=int, default=1, help="tasks at the same time (default: 1)")
     ra.add_argument("--limit-page", type=int, default=7200, help="seconds per L1 or L3 task (default: 7200)")
     ra.add_argument("--limit-set", type=int, default=21600, help="seconds per L2 task (default: 21600)")

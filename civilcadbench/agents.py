@@ -63,7 +63,7 @@ def agent_command(cfg, level, name, workspace, log):
             "-s", "workspace-write", "--skip-git-repo-check", "-C", str(workspace), "--json", "-o", str(log / "last_message.md"), prompt], {}
 
 
-def docker_ready(cfg):
+def docker_ready(cfg, say=print):
     if not shutil.which("docker"):
         sys.exit("docker not found. Install Docker and build the two images of examples/docker, or pass --local "
                  "to run the agent on this machine without isolation.")
@@ -71,18 +71,22 @@ def docker_ready(cfg):
         if subprocess.run(["docker", "image", "inspect", image], capture_output=True).returncode:
             sys.exit(f"image {image} not found. Build it first:\n"
                      "  cd examples/docker && cp allowlist.example allowlist    # then put the host of your model endpoint in it\n"
-                     "  docker build -t cadbench/proxy -f proxy.Dockerfile . && docker build -t cadbench/agent -f agent.Dockerfile .")
+                     f"  docker build -t {cfg['proxy_image']} -f proxy.Dockerfile . && docker build -t {cfg['image']} -f agent.Dockerfile .")
     sock = Path(cfg["sock"])
     sock.mkdir(parents=True, exist_ok=True)
     sock.chmod(0o777)
     names = subprocess.run(["docker", "ps", "--format", "{{.Names}}"], capture_output=True, text=True).stdout.split()
-    if cfg["proxy"] not in names:
-        subprocess.run(["docker", "rm", "-f", cfg["proxy"]], capture_output=True)
-        r = subprocess.run(["docker", "run", "-d", "--name", cfg["proxy"], "--restart", "unless-stopped", "--network", "bridge",
-                            "-v", f"{sock}:/proxy", cfg["proxy_image"]], capture_output=True, text=True)
-        if r.returncode:
-            sys.exit("the proxy container did not start: " + r.stderr.strip()[:300])
-        time.sleep(2)
+    if cfg["proxy"] in names:           # a running proxy is used as it is, with the image and the socket folder it was started with
+        say(f"proxy: using the running container {cfg['proxy']}; its socket folder has to be {sock}")
+        return
+    # a stopped container of this name is in the way of a new one. Only this name is ever removed.
+    subprocess.run(["docker", "rm", "-f", cfg["proxy"]], capture_output=True)
+    r = subprocess.run(["docker", "run", "-d", "--name", cfg["proxy"], "--restart", "unless-stopped", "--network", "bridge",
+                        "-v", f"{sock}:/proxy", cfg["proxy_image"]], capture_output=True, text=True)
+    if r.returncode:
+        sys.exit("the proxy container did not start: " + r.stderr.strip()[:300])
+    say(f"proxy: started the container {cfg['proxy']} from {cfg['proxy_image']}, socket folder {sock}")
+    time.sleep(2)
 
 
 def run_task(cfg, run, name, level):
@@ -191,7 +195,7 @@ def run_all(cfg, run, todo, export_one, say=print):
     if not open_tasks:
         return {}
     if cfg["docker"]:
-        docker_ready(cfg)
+        docker_ready(cfg, say)
     results = {}
 
     def work(item):
