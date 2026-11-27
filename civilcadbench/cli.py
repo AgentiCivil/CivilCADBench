@@ -28,6 +28,7 @@ import shutil
 import signal
 import sys
 import tempfile
+import threading
 import time
 from pathlib import Path
 
@@ -161,15 +162,124 @@ def describe(data, source):
     return c
 
 
+def clock(seconds):
+    s = int(seconds)
+    return f"{s // 3600}:{s % 3600 // 60:02d}:{s % 60:02d}"
+
+
+class Progress:
+    """Progress of a download, read from the folder: a file counts once it is in its place with the size of the listing.
+
+    Files that are there from an earlier run count from the start. On a terminal one line is refreshed; elsewhere (a log
+    file, a pipe) a line is printed every `every` seconds. The time left is the number of files to go over the files per
+    minute of the last five minutes: with 13,000 small files, the request rate of the Hub decides, not the bandwidth.
+    """
+    WINDOW = 300
+
+    def __init__(self, dst, sizes, every, out=None):
+        self.dst, self.left, self.out = Path(dst), dict(sizes), out or sys.stderr
+        self.total_n, self.total_b = len(sizes), sum(v or 0 for v in sizes.values())
+        self.n = self.b = 0
+        self.scan()
+        self.n0, self.b0, self.t0 = self.n, self.b, time.time()
+        self.samples = [(self.t0, self.n, self.b)]
+        self.tty = self.out.isatty()
+        self.every = 2 if self.tty else max(1, every)
+        self.stop = threading.Event()
+        self.thread = threading.Thread(target=self.loop, daemon=True)
+
+    def scan(self):
+        for name, size in list(self.left.items()):
+            try:
+                there = os.path.getsize(self.dst / name)
+            except OSError:
+                continue
+            if size is None or there == size:
+                self.n, self.b = self.n + 1, self.b + there
+                del self.left[name]
+
+    def line(self, width=None):
+        """files, bytes, rate, time used, time left. On a narrow terminal the rate goes first, then the bytes, then the time used."""
+        now = time.time()
+        self.samples.append((now, self.n, self.b))
+        while len(self.samples) > 2 and now - self.samples[1][0] >= self.WINDOW:
+            self.samples.pop(0)
+        t, n, b = self.samples[0]
+        parts = {"files": f"{self.n:,} / {self.total_n:,} files", "bytes": f"{self.b / 1e9:.2f} / {self.total_b / 1e9:.2f} GB"}
+        if self.left:
+            if now - t >= 20 and self.n > n:
+                per_s = (self.n - n) / (now - t)
+                parts.update(rate=f"{per_s * 60:,.0f} files/min", used=f"elapsed {clock(now - self.t0)}",
+                             left=f"about {clock(len(self.left) / per_s)} left")
+            else:
+                parts.update(used=f"elapsed {clock(now - self.t0)}", left="estimating time left")
+        for drop in (None, "rate", "bytes", "used"):
+            parts.pop(drop, None)
+            text = "   ".join(parts.values())
+            if width is None or len(text) <= width:
+                break
+        return text if width is None else text[:width].ljust(width)
+
+    def show(self, last=False):
+        self.scan()
+        if self.tty:
+            self.out.write("\r" + self.line(shutil.get_terminal_size().columns - 1) + ("\n" if last else ""))
+        else:
+            self.out.write(time.strftime("[%H:%M:%S] ") + self.line() + "\n")
+        self.out.flush()
+
+    def loop(self):
+        while not self.stop.wait(self.every):
+            self.show()
+
+    def __enter__(self):
+        if self.n0:
+            print(f"{self.n0:,} of {self.total_n:,} files ({self.b0 / 1e9:.2f} GB) are already here; the download continues from there",
+                  file=self.out)
+        self.show()
+        self.thread.start()
+        return self
+
+    def __exit__(self, kind, *_):
+        self.stop.set()
+        self.thread.join()
+        self.show(last=True)
+        took = clock(time.time() - self.t0)
+        if kind is None:
+            print(f"finished: {self.n - self.n0:,} files ({(self.b - self.b0) / 1e9:.2f} GB) fetched in {took}", file=self.out)
+        else:
+            print(f"stopped after {took} with {len(self.left):,} files to go; start ccb download again to continue", file=self.out)
+
+
 def download(args):
     try:
-        from huggingface_hub import snapshot_download
+        from huggingface_hub import HfApi, snapshot_download
     except ImportError:
         sys.exit("ccb download needs the package huggingface_hub: pip install huggingface_hub")
     dst = Path(args.dir) if args.dir else DOWNLOAD
     print(f"downloading the dataset {HF_REPO} (about 5.7 GB in 13,000 files) to {dst}\n"
-          "an interrupted download continues when started again; with HF_TOKEN set, the Hub allows a higher request rate")
-    snapshot_download(HF_REPO, repo_type="dataset", local_dir=str(dst), max_workers=args.workers)
+          "an interrupted download continues when started again; with HF_TOKEN set, the Hub allows a higher request rate\n"
+          "the time left is estimated from the last five minutes; without a token a download usually slows down after the first minutes",
+          flush=True)
+    try:        # the list of files with their sizes, for the progress lines
+        info = HfApi().dataset_info(HF_REPO, files_metadata=True)
+        sizes, revision = {f.rfilename: f.size for f in info.siblings}, info.sha
+    except Exception as e:
+        print(f"no progress lines: the list of files could not be read ({type(e).__name__})", file=sys.stderr)
+        sizes, revision = None, None
+    if sizes:
+        try:
+            from huggingface_hub.utils import disable_progress_bars
+            disable_progress_bars()         # the bars of the library count files only and need a terminal
+        except ImportError:
+            pass
+        try:
+            with Progress(dst, sizes, args.log_every):
+                snapshot_download(HF_REPO, repo_type="dataset", revision=revision, local_dir=str(dst), max_workers=args.workers)
+        except KeyboardInterrupt:
+            sys.exit(130)
+    else:
+        snapshot_download(HF_REPO, repo_type="dataset", local_dir=str(dst), max_workers=args.workers)
     if not (dst / "data" / "understanding").is_dir() or not (dst / "data" / "reconstruction").is_dir():
         sys.exit(f"{dst}/data is incomplete")
     (dst / COMPLETE).write_text(time.strftime("%F %T") + "\n", encoding="utf-8")
@@ -688,6 +798,8 @@ def main(argv=None):
     dl = sub.add_parser("download", help="get the full benchmark from Hugging Face")
     dl.add_argument("--dir", help=f"where to put it (default: {DOWNLOAD})")
     dl.add_argument("--workers", type=int, default=16, help="files fetched at the same time (default: 16)")
+    dl.add_argument("--log-every", type=int, default=60, metavar="SECONDS",
+                    help="seconds between progress lines when the output is not a terminal (default: 60)")
     dl.set_defaults(fn=download)
 
     leaf(sub, "selfcheck", selfcheck, help="score the ground truth against itself")
