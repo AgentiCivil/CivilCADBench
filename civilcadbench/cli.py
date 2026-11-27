@@ -167,7 +167,7 @@ def download(args):
     except ImportError:
         sys.exit("ccb download needs the package huggingface_hub: pip install huggingface_hub")
     dst = Path(args.dir) if args.dir else DOWNLOAD
-    print(f"downloading the dataset {HF_REPO} (about 6 GB in 13,000 files) to {dst}\n"
+    print(f"downloading the dataset {HF_REPO} (about 5.7 GB in 13,000 files) to {dst}\n"
           "an interrupted download continues when started again; with HF_TOKEN set, the Hub allows a higher request rate")
     snapshot_download(HF_REPO, repo_type="dataset", local_dir=str(dst), max_workers=args.workers)
     if not (dst / "data" / "understanding").is_dir() or not (dst / "data" / "reconstruction").is_dir():

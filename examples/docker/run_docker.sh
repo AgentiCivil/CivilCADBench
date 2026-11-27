@@ -67,7 +67,7 @@ for WS in "$RUN"/*/; do
   RC=$?
   docker kill "$NAME" >/dev/null 2>&1
   date +%s > "$LOG/.t_end"
-  rm -f "$LOG/agent_home/auth.json"
+  rm -f "$LOG/agent_home/auth.json" "$LOG/agent_home/config.toml"     # the copies of the key and of the endpoint settings
   # the container writes as uid 1000: hand the files back to the account that runs this script
   docker run --rm --user 0 --network none --entrypoint chown -v "$WS":/w -v "$LOG":/l "$IMAGE" -R "$(id -u):$(id -g)" /w /l
   echo $RC > "$LOG/.exit_code"

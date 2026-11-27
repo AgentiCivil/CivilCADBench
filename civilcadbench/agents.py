@@ -35,12 +35,19 @@ PROMPTS["L3"] = PROMPTS["L1"]
 LIMITS = {"L1": 7200, "L2": 21600, "L3": 7200}          # seconds: 2 hours for a page, 6 hours for a set
 SANDBOX = ["--cpus", "8", "--memory", "16g", "--pids-limit", "1024", "--cap-drop", "ALL", "--security-opt", "no-new-privileges"]
 TIMED_OUT = 124
+CODEX_FILES = ("config.toml", "auth.json")        # copied into the logs for the time of a Codex run in a container
 STOPPING = threading.Event()        # ccb itself is being stopped
 RUNNING = {}                        # task -> function that stops its agent
 
 
 class Interrupted(Exception):
     pass
+
+
+def forget_endpoint(log):
+    """Delete the copies of the Codex configuration and key: a run folder that is passed on names no endpoint and holds no key."""
+    for f in CODEX_FILES:
+        (Path(log) / "agent_home" / f).unlink(missing_ok=True)
 
 
 def agent_command(cfg, level, name, workspace, log):
@@ -114,7 +121,7 @@ def run_task(cfg, run, name, level):
                 head += ["-e", f"{k}={m}"]
             head += ["-e", "CLAUDE_CONFIG_DIR=/home/agent/.claude", "-e", "HOME=/home/agent", "-v", f"{log / 'agent_home'}:/home/agent/.claude"]
         else:
-            for f in ("config.toml", "auth.json"):      # a copy of the key for the time of the run; deleted below
+            for f in CODEX_FILES:       # copies for the time of the run; deleted below
                 shutil.copyfile(Path(cfg["codex_home"]) / f, log / "agent_home" / f)
             subprocess.run(["chmod", "-R", "a+rwX", str(log / "agent_home")], capture_output=True)
             head += ["-e", "CODEX_HOME=/home/agent/.codex", "-v", f"{log / 'agent_home'}:/home/agent/.codex"]
@@ -152,12 +159,11 @@ def run_task(cfg, run, name, level):
             rc = TIMED_OUT
         finally:
             RUNNING.pop(name, None)
+    forget_endpoint(log)
     if STOPPING.is_set():                       # ccb itself was stopped: no exit code is written, the task starts again next time
-        (log / "agent_home" / "auth.json").unlink(missing_ok=True)
         raise Interrupted(name)
     if cfg["docker"]:
         subprocess.run(["docker", "kill", container], capture_output=True)
-        (log / "agent_home" / "auth.json").unlink(missing_ok=True)
         # hand the files back to the account that runs ccb
         subprocess.run(["docker", "run", "--rm", "--user", "0", "--network", "none", "--entrypoint", "chown", "-v", f"{ws}:/w",
                         "-v", f"{log}:/l", cfg["image"], "-R", f"{os.getuid()}:{os.getgid()}", "/w", "/l"], capture_output=True)
@@ -171,7 +177,7 @@ def run_all(cfg, run, todo, export_one, say=print):
     """todo: (task name, level, task folder in the data). Returns {task: {"exit_code", "seconds"}} for the tasks run now."""
     run = Path(run).resolve()
     (run / "_logs").mkdir(parents=True, exist_ok=True)
-    (run / "_logs").chmod(0o700)          # during a Codex run in a container the folder holds a copy of the key
+    (run / "_logs").chmod(0o700)          # during a Codex run in a container the folder holds a copy of the configuration and the key
     open_tasks, done = [], 0
     for name, level, task_dir in todo:
         ws, log = run / name, run / "_logs" / name
@@ -184,6 +190,7 @@ def run_all(cfg, run, todo, export_one, say=print):
                 n += 1
             keep = run / "_interrupted" / f"{name}.{n}"
             keep.mkdir(parents=True)
+            forget_endpoint(log)        # ccb was killed before it could delete them
             if ws.exists():
                 shutil.move(str(ws), str(keep / "workspace"))
             shutil.move(str(log), str(keep / "logs"))
