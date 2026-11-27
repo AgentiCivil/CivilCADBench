@@ -86,7 +86,8 @@ def multi(unit_dir, resp, tier="few_sheet"):
 
 
 def demo(root):
-    """Gold answers must all pass; an answer with one letter flipped, one digit changed or a wrong unit must fail."""
+    """Gold answers must all pass; an answer with one letter flipped, a value moved beyond the tolerance of the probe
+    or a changed label must fail."""
     out = {"gold_pass": 0, "gold_total": 0, "perturbed_fail": 0, "perturbed_total": 0}
     choice = rows(os.path.join(root, "single_sheet", "items.jsonl"))
     probes = []
@@ -106,11 +107,12 @@ def demo(root):
         out["gold_total"] += 1
         out["gold_pass"] += grade_probe(q, "推理略。" + json.dumps({"answer": g}, ensure_ascii=False))
         bad = json.loads(json.dumps(g))
+        step = q["tolerance"] + 1          # just outside the tolerance, which is given in the unit of the gold value
         if q["grader_id"] == "quantity":
-            bad["value"] = bad["value"] + 1
+            bad["value"] = bad["value"] + step
         elif q["grader_id"] == "slots":
             key = sorted(bad)[0]
-            bad[key] = dict(bad[key], value=bad[key]["value"] + 1) if isinstance(bad[key], dict) else str(bad[key]) + "x"
+            bad[key] = dict(bad[key], value=bad[key]["value"] + step) if isinstance(bad[key], dict) else str(bad[key]) + "x"
         elif q["grader_id"] == "endpoints":
             bad = [bad[0], str(bad[1]) + "x"]
         else:
