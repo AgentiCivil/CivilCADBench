@@ -1,0 +1,74 @@
+name: Submit results
+description: Results of a model or an agent on CivilCADBench, for the leaderboard
+title: "Results: <model or agent>"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for evaluating on CivilCADBench. The ground truth is public, so we score the raw outputs ourselves with `ccb` and list a result once our numbers match yours. Please run on the full benchmark (`ccb download`) and follow [`docs/PROTOCOL.md`](https://github.com/AgentiCivil/CivilCADBench/blob/main/docs/PROTOCOL.md).
+
+        **Do not post API keys or endpoint addresses**, here or in the files you link.
+  - type: checkboxes
+    id: parts
+    attributes:
+      label: What was evaluated
+      options:
+        - label: Understanding, Single-Sheet
+        - label: Understanding, Few-Sheet
+        - label: Understanding, Full-Set
+        - label: Reconstruction, L1
+        - label: Reconstruction, L2
+        - label: Design, L3
+  - type: textarea
+    id: model
+    attributes:
+      label: Model
+      description: Name, version or weights, serving framework, context length, reasoning effort or thinking budget.
+    validations:
+      required: true
+  - type: textarea
+    id: agent
+    attributes:
+      label: Agent
+      description: For reconstruction and design. Name and version, the command that starts it, and the tools that were switched off.
+  - type: textarea
+    id: report
+    attributes:
+      label: Output of ccb report
+      description: Paste what `ccb report <run folder>` prints.
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: setting
+    attributes:
+      label: Setting and differences from the protocol
+      description: The limits that were applied (time, CPUs, memory, network). For understanding, the image resolution as sent and, for Full-Set, how the model looked at the pages and with which budget. List every point where the run differs from docs/PROTOCOL.md, or write "none".
+    validations:
+      required: true
+  - type: textarea
+    id: reruns
+    attributes:
+      label: Repeated runs
+      description: Which requests or tasks were run again, and why. Only an infrastructure failure is a reason to repeat one. Write "none" if nothing was repeated.
+    validations:
+      required: true
+  - type: textarea
+    id: outputs
+    attributes:
+      label: Raw outputs
+      description: |
+        Attach the files or give a download link for large ones.
+        Understanding: the `responses.jsonl` of every tier, unchanged.
+        Reconstruction and design: the run folder with one folder per task (the DXF files and `NOTES.md`). Leave out `_logs/`, which can hold the configuration of your endpoint.
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Before you send
+      options:
+        - label: Neither this issue nor the linked files hold an API key or an endpoint address.
+          required: true
+        - label: No answer, evidence page or ground-truth file was within reach of the model or the agent.
+          required: true

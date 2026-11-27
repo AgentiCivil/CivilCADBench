@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=68"]
+requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -7,6 +7,8 @@ name = "civilcadbench"
 version = "0.1.0"
 description = "CivilCADBench: deterministic scorers and the ccb command line"
 readme = "README.md"
+license = "MIT"                 # the code; the data under data/ is CC BY-NC 4.0, see data/LICENSE
+license-files = ["LICENSE"]
 requires-python = ">=3.12"
 # the versions of code/requirements.txt, with which the scorers were tested
 dependencies = [

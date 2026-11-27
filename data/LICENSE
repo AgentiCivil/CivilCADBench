@@ -1,0 +1,6 @@
+The data in this folder is a sample of the CivilCADBench dataset. The sample and the full dataset
+(https://huggingface.co/datasets/AgentiCivil/CivilCADBench) are licensed under the Creative Commons
+Attribution-NonCommercial 4.0 International licence (CC BY-NC 4.0):
+https://creativecommons.org/licenses/by-nc/4.0/legalcode
+
+The MIT licence in the root of this repository covers the code only.

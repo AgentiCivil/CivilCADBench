@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+message: "If you find CivilCADBench useful, please consider citing it."
+title: "CivilCADBench: Benchmarking Multimodal LLMs for Understanding, Reconstructing, and Designing Civil Engineering Drawing Sets"
+authors:
+  - family-names: Zheng
+    given-names: Zelin
+  - family-names: Wu
+    given-names: Difei
+  - family-names: Liu
+    given-names: Xinyan
+  - family-names: Chen
+    given-names: Minghong
+  - family-names: Chan
+    given-names: Antoni B.
+  - family-names: Zou
+    given-names: Difan
+url: "https://arxiv.org/abs/2611.28853"
+preferred-citation:
+  type: generic
+  title: "CivilCADBench: Benchmarking Multimodal LLMs for Understanding, Reconstructing, and Designing Civil Engineering Drawing Sets"
+  authors:
+    - family-names: Zheng
+      given-names: Zelin
+    - family-names: Wu
+      given-names: Difei
+    - family-names: Liu
+      given-names: Xinyan
+    - family-names: Chen
+      given-names: Minghong
+    - family-names: Chan
+      given-names: Antoni B.
+    - family-names: Zou
+      given-names: Difan
+  year: 2026
+  url: "https://arxiv.org/abs/2611.28853"
+  identifiers:
+    - type: other
+      value: "arXiv:2611.28853"
+      description: arXiv preprint
