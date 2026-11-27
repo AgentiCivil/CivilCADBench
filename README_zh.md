@@ -28,42 +28,7 @@
 </p>
 <p align="center"><sub><b>(a)</b> 理解：每道题都要判断图上的数值属于哪个对象。<b>(b)</b> 重建与设计：模型交回一个可编辑的 CAD 文件（DXF）。</sub></p>
 
-<table>
-  <thead>
-    <tr>
-      <th width="13%"></th>
-      <th width="29%">理解</th>
-      <th width="29%">重建（L1、L2）</th>
-      <th width="29%">设计（L3）</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th align="left">输入</th>
-      <td>单页、多页或整套图纸的页面图像，加一道题</td>
-      <td>单页（L1）或整套图纸（L2）的黑白打印图</td>
-      <td>一张参考页及其 CAD 文件，加同套其他页</td>
-    </tr>
-    <tr>
-      <th align="left">输出</th>
-      <td>全部正确选项</td>
-      <td>每页一个分图层的 DXF 文件</td>
-      <td>一张新图的 DXF 文件</td>
-    </tr>
-    <tr>
-      <th align="left">规模</th>
-      <td>1,800 + 383 道题</td>
-      <td>232 页 / 28 套</td>
-      <td>19 个任务</td>
-    </tr>
-    <tr>
-      <th align="left">评分方式</th>
-      <td>完全匹配</td>
-      <td>与设计人员的原始 CAD 文件逐点比对的 F1</td>
-      <td>应当改动的数值的召回率</td>
-    </tr>
-  </tbody>
-</table>
+CivilCADBench 包含 **2,183 道理解题**（1,800 道单页题，383 道跨页题）、**232 页**和 **28 套**重建任务，以及 **19 个设计任务**。
 
 所有得分都由确定性的程序算出，不使用大模型裁判。
 
@@ -88,8 +53,11 @@ ccb download      # 从 Hugging Face 下载完整基准：约 5.7 GB，13,000 �
 
 ```bash
 export OPENAI_API_KEY=...
-ccb run understanding --tier all --model <model> --base-url https://<host>/v1 --out runs/<name>
+ccb run understanding --tier all --model <model> \
+    --base-url https://<host>/v1 --out runs/<name>
 ```
+
+`--tier` 可以是 `single`、`few` 或 `full`；`all` 是三档依次跑。
 
 | 档位 | 模型拿到什么 | 怎么作答 |
 |---|---|---|
@@ -191,38 +159,11 @@ ccb score runs/<name>
 
 ## 结果
 
-<table>
-  <thead>
-    <tr>
-      <th rowspan="2" align="left" width="26%">模型</th>
-      <th colspan="3">重建</th>
-      <th>设计</th>
-      <th colspan="3">理解</th>
-    </tr>
-    <tr>
-      <th align="right" nowrap >L1&nbsp;页面</th>
-      <th align="right" nowrap >L1&nbsp;图层&nbsp;F1</th>
-      <th align="right" nowrap >L2&nbsp;整套</th>
-      <th align="right" nowrap >L3&nbsp;召回率</th>
-      <th align="right" nowrap width="11%">单页</th>
-      <th align="right" nowrap width="11%">多页</th>
-      <th align="right" nowrap width="11%">整套</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>GPT-6 Astra</td><td align="right"><b>91.2</b></td><td align="right">59.9</td><td align="right"><b>87.8</b></td><td align="right">47.9</td><td align="right"><b>93.3</b></td><td align="right"><b>95.3</b></td><td align="right"><b>94.5</b></td></tr>
-    <tr><td>GPT-6.1 Sol</td><td align="right">90.4</td><td align="right">58.9</td><td align="right">85.9</td><td align="right"><b>49.1</b></td><td align="right">91.5</td><td align="right">92.2</td><td align="right">89.7</td></tr>
-    <tr><td>GPT-5.6 Sol</td><td align="right">59.8</td><td align="right">40.8</td><td align="right">36.6</td><td align="right">40.3</td><td align="right">72.2</td><td align="right">75.5</td><td align="right">69.4</td></tr>
-    <tr><td>DeepSeek-V4.1-Flash</td><td align="right">81.3</td><td align="right">63.2</td><td align="right">55.4</td><td align="right">37.8</td><td align="right">60.4</td><td align="right">63.8</td><td align="right">58.7</td></tr>
-    <tr><td>GLM-5.3-Flash</td><td align="right">76.1</td><td align="right"><b>70.8</b></td><td align="right">47.2</td><td align="right">19.2</td><td align="right">57.4</td><td align="right">60.2</td><td align="right">52.8</td></tr>
-    <tr><td>Qwen3.8-27B</td><td align="right">36.2</td><td align="right">30.1</td><td align="right">14.5</td><td align="right">6.3</td><td align="right">58.2</td><td align="right">61.4</td><td align="right">53.6</td></tr>
-    <tr><td>Qwen3.5-9B</td><td align="right">5.6</td><td align="right">1.8</td><td align="right">0.0</td><td align="right">0.0</td><td align="right">34.3</td><td align="right">43.1</td><td align="right">8.2</td></tr>
-  </tbody>
-</table>
+<p align="center">
+  <a href="https://agenticivil.com/civilcadbench/zh#results"><img src="assets/results_zh.png" alt="七个模型在全部任务上的结果" width="100%"></a>
+</p>
 
-<sub>重建：L1 的页面得分和图层 F1，L2 的整套得分。设计：应当改动的数值的召回率。理解：单页、多页、整套三档的准确率。均为 0 到 100 分，每列最高值加粗。</sub>
-
-在单页上，最好的模型几何 F1 达到 95.5，图层 F1 只有 59.9：线画对了位置，却常常放错图层。完整的各列结果和案例分析见
+在单页上，最好的模型几何 F1 达到 95.5，图层 F1 只有 59.9：线画对了位置，却常常放错图层。案例分析见
 [榜单](https://agenticivil.com/civilcadbench/zh#results)。
 
 ## 提交结果
@@ -233,36 +174,10 @@ ccb score runs/<name>
 
 ## 数据
 
-<table>
-  <thead>
-    <tr>
-      <th width="18%"></th>
-      <th width="17%">单页题</th>
-      <th width="26%">多页与整套的跨页题</th>
-      <th width="13%">L1 页</th>
-      <th width="13%">L2 套</th>
-      <th width="13%">L3 任务</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th align="left">本仓库</th>
-      <td align="center">60</td>
-      <td align="center">10 道，含 62 道子题</td>
-      <td align="center">6</td>
-      <td align="center">1（7 页）</td>
-      <td align="center">1</td>
-    </tr>
-    <tr>
-      <th align="left">完整基准</th>
-      <td align="center">1,800</td>
-      <td align="center">383 与 330</td>
-      <td align="center">232</td>
-      <td align="center">28</td>
-      <td align="center">19</td>
-    </tr>
-  </tbody>
-</table>
+| | 单页题 | 多页题 | 整套题 | L1 | L2 | L3 |
+|---|---:|---:|---:|---:|---:|---:|
+| 本仓库的样例 | 60 | 10 | 10 | 6 页 | 1 套 | 1 个任务 |
+| 完整基准 | 1,800 | 383 | 330 | 232 页 | 28 套 | 19 个任务 |
 
 完整基准发布在 Hugging Face：[AgentiCivil/CivilCADBench](https://huggingface.co/datasets/AgentiCivil/CivilCADBench)，许可为 CC BY-NC 4.0。
 用 `ccb download` 下载，默认放在 `~/.cache/civilcadbench`，也可以用 `--dir` 指定位置。如果数据已经放在别处，用 `--data <目录>` 或环境变量 `CCB_DATA` 指定。

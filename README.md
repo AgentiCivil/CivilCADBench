@@ -29,42 +29,8 @@ real civil engineering drawing sets and three tasks of rising difficulty: unders
 </p>
 <p align="center"><sub><b>(a)</b> Understanding: each question asks which object a printed value belongs to. <b>(b)</b> Reconstruction and design: the model returns an editable CAD file (DXF).</sub></p>
 
-<table>
-  <thead>
-    <tr>
-      <th width="13%"></th>
-      <th width="29%">Understanding</th>
-      <th width="29%">Reconstruction (L1, L2)</th>
-      <th width="29%">Design (L3)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th align="left">Input</th>
-      <td>page images of one sheet, a few sheets or a whole set, and a question</td>
-      <td>a monochrome print of one page (L1) or of a whole set (L2)</td>
-      <td>a reference page with its CAD file, and the rest of the set</td>
-    </tr>
-    <tr>
-      <th align="left">Output</th>
-      <td>the set of correct options</td>
-      <td>one layered DXF file per page</td>
-      <td>a new page as a DXF file</td>
-    </tr>
-    <tr>
-      <th align="left">Size</th>
-      <td>1,800 + 383 questions</td>
-      <td>232 pages / 28 sets</td>
-      <td>19 tasks</td>
-    </tr>
-    <tr>
-      <th align="left">Scored by</th>
-      <td>exact match</td>
-      <td>point-level F1 against the designers' own CAD file</td>
-      <td>recall of the values that had to change</td>
-    </tr>
-  </tbody>
-</table>
+CivilCADBench has **2,183 understanding questions** (1,800 on one sheet, 383 across several sheets), **232 pages** and
+**28 sets** to reconstruct, and **19 design tasks**.
 
 Every score is computed by a deterministic program. No model acts as a judge.
 
@@ -76,8 +42,10 @@ Python 3.12 or later is needed. The agent tasks also need Docker.
 git clone https://github.com/AgentiCivil/CivilCADBench
 cd CivilCADBench
 pip install -e .
-ccb selfcheck     # checks the installation: the ground truth, scored as an output, gets 100
-ccb download      # the full benchmark from Hugging Face: about 5.7 GB in 13,000 files
+# check the installation: the ground truth, scored as an output, gets 100
+ccb selfcheck
+# get the full benchmark from Hugging Face: about 5.7 GB in 13,000 files
+ccb download
 ```
 
 The repository carries a small sample of the benchmark in `data/`. Before `ccb download`, every command runs on that
@@ -91,8 +59,11 @@ accuracy.
 
 ```bash
 export OPENAI_API_KEY=...
-ccb run understanding --tier all --model <model> --base-url https://<host>/v1 --out runs/<name>
+ccb run understanding --tier all --model <model> \
+    --base-url https://<host>/v1 --out runs/<name>
 ```
+
+`--tier` is `single`, `few` or `full`; `all` runs the three one after another.
 
 | Tier | The model gets | It answers |
 |---|---|---|
@@ -116,7 +87,8 @@ delivers. Each agent runs in a container that can reach only the model endpoint.
 
 ```bash
 cd examples/docker
-cp allowlist.example allowlist      # one line per host the agent may reach: your model endpoint
+# one line per host the agent may reach: your model endpoint
+cp allowlist.example allowlist
 docker build -t cadbench/proxy -f proxy.Dockerfile .
 docker build -t cadbench/agent -f agent.Dockerfile .
 cd ../..
@@ -204,39 +176,12 @@ Details and the exact prompts: [`docs/PROTOCOL.md`](docs/PROTOCOL.md).
 
 ## Results
 
-<table>
-  <thead>
-    <tr>
-      <th rowspan="2" align="left" width="26%">Model</th>
-      <th colspan="3">Reconstruction</th>
-      <th>Design</th>
-      <th colspan="3">Understanding</th>
-    </tr>
-    <tr>
-      <th align="right" >L1&nbsp;page</th>
-      <th align="right" >L1&nbsp;layer&nbsp;F1</th>
-      <th align="right" >L2&nbsp;set</th>
-      <th align="right" >L3&nbsp;recall</th>
-      <th align="right" width="11%">Single</th>
-      <th align="right" width="11%">Few</th>
-      <th align="right" width="11%">Full</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>GPT-6 Astra</td><td align="right"><b>91.2</b></td><td align="right">59.9</td><td align="right"><b>87.8</b></td><td align="right">47.9</td><td align="right"><b>93.3</b></td><td align="right"><b>95.3</b></td><td align="right"><b>94.5</b></td></tr>
-    <tr><td>GPT-6.1 Sol</td><td align="right">90.4</td><td align="right">58.9</td><td align="right">85.9</td><td align="right"><b>49.1</b></td><td align="right">91.5</td><td align="right">92.2</td><td align="right">89.7</td></tr>
-    <tr><td>GPT-5.6 Sol</td><td align="right">59.8</td><td align="right">40.8</td><td align="right">36.6</td><td align="right">40.3</td><td align="right">72.2</td><td align="right">75.5</td><td align="right">69.4</td></tr>
-    <tr><td>DeepSeek-V4.1-Flash</td><td align="right">81.3</td><td align="right">63.2</td><td align="right">55.4</td><td align="right">37.8</td><td align="right">60.4</td><td align="right">63.8</td><td align="right">58.7</td></tr>
-    <tr><td>GLM-5.3-Flash</td><td align="right">76.1</td><td align="right"><b>70.8</b></td><td align="right">47.2</td><td align="right">19.2</td><td align="right">57.4</td><td align="right">60.2</td><td align="right">52.8</td></tr>
-    <tr><td>Qwen3.8-27B</td><td align="right">36.2</td><td align="right">30.1</td><td align="right">14.5</td><td align="right">6.3</td><td align="right">58.2</td><td align="right">61.4</td><td align="right">53.6</td></tr>
-    <tr><td>Qwen3.5-9B</td><td align="right">5.6</td><td align="right">1.8</td><td align="right">0.0</td><td align="right">0.0</td><td align="right">34.3</td><td align="right">43.1</td><td align="right">8.2</td></tr>
-  </tbody>
-</table>
-
-<sub>Reconstruction: page score and layer-aware F1 on L1, set score on L2. Design: recall of the values that had to change. Understanding: accuracy on Single-Sheet, Few-Sheet and Full-Set. All on a 0 to 100 scale; best in bold.</sub>
+<p align="center">
+  <a href="https://agenticivil.com/civilcadbench/#results"><img src="assets/results.png" alt="Results of seven models on all tasks" width="100%"></a>
+</p>
 
 On single pages the best model reaches a geometry F1 of 95.5 but a layer-aware F1 of only 59.9: it puts lines in the
-right place but often on the wrong layer. All columns and the case studies are on the
+right place but often on the wrong layer. The case studies are on the
 [leaderboard](https://agenticivil.com/civilcadbench/#results).
 
 ## Submit results
@@ -248,36 +193,10 @@ outputs again and list the result once the numbers match.
 
 ## Data
 
-<table>
-  <thead>
-    <tr>
-      <th width="18%"></th>
-      <th width="17%">Single-Sheet<br>questions</th>
-      <th width="26%">Few-Sheet&nbsp;and&nbsp;Full-Set<br>questions</th>
-      <th width="13%">L1 pages</th>
-      <th width="13%">L2 sets</th>
-      <th width="13%">L3 tasks</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th align="left">This repository</th>
-      <td align="center">60</td>
-      <td align="center">10, with 62 sub-questions</td>
-      <td align="center">6</td>
-      <td align="center">1&nbsp;(7&nbsp;pages)</td>
-      <td align="center">1</td>
-    </tr>
-    <tr>
-      <th align="left">Full benchmark</th>
-      <td align="center">1,800</td>
-      <td align="center">383 and 330</td>
-      <td align="center">232</td>
-      <td align="center">28</td>
-      <td align="center">19</td>
-    </tr>
-  </tbody>
-</table>
+| | Single-Sheet | Few-Sheet | Full-Set | L1 | L2 | L3 |
+|---|---:|---:|---:|---:|---:|---:|
+| Sample in this repository | 60 | 10 | 10 | 6 pages | 1 set | 1 task |
+| Full benchmark | 1,800 | 383 | 330 | 232 pages | 28 sets | 19 tasks |
 
 The full benchmark is on Hugging Face as [AgentiCivil/CivilCADBench](https://huggingface.co/datasets/AgentiCivil/CivilCADBench), under the CC BY-NC 4.0
 licence. `ccb download` fetches it into `~/.cache/civilcadbench`, or into the folder given with `--dir`. To use a copy
