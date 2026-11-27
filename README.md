@@ -68,6 +68,140 @@ real civil engineering drawing sets and three tasks of rising difficulty: unders
 
 Every score is computed by a deterministic program. No model acts as a judge.
 
+## Quickstart
+
+Python 3.12 or later is needed. The agent tasks also need Docker.
+
+```bash
+git clone https://github.com/AgentiCivil/CivilCADBench
+cd CivilCADBench
+pip install -e .
+ccb selfcheck     # checks the installation: the ground truth, scored as an output, gets 100
+ccb download      # the full benchmark from Hugging Face: about 5.7 GB in 13,000 files
+```
+
+The repository carries a small sample of the benchmark in `data/`. Before `ccb download`, every command runs on that
+sample, which is enough to try the steps below. After it, every command uses the full benchmark. `ccb` prints which of
+the two it is using.
+
+## Evaluate a model on the understanding tasks
+
+`ccb run understanding` sends every question to an OpenAI-compatible endpoint, grades the answers and prints the
+accuracy.
+
+```bash
+export OPENAI_API_KEY=...
+ccb run understanding --tier all --model <model> --base-url https://<host>/v1 --out runs/<name>
+```
+
+| Tier | The model gets | It answers |
+|---|---|---|
+| `single` | one page and one question | in one turn |
+| `few` | the pages a question needs, mixed with similar pages of the same set | in one turn |
+| `full` | a whole drawing set | over several turns: it opens pages with the `view_page` tool and can use `calculate` |
+
+A run that stops can be started again with the same command; finished requests are kept. `--limit 20` answers only
+the first 20 requests of each tier, for a first try. `--extra '{"reasoning_effort": "high"}'` adds fields to every
+request.
+
+By default a question of the `full` tier gets 16 model turns, 24 page views and 65,536 generated tokens. When the
+model zooms in, `ccb` cuts the view out of the released page image, whereas our runs rendered it from the vector
+drawing. A zoomed view therefore shows less detail, and Full-Set accuracy from `ccb` is not directly comparable with
+the results table.
+
+## Evaluate an agent on the reconstruction and design tasks
+
+`ccb run agent` creates one workspace per task, starts a coding agent in each workspace and scores the DXF files it
+delivers. Each agent runs in a container that can reach only the model endpoint. Build the two images once:
+
+```bash
+cd examples/docker
+cp allowlist.example allowlist      # one line per host the agent may reach: your model endpoint
+docker build -t cadbench/proxy -f proxy.Dockerfile .
+docker build -t cadbench/agent -f agent.Dockerfile .
+cd ../..
+```
+
+Where Docker Hub or the default package sources are slow, pass a base image and mirrors with `--build-arg`; the
+options are listed at the top of each Dockerfile.
+
+Then run Claude Code or Codex CLI:
+
+```bash
+ccb run agent --level all --agent claude-code --model <model> \
+    --env-file model.env --out runs/<name>
+ccb run agent --level all --agent codex --model <model> \
+    --codex-home <folder> --out runs/<name>
+```
+
+`model.env` holds the endpoint and the key of the agent, for example `ANTHROPIC_BASE_URL` and `ANTHROPIC_API_KEY`.
+`--codex-home` is a folder with the `config.toml` and `auth.json` of Codex. Keep only the model settings in this
+`config.toml`: the container reaches nothing but the model endpoint.
+
+To evaluate another agent, build an image that contains it and pass its start command. `ccb` runs the command once in
+every workspace:
+
+```bash
+ccb run agent --level all --model <model> --image <image> --env-file model.env \
+    --agent-cmd 'my-agent --model {model} "$CCB_PROMPT"' --out runs/<name>
+```
+
+| Level | Tasks | The agent delivers | Time limit per task |
+|---|---|---|---|
+| `L1` | 232 pages | one DXF file | 2 hours |
+| `L2` | 28 sets, 230 pages | one DXF file per page | 6 hours |
+| `L3` | 19 design tasks | one DXF file | 2 hours |
+
+A workspace holds the task statement, the input print and a tool that plots a DXF file the way the input was plotted.
+The designers' CAD file and the scorer stay outside the workspace. `--tasks` limits a run to the task ids it lists.
+`--local` runs the agent on this machine without a container, which is fine for a first try but not for reported
+results.
+
+## Scores
+
+```bash
+ccb report runs/<name>
+```
+
+This prints one row in the columns of the [leaderboard](https://agenticivil.com/civilcadbench/#results), on a 0 to
+100 scale. Below the row, the report says how many tasks and requests it covers and whether the run kept to the
+protocol. One run folder can hold an understanding run and an agent run, and the report then shows both. The score of
+every task is in `runs/<name>/summary.json`.
+
+## Use your own harness
+
+`ccb run` is built on three file-based steps, which you can also call yourself: `ccb` writes the inputs as files, your
+code produces the outputs, and `ccb` scores them.
+
+```bash
+# writes requests.jsonl and the images, without answers
+ccb export understanding --tier single --out requests/
+# reads one line per request: {"id": ..., "response": ...}
+ccb grade understanding --tier single responses.jsonl
+```
+
+```bash
+# writes one folder per task, without ground truth
+ccb export workspace --level L1 --out runs/<name>
+# reads output.dxf (L1, L3) or output/page_NN.dxf (L2) in every folder
+ccb score runs/<name>
+```
+
+The file formats and the fixed prompts are in [`docs/PROTOCOL.md`](docs/PROTOCOL.md).
+
+## Protocol for comparable numbers
+
+- **Workspace.** A fresh copy per task; one run per task and model; the agent submits once.
+- **Outside the workspace.** The source CAD file, the ground truth and the scorer.
+- **Reasoning effort.** High, for every model.
+- **Network.** None, apart from the model endpoint; no web search.
+- **Sandbox.** 8 CPUs, 16 GB of memory, 1024 processes, non-root.
+- **Time limit.** 2 hours for L1 and L3, 6 hours for L2; at the limit, the files in the workspace are scored.
+- **Reruns.** Only after an infrastructure failure, never after a low score.
+- **Understanding.** Single-Sheet and Few-Sheet in one turn; in Full-Set the model opens the pages of the set with tools.
+
+Details and the exact prompts: [`docs/PROTOCOL.md`](docs/PROTOCOL.md).
+
 ## Results
 
 <table>
@@ -105,109 +239,12 @@ On single pages the best model reaches a geometry F1 of 95.5 but a layer-aware F
 right place but often on the wrong layer. All columns and the case studies are on the
 [leaderboard](https://agenticivil.com/civilcadbench/#results).
 
-<p align="center">
-  <img src="assets/qualitative_l1.webp" alt="Two L1 pages: input print, source file, and model outputs coloured by layer" width="100%">
-</p>
-<p align="center"><sub>Two L1 pages; colours are layers, the number after a model name is its page score. Both GPT-6 models redraw the pier detail line for line (geometry F1 100), but few of their lines carry the layer of the source file (layer-aware F1 12 and 11).</sub></p>
+## Submit results
 
-## Quickstart
-
-```bash
-git clone https://github.com/AgentiCivil/CivilCADBench
-cd CivilCADBench
-pip install -e .
-```
-
-Python 3.12 or later is needed. This repository ships a sample of the benchmark (60 single-sheet questions, 10 multi-sheet questions from 2 drawing sets, 6 L1 pages, 1 L2 set, 1 L3 task),
-so everything below runs right after the clone. Check the installation by scoring the ground truth against itself:
-
-```bash
-ccb selfcheck
-# reconstruction  8/8 tasks at 100.0 with the ground truth as output
-# understanding   132/132 gold answers pass, 132/132 perturbed answers fail
-```
-
-## Evaluate your model or agent
-
-CivilCADBench never calls your model. It hands you the inputs as files, you hand back the outputs as files, and the
-scorer does the rest. Any model behind any API and any agent framework fits, as long as it can read and write files.
-
-<p align="center">
-  <img src="assets/workflow.svg" alt="ccb exports the inputs, your model or agent produces the outputs, ccb scores them" width="100%">
-</p>
-
-### Understanding: one answer per question
-
-```bash
-ccb export understanding --tier single --out requests/
-```
-
-`requests/requests.jsonl` holds one request per line and no answers (shown here on several lines):
-
-```json
-{
-  "id": "SS-01",
-  "kind": "item",
-  "tier": "single",
-  "system": "...",
-  "prompt": "...",
-  "images": ["images/SS-01.png"]
-}
-```
-
-Send each request to your model and write its final text to `responses.jsonl`:
-
-```json
-{"id": "SS-01", "response": "... 答案：A,C"}
-```
-
-```bash
-ccb grade understanding --tier single responses.jsonl
-# prints JSON: items, answered, correct, accuracy, and accuracy by binding type
-```
-
-`--tier` is `single`, `few` or `full`. [`examples/openai_compatible.py`](examples/openai_compatible.py) does the
-middle step for any OpenAI-compatible endpoint; for another API, replace one function in it.
-
-### Reconstruction and design: one workspace per task
-
-```bash
-ccb export workspace --level L1 --out runs/my-agent
-```
-
-This creates one folder per task. A folder holds what the agent may see and nothing else:
-
-```
-runs/my-agent/L1-easy-01/
-  TASK.md            the task statement: coordinates, the nine layers, what to deliver
-  input.pdf          the monochrome print
-  tools/             render_preview.py, to plot a DXF the way the input was plotted
-```
-
-Start your agent inside the folder with the fixed prompt in [`docs/PROTOCOL.md`](docs/PROTOCOL.md). It delivers
-`output.dxf` (L1, L3) or `output/page_NN.dxf` (L2). Then score the whole run:
-
-```bash
-ccb score runs/my-agent
-# writes runs/my-agent/summary.json: page score, geometry / layer / text / dimension F1,
-# shared-value recall (L2), design recall (L3)
-```
-
-A task without a valid output scores 0. [`examples/`](examples) has a launcher for Codex CLI and a container launcher
-for Codex CLI and Claude Code that cuts the network and applies the limits below.
-
-### Protocol for comparable numbers
-
-- **Workspace.** A fresh copy per task; one run per task and model; the agent submits once.
-- **Outside the workspace.** The source CAD file, the ground truth and the scorer.
-- **Reasoning effort.** High, for every model.
-- **Network.** None, apart from the model endpoint; no web search.
-- **Sandbox.** 8 CPUs, 16 GB of memory, 1024 processes, non-root.
-- **Time limit.** 2 hours for L1 and L3, 6 hours for L2; at the limit, the files in the workspace are scored.
-- **Reruns.** Only after an infrastructure failure, never after a low score.
-- **Understanding.** Single-Sheet and Few-Sheet in one turn; in Full-Set the model opens the pages of the set with tools.
-
-Details and the exact prompts: [`docs/PROTOCOL.md`](docs/PROTOCOL.md).
+To have a model or an agent listed on the [leaderboard](https://agenticivil.com/civilcadbench/#results), open an
+issue with the **Submit results** form. The form asks for the run conditions, the output of `ccb report` and the raw
+outputs: the responses files and the run folder without `_logs/`, attached or as a download link. We score the
+outputs again and list the result once the numbers match.
 
 ## Data
 
@@ -243,12 +280,8 @@ Details and the exact prompts: [`docs/PROTOCOL.md`](docs/PROTOCOL.md).
 </table>
 
 The full benchmark is on Hugging Face as [AgentiCivil/CivilCADBench](https://huggingface.co/datasets/AgentiCivil/CivilCADBench), under the CC BY-NC 4.0
-licence. It has the layout of the sample, so every `ccb` command reads it through `--data`:
-
-```bash
-hf download AgentiCivil/CivilCADBench --repo-type dataset --local-dir CivilCADBench-data
-ccb --data CivilCADBench-data/data export understanding --tier single --out requests/
-```
+licence. `ccb download` fetches it into `~/.cache/civilcadbench`, or into the folder given with `--dir`. To use a copy
+that is stored elsewhere, pass `--data <folder>` or set `CCB_DATA`.
 
 Drawings, questions and task statements are in Chinese, the language of the source drawing sets; the [sample viewer](https://agenticivil.com/civilcadbench/sample/) shows an
 English translation next to every question.
@@ -272,7 +305,7 @@ results/           fault-injection scores of the six sample pages
 
 ## Citation
 
-The paper is on arXiv: [arXiv:2611.28853](https://arxiv.org/abs/2611.28853). If you use CivilCADBench, please cite it:
+The paper is on arXiv: [arXiv:2611.28853](https://arxiv.org/abs/2611.28853). If you find CivilCADBench useful, please consider citing it:
 
 ```bibtex
 @misc{zheng2026civilcadbench,
@@ -287,6 +320,11 @@ The paper is on arXiv: [arXiv:2611.28853](https://arxiv.org/abs/2611.28853). If 
   url           = {https://arxiv.org/abs/2611.28853}
 }
 ```
+
+## License
+
+The code is released under the [MIT licence](LICENSE). The data, including the sample in `data/`, is released under
+CC BY-NC 4.0.
 
 ## Contact
 

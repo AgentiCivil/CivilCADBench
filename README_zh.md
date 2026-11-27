@@ -67,6 +67,128 @@
 
 所有得分都由确定性的程序算出，不使用大模型裁判。
 
+## 快速开始
+
+需要 Python 3.12 或更高版本。重建和设计任务还需要 Docker。
+
+```bash
+git clone https://github.com/AgentiCivil/CivilCADBench
+cd CivilCADBench
+pip install -e .
+ccb selfcheck     # 检查安装：把真值当作输出来评分，应得满分
+ccb download      # 从 Hugging Face 下载完整基准：约 5.7 GB，13,000 个文件
+```
+
+仓库里带一份小的数据样例，在 `data/` 目录。运行 `ccb download` 之前，所有命令都在这份样例上运行，可以先用它把下面的步骤试一遍；
+下载之后，所有命令都改用完整基准。`ccb` 每次都会打印当前用的是哪一份。
+
+## 在理解任务上评测模型
+
+`ccb run understanding` 把每道题发给一个兼容 OpenAI 的接口，给回答评分，并打印准确率。
+
+```bash
+export OPENAI_API_KEY=...
+ccb run understanding --tier all --model <model> --base-url https://<host>/v1 --out runs/<name>
+```
+
+| 档位 | 模型拿到什么 | 怎么作答 |
+|---|---|---|
+| `single`（单页） | 一页图和一道题 | 一轮作答 |
+| `few`（多页） | 这道题要用到的几页，和同一套图里相似的页混在一起 | 一轮作答 |
+| `full`（整套） | 一整套图 | 多轮作答：用 `view_page` 工具自己翻页，可以用 `calculate` 做计算 |
+
+中断的运行可以用同一条命令接着跑，已完成的请求会保留。`--limit 20` 只回答每个档位的前 20 个请求，适合先试一下。
+`--extra '{"reasoning_effort": "high"}'` 可以给每个请求加上额外字段。
+
+`full` 档位的每道题默认最多 16 轮、看图 24 次、生成 65,536 个 token。模型放大看图时，`ccb` 是从发布的页面图片上裁剪，
+而我们的实验是从矢量图纸重新渲染的。因此这里放大后的细节更少，`ccb` 得到的整套理解准确率不能和结果表直接比较。
+
+## 在重建和设计任务上评测智能体
+
+`ccb run agent` 为每个任务建一个工作目录，在里面启动一个编程智能体，再给它交付的 DXF 文件评分。每个智能体都在容器里运行，
+只能访问模型接口。先构建两个镜像，只需一次：
+
+```bash
+cd examples/docker
+cp allowlist.example allowlist      # 每行一个允许访问的主机：你的模型接口
+docker build -t cadbench/proxy -f proxy.Dockerfile .
+docker build -t cadbench/agent -f agent.Dockerfile .
+cd ../..
+```
+
+如果访问 Docker Hub 或默认软件源较慢，可以用 `--build-arg` 指定基础镜像和镜像源，可用的参数写在两个 Dockerfile 的开头。
+
+然后运行 Claude Code 或 Codex CLI：
+
+```bash
+ccb run agent --level all --agent claude-code --model <model> \
+    --env-file model.env --out runs/<name>
+ccb run agent --level all --agent codex --model <model> \
+    --codex-home <folder> --out runs/<name>
+```
+
+`model.env` 里写智能体用的接口地址和密钥，例如 `ANTHROPIC_BASE_URL` 和 `ANTHROPIC_API_KEY`。`--codex-home` 是存放 Codex 的
+`config.toml` 和 `auth.json` 的目录。这份 `config.toml` 里只保留模型相关的设置即可，容器只能访问模型接口。
+
+评测别的智能体，就构建一个装有它的镜像，再把它的启动命令传进来。`ccb` 会在每个工作目录里运行一次：
+
+```bash
+ccb run agent --level all --model <model> --image <image> --env-file model.env \
+    --agent-cmd 'my-agent --model {model} "$CCB_PROMPT"' --out runs/<name>
+```
+
+| 级别 | 任务 | 智能体交付 | 每个任务限时 |
+|---|---|---|---|
+| `L1` | 232 页 | 一个 DXF 文件 | 2 小时 |
+| `L2` | 28 套，共 230 页 | 每页一个 DXF 文件 | 6 小时 |
+| `L3` | 19 个设计任务 | 一个 DXF 文件 | 2 小时 |
+
+工作目录里有任务说明、输入的打印图，以及一个按输入图的出图方式渲染 DXF 的工具。设计人员的 CAD 文件和评分程序都在工作目录之外。
+`--tasks` 可以只跑列出的几个任务。`--local` 不用容器，直接在本机运行智能体，适合先试一下，但不能用于正式报告的结果。
+
+## 得分
+
+```bash
+ccb report runs/<name>
+```
+
+这条命令按[榜单](https://agenticivil.com/civilcadbench/zh#results)的各列打印一行得分，均为 0 到 100 分。这一行下面会说明它覆盖了多少任务和请求，
+以及这次运行是否符合评测协议。同一个运行目录可以既有理解任务的结果，也有智能体的结果，报告会一并给出。
+每个任务的得分在 `runs/<name>/summary.json` 里。
+
+## 用你自己的评测框架
+
+`ccb run` 建立在三个基于文件的步骤上，你也可以直接调用它们：`ccb` 把输入写成文件，你的代码产出输出，`ccb` 再评分。
+
+```bash
+# 写出 requests.jsonl 和图片，不含答案
+ccb export understanding --tier single --out requests/
+# 读取回答文件，每行一个：{"id": ..., "response": ...}
+ccb grade understanding --tier single responses.jsonl
+```
+
+```bash
+# 每个任务写出一个目录，不含真值
+ccb export workspace --level L1 --out runs/<name>
+# 读取每个目录里的 output.dxf（L1、L3）或 output/page_NN.dxf（L2）
+ccb score runs/<name>
+```
+
+文件格式和固定的提示词见 [`docs/PROTOCOL.md`](docs/PROTOCOL.md)。
+
+## 可比结果的评测协议
+
+- **工作目录**：每个任务一份全新的拷贝；每个任务、每个模型只跑一次；智能体只提交一次。
+- **工作目录之外**：原始 CAD 文件、真值和评分程序。
+- **推理档位**：所有模型均为 high。
+- **网络**：除模型接口外全部断开；不提供网页搜索。
+- **沙箱**：8 核 CPU、16 GB 内存、1024 个进程、非 root。
+- **限时**：L1 和 L3 为 2 小时，L2 为 6 小时；到时即停，按工作目录里已有的文件评分。
+- **重跑**：只在基础设施故障后重跑，不因得分低而重跑。
+- **理解**：单页和多页一轮作答；整套理解由模型用工具自己翻页。
+
+细则和完整的提示词见 [`docs/PROTOCOL.md`](docs/PROTOCOL.md)。
+
 ## 结果
 
 <table>
@@ -103,109 +225,11 @@
 在单页上，最好的模型几何 F1 达到 95.5，图层 F1 只有 59.9：线画对了位置，却常常放错图层。完整的各列结果和案例分析见
 [榜单](https://agenticivil.com/civilcadbench/zh#results)。
 
-<p align="center">
-  <img src="assets/qualitative_l1.webp" alt="两页 L1：输入打印图、原始文件和模型输出，按图层着色" width="100%">
-</p>
-<p align="center"><sub>两页 L1，颜色表示图层，模型名后的数字是页面得分。两个 GPT-6 模型把桥墩大样逐线画了出来（几何 F1 为 100），但只有少数线条落在原始文件的图层上（图层 F1 为 12 和 11）。</sub></p>
+## 提交结果
 
-## 快速开始
-
-```bash
-git clone https://github.com/AgentiCivil/CivilCADBench
-cd CivilCADBench
-pip install -e .
-```
-
-需要 Python 3.12 或更高版本。仓库自带一份数据样例（60 道单页题、2 套图纸上的 10 道跨页题、6 页 L1、1 套 L2、1 个 L3 任务），克隆后下面的命令都能直接运行。
-先用标准答案给自己评一次分，确认安装无误：
-
-```bash
-ccb selfcheck
-# reconstruction  8/8 tasks at 100.0 with the ground truth as output
-# understanding   132/132 gold answers pass, 132/132 perturbed answers fail
-```
-
-## 评测你自己的模型或智能体
-
-CivilCADBench 不会调用你的模型。它把输入写成文件交给你，你把输出写成文件交回来，剩下的由评分程序完成。任何接口的模型、
-任何智能体框架都能接入，只要能读写文件。
-
-<p align="center">
-  <img src="assets/workflow.svg" alt="ccb 导出输入，你的模型或智能体产出输出，ccb 评分" width="100%">
-</p>
-
-### 理解：每道题一个回答
-
-```bash
-ccb export understanding --tier single --out requests/
-```
-
-`requests/requests.jsonl` 每行一个请求，不含答案（这里分行显示）：
-
-```json
-{
-  "id": "SS-01",
-  "kind": "item",
-  "tier": "single",
-  "system": "...",
-  "prompt": "...",
-  "images": ["images/SS-01.png"]
-}
-```
-
-把每个请求发给你的模型，再把模型最后输出的文字写进 `responses.jsonl`：
-
-```json
-{"id": "SS-01", "response": "... 答案：A,C"}
-```
-
-```bash
-ccb grade understanding --tier single responses.jsonl
-# 输出 JSON：题数、作答数、答对数、准确率，以及按绑定类型的准确率
-```
-
-`--tier` 可取 `single`（单页）、`few`（多页）或 `full`（整套）。中间这一步，
-[`examples/openai_compatible.py`](examples/openai_compatible.py) 已经为所有兼容 OpenAI 的接口写好；换成别的接口，只需替换其中一个函数。
-
-### 重建与设计：每个任务一个工作目录
-
-```bash
-ccb export workspace --level L1 --out runs/my-agent
-```
-
-每个任务生成一个目录，里面只有智能体可以看到的文件：
-
-```
-runs/my-agent/L1-easy-01/
-  TASK.md            任务说明：坐标约定、九个图层、要交付什么
-  input.pdf          黑白打印图
-  tools/             render_preview.py，按输入图的出图方式渲染 DXF
-```
-
-在目录里启动你的智能体，提示词用 [`docs/PROTOCOL.md`](docs/PROTOCOL.md) 里的固定提示词。它需要交付 `output.dxf`（L1、L3）
-或 `output/page_NN.dxf`（L2）。然后给整次运行评分：
-
-```bash
-ccb score runs/my-agent
-# 写出 runs/my-agent/summary.json：页面得分，几何 / 图层 / 文字 / 标注 F1，
-# 共享值召回率（L2），设计召回率（L3）
-```
-
-没有交出有效文件的任务记 0 分。[`examples/`](examples) 里有 Codex CLI 的启动脚本，以及一套容器启动脚本（支持 Codex CLI 和
-Claude Code），它会断开网络并施加下面的限制。
-
-### 可比结果的评测协议
-
-- **工作目录**：每个任务一份全新的拷贝；每个任务、每个模型只跑一次；智能体只提交一次。
-- **工作目录之外**：原始 CAD 文件、真值和评分程序。
-- **推理档位**：所有模型均为 high。
-- **网络**：除模型接口外全部断开；不提供网页搜索。
-- **沙箱**：8 核 CPU、16 GB 内存、1024 个进程、非 root。
-- **限时**：L1 和 L3 为 2 小时，L2 为 6 小时；到时即停，按工作目录里已有的文件评分。
-- **重跑**：只在基础设施故障后重跑，不因得分低而重跑。
-- **理解**：单页和多页一轮作答；整套理解由模型用工具自己翻页。
-
-细则和完整的提示词见 [`docs/PROTOCOL.md`](docs/PROTOCOL.md)。
+想让自己的模型或智能体列入[榜单](https://agenticivil.com/civilcadbench/zh#results)，请用 **Submit results** 表单提一个 issue。
+表单需要填写运行条件和 `ccb report` 的输出，并附上原始输出：回答文件和去掉 `_logs/` 的运行目录，可以直接上传，也可以给下载链接。
+我们会用这些输出重新评分，分数一致后列入榜单。
 
 ## 数据
 
@@ -241,12 +265,7 @@ Claude Code），它会断开网络并施加下面的限制。
 </table>
 
 完整基准发布在 Hugging Face：[AgentiCivil/CivilCADBench](https://huggingface.co/datasets/AgentiCivil/CivilCADBench)，许可为 CC BY-NC 4.0。
-它与样例的目录结构相同，所有 `ccb` 命令都可以用 `--data` 读取它：
-
-```bash
-hf download AgentiCivil/CivilCADBench --repo-type dataset --local-dir CivilCADBench-data
-ccb --data CivilCADBench-data/data export understanding --tier single --out requests/
-```
+用 `ccb download` 下载，默认放在 `~/.cache/civilcadbench`，也可以用 `--dir` 指定位置。如果数据已经放在别处，用 `--data <目录>` 或环境变量 `CCB_DATA` 指定。
 
 图纸、题目和任务说明均为中文，与原始图纸集一致；
 [数据样例页面](https://agenticivil.com/civilcadbench/sample/zh)在每道题旁给出了对照翻译。
@@ -272,7 +291,7 @@ results/           六页样例的错误注入得分
 
 ## 引用
 
-论文见 [arXiv:2611.28853](https://arxiv.org/abs/2611.28853)。使用 CivilCADBench 请引用：
+论文见 [arXiv:2611.28853](https://arxiv.org/abs/2611.28853)。如果 CivilCADBench 对你的工作有帮助，欢迎引用：
 
 ```bibtex
 @misc{zheng2026civilcadbench,
@@ -287,6 +306,10 @@ results/           六页样例的错误注入得分
   url           = {https://arxiv.org/abs/2611.28853}
 }
 ```
+
+## 许可
+
+代码以 [MIT 许可](LICENSE)发布。数据（包括 `data/` 里的样例）以 CC BY-NC 4.0 发布。
 
 ## 联系
 
